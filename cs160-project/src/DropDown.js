@@ -1,24 +1,37 @@
 import React from 'react'
 
+
+//Props in the following format
+// {name of menu, Label for menu, arry of options}
+// Options array in the format [{id:  name: }, {id: name: } ...]
 class DropDown extends React.Component {
-  render() {
+  
+ render() {
     return(
       <form>
-        <label for="shools">Select a school:</label>
-        <br/>  
-        <select name="schools" autocomplete="true"> 
-          <option value="SJSU">SJSU</option> 
-          <option value="SRJC">SRJC</option> 
-          <option value="SAC">SAC</option> 
-          <option value="CSUEB">CSUEB</option> 
-          <option value="CSUN">CSUN</option> 
-          <option value="SSU">SSU</option> 
-          <option value="UCD">UCD</option> 
+        <label for={this.props.name}>{this.props.label}:</label>
+        <br/>
+        <select name={this.props.name}> 
+          <DropDownOptions optionList={this.props.optionList} />
         </select>
       </form>
     )
   }
+
 }
+
+
+const DropDownOptions = (props) => {
+  const options = props.optionList.map((row, index) => {
+    return(
+      <option key={index} value={row.id}>
+        {row.name}
+      </option>
+    )
+  })
+  return options
+}
+
 
 
 export default DropDown;
