@@ -7,26 +7,28 @@ import React from 'react'
 // optionList={Array of options}
 // Options array in the format [{id:  name: }, {id: name: } ...]
 class DropDown extends React.Component {
- 
-
   
- render() {
+  handleSelection = (event) => {
+    console.log(event.target.value)
+    this.props.selectOption(event.target.value)
+  } 
+
+
+  render() {
     return(
       <form>
         <label name={this.props.name}>{this.props.label}:</label>
         <br/>
-        <select name={this.props.name}> 
+        <select name={this.props.name} onChange={this.handleSelection}> 
           <DropDownOptions optionList={this.props.optionList} />
         </select>
       </form>
     )
   }
-
 }
 
 
 const DropDownOptions = (props) => {
-  console.log(props.optionList + "options")
   const options = props.optionList.map((row) => {
     return(
       <option value={row.id}>

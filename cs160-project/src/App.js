@@ -9,23 +9,16 @@ class App extends React.Component {
     super(props)
 
     this.state = {source: [], target: []}
-    Parse().then( (schools) => this.setState({source: schools})
+    Parse('institutions.json').then( (schools) => 
+      this.setState({source: schools})
     )
   }
 
-     // const schools = Parse();
-    //console.log(schools)
-/*
-      [
-      {id: 1, name: "Santa Rosa Junior College"},
-      {id: 2, name: "Sacramento State"},
-      {id: 3, name: "CSU East Bay"},
-      {id: 4, name: "CSU Northridge"},
-      {id: 5, name: "Sonoma State Uinversity"},
-      {id: 6, name: "UC Davis"},
-      {id: 7, name: "San Jose State Univeristy"},
-    ]
-*/
+  handleSelected = (schoolId) => {
+    Parse('agreements-' + schoolId + '.json').then( (schools) => 
+      this.setState({target: schools})
+    )
+  }
 
   render () {
   return (
@@ -35,6 +28,7 @@ class App extends React.Component {
             name="Schools" 
             label="Select a school"
             optionList={this.state.source}
+            selectOption={this.handleSelected}
           />  
         </div>
         <br/> <br/>
