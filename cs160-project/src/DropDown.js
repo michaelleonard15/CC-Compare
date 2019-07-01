@@ -2,14 +2,18 @@ import React from 'react'
 
 
 //Props in the following format
-// {name of menu, Label for menu, arry of options}
+// name="name of menu" 
+// label="label for menu" 
+// optionList={Array of options}
 // Options array in the format [{id:  name: }, {id: name: } ...]
 class DropDown extends React.Component {
+ 
+
   
  render() {
     return(
       <form>
-        <label for={this.props.name}>{this.props.label}:</label>
+        <label name={this.props.name}>{this.props.label}:</label>
         <br/>
         <select name={this.props.name}> 
           <DropDownOptions optionList={this.props.optionList} />
@@ -22,9 +26,10 @@ class DropDown extends React.Component {
 
 
 const DropDownOptions = (props) => {
-  const options = props.optionList.map((row, index) => {
+  console.log(props.optionList + "options")
+  const options = props.optionList.map((row) => {
     return(
-      <option key={index} value={row.id}>
+      <option value={row.id}>
         {row.name}
       </option>
     )
