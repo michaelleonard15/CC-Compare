@@ -11,7 +11,6 @@ class SpecificMajorSelection extends React.Component {
     this.state = {majors: []}
   }
 
-  updateStateFromParent
 
   handleSelected = (schoolId) => {
     if(schoolId === '39') {      
@@ -37,7 +36,9 @@ class SpecificMajorSelection extends React.Component {
           name="Majors" 
           label="Select a Major for Transfer"
           optionList={this.state.majors}
-          />  
+          selectOption={() => {console.log("Do Stuff")}}
+          />
+        <button onClick={this.props.removeAgreement}>delete</button>  
       </div>
     )
   }

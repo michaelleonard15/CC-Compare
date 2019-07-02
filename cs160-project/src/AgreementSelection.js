@@ -46,7 +46,8 @@ constructor(props) {
         </div>  
         <div>
           <SpecificMajors numAgreements={this.state.numAgreements}
-                          targetSchools={this.state.target} />
+                          targetSchools={this.state.target}
+                          removeAgreement={this.removeAgreement} />
         </div>
         <div align="center">
           <button onClick={this.addAgreement}>Click me!</button>
@@ -64,7 +65,8 @@ const SpecificMajors = (props) => {
   let  agreements = []
   for (let i = 0; i < numAgreements; i++) {
     agreements.push(  
-      <SpecificMajorSelection targetSchools={props.targetSchools} />
+      <SpecificMajorSelection targetSchools={props.targetSchools}
+                              removeAgreement={props.removeAgreement} />
     )
   }
   return agreements
