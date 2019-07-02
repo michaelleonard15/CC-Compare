@@ -1,29 +1,44 @@
 import React from 'react'
 import DropDown from './DropDown'
+import SpecificMajorSelection from './SpecificMajorSelection'
+import Parse from './Parse'
 
 
 class AgreementSelection extends React.Component {
 
+constructor(props) {
+    super(props)
 
+    this.state = {source: [], target: []}
+    Parse('institutions.json').then( (schools) => 
+      this.setState({source: schools})
+    )
+  }
 
-  render() {
-    return ( 
-      <div>
+  handleSelected = (schoolId) => {
+    Parse('agreements-' + schoolId + '.json').then( (schools) => 
+      this.setState({target: schools})
+    )
+  }
+
+  render () {
+  return (
+      <div className="App">
         <div align="center">  
           <DropDown 
             name="Schools" 
-            label="Select Transfer school"
-            optionList={[]}
+            label="Select a school"
+            optionList={this.state.source}
+            selectOption={this.handleSelected}
           />  
         </div>
-      
-        <div align="center">  
-          <DropDown 
-            name="Majors" 
-            label="Select a Major for Transfer"
-            optionList={[]}
-          />  
+
+        <br/>
+
+        <div>
+          <SpecificMajorSelection targetSchools={this.state.target}/>
         </div>
+        
       </div>
     )
   }

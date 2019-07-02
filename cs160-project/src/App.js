@@ -6,49 +6,10 @@ import AgreementSelection from './AgreementSelection'
 
 class App extends React.Component {
 
-  constructor(props) {
-    super(props)
-
-    this.state = {source: [], target: []}
-    Parse('institutions.json').then( (schools) => 
-      this.setState({source: schools})
-    )
-  }
-
-  handleSelected = (schoolId) => {
-    Parse('agreements-' + schoolId + '.json').then( (schools) => 
-      this.setState({target: schools})
-    )
-  }
-
   render () {
   return (
-      <div className="App">
-        <div align="center">  
-          <DropDown 
-            name="Schools" 
-            label="Select a school"
-            optionList={this.state.source}
-            selectOption={this.handleSelected}
-          />  
-        </div>
-
-        <br/> <br/>
-        
-        <div align="center">  
-          <DropDown 
-            name="Schools" 
-            label="Select Transfer school"
-            optionList={this.state.target}
-          />  
-        </div>
-
-        <br/><br/>
-
-        <div>
-          <AgreementSelection />
-        </div>
-        
+      <div>
+        <AgreementSelection />
       </div>
     )
   }
