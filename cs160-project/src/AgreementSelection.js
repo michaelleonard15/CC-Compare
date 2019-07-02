@@ -9,7 +9,7 @@ class AgreementSelection extends React.Component {
 constructor(props) {
     super(props)
 
-    this.state = {source: [], target: []}
+    this.state = {source: [], target: [], numAgreements: 1}
     Parse('institutions.json').then( (schools) => 
       this.setState({source: schools})
     )
@@ -19,6 +19,18 @@ constructor(props) {
     Parse('agreements-' + schoolId + '.json').then( (schools) => 
       this.setState({target: schools})
     )
+  }
+
+  addAgreement = () => {
+    let newNum = this.state.numAgreements + 1
+    this.setState({numAgreements: newNum})
+  }
+
+  removeAgreement = () => {
+    let newNum = this.state.numAgreements - 1
+    if(newNum >= 1) {
+      this.setState({numAgreements: newNum})
+    }
   }
 
   render () {
@@ -36,12 +48,28 @@ constructor(props) {
         <br/>
 
         <div>
-          <SpecificMajorSelection targetSchools={this.state.target}/>
+          <SpecificMajors numAgreements={this.state.numAgreements}
+                          targetSchools={this.state.target} />
+        </div>
+        <div align="center">
+          <button onClick={this.addAgreement}>Click me!</button>
         </div>
         
       </div>
     )
   }
+}
+
+const SpecificMajors = (props) => {
+  const numAgreements = props.numAgreements
+  let  agreements = []
+  for (let i = 0; i < numAgreements; i++) {
+    agreements.push(
+      <div>
+        <SpecificMajorSelection targetSchools={props.targetSchools} />
+      </div>)
+  }
+  return agreements
 }
 
 
