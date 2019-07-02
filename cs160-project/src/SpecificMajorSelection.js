@@ -24,23 +24,20 @@ class SpecificMajorSelection extends React.Component {
 
   render() {
     return ( 
-      <div>
-        <div align="center">  
-          <DropDown 
-            name="Schools" 
-            label="Select Transfer school"
-            optionList={this.props.targetSchools}
-            selectOption={this.handleSelected}
+      <div align="center">
+        <br/>
+        <br/>
+        <DropDown 
+          name="Schools" 
+          label="Select Transfer school"
+          optionList={this.props.targetSchools}
+          selectOption={this.handleSelected}
+        />  
+        <DropDown 
+          name="Majors" 
+          label="Select a Major for Transfer"
+          optionList={this.state.majors}
           />  
-        </div>
-      
-        <div align="center">  
-          <DropDown 
-            name="Majors" 
-            label="Select a Major for Transfer"
-            optionList={this.state.majors}
-          />  
-        </div>
       </div>
     )
   }

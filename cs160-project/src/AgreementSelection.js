@@ -35,18 +35,15 @@ constructor(props) {
 
   render () {
   return (
-      <div className="App">
+      <div>
         <div align="center">  
           <DropDown 
             name="Schools" 
             label="Select a school"
             optionList={this.state.source}
             selectOption={this.handleSelected}
-          />  
-        </div>
-
-        <br/>
-
+          />
+        </div>  
         <div>
           <SpecificMajors numAgreements={this.state.numAgreements}
                           targetSchools={this.state.target} />
@@ -60,14 +57,15 @@ constructor(props) {
   }
 }
 
+
+
 const SpecificMajors = (props) => {
   const numAgreements = props.numAgreements
   let  agreements = []
   for (let i = 0; i < numAgreements; i++) {
-    agreements.push(
-      <div>
-        <SpecificMajorSelection targetSchools={props.targetSchools} />
-      </div>)
+    agreements.push(  
+      <SpecificMajorSelection targetSchools={props.targetSchools} />
+    )
   }
   return agreements
 }
