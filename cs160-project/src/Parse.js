@@ -15,11 +15,14 @@ function Parse(fileName) {
       }
     })
     .then( (list) => {
-        if(list.length === 147) {
+        if(fileName === 'institutions.json') {
           return parseInitial(list)
         } 
-        else {
+        else if (fileName === 'agreements-57.json'){
           return parseSecondary(list)
+        }
+        else if (fileName === 'majors.json') {
+          return parseMajors(list.reports)
         }
 
         
@@ -43,6 +46,16 @@ function parseSecondary(list) {
   for(var i = 0; i < list.length; i++) {
     let inst = list[i]
     temp.push({ id: inst.institutionParentId, name: inst.institutionName})
+  }
+  return temp
+}
+
+
+function parseMajors(list) {
+  let temp = []
+  for(var i = 0; i < list.length; i++) {
+    let inst = list[i]
+    temp.push({ id: inst.key, name: inst.label})
   }
   return temp
 }
