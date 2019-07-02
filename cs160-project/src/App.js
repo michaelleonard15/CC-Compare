@@ -2,6 +2,7 @@ import React from 'react';
 //import './App.css';
 import DropDown from './DropDown'
 import Parse from './Parse'
+import AgreementSelection from './AgreementSelection'
 
 class App extends React.Component {
 
@@ -31,7 +32,9 @@ class App extends React.Component {
             selectOption={this.handleSelected}
           />  
         </div>
+
         <br/> <br/>
+        
         <div align="center">  
           <DropDown 
             name="Schools" 
@@ -39,6 +42,13 @@ class App extends React.Component {
             optionList={this.state.target}
           />  
         </div>
+
+        <br/><br/>
+
+        <div>
+          <AgreementSelection />
+        </div>
+        
       </div>
     )
   }
