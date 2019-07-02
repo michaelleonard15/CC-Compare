@@ -2,7 +2,7 @@
 
 function Parse(fileName) {
 
-  var temp = fetch('./' + fileName)
+  return fetch('./' + fileName)
     .then( (response) => {
       if(response.ok) {
         console.log(fileName + " open!")
@@ -25,7 +25,6 @@ function Parse(fileName) {
 
         
     }) 
-    return temp
 }
 
 
