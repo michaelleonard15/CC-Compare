@@ -9,7 +9,6 @@ import React from 'react'
 class DropDown extends React.Component {
   
   handleSelection = (event) => {
-    console.log(event.target.value)
     this.props.selectOption(event.target.value)
   } 
 
@@ -31,7 +30,7 @@ class DropDown extends React.Component {
 const DropDownOptions = (props) => {
   const options = props.optionList.map((row) => {
     return(
-      <option value={row.id}>
+      <option key={row.id} value={row.id}>
         {row.name}
       </option>
     )

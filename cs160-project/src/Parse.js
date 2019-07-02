@@ -2,12 +2,10 @@
 
 function Parse(fileName) {
 
-  console.log(fileName)
-
   var temp = fetch('./' + fileName)
     .then( (response) => {
       if(response.ok) {
-        console.log("request Success!")
+        console.log(fileName + " open!")
         return response.json()
       }
       else {
@@ -45,7 +43,12 @@ function parseSecondary(list) {
   let temp = []
   for(var i = 0; i < list.length; i++) {
     let inst = list[i]
-    temp.push({ id: inst.institutionParentId, name: inst.institutionName})
+    if(temp.length === 0) {
+      temp.push({ id: inst.institutionParentId, name: inst.institutionName})
+    }
+    else if(inst.institutionParentId !== temp[temp.length - 1].id) {
+      temp.push({ id: inst.institutionParentId, name: inst.institutionName})
+    } 
   }
   return temp
 }

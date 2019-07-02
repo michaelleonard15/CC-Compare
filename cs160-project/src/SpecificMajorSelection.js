@@ -14,9 +14,7 @@ class SpecificMajorSelection extends React.Component {
   updateStateFromParent
 
   handleSelected = (schoolId) => {
-    console.log(schoolId)
-    if(schoolId === '39') {
-      console.log('Time to parse Majors')
+    if(schoolId === '39') {      
       Parse('majors.json').then( (majors) => 
         this.setState({majors: majors})
       )
