@@ -2,7 +2,9 @@ import os
 
 from flask import Flask
 
+# TODO: Write instructions on running backend in README
 
+# This is an "Application Factory".
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
