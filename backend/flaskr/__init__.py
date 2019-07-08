@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask
+from flask import Flask, jsonify, request, url_for, render_template
 
 # TODO: Write instructions on running backend in README
 
@@ -11,6 +11,7 @@ def create_app(test_config=None):
     app.config.from_mapping(
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
+        
     )
 
     if test_config is None:
@@ -26,10 +27,22 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+    ### MAIN PAGE ###
+    @app.route('/')
+    def index():
+        return app.send_static_file('index.html')
+
     # a simple page that says hello
-    @app.route('/hello')
+    @app.route('/hello/')
     def hello():
         return 'Hello, World!'
+
+    # API call to get the destinations list
+    @app.route('/api/dest-schools/') #, methods=['POST'])
+    def dest_schools():
+        app.logger.info(request.args.to_dict())
+        a = request.args.get('origin')
+        return jsonify({'foo' : 42}) 
 
     # This section runs our init_app function in db.
     from . import db

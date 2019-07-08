@@ -1,3 +1,5 @@
+# I'm gonna be straightforward with you, I don't really understand what's going on here
+
 import sqlite3
 
 import click
