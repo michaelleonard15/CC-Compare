@@ -1,3 +1,7 @@
+-- NOTE: This schema is not what we're actually using for our project.
+-- It's just a sample schema given by the flask tutorial.
+
+-- why are we dropping the table? won't that destroy all data every time it runs?
 DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS post;
 
