@@ -9,19 +9,25 @@ class AgreementSelection extends React.Component {
 constructor(props) {
     super(props)
 
-    this.state = {source: [], destinations: []}
+    this.state = {source: [], destinations: [], 
+                  sourceID: -1, specificAgreements: []}
+
+
     Parse('institutions.json').then( (schools) => 
       this.setState({source: schools})
     )
   }
 
 
-  handleSelected = (schoolId) => {
+  sourceSelected = (schoolId) => {
     Parse('agreements-' + schoolId + '.json').then( (schools) => 
-      this.setState({destinations: schools})
+      this.setState({destinations: schools, sourceID: schoolId})
     )
   }
 
+  specificAgreementSelected = (agreements) => {
+    this.setState({specificAgreements: agreements})
+  }
  
   render () {
   return (
@@ -31,13 +37,14 @@ constructor(props) {
             name="Schools" 
             label="Select a school"
             optionList={this.state.source}
-            selectOption={this.handleSelected}
+            selectOption={this.sourceSelected}
           />
         </div>  
-        <div>
-          <DestinationSchoolSelection destinationSchools={this.state.destinations} />
+          <DestinationSchoolSelection destinationSchools={this.state.destinations} 
+                                      specificAgreementSelected={this.specificAgreementSelected} />
+        <div align="center">  <br/><br/> 
+          <button onClick={console.log("buttonClicked")}>Next</button>
         </div>
-        
       </div>
     )
   }

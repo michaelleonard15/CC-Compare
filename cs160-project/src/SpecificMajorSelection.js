@@ -7,16 +7,21 @@ class SpecificMajorSelection extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {majors: []}
+    this.state = {majors: [], destinationID: -1, majorID: -1}
   }
 
 
-  handleSelected = (schoolId) => {
+  destinationSelected = (schoolId) => {
     if(schoolId === '39') {      
       Parse('majors.json').then( (majors) => 
-        this.setState({majors: majors})
+        this.setState({majors: majors,
+            destinationID: schoolId})
       )
     }
+  }
+
+  majorSelected = (ID) => {
+    this.setState({majorID: ID})
   }
 
   handleRemove = () => {
@@ -33,13 +38,13 @@ class SpecificMajorSelection extends React.Component {
           name="Schools" 
           label="Select Transfer school"
           optionList={this.props.destinationSchools}
-          selectOption={this.handleSelected}
+          selectOption={this.destinationSelected}
         />  
         <DropDown 
           name="Majors" 
           label="Select a Major for Transfer"
           optionList={this.state.majors}
-          selectOption={() => {console.log("Do Stuff")}}
+          selectOption={this.majorSelected}
           />
         <button onClick={this.handleRemove}>delete</button>  
       </div>
