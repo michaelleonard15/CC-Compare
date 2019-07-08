@@ -29,7 +29,7 @@ def close_db(e=None):
     if db is not None:
         db.close()
 
-def init_db():
+def reset_db():
     db = get_db()
 
     # Explanation from flask tutorial:
@@ -40,19 +40,51 @@ def init_db():
     with current_app.open_resource('schema.sql') as f:
         db.executescript(f.read().decode('utf8'))
 
+def fake_db():
+    db = get_db()
+    query = 'INSERT INTO agreements (source_id, target_id, major, agreement_json, agreement_id) VALUES (?, ?, ?, ?, ?)'
+    db.execute(query, (-1, -2, 'Fake Major, B.S.', '{foo : bar}', -3))
+    db.commit() # A commit must be done, since data is modified here.
+
+def print_db():
+    db = get_db()
+    list = db.execute('SELECT * FROM agreements').fetchall()
+    for row in list:
+        for value in row:
+            print(value, end=" ")
+        print()
+
 # click.command defines a command called init-db. it will call the init_db function
 # https://click.palletsprojects.com/en/7.x/api/#click.command for info on this function
 # Flask uses Click for its CLI interaction
 # http://flask.pocoo.org/docs/1.0/cli/#cli for more info about command line and Flask
-@click.command('init-db')
-@with_appcontext
-def init_db_command():
-    """Clear the existing data and create new tables."""
-    init_db()
-    click.echo('Initialized the database.')
 
-# The functions close_db() and init_db() must be registered with the application instance.
+@click.command('reset-db')
+@with_appcontext
+def reset_db_command():
+    """Clear the existing data and create new tables."""
+    reset_db()
+    click.echo('Cleared and reset the database.')
+
+@click.command('fake-db-value')
+@with_appcontext
+def fake_db_command():
+    """Adds a fake value to the database."""
+    fake_db()
+    click.echo('Added a fake value to the database.')
+
+@click.command('print-db')
+@with_appcontext
+def print_db_command():
+    """Prints all rows of database."""
+    print_db()
+    click.echo('End of database.')
+        
+
+# The functions close_db() and reset_db() must be registered with the application instance.
 # This init_app() function is called in the create_app() function in __init__.py.
 def init_app(app):
     app.teardown_appcontext(close_db)
-    app.cli.add_command(init_db_command)
+    app.cli.add_command(reset_db_command)
+    app.cli.add_command(fake_db_command)
+    app.cli.add_command(print_db_command)
