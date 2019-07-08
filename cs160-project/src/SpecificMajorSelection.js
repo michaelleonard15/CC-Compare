@@ -7,7 +7,6 @@ class SpecificMajorSelection extends React.Component {
 
   constructor(props) {
     super(props)
-
     this.state = {majors: []}
   }
 
@@ -20,6 +19,10 @@ class SpecificMajorSelection extends React.Component {
     }
   }
 
+  handleRemove = () => {
+    console.log(this.props.listIndex)
+    this.props.removeAgreement(this.props.listIndex)
+  }
 
   render() {
     return ( 
@@ -29,7 +32,7 @@ class SpecificMajorSelection extends React.Component {
         <DropDown 
           name="Schools" 
           label="Select Transfer school"
-          optionList={this.props.targetSchools}
+          optionList={this.props.destinationSchools}
           selectOption={this.handleSelected}
         />  
         <DropDown 
@@ -38,11 +41,10 @@ class SpecificMajorSelection extends React.Component {
           optionList={this.state.majors}
           selectOption={() => {console.log("Do Stuff")}}
           />
-        <button onClick={this.props.removeAgreement}>delete</button>  
+        <button onClick={this.handleRemove}>delete</button>  
       </div>
     )
   }
 }
-
 
 export default SpecificMajorSelection

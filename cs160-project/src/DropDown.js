@@ -9,6 +9,9 @@ import React from 'react'
 class DropDown extends React.Component {
   
   handleSelection = (event) => {
+    console.log(event)
+    console.log(event.target)
+    console.log(event.target.key)
     this.props.selectOption(event.target.value)
   } 
 

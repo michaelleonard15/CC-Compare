@@ -22,8 +22,6 @@ function Parse(fileName) {
         else if (fileName === 'majors.json') {
           return parseMajors(list.reports)
         }
-
-        
     }) 
 }
 
