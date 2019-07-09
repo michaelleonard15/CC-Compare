@@ -28,6 +28,16 @@ constructor(props) {
   specificAgreementSelected = (agreements) => {
     this.setState({specificAgreements: agreements})
   }
+
+
+
+  submitForm = () => {
+    let request = {source: this.state.sourceID,
+                   agreements: this.state.specificAgreements}
+    console.log(request)                   
+  }
+
+
  
   render () {
   return (
@@ -43,7 +53,7 @@ constructor(props) {
           <DestinationSchoolSelection destinationSchools={this.state.destinations} 
                                       specificAgreementSelected={this.specificAgreementSelected} />
         <div align="center">  <br/><br/> 
-          <button onClick={console.log("buttonClicked")}>Next</button>
+          <button onClick={this.submitForm}>Next</button>
         </div>
       </div>
     )

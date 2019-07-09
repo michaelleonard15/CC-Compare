@@ -22,6 +22,10 @@ class SpecificMajorSelection extends React.Component {
 
   majorSelected = (ID) => {
     this.setState({majorID: ID})
+    let specificAgreement = {ID: this.props.listIndex, 
+                             destinationID: this.state.destinationID,
+                             majorID: ID}
+    this.props.updateIDs(specificAgreement)
   }
 
   handleRemove = () => {
