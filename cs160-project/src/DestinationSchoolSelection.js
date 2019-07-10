@@ -11,7 +11,7 @@ class DestinationSchoolSelection extends React.Component {
   }
 
   addAgreement = () => {
-    let temp = this.state.agreements
+    let temp = this.state.agreements.slice()
     let lastIndex = temp.length - 1
     temp.push({ID: temp[lastIndex].ID + 1, destinationID: -1, majorID: -1})
     this.setState({agreements: temp})
@@ -20,8 +20,8 @@ class DestinationSchoolSelection extends React.Component {
 
 
   removeAgreement = (index) => {
-    if(this.state.agreements.length > 1) {
-      let newList = this.state.agreements
+    let newList = this.state.agreements.slice()
+    if(newList.length > 1) {
       newList.splice(index, 1)
       this.setState({agreements: newList})
       this.submitAgreements(newList)
@@ -29,7 +29,7 @@ class DestinationSchoolSelection extends React.Component {
   }
 
   updateIDs = (index, agreement) => {
-    let temp = this.state.agreements
+    let temp = this.state.agreements.slice()
     temp[index] = agreement
     this.setState({agreements: temp})
     this.submitAgreements(temp)
@@ -50,7 +50,7 @@ class DestinationSchoolSelection extends React.Component {
           {this.state.agreements.map( (agreement, index) => {
             return(
               <SpecificMajorSelection   
-                key={index}
+                key={agreement.ID}
                 listIndex={agreement.ID}
                 destinationSchools={this.props.destinationSchools}
                 removeAgreement={this.removeAgreement.bind(this, index)} 
