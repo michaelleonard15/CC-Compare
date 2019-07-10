@@ -29,27 +29,21 @@ class DropDown extends React.Component {
         <br/>
         <select value={this.state.selectedID}
                 name={this.props.name} 
-                onChange={this.handleSelection}> 
-          <DropDownOptions optionList={this.props.optionList} />
+                onChange={this.handleSelection} >
+
+          <option key ="-1" value="-1">Choose from this list: </option> 
+          
+          {this.props.optionList.map((row) => {
+              return(
+                <option key={row.id} value={row.id}> {row.name} </option>
+              )
+            })
+          }
+          
         </select>
       </form>
     )
   }
 }
-
-
-const DropDownOptions = (props) => {
-  const defaultOption = [<option key ="-1" value="-1">Choose from this list: </option> ]
-  const options = props.optionList.map((row) => {
-    return(
-      <option key={row.id} value={row.id}>
-        {row.name}
-      </option>
-    )
-  })
-  return defaultOption.concat(options)
-}
-
-
 
 export default DropDown;

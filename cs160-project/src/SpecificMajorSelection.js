@@ -28,11 +28,6 @@ class SpecificMajorSelection extends React.Component {
     this.props.updateIDs(specificAgreement)
   }
 
-  handleRemove = () => {
-    console.log(this.props.listIndex)
-    this.props.removeAgreement(this.props.listIndex)
-  }
-
   render() {
     return ( 
       <div align="center">
@@ -50,7 +45,7 @@ class SpecificMajorSelection extends React.Component {
           optionList={this.state.majors}
           selectOption={this.majorSelected}
           />
-        <button onClick={this.handleRemove}>delete</button>  
+        <button onClick={this.props.removeAgreement}>delete</button>  
       </div>
     )
   }

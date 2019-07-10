@@ -17,35 +17,20 @@ class DestinationSchoolSelection extends React.Component {
     this.setState({agreements: temp})
   }
 
-  generateMenus = () => {
-    let menus = []
-    let agreements = this.state.agreements
-    for(let i = 0; i < agreements.length; i++) {
-      menus.push(<SpecificMajorSelection   key={agreements[i].ID}
-                                          listIndex={agreements[i].ID}
-                                        destinationSchools={this.props.destinationSchools}
-                                        removeAgreement={this.removeAgreement} 
-                                        updateIDs={this.updateIDs}  />)
-    }
-    return menus
-  }
 
-  removeAgreement = (num) => {
-      if(this.state.agreements.length > 1) {
-      let newList = this.state.agreements.filter( (agreement) => {
-          return num !== agreement.ID } )
+
+  removeAgreement = (index) => {
+    if(this.state.agreements.length > 1) {
+      let newList = this.state.agreements
+      newList.splice(index, 1)
       this.setState({agreements: newList})
       this.submitAgreements(newList)
     }
   }
 
-  updateIDs = (agreement) => {
+  updateIDs = (index, agreement) => {
     let temp = this.state.agreements
-    for(let i = 0; i < temp.length; i++) {
-      if(temp[i].ID === agreement.ID) {
-        temp[i] = agreement
-      }
-    }
+    temp[index] = agreement
     this.setState({agreements: temp})
     this.submitAgreements(temp)
   }
@@ -62,7 +47,17 @@ class DestinationSchoolSelection extends React.Component {
     return (
       <div>
         <div>
-          {this.generateMenus()}
+          {this.state.agreements.map( (agreement, index) => {
+            return(
+              <SpecificMajorSelection   
+                key={index}
+                listIndex={agreement.ID}
+                destinationSchools={this.props.destinationSchools}
+                removeAgreement={this.removeAgreement.bind(this, index)} 
+                updateIDs={this.updateIDs.bind(this, index)}  />
+              )
+            })
+          }
         </div>
         <div align="center">
           <button onClick={this.addAgreement}>Click me!</button>
