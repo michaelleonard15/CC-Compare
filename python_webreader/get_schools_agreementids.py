@@ -22,7 +22,8 @@ for item in readable_json:
 
     tempArr = []
     for school in tempSchool_json:
-        tempArr.append(school['institutionParentId'])
+        if school['institutionParentId'] not in tempArr:
+            tempArr.append(school['institutionParentId'])
 
     x = {
        "id": idNum,

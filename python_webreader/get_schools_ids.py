@@ -14,7 +14,8 @@ schools = list()
 #iterates through every item in the json and appends to the dictionary
 for item in readable_json:
     idNum = item ['id']
-    name = item ['names'][0]['name'] # names is an array, so we must access its first and only element with 0
+    for x in item ['names']:# names is an array, so we must access its first and only element with 0
+        name = x['name']
     x = {
         "id": idNum,
         "name": name
