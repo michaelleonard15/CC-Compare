@@ -26,7 +26,7 @@ CREATE TABLE agreements (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   source_id INTEGER NOT NULL,
   target_id INTEGER NOT NULL,
-  major INTEGER NOT NULL,
+  major TEXT NOT NULL,
   agreement_json TEXT NOT NULL,
   timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
   agreement_id INTEGER NOT NULL
