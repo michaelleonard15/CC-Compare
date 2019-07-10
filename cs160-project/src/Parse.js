@@ -2,12 +2,10 @@
 
 function Parse(fileName) {
 
-  console.log(fileName)
-
-  var temp = fetch('./' + fileName)
+  return fetch('./' + fileName)
     .then( (response) => {
       if(response.ok) {
-        console.log("request Success!")
+        console.log(fileName + " open!")
         return response.json()
       }
       else {
@@ -15,16 +13,16 @@ function Parse(fileName) {
       }
     })
     .then( (list) => {
-        if(list.length === 147) {
+        if(fileName === 'institutions.json') {
           return parseInitial(list)
         } 
-        else {
+        else if (fileName === 'agreements-57.json'){
           return parseSecondary(list)
         }
-
-        
+        else if (fileName === 'majors.json') {
+          return parseMajors(list.reports)
+        }
     }) 
-    return temp
 }
 
 
@@ -42,7 +40,22 @@ function parseSecondary(list) {
   let temp = []
   for(var i = 0; i < list.length; i++) {
     let inst = list[i]
-    temp.push({ id: inst.institutionParentId, name: inst.institutionName})
+    if(temp.length === 0) {
+      temp.push({ id: inst.institutionParentId, name: inst.institutionName})
+    }
+    else if(inst.institutionParentId !== temp[temp.length - 1].id) {
+      temp.push({ id: inst.institutionParentId, name: inst.institutionName})
+    } 
+  }
+  return temp
+}
+
+
+function parseMajors(list) {
+  let temp = []
+  for(var i = 0; i < list.length; i++) {
+    let inst = list[i]
+    temp.push({ id: inst.key, name: inst.label})
   }
   return temp
 }
