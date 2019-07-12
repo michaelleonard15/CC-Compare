@@ -45,7 +45,9 @@ def create_app(test_config=None):
     def origin_schools():
         app.logger.info(request.args.to_dict())
         a = request.args.get('origin')
-        array = [{'id': 1, 'name': 'cool'}, {'id': 2, 'name': 'dude'}, {'id': 57, 'name': 'Santa Rosa Junior College'}]
+        array = [{'id': 1, 'name': 'cool'}, 
+                 {'id': 2, 'name': 'dude'}, 
+                 {'id': 57, 'name': 'Santa Rosa Junior College'}]
         return jsonify(array) 
 
     # API call to get the destinations list
@@ -53,7 +55,9 @@ def create_app(test_config=None):
     def dest_schools():
         app.logger.info(request.args.to_dict())
         a = request.args.get('origin')
-        array = [{'id': 1, 'name': 'fake'}, {'id': 2, 'name': 'data'}, {'id': 3, 'name': 'wow'}]
+        array = [{'id': 1, 'name': 'fake'}, 
+                 {'id': 2, 'name': 'data'}, 
+                 {'id': 3, 'name': 'wow'}]
         return jsonify(array) 
 
     # This section runs our init_app function in db.
