@@ -29,6 +29,11 @@ def close_db(e=None):
     if db is not None:
         db.close()
 
+def get_dest_array():
+    return [{'id': 1, 'name': 'fake'},
+            {'id': 2, 'name': 'data'},
+            {'id': 3, 'name': 'wow'}]
+
 def reset_db():
     db = get_db()
 
