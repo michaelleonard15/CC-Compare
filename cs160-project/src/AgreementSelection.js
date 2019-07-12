@@ -14,7 +14,7 @@ constructor(props) {
 
 
     //Parse('institutions.json').then( (schools) => 
-    fetch('http://127.0.0.1:5000/api/dest-schools', 
+    fetch('http://127.0.0.1:5000/api/origin-schools', 
           {
             method: 'GET',
             mode: 'cors',
