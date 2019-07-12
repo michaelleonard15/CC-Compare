@@ -1,6 +1,7 @@
 import os
 
 from flask import Flask, jsonify, request, url_for, render_template
+from flask_cors import CORS
 
 # TODO: Write instructions on running backend in README
 
@@ -13,6 +14,9 @@ def create_app(test_config=None):
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
         
     )
+
+    # enabling CORS https://flask-cors.readthedocs.io/en/latest/
+    cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
     if test_config is None:
         # load the instance config, if it exists, when not testing
