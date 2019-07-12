@@ -13,9 +13,19 @@ constructor(props) {
                   sourceID: -1, specificAgreements: []}
 
 
-    Parse('institutions.json').then( (schools) => 
-      this.setState({source: schools})
-    )
+    //Parse('institutions.json').then( (schools) => 
+    fetch('http://127.0.0.1:5000/api/dest-schools', 
+          {
+            method: 'GET',
+            mode: 'cors',
+          })
+      .then( (response) => { if(response.ok) {
+        console.log(response)
+        return response.json()
+      }})
+      .then( (schools) => this.setState({source: schools}))
+      .catch( (err) => console.log('Failed to open resourse: ' + err))  
+    
   }
 
 
