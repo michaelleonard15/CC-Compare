@@ -53,7 +53,7 @@
   },
   {
     "id": 14,
-    "name": "Rancho Santiago College"
+    "name": "Santa Ana College"
   },
   {
     "id": 16,
@@ -77,7 +77,7 @@
   },
   {
     "id": 21,
-    "name": "California State University, Hayward"
+    "name": "California State University, East Bay"
   },
   {
     "id": 23,
@@ -133,7 +133,7 @@
   },
   {
     "id": 36,
-    "name": "Kings River College"
+    "name": "Reedley College"
   },
   {
     "id": 38,
@@ -217,7 +217,7 @@
   },
   {
     "id": 58,
-    "name": "Vista Community College"
+    "name": "Berkeley City College"
   },
   {
     "id": 60,
@@ -585,6 +585,6 @@
   },
   {
     "id": 153,
-    "name": "Compton Community College"
+    "name": "El Camino College"
   }
 ]
