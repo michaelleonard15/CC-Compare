@@ -33,7 +33,7 @@ constructor(props) {
     // Parse('agreements-' + schoolId + '.json').then( (schools) => 
     //   this.setState({destinations: schools, sourceID: schoolId})
     // )
-    fetch('http://127.0.0.1:5000/api/dest-schools', 
+    fetch('http://127.0.0.1:5000/api/dest-schools?origin=' + schoolId, 
           {
             method: 'GET',
             mode: 'cors',

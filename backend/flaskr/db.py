@@ -29,10 +29,11 @@ def close_db(e=None):
     if db is not None:
         db.close()
 
-def get_dest_array():
-    return [{'id': 1, 'name': 'fake'},
-            {'id': 2, 'name': 'data'},
-            {'id': 3, 'name': 'wow'}]
+
+def get_dest_array(origin_id):
+    return [{'id': 1, 'name': 'Your origin id was ' + str(origin_id)},
+            {'id': 2, 'name': 'item 2'},
+            {'id': 3, 'name': 'item 3'}]
 
 def reset_db():
     db = get_db()

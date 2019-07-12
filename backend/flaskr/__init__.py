@@ -55,7 +55,7 @@ def create_app(test_config=None):
     def dest_schools():
         app.logger.info(request.args.to_dict())
         a = request.args.get('origin')
-        array = db.get_dest_array()
+        array = db.get_dest_array(a)
         return jsonify(array) 
 
     # This section runs our init_app function in db.
