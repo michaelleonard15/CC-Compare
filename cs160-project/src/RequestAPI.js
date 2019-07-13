@@ -2,35 +2,43 @@
 
 function RequestAPI() {
 
-  let init = { method: 'GET', mode: 'cors' }
+  let fetchInit = { method: 'GET', mode: 'cors' }
+
+  function runFetch(request) {
+    return  
+      fetch(request , fetchInit).then( (response) => { 
+        if(response.ok) {
+          return response.json()
+        }
+      }).catch( (err) => console.log('Failed to open resourse: ' + err)) 
+  }
 
   return {
 
     requestSources() {
       let request = 'http://127.0.0.1:5000/api/origin-schools'
-      return  fetch(request, init).then( (response) => { 
-                if(response.ok) {
-                  console.log(response)
-                  return response.json()
-                }
-              }).catch( (err) => 
-                  console.log('Failed to open resourse: ' + err))  
+      return runFetch(request) 
     },
+
+
 
     requestDestinations(SourceID) {
       let request = 'http://127.0.0.1:5000/api/dest-schools?origin=' + SourceID
-      return  fetch(request , init).then( (response) => { 
-                if(response.ok) {
-                  console.log(response)
-                  return response.json()
-                }
-              }).catch( (err) => 
-                  console.log('Failed to open resourse: ' + err)) 
+      return runFetch(request)
     },
+
+
 
     requestMajors() {
 
     },
+
+
+
+    requestAgreements() {
+
+    },
+
 
   }
 }

@@ -12,22 +12,9 @@ constructor(props) {
 
     this.state = {source: [], destinations: [], 
                   sourceID: -1, specificAgreements: []}
-
-    
-    /*Parse('institutions.json').then( (schools) => 
-    fetch('http://127.0.0.1:5000/api/origin-schools', 
-          {
-            method: 'GET',
-            mode: 'cors',
-          })
-      .then( (response) => { if(response.ok) {
-        console.log(response)
-        return response.json()
-      }})
-      .then( (schools) => this.setState({source: schools}))
-      .catch( (err) => console.log('Failed to open resourse: ' + err))  
-    */
   }
+
+
 
   componentDidMount() {
     RequestAPI().requestSources().then( (schools) => {
@@ -35,26 +22,15 @@ constructor(props) {
     })
   }
 
+
+
   sourceSelected = (schoolID) => {
-    // Parse('agreements-' + schoolId + '.json').then( (schools) => 
-    //   this.setState({destinations: schools, sourceID: schoolId})
-    /* )
-    fetch('http://127.0.0.1:5000/api/dest-schools?origin=' + schoolId, 
-          {
-            method: 'GET',
-            mode: 'cors',
-          })
-      .then( (response) => { if(response.ok) {
-        console.log(response)
-        return response.json()
-      }})
-      .then( (schools) => this.setState({destinations: schools, sourceID: schoolId}))
-      .catch( (err) => console.log('Failed to open resourse: ' + err)) 
-      */
       RequestAPI().requestDestinations(schoolID).then( (schools) => {
       this.setState({destinations: schools})
     })
   }
+
+
 
   specificAgreementSelected = (agreements) => {
     this.setState({specificAgreements: agreements})
