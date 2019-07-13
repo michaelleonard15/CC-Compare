@@ -3,23 +3,46 @@ import DropDown from './DropDown'
 import Parse from './Parse'
 
 
+/**
+ * Component to contain the two dropdown menus for
+ * destination school and major selection. 
+ * Props:
+ * key="A unique identifier"
+ * listIndex="Same identifier as key"
+ * destinationSchools="Array of options in the format [{id:  name: }, {id: name: } ...]"
+ * removeAgreement=handler for the delete button in this component
+ * updateIDs=handler for when destination and majors have been selected
+ */
 class SpecificMajorSelection extends React.Component {
 
+  /**
+   * Initializes the state of the component.
+   * Contains an array to hold a list of majors once
+   * a destination school is selected. Also contains 
+   * the ID of the destination school and major selected.
+   */
   constructor(props) {
     super(props)
     this.state = {majors: [], destinationID: -1, majorID: -1}
   }
 
 
+  /**
+   * Handler for the destination school dropdown
+   * Requests the list of majors for the destination selected.
+   */
   destinationSelected = (schoolId) => {
-    if(schoolId === '39') {      
-      Parse('majors.json').then( (majors) => 
-        this.setState({majors: majors,
-            destinationID: schoolId})
-      )
-    }
+    RequestsAPI().requestMajors(schoolId).then( (majors) => {
+      this.setState({majors: majors})
+    })
   }
 
+
+  /**
+   * Handler for the major selection dropdown.
+   * Sets the majorID and updates the agreements in 
+   * the parent component.
+   */
   majorSelected = (ID) => {
     this.setState({majorID: ID})
     let specificAgreement = {ID: this.props.listIndex, 
@@ -28,6 +51,12 @@ class SpecificMajorSelection extends React.Component {
     this.props.updateIDs(specificAgreement)
   }
 
+
+  /**
+   * Renders the two dropdown menus for the component
+   * and a button to remove the this component from 
+   * the parent component.
+   */
   render() {
     return ( 
       <div align="center">
