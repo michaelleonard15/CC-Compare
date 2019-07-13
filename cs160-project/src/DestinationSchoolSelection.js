@@ -1,5 +1,6 @@
 import React from 'react'
 import SpecificMajorSelection from './SpecificMajorSelection'
+import './App.css';
 
 
 /**
@@ -83,21 +84,19 @@ class DestinationSchoolSelection extends React.Component {
    */
   render() {
     return (
-      <div>
-        <div>
-          {this.state.agreements.map( (agreement, index) => {
-            return(
-              <SpecificMajorSelection   
-                key={agreement.ID}
-                listIndex={agreement.ID}
-                destinationSchools={this.props.destinationSchools}
-                removeAgreement={this.removeAgreement.bind(this, index)} 
-                updateIDs={this.updateIDs.bind(this, index)}  />
-              )
-            })
-          }
-        </div>
-        <div align="center">
+      <div className="destination_container">      
+        {this.state.agreements.map( (agreement, index) => {
+          return(
+            <SpecificMajorSelection   
+              key={agreement.ID}
+              listIndex={agreement.ID}
+              destinationSchools={this.props.destinationSchools}
+              removeAgreement={this.removeAgreement.bind(this, index)} 
+              updateIDs={this.updateIDs.bind(this, index)}  />
+            )
+          })
+        }
+        <div className="destination_container_add">
           <button onClick={this.addAgreement}>Click me!</button>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import DropDown from './DropDown'
 import RequestAPI from './RequestAPI'
+import './App.css';
 
 
 /**
@@ -59,9 +60,7 @@ class SpecificMajorSelection extends React.Component {
    */
   render() {
     return ( 
-      <div align="center">
-        <br/>
-        <br/>
+      <div className="specific_major_selection">
         <DropDown 
           name="Schools" 
           label="Select Transfer school"
@@ -74,7 +73,11 @@ class SpecificMajorSelection extends React.Component {
           optionList={this.state.majors}
           selectOption={this.majorSelected}
           />
-        <button onClick={this.props.removeAgreement}>delete</button>  
+        <button 
+            className="specific_major_selection_remove"
+            onClick={this.props.removeAgreement}>
+              delete
+        </button>  
       </div>
     )
   }

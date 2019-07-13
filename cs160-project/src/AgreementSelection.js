@@ -2,6 +2,7 @@ import React from 'react'
 import DropDown from './DropDown'
 import DestinationSchoolSelection from './DestinationSchoolSelection'
 import RequestAPI from './RequestAPI'
+import './App.css';
 
 
 /**
@@ -82,7 +83,7 @@ constructor(props) {
   render () {
   return (
       <div>
-        <div align="center">  
+        <div className="source_selection_menu">  
           <DropDown 
             name="Schools" 
             label="Select a school"
