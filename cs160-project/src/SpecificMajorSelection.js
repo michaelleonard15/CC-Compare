@@ -1,6 +1,6 @@
 import React from 'react'
 import DropDown from './DropDown'
-import Parse from './Parse'
+import RequestAPI from './RequestAPI'
 
 
 /**
@@ -32,7 +32,7 @@ class SpecificMajorSelection extends React.Component {
    * Requests the list of majors for the destination selected.
    */
   destinationSelected = (schoolId) => {
-    RequestsAPI().requestMajors(schoolId).then( (majors) => {
+    RequestAPI().requestMajors(schoolId).then( (majors) => {
       this.setState({majors: majors})
     })
   }
