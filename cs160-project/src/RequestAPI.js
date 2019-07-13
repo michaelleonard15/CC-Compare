@@ -5,12 +5,12 @@ function RequestAPI() {
   let fetchInit = { method: 'GET', mode: 'cors' }
 
   function runFetch(request) {
-    return  
-      fetch(request , fetchInit).then( (response) => { 
-        if(response.ok) {
-          return response.json()
-        }
-      }).catch( (err) => console.log('Failed to open resourse: ' + err)) 
+    return  fetch(request , fetchInit).then( (response) => { 
+              if(response.ok) {
+                return response.json()
+              }
+            }).catch( (err) => 
+                console.log('Failed to open resourse: ' + err)) 
   }
 
   return {
