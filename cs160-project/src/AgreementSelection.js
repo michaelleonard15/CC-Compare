@@ -2,6 +2,7 @@ import React from 'react'
 import DropDown from './DropDown'
 import DestinationSchoolSelection from './DestinationSchoolSelection'
 import Parse from './Parse'
+import RequestAPI from './RequestAPI'
 
 
 class AgreementSelection extends React.Component {
@@ -12,8 +13,8 @@ constructor(props) {
     this.state = {source: [], destinations: [], 
                   sourceID: -1, specificAgreements: []}
 
-
-    //Parse('institutions.json').then( (schools) => 
+    
+    /*Parse('institutions.json').then( (schools) => 
     fetch('http://127.0.0.1:5000/api/origin-schools', 
           {
             method: 'GET',
@@ -25,14 +26,19 @@ constructor(props) {
       }})
       .then( (schools) => this.setState({source: schools}))
       .catch( (err) => console.log('Failed to open resourse: ' + err))  
-    
+    */
   }
 
+  componentDidMount() {
+    RequestAPI().requestSources().then( (schools) => {
+      this.setState({source: schools})
+    })
+  }
 
-  sourceSelected = (schoolId) => {
+  sourceSelected = (schoolID) => {
     // Parse('agreements-' + schoolId + '.json').then( (schools) => 
     //   this.setState({destinations: schools, sourceID: schoolId})
-    // )
+    /* )
     fetch('http://127.0.0.1:5000/api/dest-schools?origin=' + schoolId, 
           {
             method: 'GET',
@@ -44,6 +50,10 @@ constructor(props) {
       }})
       .then( (schools) => this.setState({destinations: schools, sourceID: schoolId}))
       .catch( (err) => console.log('Failed to open resourse: ' + err)) 
+      */
+      RequestAPI().requestDestinations(schoolID).then( (schools) => {
+      this.setState({destinations: schools})
+    })
   }
 
   specificAgreementSelected = (agreements) => {
