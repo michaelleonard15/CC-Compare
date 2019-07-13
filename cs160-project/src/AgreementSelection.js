@@ -70,7 +70,8 @@ constructor(props) {
   submitForm = () => {
     let request = {source: this.state.sourceID,
                    agreements: this.state.specificAgreements}
-    console.log(request)                   
+    console.log(request) 
+    this.props.onSubmit(request)                  
   }
 
 
