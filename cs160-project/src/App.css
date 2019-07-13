@@ -1,13 +1,10 @@
 .dropdown_menu_box {
   width: 500px;
   background-color: #a6c8ff; 
-
-
 }
 
 .dropdown_menu_label {
   font-weight: bold;
-
 }
 
 .dropdown_menu_closed {
@@ -15,12 +12,10 @@
 
 .dropdown_menu_option_1 {
   background-color: #d1d1d1; 
-
 }
 
 .dropdown_menu_option_2 {
   background-color: #a1a1a1; 
-
 }
 
 .source_selection_menu {

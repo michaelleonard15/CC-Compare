@@ -56,9 +56,7 @@ function RequestAPI() {
     requestMajors(sourceID) {
 
       // FOR TESTING ////
-      if(sourceID === '39') {      
-        return Parse('majors.json')
-      }
+      return Parse('majors.json')
       ///////////////////
     },
 

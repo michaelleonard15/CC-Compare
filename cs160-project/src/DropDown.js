@@ -7,16 +7,6 @@ import './App.css'
 // optionList={Array of options}
 // Options array in the format [{id:  name: }, {id: name: } ...]
 class DropDown extends React.Component {
-  
-  /**
-   * Initializes the state for the component
-   */
-  constructor(props) {
-    super(props)
-
-    this.state = {selectedID: -1}
-  }
-
 
   /**
    * Handler for selection of a menu item
@@ -26,7 +16,6 @@ class DropDown extends React.Component {
    */
   handleSelection = (event) => {
     if(event.target.value >= 0) {
-      this.setState({selectedID: event.target.value})
       this.props.selectOption(event.target.value)
     }
   } 
@@ -44,7 +33,7 @@ class DropDown extends React.Component {
                  name={this.props.name}>{this.props.label}:</label>
           <br/>
           <select className="dropdown_menu_closed"
-                  value={this.state.selectedID}
+                  value={this.props.currentSelection}
                   name={this.props.name} 
                   onChange={this.handleSelection} >
 

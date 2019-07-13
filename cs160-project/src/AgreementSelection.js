@@ -48,7 +48,7 @@ constructor(props) {
    */
   sourceSelected = (schoolID) => {
       RequestAPI().requestDestinations(schoolID).then( (schools) => {
-      this.setState({destinations: schools})
+      this.setState({destinations: schools, sourceID: schoolID})
     })
   }
 
@@ -88,10 +88,12 @@ constructor(props) {
             name="Schools" 
             label="Select a school"
             optionList={this.state.source}
+            currentSelection={this.state.sourceID}
             selectOption={this.sourceSelected}
           />
         </div>  
-          <DestinationSchoolSelection destinationSchools={this.state.destinations} 
+          <DestinationSchoolSelection key={this.state.sourceID}
+                                      destinationSchools={this.state.destinations} 
                                       specificAgreementSelected={this.specificAgreementSelected} />
         <div align="center">  <br/><br/> 
           <button onClick={this.submitForm}>Next</button>

@@ -32,10 +32,12 @@ class SpecificMajorSelection extends React.Component {
    * Handler for the destination school dropdown
    * Requests the list of majors for the destination selected.
    */
-  destinationSelected = (schoolId) => {
-    RequestAPI().requestMajors(schoolId).then( (majors) => {
-      this.setState({majors: majors})
-    })
+  destinationSelected = (schoolID) => {
+    //if(schoolID === '39') {
+      RequestAPI().requestMajors(schoolID).then( (majors) => {
+        this.setState({majors: majors, destinationID: schoolID, majorID: -1})
+      })
+    //}
   }
 
 
@@ -65,12 +67,14 @@ class SpecificMajorSelection extends React.Component {
           name="Schools" 
           label="Select Transfer school"
           optionList={this.props.destinationSchools}
+          currentSelection={this.state.destinationID}
           selectOption={this.destinationSelected}
         />  
         <DropDown 
           name="Majors" 
           label="Select a Major for Transfer"
           optionList={this.state.majors}
+          currentSelection={this.state.majorID}
           selectOption={this.majorSelected}
           />
         <button 
