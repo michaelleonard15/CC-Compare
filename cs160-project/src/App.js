@@ -15,13 +15,17 @@ class App extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {pageNumber: 1}
+    this.state = {pageNumber: 2}
   }
 
   submitRequest(IDs) {
     this.setState({pageNumber: 2})
   }
 
+  dummyData() {
+    return ['MATH 1A', 'MATH 1B', 'MATH 1C', 'MATH 2', 'MATH 4', 'MATH 5', 'MATH 15',
+            'PHYS 40', 'PHYS 41', 'PHYS 42', 'PHYS 43', 'CS 10', 'CS 11', 'CS 12']
+  }
 
   renderAppPage() {
     if(this.state.pageNumber === 1) {
@@ -30,7 +34,8 @@ class App extends React.Component {
               />
     } 
     else if(this.state.pageNumber === 2) {
-      return <ClassSelector />
+      return <ClassSelector 
+                courses={this.dummyData()} />
     }
   }
 

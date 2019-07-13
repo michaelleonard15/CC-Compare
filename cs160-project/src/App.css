@@ -46,3 +46,33 @@
     right: 00px;
 }
 
+
+
+
+
+
+
+
+
+
+
+.class_selector {
+  position: relative;
+  top: 200px;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+  text-align: center;
+  background-color: #a6c8ff;
+}
+
+.class_selector_container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.class_selection_button {
+  width: 134px;
+  margin: 8px 
+  
+}
