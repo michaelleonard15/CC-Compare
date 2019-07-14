@@ -31,9 +31,11 @@ class DestinationSchoolSelection extends React.Component {
    */
   addAgreement = () => {
     let temp = this.state.agreements.slice()
-    let lastIndex = temp.length - 1
-    temp.push({ID: temp[lastIndex].ID + 1, destinationID: -1, majorID: -1})
-    this.setState({agreements: temp})
+    if(temp.length < 5) {
+      let lastIndex = temp.length - 1
+      temp.push({ID: temp[lastIndex].ID + 1, destinationID: -1, majorID: -1})
+      this.setState({agreements: temp})
+    }
   }
 
 

@@ -15,7 +15,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {pageNumber: 2}
+    this.state = {pageNumber: 1}
   }
 
   submitRequest(IDs) {

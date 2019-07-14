@@ -1,5 +1,4 @@
 .dropdown_menu_box {
-  width: 500px;
   background-color: #a6c8ff; 
 }
 
@@ -20,11 +19,13 @@
 
 .source_selection_menu {
   position: relative;
+  width: 45%;
   top: 90px;
 }
 
 .destination_container {
   position: relative;
+  background-color: #a1a1a1; 
   top: 20px;
   width: 45%; 
   left: 55%
