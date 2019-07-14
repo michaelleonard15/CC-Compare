@@ -44,7 +44,6 @@ def create_app(test_config=None):
     @app.route('/api/origin-schools/')
     def origin_schools():
         app.logger.info(request.args.to_dict())
-        a = request.args.get('origin')
         array = [{'id': 1, 'name': 'cool'}, 
                  {'id': 2, 'name': 'dude'}, 
                  {'id': 57, 'name': 'Santa Rosa Junior College'}]
@@ -54,8 +53,8 @@ def create_app(test_config=None):
     @app.route('/api/dest-schools/') #, methods=['POST'])
     def dest_schools():
         app.logger.info(request.args.to_dict())
-        a = request.args.get('origin')
-        array = db.get_dest_array(a)
+        origin_id = request.args.get('origin')
+        array = db.get_dest_array(origin_id)
         return jsonify(array) 
 
     # This section runs our init_app function in db.
