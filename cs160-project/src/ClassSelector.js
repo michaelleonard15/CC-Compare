@@ -10,7 +10,7 @@ class ClassSelector extends React.Component {
   }
 
   generateButtons() {
-    const courses = this.props.courses.slice()
+    const courses = this.props.courses.slice(1)
     let buttons = courses.map( (name) => {
       return(
         <button className="class_selection_button">{name}</button>)
@@ -20,11 +20,17 @@ class ClassSelector extends React.Component {
 
   render() {
     return (
-      <div className="class_selector">
-        <h1> HELLO, WORLD! </h1>
-        <br/>
-        <div className="class_selector_container">
-          {this.generateButtons()}
+      <div>
+        <div align='right'>
+        <button className="back_button"
+                onClick={this.props.backButton}>Back</button>
+        </div>
+        <div className="class_selector">
+          <h1> What classes have you completed at {this.props.courses[0]}? </h1>
+          <br/>
+          <div className="class_selector_container">
+            {this.generateButtons()}
+          </div>
         </div>
       </div>
     )

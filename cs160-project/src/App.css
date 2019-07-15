@@ -44,7 +44,7 @@
 .specific_major_selection_remove {
     position: absolute;
     top: 25px;
-    right: 00px;
+    right: 0px;
 }
 
 
@@ -73,7 +73,13 @@
 }
 
 .class_selection_button {
-  width: 134px;
-  margin: 8px 
+  font-size: 30px;
+  margin: 12px; 
+  padding: 12px;
   
+}
+
+.back_button {
+  font-size: 24px;
+  padding: 12px;
 }

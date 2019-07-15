@@ -15,16 +15,40 @@ class App extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {pageNumber: 1}
+    this.state = {pageNumber: 1, courseMatrix: []}
   }
+
+  
+
+
 
   submitRequest(IDs) {
-    this.setState({pageNumber: 2})
+    fetch('./dummyClasses.json')
+      .then( response => {
+        return response.json()
+      })
+      .then( matrix => {
+        this.setState({pageNumber: 2, courseMatrix: matrix})
+      })
+      .catch( err => {console.log(err)} )
   }
 
-  dummyData() {
-    return ['MATH 1A', 'MATH 1B', 'MATH 1C', 'MATH 2', 'MATH 4', 'MATH 5', 'MATH 15',
-            'PHYS 40', 'PHYS 41', 'PHYS 42', 'PHYS 43', 'CS 10', 'CS 11', 'CS 12']
+
+
+  handleBackButton() {
+    let page = this.state.pageNumber
+    if(page > 1) {
+      this.setState({pageNumber: page - 1})
+    }
+  }
+
+//  dummyData() {
+//    return ['MATH 1A', 'MATH 1B', 'MATH 1C', 'MATH 2', 'MATH 4', 'MATH 5', 'MATH 15',
+//            'PHYS 40', 'PHYS 41', 'PHYS 42', 'PHYS 43', 'CS 10', 'CS 11', 'CS 12']
+//  }
+
+  getClassList() {
+    return this.state.courseMatrix.map( row => {return row[1]})
   }
 
   renderAppPage() {
@@ -35,7 +59,8 @@ class App extends React.Component {
     } 
     else if(this.state.pageNumber === 2) {
       return <ClassSelector 
-                courses={this.dummyData()} />
+                courses={this.getClassList()}
+                backButton={this.handleBackButton.bind(this)} />
     }
   }
 
