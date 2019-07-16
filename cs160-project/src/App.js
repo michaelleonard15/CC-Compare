@@ -20,8 +20,6 @@ class App extends React.Component {
 
   
 
-
-
   submitRequest(IDs) {
     fetch('./dummyClasses.json')
       .then( response => {
@@ -42,13 +40,23 @@ class App extends React.Component {
     }
   }
 
+
+  handleToggle(index) {
+    let temp = this.state.courseMatrix.slice()
+    temp[index][0] = !temp[index][0]
+    console.log(temp[index][0])
+    this.setState({courseMatrix: temp})
+  }
+
 //  dummyData() {
 //    return ['MATH 1A', 'MATH 1B', 'MATH 1C', 'MATH 2', 'MATH 4', 'MATH 5', 'MATH 15',
 //            'PHYS 40', 'PHYS 41', 'PHYS 42', 'PHYS 43', 'CS 10', 'CS 11', 'CS 12']
 //  }
 
   getClassList() {
-    return this.state.courseMatrix.map( row => {return row[1]})
+    return this.state.courseMatrix.map( row => {
+      return {selected: row[0], name: row[1]}
+    })
   }
 
   renderAppPage() {
@@ -60,6 +68,7 @@ class App extends React.Component {
     else if(this.state.pageNumber === 2) {
       return <ClassSelector 
                 courses={this.getClassList()}
+                handleToggle={this.handleToggle.bind(this)}
                 backButton={this.handleBackButton.bind(this)} />
     }
   }

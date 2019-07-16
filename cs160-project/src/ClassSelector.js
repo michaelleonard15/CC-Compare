@@ -3,17 +3,22 @@ import './App.css'
 
 class ClassSelector extends React.Component {
 
-  constructor(props) {
-    super(props)
 
-    this.state = {courses: []}
+  toggleClass(index) {
+    this.props.handleToggle(index)
   }
 
   generateButtons() {
     const courses = this.props.courses.slice(1)
-    let buttons = courses.map( (name) => {
+    let buttons = courses.map( (row, index) => {
+      let buttonName = row.selected ? 'selected' : 'not_selected'
       return(
-        <button className="class_selection_button">{name}</button>)
+        <button className={'class_toggle_' + buttonName}
+                onClick={this.toggleClass.bind(this, index + 1)}
+        >
+          {row.name}
+        </button>
+      )
     })
     return buttons
   }
@@ -26,7 +31,7 @@ class ClassSelector extends React.Component {
                 onClick={this.props.backButton}>Back</button>
         </div>
         <div className="class_selector">
-          <h1> What classes have you completed at {this.props.courses[0]}? </h1>
+          <h1> What classes have you completed at {this.props.courses[0].name}? </h1>
           <br/>
           <div className="class_selector_container">
             {this.generateButtons()}

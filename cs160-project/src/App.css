@@ -72,11 +72,18 @@
   flex-flow: row wrap;
 }
 
-.class_selection_button {
+.class_toggle_selected {
   font-size: 30px;
   margin: 12px; 
   padding: 12px;
-  
+  background-color: #5a9962
+}
+
+.class_toggle_not_selected {
+  font-size: 30px;
+  margin: 12px; 
+  padding: 12px;
+  background-color: #a8a8a8
 }
 
 .back_button {
