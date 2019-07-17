@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import AgreementSelection from './AgreementSelection'
 import ClassSelector from './ClassSelector'
+import FinalReport from './FinalReport'
 
 
 /**
@@ -11,14 +12,11 @@ import ClassSelector from './ClassSelector'
  */
 class App extends React.Component {
   
-
   constructor(props) {
     super(props)
 
     this.state = {pageNumber: 1, courseMatrix: []}
   }
-
-  
 
   submitRequest(IDs) {
     fetch('./dummyClasses.json')
@@ -31,7 +29,9 @@ class App extends React.Component {
       .catch( err => {console.log(err)} )
   }
 
-
+  loadPageThree() {
+    this.setState({pageNumber: 3})
+  }
 
   handleBackButton() {
     let page = this.state.pageNumber
@@ -44,14 +44,8 @@ class App extends React.Component {
   handleToggle(index) {
     let temp = this.state.courseMatrix.slice()
     temp[index][0] = !temp[index][0]
-    console.log(temp[index][0])
     this.setState({courseMatrix: temp})
   }
-
-//  dummyData() {
-//    return ['MATH 1A', 'MATH 1B', 'MATH 1C', 'MATH 2', 'MATH 4', 'MATH 5', 'MATH 15',
-//            'PHYS 40', 'PHYS 41', 'PHYS 42', 'PHYS 43', 'CS 10', 'CS 11', 'CS 12']
-//  }
 
   getClassList() {
     return this.state.courseMatrix.map( row => {
@@ -66,8 +60,16 @@ class App extends React.Component {
               />
     } 
     else if(this.state.pageNumber === 2) {
-      return <ClassSelector 
+      return  <ClassSelector 
                 courses={this.getClassList()}
+                handleToggle={this.handleToggle.bind(this)}
+                backButton={this.handleBackButton.bind(this)}
+                loadNextPage={this.loadPageThree.bind(this)}
+              />
+    }
+    else if(this.state.pageNumber === 3) {
+      return <FinalReport 
+                courseMatrix={this.state.courseMatrix}
                 handleToggle={this.handleToggle.bind(this)}
                 backButton={this.handleBackButton.bind(this)} />
     }
@@ -75,7 +77,7 @@ class App extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="APP">
         {this.renderAppPage()}
       </div>
     )

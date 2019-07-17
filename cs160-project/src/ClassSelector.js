@@ -13,7 +13,8 @@ class ClassSelector extends React.Component {
     let buttons = courses.map( (row, index) => {
       let buttonName = row.selected ? 'selected' : 'not_selected'
       return(
-        <button className={'class_toggle_' + buttonName}
+        <button key={index}
+                className={'class_toggle_' + buttonName}
                 onClick={this.toggleClass.bind(this, index + 1)}
         >
           {row.name}
@@ -25,18 +26,28 @@ class ClassSelector extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="page_two">
+
         <div align='right'>
         <button className="back_button"
                 onClick={this.props.backButton}>Back</button>
         </div>
+      
         <div className="class_selector">
           <h1> What classes have you completed at {this.props.courses[0].name}? </h1>
           <br/>
+
           <div className="class_selector_container">
             {this.generateButtons()}
           </div>
+        
         </div>
+        
+         <div className="next_button_box">
+            <button className="next_button"
+                    onClick={this.props.loadNextPage}>Next</button>
+          </div>
+
       </div>
     )
   }

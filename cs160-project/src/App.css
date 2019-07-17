@@ -49,13 +49,9 @@
 
 
 
-
-
-
-
-
-
-
+.page_two {
+  height: 100vh;
+}
 
 .class_selector {
   position: relative;
@@ -89,4 +85,42 @@
 .back_button {
   font-size: 24px;
   padding: 12px;
+}
+
+.next_button_box {
+  position: absolute;
+  align-content: center;
+  left: 45%;
+  top: 800px;
+}
+
+.next_button {
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+.source_column_box {
+  text-align: center;
+  width: 200px;
+}
+
+
+.report_toggle_selected {
+  font-size: 18px;
+  margin: 12px; 
+  padding: 12px;
+  background-color: #5a9962
+}
+
+.report_toggle_not_selected {
+  font-size: 18px;
+  margin: 12px; 
+  padding: 12px;
+  background-color: #a8a8a8
 }
