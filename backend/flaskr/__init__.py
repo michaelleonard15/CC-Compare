@@ -1,6 +1,7 @@
 import os
 
 from flask import Flask, jsonify, request, url_for, render_template
+from flask_cors import CORS
 
 # TODO: Write instructions on running backend in README
 
@@ -13,6 +14,9 @@ def create_app(test_config=None):
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
         
     )
+
+    # enabling CORS https://flask-cors.readthedocs.io/en/latest/
+    cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
     if test_config is None:
         # load the instance config, if it exists, when not testing
@@ -37,12 +41,21 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World!'
 
+    @app.route('/api/origin-schools/')
+    def origin_schools():
+        app.logger.info(request.args.to_dict())
+        array = [{'id': 1, 'name': 'cool'}, 
+                 {'id': 2, 'name': 'dude'}, 
+                 {'id': 57, 'name': 'Santa Rosa Junior College'}]
+        return jsonify(array) 
+
     # API call to get the destinations list
     @app.route('/api/dest-schools/') #, methods=['POST'])
     def dest_schools():
         app.logger.info(request.args.to_dict())
-        a = request.args.get('origin')
-        return jsonify({'foo' : 42}) 
+        origin_id = request.args.get('origin')
+        array = db.get_dest_array(origin_id)
+        return jsonify(array) 
 
     # This section runs our init_app function in db.
     from . import db

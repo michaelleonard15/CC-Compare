@@ -5,7 +5,7 @@ function Parse(fileName) {
   return fetch('./' + fileName)
     .then( (response) => {
       if(response.ok) {
-        console.log(fileName + " open!")
+        console.log(response)
         return response.json()
       }
       else {
@@ -22,7 +22,7 @@ function Parse(fileName) {
         else if (fileName === 'majors.json') {
           return parseMajors(list.reports)
         }
-    }) 
+    }).catch( err => { console.log(err); return []} )
 }
 
 
