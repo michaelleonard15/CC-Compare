@@ -33,10 +33,10 @@ function RequestAPI() {
 
     requestSources() {
       let request = 'http://127.0.0.1:5000/api/origin-schools'
-      //return runFetch(request)
+      return runFetch(request)
 
       // FOR TESTING ////
-      return Parse('institutions.json')
+      // return Parse('institutions.json')
       /////////////////// 
     },
 
@@ -44,10 +44,10 @@ function RequestAPI() {
 
     requestDestinations(SourceID) {
       let request = 'http://127.0.0.1:5000/api/dest-schools?origin=' + SourceID
-      //return runFetch(request)
+      return runFetch(request)
       
       // FOR TESTING ////
-      return Parse('agreements-' + SourceID + '.json')    
+      // return Parse('agreements-' + SourceID + '.json')    
       /////////////////// 
     },
 

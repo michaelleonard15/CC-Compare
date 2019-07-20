@@ -44,10 +44,11 @@ def create_app(test_config=None):
     @app.route('/api/origin-schools/')
     def origin_schools():
         app.logger.info(request.args.to_dict())
-        array = [{'id': 1, 'name': 'cool'}, 
-                 {'id': 2, 'name': 'dude'}, 
-                 {'id': 57, 'name': 'Santa Rosa Junior College'}]
-        return jsonify(array) 
+        # array = [{'id': 1, 'name': 'cool'}, 
+        #          {'id': 2, 'name': 'dude'}, 
+        #          {'id': 57, 'name': 'Santa Rosa Junior College'}]
+        # return jsonify(array) 
+        return app.send_static_file('schools_ids.json')
 
     # API call to get the destinations list
     @app.route('/api/dest-schools/') #, methods=['POST'])
@@ -56,6 +57,10 @@ def create_app(test_config=None):
         origin_id = request.args.get('origin')
         array = db.get_dest_array(origin_id)
         return jsonify(array) 
+
+    @app.route('/api/majors/') #, methods=['POST'])
+    def majors():
+        return "h"
 
     # This section runs our init_app function in db.
     from . import db
