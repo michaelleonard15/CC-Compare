@@ -53,10 +53,13 @@ function RequestAPI() {
 
 
 
-    requestMajors(sourceID) {
+    requestMajors(sourceID, destID) {
+
+      let request = `http://127.0.0.1:5000/api/majors?origin=${sourceID}&dest=${destID}`
+      return runFetch(request)
 
       // FOR TESTING ////
-      return Parse('majors.json')
+      // return Parse('majors.json') 
       ///////////////////
     },
 
