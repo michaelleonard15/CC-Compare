@@ -37,16 +37,16 @@ def get_dest_array(origin_id):
     query = "SELECT DISTINCT target_id FROM agreements WHERE source_id=(?) ORDER BY target_id ASC"
     rows = db.execute(query, (origin_id,)).fetchall()
 
-    array = []
+    dest_array = []
 
     for row in rows:
         dest_id = int(row[0])
         new_dest = {}
         new_dest['id'] = dest_id
         new_dest['name'] = get_school_name(dest_id)
-        array.append(new_dest)
+        dest_array.append(new_dest)
     
-    return(array)
+    return(dest_array)
 
 
 def get_school_name(given_id):
@@ -59,6 +59,28 @@ def get_school_name(given_id):
 
     # Default if name cannot be found
     return("<MISSING NAME FOR SCHOOL {}>".format(given_id))
+
+
+def get_majors(origin_id, dest_id):
+    db = get_db()
+
+    click.echo(origin_id)
+    click.echo(dest_id)
+
+    query = "SELECT agreement_id, major FROM agreements WHERE source_id=(?) AND target_id=(?) ORDER BY major ASC"
+    rows = db.execute(query, (origin_id, dest_id,)).fetchall()
+
+    click.echo(rows)
+
+    major_array = []
+
+    for row in rows:
+        new_major = {}
+        new_major['id'] = row[0]
+        new_major['name'] = row[1]
+        major_array.append(new_major)
+
+    return major_array
 
 
 def reset_db():

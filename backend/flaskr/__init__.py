@@ -58,9 +58,14 @@ def create_app(test_config=None):
         array = db.get_dest_array(origin_id)
         return jsonify(array) 
 
+
+    # http://localhost:5000/api/majors/?origin=2&dest=4
     @app.route('/api/majors/') #, methods=['POST'])
     def majors():
-        return "h"
+        origin_id = request.args.get('origin')
+        dest_id = request.args.get('dest')
+        array = db.get_majors(origin_id, dest_id)
+        return jsonify(array)
 
     # This section runs our init_app function in db.
     from . import db
