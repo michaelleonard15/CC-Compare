@@ -16,7 +16,7 @@ class SourceColumn extends React.Component {
     let buttonName = row[0] ? 'selected' : 'not_selected'
       return( 
         <button key={index}
-                className={'report_toggle_' + buttonName}
+                className={'class_toggle_' + buttonName}
                 onClick={this.toggleClass.bind(this, index)}>
           {row[1]}
         </button>

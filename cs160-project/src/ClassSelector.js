@@ -11,7 +11,7 @@ class ClassSelector extends React.Component {
   generateButtons() {
     const courses = this.props.courses.slice(1)
     let buttons = courses.map( (row, index) => {
-      let buttonName = row.selected ? 'selected' : 'not_selected'
+    let buttonName = row.selected ? 'selected' : 'not_selected'
       return(
         <button key={index}
                 className={'class_toggle_' + buttonName}

@@ -1,5 +1,6 @@
 import React from 'react'
 import SourceColumn from './SourceColumn'
+import DestinationColumnContainer from './DestinationColumnContainer'
 import './App.css'
 
 class FinalReport extends React.Component {
