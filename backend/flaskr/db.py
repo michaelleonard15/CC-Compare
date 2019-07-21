@@ -5,7 +5,7 @@ import json
 
 import click
 # g is unique for each request and stores data that might be used by multiple functions during the request 
-from flask import current_app, g
+from flask import current_app, g, jsonify
 from flask.cli import with_appcontext
 
 
@@ -31,7 +31,7 @@ def close_db(e=None):
         db.close()
 
 
-def get_dest_array(origin_id):
+def get_dests(origin_id):
     db = get_db()
 
     query = "SELECT DISTINCT target_id FROM agreements WHERE source_id=(?) ORDER BY target_id ASC"
@@ -46,7 +46,7 @@ def get_dest_array(origin_id):
         new_dest['name'] = get_school_name(dest_id)
         dest_array.append(new_dest)
     
-    return(dest_array)
+    return(jsonify(dest_array))
 
 
 def get_school_name(given_id):
@@ -64,13 +64,15 @@ def get_school_name(given_id):
 def get_majors(origin_id, dest_id):
     db = get_db()
 
+    click.echo("Calling get_majors with origin + destination:")
     click.echo(origin_id)
     click.echo(dest_id)
 
     query = "SELECT agreement_id, major FROM agreements WHERE source_id=(?) AND target_id=(?) ORDER BY major ASC"
     rows = db.execute(query, (origin_id, dest_id,)).fetchall()
 
-    click.echo(rows)
+    ## To check if majors is returning any rows
+    # click.echo(rows)
 
     major_array = []
 
@@ -80,7 +82,7 @@ def get_majors(origin_id, dest_id):
         new_major['name'] = row[1]
         major_array.append(new_major)
 
-    return major_array
+    return jsonify(major_array)
 
 
 def reset_db():
