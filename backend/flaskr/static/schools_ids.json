@@ -1,0 +1,590 @@
+[
+  {
+    "id": 1,
+    "name": "California Maritime Academy"
+  },
+  {
+    "id": 2,
+    "name": "Evergreen Valley College"
+  },
+  {
+    "id": 3,
+    "name": "Los Angeles City College"
+  },
+  {
+    "id": 4,
+    "name": "College of Marin"
+  },
+  {
+    "id": 5,
+    "name": "College of San Mateo"
+  },
+  {
+    "id": 6,
+    "name": "College of the Sequoias"
+  },
+  {
+    "id": 7,
+    "name": "University of California, San Diego"
+  },
+  {
+    "id": 8,
+    "name": "Butte College"
+  },
+  {
+    "id": 9,
+    "name": "Cerro Coso Community College"
+  },
+  {
+    "id": 10,
+    "name": "Columbia College"
+  },
+  {
+    "id": 11,
+    "name": "California Polytechnic University, San Luis Obispo"
+  },
+  {
+    "id": 12,
+    "name": "California State University, Monterey Bay"
+  },
+  {
+    "id": 13,
+    "name": "Merritt College"
+  },
+  {
+    "id": 14,
+    "name": "Santa Ana College"
+  },
+  {
+    "id": 16,
+    "name": "Cuesta College"
+  },
+  {
+    "id": 17,
+    "name": "Merced College"
+  },
+  {
+    "id": 18,
+    "name": "Las Positas College"
+  },
+  {
+    "id": 19,
+    "name": "Victor Valley College"
+  },
+  {
+    "id": 20,
+    "name": "Barstow Community College"
+  },
+  {
+    "id": 21,
+    "name": "California State University, East Bay"
+  },
+  {
+    "id": 23,
+    "name": "California State University, San Marcos"
+  },
+  {
+    "id": 24,
+    "name": "California State University, Stanislaus"
+  },
+  {
+    "id": 25,
+    "name": "Los Angeles Trade Technical College"
+  },
+  {
+    "id": 26,
+    "name": "San Diego State University"
+  },
+  {
+    "id": 27,
+    "name": "American River College"
+  },
+  {
+    "id": 28,
+    "name": "Contra Costa College"
+  },
+  {
+    "id": 29,
+    "name": "California State University, Fresno"
+  },
+  {
+    "id": 30,
+    "name": "College of the Desert"
+  },
+  {
+    "id": 31,
+    "name": "Los Angeles Harbor College"
+  },
+  {
+    "id": 32,
+    "name": "Mission College"
+  },
+  {
+    "id": 33,
+    "name": "City College of San Francisco"
+  },
+  {
+    "id": 34,
+    "name": "Compton Community College"
+  },
+  {
+    "id": 35,
+    "name": "Fresno City College"
+  },
+  {
+    "id": 36,
+    "name": "Reedley College"
+  },
+  {
+    "id": 38,
+    "name": "Shasta College"
+  },
+  {
+    "id": 39,
+    "name": "San Jose State University"
+  },
+  {
+    "id": 40,
+    "name": "Lake Tahoe Community College"
+  },
+  {
+    "id": 41,
+    "name": "Cabrillo College"
+  },
+  {
+    "id": 42,
+    "name": "California State University, Northridge"
+  },
+  {
+    "id": 43,
+    "name": "Glendale Community College"
+  },
+  {
+    "id": 44,
+    "name": "Los Angeles Valley College"
+  },
+  {
+    "id": 45,
+    "name": "San Diego Miramar College"
+  },
+  {
+    "id": 46,
+    "name": "University of California, Riverside"
+  },
+  {
+    "id": 47,
+    "name": "Los Angeles Mission College"
+  },
+  {
+    "id": 48,
+    "name": "Ohlone College"
+  },
+  {
+    "id": 49,
+    "name": "Pasadena City College"
+  },
+  {
+    "id": 50,
+    "name": "California State University, Dominguez Hills"
+  },
+  {
+    "id": 51,
+    "name": "Foothill College"
+  },
+  {
+    "id": 52,
+    "name": "Modesto Junior College"
+  },
+  {
+    "id": 53,
+    "name": "Mt. San Jacinto College"
+  },
+  {
+    "id": 54,
+    "name": "San Diego City College"
+  },
+  {
+    "id": 55,
+    "name": "Golden West College"
+  },
+  {
+    "id": 56,
+    "name": "Palomar College"
+  },
+  {
+    "id": 57,
+    "name": "Santa Rosa Junior College"
+  },
+  {
+    "id": 58,
+    "name": "Berkeley City College"
+  },
+  {
+    "id": 60,
+    "name": "California State University, Sacramento"
+  },
+  {
+    "id": 61,
+    "name": "Los Medanos College"
+  },
+  {
+    "id": 62,
+    "name": "Mount San Antonio College"
+  },
+  {
+    "id": 63,
+    "name": "Palo Verde College"
+  },
+  {
+    "id": 64,
+    "name": "Rio Hondo College"
+  },
+  {
+    "id": 65,
+    "name": "Saddleback College"
+  },
+  {
+    "id": 66,
+    "name": "Santiago Canyon College"
+  },
+  {
+    "id": 67,
+    "name": "West Hills College Coalinga"
+  },
+  {
+    "id": 68,
+    "name": "Canada College"
+  },
+  {
+    "id": 69,
+    "name": "Chaffey College"
+  },
+  {
+    "id": 70,
+    "name": "Crafton Hills College"
+  },
+  {
+    "id": 71,
+    "name": "Cypress College"
+  },
+  {
+    "id": 72,
+    "name": "Gavilan College"
+  },
+  {
+    "id": 73,
+    "name": "Napa Valley College"
+  },
+  {
+    "id": 74,
+    "name": "Orange Coast College"
+  },
+  {
+    "id": 75,
+    "name": "California Polytechnic University, Pomona"
+  },
+  {
+    "id": 76,
+    "name": "California State University, Los Angeles"
+  },
+  {
+    "id": 77,
+    "name": "Laney College"
+  },
+  {
+    "id": 78,
+    "name": "Riverside City College"
+  },
+  {
+    "id": 79,
+    "name": "University of California, Berkeley"
+  },
+  {
+    "id": 80,
+    "name": "West Valley College"
+  },
+  {
+    "id": 81,
+    "name": "California State University, Long Beach"
+  },
+  {
+    "id": 82,
+    "name": "Lassen Community College"
+  },
+  {
+    "id": 83,
+    "name": "College of the Redwoods"
+  },
+  {
+    "id": 84,
+    "name": "Bakersfield College"
+  },
+  {
+    "id": 85,
+    "name": "California State University, San Bernardino"
+  },
+  {
+    "id": 86,
+    "name": "Los Angeles Pierce College"
+  },
+  {
+    "id": 87,
+    "name": "Oxnard College"
+  },
+  {
+    "id": 88,
+    "name": "Sonoma State University"
+  },
+  {
+    "id": 89,
+    "name": "University of California, Davis"
+  },
+  {
+    "id": 90,
+    "name": "Yuba College"
+  },
+  {
+    "id": 91,
+    "name": "West Los Angeles College"
+  },
+  {
+    "id": 92,
+    "name": "Santa Barbara City College"
+  },
+  {
+    "id": 93,
+    "name": "Sierra College"
+  },
+  {
+    "id": 94,
+    "name": "Solano Community College"
+  },
+  {
+    "id": 95,
+    "name": "Ventura College"
+  },
+  {
+    "id": 96,
+    "name": "Chabot College"
+  },
+  {
+    "id": 97,
+    "name": "Citrus College"
+  },
+  {
+    "id": 98,
+    "name": "California State University, Bakersfield"
+  },
+  {
+    "id": 99,
+    "name": "Cuyamaca College"
+  },
+  {
+    "id": 100,
+    "name": "Mendocino College"
+  },
+  {
+    "id": 101,
+    "name": "San Diego Mesa College"
+  },
+  {
+    "id": 102,
+    "name": "College of the Siskiyous"
+  },
+  {
+    "id": 103,
+    "name": "El Camino College"
+  },
+  {
+    "id": 104,
+    "name": "Cerritos College"
+  },
+  {
+    "id": 105,
+    "name": "Coastline Community College"
+  },
+  {
+    "id": 106,
+    "name": "Grossmont College"
+  },
+  {
+    "id": 107,
+    "name": "Imperial Valley College"
+  },
+  {
+    "id": 108,
+    "name": "MiraCosta College"
+  },
+  {
+    "id": 109,
+    "name": "San Joaquin Delta College"
+  },
+  {
+    "id": 110,
+    "name": "Allan Hancock College"
+  },
+  {
+    "id": 111,
+    "name": "College of Alameda"
+  },
+  {
+    "id": 112,
+    "name": "Copper Mountain College"
+  },
+  {
+    "id": 113,
+    "name": "De Anza College"
+  },
+  {
+    "id": 114,
+    "name": "Diablo Valley College"
+  },
+  {
+    "id": 115,
+    "name": "Humboldt State University"
+  },
+  {
+    "id": 116,
+    "name": "San Francisco State University"
+  },
+  {
+    "id": 117,
+    "name": "University of California, Los Angeles"
+  },
+  {
+    "id": 118,
+    "name": "East Los Angeles College"
+  },
+  {
+    "id": 119,
+    "name": "Taft College"
+  },
+  {
+    "id": 120,
+    "name": "University of California, Irvine"
+  },
+  {
+    "id": 121,
+    "name": "Antelope Valley College"
+  },
+  {
+    "id": 122,
+    "name": "Feather River College"
+  },
+  {
+    "id": 123,
+    "name": "Hartnell College"
+  },
+  {
+    "id": 124,
+    "name": "Irvine Valley College"
+  },
+  {
+    "id": 125,
+    "name": "Porterville College"
+  },
+  {
+    "id": 126,
+    "name": "Sacramento City College"
+  },
+  {
+    "id": 127,
+    "name": "Skyline College"
+  },
+  {
+    "id": 128,
+    "name": "University of California, Santa Barbara"
+  },
+  {
+    "id": 129,
+    "name": "California State University, Fullerton"
+  },
+  {
+    "id": 130,
+    "name": "Los Angeles Southwest College"
+  },
+  {
+    "id": 131,
+    "name": "San Bernardino Valley College"
+  },
+  {
+    "id": 132,
+    "name": "University of California, Santa Cruz"
+  },
+  {
+    "id": 133,
+    "name": "Monterey Peninsula College"
+  },
+  {
+    "id": 134,
+    "name": "Fullerton College"
+  },
+  {
+    "id": 135,
+    "name": "Long Beach City College"
+  },
+  {
+    "id": 136,
+    "name": "San Jose City College"
+  },
+  {
+    "id": 137,
+    "name": "Santa Monica College"
+  },
+  {
+    "id": 138,
+    "name": "Southwestern College"
+  },
+  {
+    "id": 139,
+    "name": "Moorpark College"
+  },
+  {
+    "id": 140,
+    "name": "College of the Canyons"
+  },
+  {
+    "id": 141,
+    "name": "California State University, Chico"
+  },
+  {
+    "id": 142,
+    "name": "Cosumnes River College"
+  },
+  {
+    "id": 143,
+    "name": "California State University, Channel Islands"
+  },
+  {
+    "id": 144,
+    "name": "University of California, Merced"
+  },
+  {
+    "id": 145,
+    "name": "Folsom Lake College"
+  },
+  {
+    "id": 146,
+    "name": "West Hills College Lemoore"
+  },
+  {
+    "id": 147,
+    "name": "Woodland Community College"
+  },
+  {
+    "id": 148,
+    "name": "Norco College"
+  },
+  {
+    "id": 149,
+    "name": "Moreno Valley College"
+  },
+  {
+    "id": 150,
+    "name": "Clovis Community College"
+  },
+  {
+    "id": 153,
+    "name": "El Camino College"
+  }
+]

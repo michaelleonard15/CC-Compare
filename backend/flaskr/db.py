@@ -1,10 +1,11 @@
 # I'm gonna be straightforward with you, I don't really understand what's going on here
 
 import sqlite3
+import json
 
 import click
 # g is unique for each request and stores data that might be used by multiple functions during the request 
-from flask import current_app, g
+from flask import current_app, g, jsonify
 from flask.cli import with_appcontext
 
 
@@ -30,10 +31,59 @@ def close_db(e=None):
         db.close()
 
 
-def get_dest_array(origin_id):
-    return [{'id': 1, 'name': 'Your origin id was ' + str(origin_id)},
-            {'id': 2, 'name': 'item 2'},
-            {'id': 3, 'name': 'item 3'}]
+def get_dests(origin_id):
+    db = get_db()
+
+    query = "SELECT DISTINCT target_id FROM agreements WHERE source_id=(?) ORDER BY target_id ASC"
+    rows = db.execute(query, (origin_id,)).fetchall()
+
+    dest_array = []
+
+    for row in rows:
+        dest_id = int(row[0])
+        new_dest = {}
+        new_dest['id'] = dest_id
+        new_dest['name'] = get_school_name(dest_id)
+        dest_array.append(new_dest)
+    
+    return(jsonify(dest_array))
+
+
+def get_school_name(given_id):
+    with current_app.open_resource('static/schools_ids.json') as f:
+        json_obj = json.load(f)
+
+    for val in json_obj:
+        if val['id'] == given_id:
+            return val['name']
+
+    # Default if name cannot be found
+    return("<MISSING NAME FOR SCHOOL {}>".format(given_id))
+
+
+def get_majors(origin_id, dest_id):
+    db = get_db()
+
+    click.echo("Calling get_majors with origin + destination:")
+    click.echo(origin_id)
+    click.echo(dest_id)
+
+    query = "SELECT agreement_id, major FROM agreements WHERE source_id=(?) AND target_id=(?) ORDER BY major ASC"
+    rows = db.execute(query, (origin_id, dest_id,)).fetchall()
+
+    ## To check if majors is returning any rows
+    # click.echo(rows)
+
+    major_array = []
+
+    for row in rows:
+        new_major = {}
+        new_major['id'] = row[0]
+        new_major['name'] = row[1]
+        major_array.append(new_major)
+
+    return jsonify(major_array)
+
 
 def reset_db():
     db = get_db()

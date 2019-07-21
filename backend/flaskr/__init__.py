@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, jsonify, request, url_for, render_template
+from flask import Flask, request, url_for, render_template
 from flask_cors import CORS
 
 # TODO: Write instructions on running backend in README
@@ -11,8 +11,8 @@ def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY='dev',
-        DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
-        
+        # DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
+        DATABASE=os.path.join(app.instance_path, 'test-data.sqlite')
     )
 
     # enabling CORS https://flask-cors.readthedocs.io/en/latest/
@@ -44,19 +44,22 @@ def create_app(test_config=None):
     @app.route('/api/origin-schools/')
     def origin_schools():
         app.logger.info(request.args.to_dict())
-        a = request.args.get('origin')
-        array = [{'id': 1, 'name': 'cool'}, 
-                 {'id': 2, 'name': 'dude'}, 
-                 {'id': 57, 'name': 'Santa Rosa Junior College'}]
-        return jsonify(array) 
+        return app.send_static_file('schools_ids.json')
 
     # API call to get the destinations list
     @app.route('/api/dest-schools/') #, methods=['POST'])
     def dest_schools():
         app.logger.info(request.args.to_dict())
-        a = request.args.get('origin')
-        array = db.get_dest_array(a)
-        return jsonify(array) 
+        origin_id = request.args.get('origin')
+        return db.get_dests(origin_id)
+
+
+    # http://localhost:5000/api/majors/?origin=2&dest=4
+    @app.route('/api/majors/') #, methods=['POST'])
+    def majors():
+        origin_id = request.args.get('origin')
+        dest_id = request.args.get('dest')
+        return db.get_majors(origin_id, dest_id)
 
     # This section runs our init_app function in db.
     from . import db

@@ -32,10 +32,10 @@ class SpecificMajorSelection extends React.Component {
    * Handler for the destination school dropdown
    * Requests the list of majors for the destination selected.
    */
-  destinationSelected = (schoolID) => {
+  destinationSelected = (destID) => {
     //if(schoolID === '39') {
-      RequestAPI().requestMajors(schoolID).then( (majors) => {
-        this.setState({majors: majors, destinationID: schoolID, majorID: -1})
+      RequestAPI().requestMajors(this.props.sourceID, destID).then( (majors) => {
+        this.setState({majors: majors, destinationID: destID, majorID: -1})
       })
     //}
   }
