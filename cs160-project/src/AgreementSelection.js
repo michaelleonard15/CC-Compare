@@ -94,7 +94,8 @@ constructor(props) {
         </div>  
           <DestinationSchoolSelection key={this.state.sourceID}
                                       destinationSchools={this.state.destinations} 
-                                      specificAgreementSelected={this.specificAgreementSelected} />
+                                      specificAgreementSelected={this.specificAgreementSelected}
+                                      sourceID={this.state.sourceID} />
         <div align="center">  <br/><br/> 
           <button onClick={this.submitForm}>Next</button>
         </div>

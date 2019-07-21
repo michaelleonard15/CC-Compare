@@ -94,7 +94,8 @@ class DestinationSchoolSelection extends React.Component {
               listIndex={agreement.ID}
               destinationSchools={this.props.destinationSchools}
               removeAgreement={this.removeAgreement.bind(this, index)} 
-              updateIDs={this.updateIDs.bind(this, index)}  />
+              updateIDs={this.updateIDs.bind(this, index)}
+              sourceID={this.props.sourceID}  />
             )
           })
         }

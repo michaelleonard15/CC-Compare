@@ -55,6 +55,7 @@ function RequestAPI() {
 
     requestMajors(sourceID, destID) {
 
+      console.info(`%c Major request: sourceID is ${sourceID} and destID is ${destID}`, 'color: purple; font-weight: bold;')
       let request = `http://127.0.0.1:5000/api/majors?origin=${sourceID}&dest=${destID}`
       return runFetch(request)
 
