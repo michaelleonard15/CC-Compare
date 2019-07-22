@@ -136,12 +136,16 @@
   background-color: #008fba;
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .requirement_row_incomplete {
   background-color: #363636;
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 

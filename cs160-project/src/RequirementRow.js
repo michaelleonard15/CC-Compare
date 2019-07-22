@@ -21,6 +21,15 @@ class RequirementRow extends React.Component {
   isCompleted() {
     let expr = this.props.requirements[0].expr
     let relation = this.props.requirements[0].relation
+    if(expr.length === 1) {
+      return this.props.lookupTable.get(expr[0]).isSelected
+    }
+    else {
+      return this.handleConditionalRequirements(expr, relation)
+    }
+  }
+
+  handleConditionalRequirements(expr, relation) {
     expr = expr.map( (ID) => {
       return this.props.lookupTable.get(ID).isSelected
     })
@@ -38,6 +47,7 @@ class RequirementRow extends React.Component {
     }
     return bool
   }
+
 
   generateGroups() {
     let req = this.props.requirements
