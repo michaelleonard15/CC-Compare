@@ -33,8 +33,12 @@ class FinalReport extends React.Component {
   render() {
     return (
       <div>
-      <h1> HELLO, WORLD! </h1>
-      <h3> From: FinalReport </h3>
+        <div align='right'>
+          <button className="back_button"
+                  onClick={this.props.backButton}>Back</button>
+        </div>
+        <h1> HELLO, WORLD! </h1>
+        <h3> From: FinalReport </h3>
         <RequirementRow lookupTable={this.props.lookupTable}
                         requirements={this.props.requirements[0]}/>
         

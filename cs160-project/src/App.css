@@ -126,3 +126,53 @@
   padding: 12px;
   background-color: #a8a8a8
 }
+
+
+
+
+
+
+.requirement_row_complete {
+  background-color: #008fba;
+  display: flex;
+  flex-direction: row;
+}
+
+.requirement_row_incomplete {
+  background-color: #363636;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.relation_group {
+  width: 300px;
+  height: 100px;
+  background-color: #878787;
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  text-align: center;
+}
+
+.class_label_selected {
+  background-color: #56a65d;
+  width: 100px;
+  height: 40px;
+}
+
+.class_label_not_selected {
+  background-color: #2f65bd;
+  width: 100px;
+  height: 40px;
+}
+
+.relation {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.relation_label {
+  font-weight: bold;
+  text-decoration: underline;
+}
