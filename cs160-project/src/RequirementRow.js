@@ -1,6 +1,5 @@
 import React from 'react'
-import SourceRelationGroup from './SourceRelationGroup'
-import DestinationRelationGroup from './DestinationRelationGroup'
+import RelationGroup from './RelationGroup'
 import './App.css'
 
 class RequirementRow extends React.Component {
@@ -30,16 +29,23 @@ class RequirementRow extends React.Component {
   }
 
   handleConditionalRequirements(expr, relation) {
+    
+    // Convert IDs in expr to corresponding boolean values.
     expr = expr.map( (ID) => {
       return this.props.lookupTable.get(ID).isSelected
     })
-    let bool = false
+
+    // Handle any && logic first. Splice the two arrays to 
+    // remove the && and replace two bool values with the result.
     for (let i = 0; i < relation.length; i++) {
       if(relation[i] === 'AND') {
         expr.splice(i, 2, expr[i] && expr[i+1])
         relation.splice(i, 1)
       }
     }
+
+    // Handle any || operations next.
+    let bool = false
     for(let i = 0; i < relation.length; i++) {
       if(relation[i] === 'OR') {
         bool = bool || expr[i] || expr[i+1]
@@ -49,16 +55,15 @@ class RequirementRow extends React.Component {
   }
 
 
+
+
   generateGroups() {
     let req = this.props.requirements
     let groups = []
-    groups.push(
-          <SourceRelationGroup lookupTable={this.props.lookupTable}
-                         group={req[0]}
-                         />)
-    for (let i = 1; i < req.length; i++) {
+    for (let i = 0; i < req.length; i++) {
       groups.push(
-          <DestinationRelationGroup lookupTable={this.props.lookupTable}
+          <RelationGroup key={i}
+                         lookupTable={this.props.lookupTable}
                          group={req[i]}
                          completed={this.state.completed}
                          />
