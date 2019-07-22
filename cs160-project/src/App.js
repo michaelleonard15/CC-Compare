@@ -74,7 +74,8 @@ class App extends React.Component {
     }
     else if(this.state.pageNumber === 3) {
       return <FinalReport 
-                courseMatrix={this.state.courseMatrix}
+                lookupTable={this.state.lookupTable}
+                requirements={this.state.requirements}
                 handleToggle={this.handleToggle.bind(this)}
                 backButton={this.handleBackButton.bind(this)} />
     }

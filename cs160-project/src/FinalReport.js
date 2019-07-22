@@ -1,6 +1,5 @@
 import React from 'react'
-import SourceColumn from './SourceColumn'
-import DestinationColumnContainer from './DestinationColumnContainer'
+import RequirementRow from './RequirementRow'
 import './App.css'
 
 class FinalReport extends React.Component {
@@ -13,11 +12,9 @@ class FinalReport extends React.Component {
   //  this.props.handleToggle(index)
   //}
 
-  render() {
-    return (
-      <div>
 
-        <div align='right'>
+    /*
+    <div align='right'>
         <button className="back_button"
                 onClick={this.props.backButton}>Back</button>
         </div>
@@ -30,6 +27,17 @@ class FinalReport extends React.Component {
           <SourceColumn courseMatrix={this.props.courseMatrix}
                         handleToggle={this.props.handleToggle} />
         </div>
+    */
+
+
+  render() {
+    return (
+      <div>
+      <h1> HELLO, WORLD! </h1>
+      <h3> From: FinalReport </h3>
+        <RequirementRow lookupTable={this.props.lookupTable}
+                        requirements={this.props.requirements[0]}/>
+        
 
       </div>)
   }
