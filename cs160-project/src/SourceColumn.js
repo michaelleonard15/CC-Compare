@@ -11,13 +11,13 @@ class SourceColumn extends React.Component {
 
 
   generateButtons() {
-    let courses = this.props.courseMatrix.slice()
+    let courses = this.props.courseMatrix.slice(1)
     let buttons = courses.map( (row, index) => {
     let buttonName = row[0] ? 'selected' : 'not_selected'
       return( 
         <button key={index}
                 className={'class_toggle_' + buttonName}
-                onClick={this.toggleClass.bind(this, index)}>
+                onClick={this.toggleClass.bind(this, index + 1)}>
           {row[1]}
         </button>
       )
@@ -31,6 +31,7 @@ class SourceColumn extends React.Component {
   render() {
     return (
       <div className="source_column_box">
+        <label>{this.props.courseMatrix[0][1]}</label>
         {this.generateButtons()}        
       </div>
     )

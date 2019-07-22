@@ -9,13 +9,13 @@ class ClassSelector extends React.Component {
   }
 
   generateButtons() {
-    const courses = this.props.courses.slice(1)
+    const courses = this.props.courses.slice()
     let buttons = courses.map( (row, index) => {
-    let buttonName = row.selected ? 'selected' : 'not_selected'
+    let buttonName = row.isSelected ? 'selected' : 'not_selected'
       return(
         <button key={index}
                 className={'class_toggle_' + buttonName}
-                onClick={this.toggleClass.bind(this, index + 1)}
+                onClick={this.toggleClass.bind(this, index)}
         >
           {row.name}
         </button>
@@ -34,7 +34,7 @@ class ClassSelector extends React.Component {
         </div>
       
         <div className="class_selector">
-          <h1> What classes have you completed at {this.props.courses[0].name}? </h1>
+          <h1> What classes have you completed at DUMMY DATA? </h1>
           <br/>
 
           <div className="class_selector_container">

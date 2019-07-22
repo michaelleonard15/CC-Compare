@@ -15,7 +15,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {pageNumber: 1, courseMatrix: []}
+    this.state = {pageNumber: 1, lookupTable: [], requirements: []}
   }
 
   submitRequest(IDs) {
@@ -23,8 +23,13 @@ class App extends React.Component {
       .then( response => {
         return response.json()
       })
-      .then( matrix => {
-        this.setState({pageNumber: 2, courseMatrix: matrix})
+      .then( data => {
+        let lookup = new Map()
+        for(let i = 0; i < data.lookup.length; i++) {
+          lookup.set(data.lookup[i].ID, {isSelected: data.lookup[i].isSelected,
+                                         name: data.lookup[i].className})
+        }
+        this.setState({pageNumber: 2, lookupTable: lookup, requirements: data.requirements})
       })
       .catch( err => {console.log(err)} )
   }
@@ -42,19 +47,19 @@ class App extends React.Component {
 
 
   handleToggle(index) {
-    let temp = this.state.courseMatrix.slice()
-    temp[index][0] = !temp[index][0]
-    this.setState({courseMatrix: temp})
+    let lookup = this.state.lookupTable
+    let temp = lookup.get(index)
+    temp.isSelected = !temp.isSelected
+    lookup.set(index, temp)
+    this.setState({lookupTable: lookup})
   }
 
   getClassList() {
-    return this.state.courseMatrix.map( row => {
-      return {selected: row[0], name: row[1]}
-    })
+    return Array.from(this.state.lookupTable.values())
   }
 
   renderAppPage() {
-    if(this.state.pageNumber === 1) {
+    if(this.state.pageNumber === 1) { 
       return  <AgreementSelection 
                 onSubmit={this.submitRequest.bind(this)}
               />
