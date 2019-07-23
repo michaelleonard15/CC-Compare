@@ -8,7 +8,6 @@ import click
 from flask import current_app, g, jsonify
 from flask.cli import with_appcontext
 
-
 def get_db():
     if 'db' not in g:
         # sqlite3.connect(':memory:') # this stores the db in RAM instead of disk; may be useful for testing
@@ -31,34 +30,25 @@ def close_db(e=None):
         db.close()
 
 
-def get_dests(origin_id):
-    db = get_db()
-
-    query = "SELECT DISTINCT target_id FROM agreements WHERE source_id=(?) ORDER BY target_id ASC"
-    rows = db.execute(query, (origin_id,)).fetchall()
-
-    dest_array = []
-
-    for row in rows:
-        dest_id = int(row[0])
-        new_dest = {}
-        new_dest['id'] = dest_id
-        new_dest['name'] = get_school_name(dest_id)
-        dest_array.append(new_dest)
-    
-    return(jsonify(dest_array))
-
-
-def get_school_name(given_id):
+def get_school_dict():
     with current_app.open_resource('static/schools_ids.json') as f:
         json_obj = json.load(f)
 
-    for val in json_obj:
-        if val['id'] == given_id:
-            return val['name']
+    school_dict = {school['id']:school['name'] for school in json_obj}
 
-    # Default if name cannot be found
-    return("<MISSING NAME FOR SCHOOL {}>".format(given_id))
+    return school_dict
+
+
+def get_dests(origin_id):
+    db = get_db()
+    school_names = get_school_dict()
+
+    query = "SELECT DISTINCT target_id FROM agreements WHERE source_id=(?) ORDER BY target_id ASC"
+    rows = db.execute(query, (origin_id,)).fetchall()
+  
+    dest_array = [{'id':row[0], 'name':school_names[row[0]]} for row in rows]
+
+    return(jsonify(dest_array))
 
 
 def get_majors(origin_id, dest_id):
@@ -71,16 +61,7 @@ def get_majors(origin_id, dest_id):
     query = "SELECT agreement_id, major FROM agreements WHERE source_id=(?) AND target_id=(?) ORDER BY major ASC"
     rows = db.execute(query, (origin_id, dest_id,)).fetchall()
 
-    ## To check if majors is returning any rows
-    # click.echo(rows)
-
-    major_array = []
-
-    for row in rows:
-        new_major = {}
-        new_major['id'] = row[0]
-        new_major['name'] = row[1]
-        major_array.append(new_major)
+    major_array = [{'id':row[0], 'name':row[1]} for row in rows]
 
     return jsonify(major_array)
 
