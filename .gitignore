@@ -1,6 +1,7 @@
 ## VSCode files
 .vscode/*
-!.vscode/settings.json
+# I don't think we should share vscode settings, unless there's something specific we want to share
+# !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
