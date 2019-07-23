@@ -7,33 +7,48 @@ class RelationGroup extends React.Component {
   generateLabels() {
   let group = this.props.group
   let labels = []
-  for(let i = 0; i < group.name.length; i++) {
+  let max = this.props.sourceCol ? group.IDs.length : group.classes.length
+  for(let i = 0; i < max; i++) {
   
-    let selected 
-    if(typeof group.expr === 'undefined') {
-      selected = this.props.completed ? 'selected' : 'not_selected'
-    } else {
-      let temp = this.props.lookupTable.get(group.expr[i])
+    let selected = ""
+    if(this.props.sourceCol) {
+      let temp = this.props.lookupTable.get(group.IDs[i])
       selected = temp.isSelected ? 'selected' : 'not_selected'
+      labels.push(this.createLabel(2*i, selected, temp))
+    } else {
+      selected = this.props.completed ? 'selected' : 'not_selected'
+      labels.push(this.createLabel(2*i, selected, group.classes[i]))
     }
 
-    labels.push(
-      <div key={2*i} className={'class_label_' + selected}>
-        <label className='className'>{group.name[i]}</label>
-        <label className='units'> ({group.units[i]})</label>
-      </div>
-    )
     if(i < group.relation.length) {
-      labels.push(
-        <div key={2*i + 1} className='relation'>
-          <label className='relation_label'>{group.relation[i]}</label>
-        </div>
-      )
+      labels.push(this.createRelation(2*i + 1, group.relation[i]) )
     } 
   }
   return labels
-
 }
+
+
+
+  createLabel(key, selected, aClass) {
+    return (
+      <div key={key} className={'class_label_' + selected}>
+        <label className='className'>{aClass.name}</label>
+        <label className='units'>{aClass.units}</label>
+      </div>
+    )
+  }
+
+
+
+  createRelation(key, relation) {
+    return (
+        <div key={key} className='relation'>
+          <label className='relation_label'>{relation}</label>
+        </div>
+    )
+  }  
+
+
 
   render () {
     return (

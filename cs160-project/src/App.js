@@ -26,8 +26,7 @@ class App extends React.Component {
       .then( data => {
         let lookup = new Map()
         for(let i = 0; i < data.lookup.length; i++) {
-          lookup.set(data.lookup[i].ID, {isSelected: data.lookup[i].isSelected,
-                                         name: data.lookup[i].className})
+          lookup.set(data.lookup[i].ID, data.lookup[i].class)
         }
         this.setState({pageNumber: 2, lookupTable: lookup, requirements: data.requirements})
       })

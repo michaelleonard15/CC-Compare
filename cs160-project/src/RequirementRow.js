@@ -18,28 +18,32 @@ class RequirementRow extends React.Component {
     Hopefully it's only temporary.
   */
   isCompleted() {
-    let expr = this.props.requirements[0].expr
+    let IDs = this.props.requirements[0].IDs
     let relation = this.props.requirements[0].relation
-    if(expr.length === 1) {
-      return this.props.lookupTable.get(expr[0]).isSelected
+    if(IDs.length === 1) {
+      return this.props.lookupTable.get(IDs[0]).isSelected
     }
     else {
-      return this.handleConditionalRequirements(expr, relation)
+      return this.handleConditionalRequirements(IDs, relation)
     }
   }
 
-  handleConditionalRequirements(expr, relation) {
+  handleConditionalRequirements(IDs, relation) {
     
     // Convert IDs in expr to corresponding boolean values.
-    expr = expr.map( (ID) => {
-      return this.props.lookupTable.get(ID).isSelected
-    })
-
+    IDs = IDs.map( (ID) => {return this.props.lookupTable.get(ID).isSelected} )
+    relation = relation.map( (bool) => {return bool === "OR"  ? "||" : "&&"}  )
+    let expr = IDs[0]
+    for(let i = 0; i < relation.length; i++) {
+      expr += relation[i] + IDs[i +1]
+    }
+    return eval(expr)
+/*
     // Handle any && logic first. Splice the two arrays to 
     // remove the && and replace two bool values with the result.
     for (let i = 0; i < relation.length; i++) {
       if(relation[i] === 'AND') {
-        expr.splice(i, 2, expr[i] && expr[i+1])
+        expr.splice(i, 2, (expr[i] && expr[i+1]) )
         relation.splice(i, 1)
       }
     }
@@ -52,17 +56,25 @@ class RequirementRow extends React.Component {
       }
     }
     return bool
+    */
   }
-
-
 
 
   generateGroups() {
     let req = this.props.requirements
     let groups = []
+   // if(req[0].constructor === Array) {
+   //   for(let i = 0; i < req[0].length; i++) {
+   //     for(let j = 0; j < req.lenght; j++) {
+   //
+   //     }
+   //   }
+   // }
+
     for (let i = 0; i < req.length; i++) {
       groups.push(
           <RelationGroup key={i}
+                         sourceCol={i === 0}
                          lookupTable={this.props.lookupTable}
                          group={req[i]}
                          completed={this.state.completed}
