@@ -1,5 +1,6 @@
 import React from 'react'
 import RequirementRow from './RequirementRow'
+import RowGroup from './RowGroup'
 import './App.css'
 
 class FinalReport extends React.Component {
@@ -7,13 +8,19 @@ class FinalReport extends React.Component {
 
   generateRows() {
     let rows = []
+    
+
     for(let i = 0; i < this.props.requirements.length; i++) {
-      //if (this.props.requirements[i][0].relationToNext === undefined) {
-        rows.push(
-          <RequirementRow key={i}
+      let temp = []
+      temp.push(this.props.requirements[i])
+
+      while(this.props.requirements[i][0].relationToNext !== "NONE") {
+        temp.push(this.props.requirements[ i+1 ])
+        i += 1
+      }
+      rows.push(<RowGroup key={i}
                           lookupTable={this.props.lookupTable}
-                          requirements={this.props.requirements[i]}/>
-          )
+                          requirements={temp} />)
       /*} 
       else {
         let temp = []

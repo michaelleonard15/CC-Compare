@@ -33,7 +33,7 @@ class RelationGroup extends React.Component {
     return (
       <div key={key} className={'class_label_' + selected}>
         <label className='className'>{aClass.name}</label>
-        <label className='units'>{aClass.units}</label>
+        <label className='units'> ({aClass.units}) </label>
       </div>
     )
   }
