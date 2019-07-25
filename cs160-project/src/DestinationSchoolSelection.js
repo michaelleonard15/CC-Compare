@@ -100,8 +100,8 @@ class DestinationSchoolSelection extends React.Component {
               )
             })
           }
-          <div className="destination_container_add">
-            <button className="button" onClick={this.addAgreement}>Add another school</button>
+          <div className="level-right">
+            <button className="button level-item is-primary" onClick={this.addAgreement}>Add another school</button>
           </div>
         </div>
       </div>  

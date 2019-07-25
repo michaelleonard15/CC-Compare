@@ -87,7 +87,7 @@ class SpecificMajorSelection extends React.Component {
             <button 
                 className="button is-dark"
                 onClick={this.props.removeAgreement}>
-                  delete
+                  Delete
             </button>  
           </div>
         </div>
