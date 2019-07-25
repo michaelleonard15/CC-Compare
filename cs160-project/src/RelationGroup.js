@@ -14,10 +14,10 @@ class RelationGroup extends React.Component {
     if(this.props.sourceCol) {
       let temp = this.props.lookupTable.get(group.IDs[i])
       selected = temp.isSelected ? 'selected' : 'not_selected'
-      labels.push(this.createLabel(2*i, selected, temp))
+      labels.push(this.createLabel(2*i, selected, temp, group.IDs[i]))
     } else {
       selected = this.props.completed ? 'selected' : 'not_selected'
-      labels.push(this.createLabel(2*i, selected, group.classes[i]))
+      labels.push(this.createLabel(2*i, selected, group.classes[i], -1))
     }
 
     if(i < group.relation.length) {
@@ -29,13 +29,24 @@ class RelationGroup extends React.Component {
 
 
 
-  createLabel(key, selected, aClass) {
-    return (
-      <div key={key} className={'class_label_' + selected}>
-        <label className='className'>{aClass.name}</label>
-        <label className='units'> ({aClass.units}) </label>
-      </div>
-    )
+  createLabel(key, selected, aClass, lookupID) {
+    if(this.props.sourceCol) {
+      return (
+        <div key={key} className={'class_label_' + selected}>
+          <button className={'report_toggle_' + selected}
+                  onClick={this.props.handleToggle.bind(this, lookupID)}>
+                  {aClass.name} ({aClass.units})
+          </button>
+        </div>
+      )
+    } else {
+      return (
+        <div key={key} className={'class_label_' + selected}>
+          <label className='className'>{aClass.name}</label>
+          <label className='units'> ({aClass.units}) </label>
+        </div>
+      )
+    }
   }
 
 

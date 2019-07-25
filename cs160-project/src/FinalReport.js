@@ -20,7 +20,8 @@ class FinalReport extends React.Component {
       }
       rows.push(<RowGroup key={i}
                           lookupTable={this.props.lookupTable}
-                          requirements={temp} />)
+                          requirements={temp} 
+                          handleToggle={this.props.handleToggle.bind(this)} />)
       /*} 
       else {
         let temp = []

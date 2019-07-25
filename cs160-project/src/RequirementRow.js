@@ -14,7 +14,7 @@ class RequirementRow extends React.Component {
     let req = this.props.requirements
     let groups = []
     for (let i = 0; i < req.length; i++) {
-      if( (i > 0) && (req[i].classes[0] === "") ) {
+      if( (i > 0) && (req[i].classes[0].name === "") ) {
         groups.push(<div className="relation_group_empty"></div>)
       } else {
       groups.push(
@@ -23,6 +23,7 @@ class RequirementRow extends React.Component {
                          lookupTable={this.props.lookupTable}
                          group={req[i]}
                          completed={this.props.isComplete}
+                         handleToggle={this.props.handleToggle.bind(this)}
                          />
         )
     }
