@@ -1,3 +1,13 @@
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
 /* .dropdown_menu_box {
   background-color: #a6c8ff; 
 }
