@@ -11,10 +11,10 @@ class ClassSelector extends React.Component {
   generateButtons() {
     const courses = this.props.courses.slice()
     let buttons = courses.map( (row, index) => {
-    let buttonName = row.isSelected ? 'selected' : 'not_selected'
+    let isSelected = row.isSelected ? 'is-primary' : 'has-background-grey-lighter'
       return(
         <button key={index}
-                className={'class_toggle_' + buttonName}
+                className={'button is-large ' + isSelected}
                 onClick={this.toggleClass.bind(this, index)}
         >
           {row.name}
@@ -26,28 +26,31 @@ class ClassSelector extends React.Component {
 
   render() {
     return (
-      <div className="page_two">
-
-        <div align='right'>
-        <button className="back_button"
-                onClick={this.props.backButton}>Back</button>
-        </div>
+      <div className="columns">
       
-        <div className="class_selector">
-          <h1> What classes have you completed at DUMMY DATA? </h1>
-          <br/>
-
-          <div className="class_selector_container">
-            {this.generateButtons()}
+        <div className="column is-half is-offset-one-quarter">
+          <div className="box has-background-light">
+            <h3 className="title has-text-centered"> What classes have you completed at DUMMY DATA? </h3>
+  
+            <div className="buttons is-centered">
+              {this.generateButtons()}
+            </div>
+          
+          
+            <div className="level is-mobile">
+  
+              <div className="level-left">
+                <button className="button is-large level-item"
+                        onClick={this.props.backButton}>Back</button>
+              </div>
+                  
+              <div className="level-right">
+                <button className="button is-large level-item"
+                        onClick={this.props.loadNextPage}>Next</button>
+              </div>
+            </div>
           </div>
-        
         </div>
-        
-         <div className="next_button_box">
-            <button className="next_button"
-                    onClick={this.props.loadNextPage}>Next</button>
-          </div>
-
       </div>
     )
   }
