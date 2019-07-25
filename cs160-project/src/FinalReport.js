@@ -1,5 +1,5 @@
 import React from 'react'
-import RequirementRow from './RequirementRow'
+import SchoolLabels from './SchoolLabels'
 import RowGroup from './RowGroup'
 import './App.css'
 
@@ -48,8 +48,7 @@ class FinalReport extends React.Component {
           <button className="back_button"
                   onClick={this.props.backButton}>Back</button>
         </div>
-        <h1> HELLO, WORLD! </h1>
-        <h3> From: FinalReport </h3>
+        <SchoolLabels schoolList={["SRJC","DUMMY","SJSU"]} />
         {this.generateRows()}
 
         {/*<RequirementRow lookupTable={this.props.lookupTable}

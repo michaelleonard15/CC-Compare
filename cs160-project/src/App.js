@@ -76,8 +76,7 @@ class App extends React.Component {
                 lookupTable={this.state.lookupTable}
                 requirements={this.state.requirements}
                 handleToggle={this.handleToggle.bind(this)}
-                backButton={this.handleBackButton.bind(this)}
-                handleToggle={this.handleToggle.bind(this)} />
+                backButton={this.handleBackButton.bind(this)} />
     }
   }
 
