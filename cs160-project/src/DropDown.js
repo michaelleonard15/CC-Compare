@@ -28,29 +28,29 @@ class DropDown extends React.Component {
     return(
       <div>
         <form>
-          <label className="label"
-                 name={this.props.name}>{this.props.label}:</label>
+
+          <label className="label" name={this.props.name}>
+            {this.props.label}:
+          </label>
+
           <div className="select">
-          
-            <select
-                    value={this.props.currentSelection}
+            <select value={this.props.currentSelection}
                     name={this.props.name} 
                     onChange={this.handleSelection} >
 
               <option className="dropdown_menu_option_2"
                       key ="-1" 
-                      value="-1">Select an option... </option> 
+                      value="-1">Select an option...</option> 
               
               {this.props.optionList.map((row, index) => {
-                  return(
-                    <option className={"dropdown_menu_option_" + (index % 2 + 1)}
+                  return( <option className={"dropdown_menu_option_" + (index % 2 + 1)}
                             key={row.id} 
-                            value={row.id}> {row.name} </option>
-                  )
+                            value={row.id}>{row.name}</option> )
                 })
               }
             </select>
           </div>
+
         </form>
       </div>
     )

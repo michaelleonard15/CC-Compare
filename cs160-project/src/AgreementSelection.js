@@ -84,15 +84,16 @@ constructor(props) {
   return (
     <div>
       <h1 className="title is-1">College Comparison Tool</h1>
-      
+
       <div className="box">
         <div className="columns">
-          <div className="column is-narrow">  
+
+          <div className="column is-narrow">
             <div className="box has-background-light">
               <h4 className="title is-4">Origin School</h4>
               <div className="box has-background-primary">
-                <DropDown 
-                  name="Schools" 
+                <DropDown
+                  name="Schools"
                   label="Select your current school"
                   optionList={this.state.source}
                   currentSelection={this.state.sourceID}
@@ -100,22 +101,27 @@ constructor(props) {
                 />
               </div>
             </div>
-          </div>  
-          <div className="column">
-            <DestinationSchoolSelection key={this.state.sourceID}
-                                        destinationSchools={this.state.destinations} 
-                                        specificAgreementSelected={this.specificAgreementSelected}
-                                        sourceID={this.state.sourceID} />
           </div>
-          
-        </div>
-        <div className="level-right">
-          <button className="button is-large  level-item" onClick={this.submitForm}>Next</button>
+
+          <div className="column">
+            <DestinationSchoolSelection
+              key={this.state.sourceID}
+              destinationSchools={this.state.destinations}
+              specificAgreementSelected={this.specificAgreementSelected}
+              sourceID={this.state.sourceID}
+            />
+          </div>
+
         </div>
 
+        <div className="level-right">
+          <button
+            className="button is-large  level-item"
+            onClick={this.submitForm}>Next</button>
+        </div>
       </div>
     </div>
-    )
+  );
   }
 }
 

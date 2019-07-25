@@ -60,40 +60,35 @@ class SpecificMajorSelection extends React.Component {
    * the parent component.
    */
   render() {
-    return ( 
+    return (
       <div className="box has-background-primary">
         <div className="columns is-vcentered">
           <div className="column">
             <div className="block">
-              <DropDown 
-                name="Schools" 
+              <DropDown
+                name="Schools"
                 label="Select transfer school"
                 optionList={this.props.destinationSchools}
                 currentSelection={this.state.destinationID}
-                selectOption={this.destinationSelected}
-              />  
+                selectOption={this.destinationSelected}/>
             </div>
             <div>
-              <DropDown 
-                name="Majors" 
+              <DropDown
+                name="Majors"
                 label="Select major"
                 optionList={this.state.majors}
                 currentSelection={this.state.majorID}
-                selectOption={this.majorSelected}
-                />
+                selectOption={this.majorSelected}/>
             </div>
           </div>
           <div className="column is-narrow">
-            <button 
-                className="button is-dark"
-                onClick={this.props.removeAgreement}>
-                  Delete
-            </button>  
+            <button
+              className="button is-dark"
+              onClick={this.props.removeAgreement}>Delete</button>
           </div>
         </div>
       </div>
-        
-    )
+    );
   }
 }
 
