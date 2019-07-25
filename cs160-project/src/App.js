@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import 'bulma/css/bulma.css'
 import AgreementSelection from './AgreementSelection'
 import ClassSelector from './ClassSelector'
 import FinalReport from './FinalReport'
@@ -82,7 +82,7 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className="APP">
+      <div className="container">
         {this.renderAppPage()}
       </div>
     )
