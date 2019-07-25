@@ -1,6 +1,5 @@
 import React from 'react'
 import SpecificMajorSelection from './SpecificMajorSelection'
-import './App.css';
 
 
 /**
@@ -86,23 +85,26 @@ class DestinationSchoolSelection extends React.Component {
    */
   render() {
     return (
-      <div className="destination_container">      
-        {this.state.agreements.map( (agreement, index) => {
-          return(
-            <SpecificMajorSelection   
-              key={agreement.ID}
-              listIndex={agreement.ID}
-              destinationSchools={this.props.destinationSchools}
-              removeAgreement={this.removeAgreement.bind(this, index)} 
-              updateIDs={this.updateIDs.bind(this, index)}
-              sourceID={this.props.sourceID}  />
-            )
-          })
-        }
-        <div className="destination_container_add">
-          <button onClick={this.addAgreement}>Click me!</button>
+      <div className="destination_container">
+        <div className="box has-background-light">
+          <h4 className="title is-4">Destination Schools</h4>    
+          {this.state.agreements.map( (agreement, index) => {
+            return(
+              <SpecificMajorSelection   
+                key={agreement.ID}
+                listIndex={agreement.ID}
+                destinationSchools={this.props.destinationSchools}
+                removeAgreement={this.removeAgreement.bind(this, index)} 
+                updateIDs={this.updateIDs.bind(this, index)}
+                sourceID={this.props.sourceID}  />
+              )
+            })
+          }
+          <div className="destination_container_add">
+            <button className="button" onClick={this.addAgreement}>Add another school</button>
+          </div>
         </div>
-      </div>
+      </div>  
     )
   }
 }
