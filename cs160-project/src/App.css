@@ -1,5 +1,4 @@
 .dropdown_menu_box {
-  width: 500px;
   background-color: #a6c8ff; 
 }
 
@@ -11,20 +10,24 @@
 }
 
 .dropdown_menu_option_1 {
+  font-size: 24px;
   background-color: #d1d1d1; 
 }
 
 .dropdown_menu_option_2 {
+  font-size: 24px;
   background-color: #a1a1a1; 
 }
 
 .source_selection_menu {
   position: relative;
+  width: 45%;
   top: 90px;
 }
 
 .destination_container {
   position: relative;
+  background-color: #a1a1a1; 
   top: 20px;
   width: 45%; 
   left: 55%
@@ -43,6 +46,83 @@
 .specific_major_selection_remove {
     position: absolute;
     top: 25px;
-    right: 00px;
+    right: 0px;
 }
 
+
+
+.page_two {
+  height: 100vh;
+}
+
+.class_selector {
+  position: relative;
+  top: 200px;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+  text-align: center;
+  background-color: #a6c8ff;
+}
+
+.class_selector_container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.class_toggle_selected {
+  font-size: 30px;
+  margin: 12px; 
+  padding: 12px;
+  background-color: #5a9962
+}
+
+.class_toggle_not_selected {
+  font-size: 30px;
+  margin: 12px; 
+  padding: 12px;
+  background-color: #a8a8a8
+}
+
+.back_button {
+  font-size: 24px;
+  padding: 12px;
+}
+
+.next_button_box {
+  position: absolute;
+  align-content: center;
+  left: 45%;
+  top: 800px;
+}
+
+.next_button {
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+.source_column_box {
+  text-align: center;
+  width: 200px;
+}
+
+
+.report_toggle_selected {
+  font-size: 18px;
+  margin: 12px; 
+  padding: 12px;
+  background-color: #5a9962
+}
+
+.report_toggle_not_selected {
+  font-size: 18px;
+  margin: 12px; 
+  padding: 12px;
+  background-color: #a8a8a8
+}

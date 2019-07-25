@@ -70,7 +70,8 @@ constructor(props) {
   submitForm = () => {
     let request = {source: this.state.sourceID,
                    agreements: this.state.specificAgreements}
-    console.log(request)                   
+    console.log(request) 
+    this.props.onSubmit(request)                  
   }
 
 
@@ -93,6 +94,7 @@ constructor(props) {
           />
         </div>  
           <DestinationSchoolSelection key={this.state.sourceID}
+                                      sourceID={this.state.sourceID}
                                       destinationSchools={this.state.destinations} 
                                       specificAgreementSelected={this.specificAgreementSelected} />
         <div align="center">  <br/><br/> 
