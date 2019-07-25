@@ -83,6 +83,8 @@ constructor(props) {
   render () {
   return (
     <div>
+      <h1 className="title is-1">College Comparison Tool</h1>
+      
       <div className="columns">
         <div className="column">  
           <div className="box has-background-light">
@@ -98,16 +100,16 @@ constructor(props) {
             </div>
           </div>
         </div>  
-        <div className="column is-two-thirds">
+        <div className="column is-two-thirds-fullhd">
           <DestinationSchoolSelection key={this.state.sourceID}
                                       destinationSchools={this.state.destinations} 
                                       specificAgreementSelected={this.specificAgreementSelected}
                                       sourceID={this.state.sourceID} />
         </div>
       </div>
-        <div>
-          <button className="button" onClick={this.submitForm}>Next</button>
-        </div>
+      <section>
+        <button className="button is-large is-pulled-right is-primary" onClick={this.submitForm}>Next</button>
+      </section>
     </div>
     )
   }
