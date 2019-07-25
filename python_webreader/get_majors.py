@@ -18,6 +18,7 @@ with open('agreement_ids.json') as f:
                     "key" : major['key']
                 }
                 tempList.append(tempReport)
-            if(tempList.__len__()>0):
-                with open(os.getcwd()+'/jsons/'+str(sourceId)+'_'+str(destId)+'.json', 'w') as f:   
-                    json.dump(tempList, f, indent = 2)
+            with open(os.getcwd()+'/jsons/'+str(sourceId)+'_'+str(destId)+'.json', 'w') as f:   
+                json.dump(tempList, f, indent = 2)
+
+            tempList.clear()
