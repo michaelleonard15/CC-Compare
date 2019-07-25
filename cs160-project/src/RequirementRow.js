@@ -13,17 +13,10 @@ class RequirementRow extends React.Component {
   generateGroups() {
     let req = this.props.requirements
     let groups = []
-   // if(req[0].constructor === Array) {
-   //   for(let i = 0; i < req[0].length; i++) {
-   //     for(let j = 0; j < req.lenght; j++) {
-   //
-   //     }
-   //   }
-   // }
-
-
-
     for (let i = 0; i < req.length; i++) {
+      if( (i > 0) && (req[i].classes[0] === "") ) {
+        groups.push(<div className="relation_group_empty"></div>)
+      } else {
       groups.push(
           <RelationGroup key={i}
                          sourceCol={i === 0}
@@ -33,8 +26,13 @@ class RequirementRow extends React.Component {
                          />
         )
     }
+    }
     return groups
   }
+
+
+
+
 
   render() {
     let completed = this.props.isComplete ? 'complete' : 'incomplete'

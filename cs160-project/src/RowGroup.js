@@ -52,7 +52,7 @@ class RowGroup extends React.Component {
 
 
   generateRows() {
-    return this.props.requirements.map( (row, index) => {
+    let rowsArray = this.props.requirements.map( (row, index) => {
       return (
          <RequirementRow  key={index}
                           lookupTable={this.props.lookupTable}
@@ -60,7 +60,25 @@ class RowGroup extends React.Component {
                           isComplete={this.isCompleted(row)} />
       )
     })
+
+    let len = rowsArray.length
+    for (let i = 1; i < len; i++) {
+      let operator = this.props.requirements[i - 1][0].relationToNext
+      rowsArray.splice(i, 0, 
+        <div className="operator_box">
+          <label> {operator} </label>
+        </div>)
+    }
+    return rowsArray
   }
+
+  createRelation(key, relation) {
+    return (
+        <div key={key} className='operator_box'>
+          <label>{relation}</label>
+        </div>
+    )
+  } 
 
 
 
