@@ -6,6 +6,15 @@
 #     "destin_list": dest_list
 # }
 
+#one for each area of classes between the dotted lines, showing separate set of equivalncies
+equivalencies = []
+
+#data between dotted line, the box in green
+# equivalency = {
+#     "source_list" : [],
+#     "dest_list" : []
+# }
+##
 
 #source/dest_list is composed of source_sublists, its index of 0 correspondes to index of 0 to dest_list
 source_list = []
@@ -58,14 +67,70 @@ dest_sublist.append(smallest_list.copy())
 smallest_list.clear()
 #add the sole class relationship to the destlist index of [0]
 dest_list.append(dest_sublist.copy())
-for dest_sub,source_sub in zip(dest_list, source_list):
 
-    print('FROM SOURCE SCHOOL, CLASS(ES):')
-    for x in source_sub:
-        for y in x:
-            print(y)
+equivalency = {
+    "source_list" : source_list.copy(),
+    "dest_list" : dest_list.copy()
+}
 
-    print('ABOVE ARE EQUIVALENT TO:')
-    for x in dest_sub:
-        for y in x:
-            print(y)
+equivalencies.append(equivalency.copy())
+dest_sublist.clear()
+source_sublist.clear()
+dest_list.clear()
+source_list.clear()
+
+
+##########END OF PINK AREA############### POST THE PRINT LOOP HERE TO SEE ONLY PINK AREA##########
+
+#####BLUE AREA############################################
+
+##SOURCE SIDE
+temp = {
+    "key": "ENGL 201B",
+    "name": "English Composition: Introduction to Literature and Critical Thinking",
+    "units": 4
+}
+smallest_list.append(temp.copy())
+source_sublist.append(smallest_list.copy())
+smallest_list.clear()
+source_list.append(source_sublist.copy())
+
+
+##############################
+##DEST SIDE
+temp = {
+    "key": "ENGL 1B",
+    "name": "Argument and Analysis",
+    "units": 3
+}
+
+smallest_list.append(temp.copy())
+dest_sublist.append(smallest_list.copy())
+smallest_list.clear()
+dest_list.append(dest_sublist.copy())
+
+equivalency = {
+    "source_list" : source_list.copy(),
+    "dest_list" : dest_list.copy()
+}
+
+equivalencies.append(equivalency.copy())
+dest_sublist.clear()
+source_sublist.clear()
+dest_list.clear()
+source_list.clear()
+
+
+
+
+#######################################
+for eq in equivalencies:
+    for dest_sub,source_sub in zip(eq['dest_list'], eq['source_list']):
+        print('FROM SOURCE SCHOOL, CLASS(ES):')
+        for x in source_sub:
+            for y in x:
+                print(y)
+        print('ABOVE ARE EQUIVALENT TO:')
+        for x in dest_sub:
+            for y in x:
+                print(y)
