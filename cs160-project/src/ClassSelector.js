@@ -1,21 +1,37 @@
 import React from 'react'
 import './App.css'
 
+
+
+/**
+ * Top level component for the second page of the application.
+ * Contains
+ *  A back button
+ *  A array html buttons. 
+ *  A next button
+ *
+ * props
+ *  courses An array of class objects.
+ *  handleToggle A function to be used for the onClick property of buttons
+ *  backButton A onClick handler for the back button
+ *  loadNextPage A onClick handler for the next button
+ *
+ */
 class ClassSelector extends React.Component {
 
 
-  toggleClass(index) {
-    this.props.handleToggle(index)
-  }
-
+  /**
+   * Maps the array of courses from props to an
+   * array of toggle buttons. Button text is set to 
+   * the course name, and the onClick is handled by the handleToggle prop
+   */
   generateButtons() {
-    const courses = this.props.courses.slice()
-    let buttons = courses.map( (row, index) => {
-    let buttonName = row.isSelected ? 'selected' : 'not_selected'
+    let buttons = this.props.courses.map( (row, index) => {  
+      let buttonName = row.isSelected ? 'selected' : 'not_selected'
       return(
         <button key={index}
                 className={'class_toggle_' + buttonName}
-                onClick={this.toggleClass.bind(this, index)}
+                onClick={ () => {this.props.handleToggle(index)} }
         >
           {row.name}
         </button>
@@ -24,6 +40,12 @@ class ClassSelector extends React.Component {
     return buttons
   }
 
+
+  /**
+   * Render function for the component. Places the back button,
+   * the next button, and calls generateButtons() to render the 
+   * toggle buttons for each class.
+   */
   render() {
     return (
       <div className="page_two">
