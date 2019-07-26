@@ -5,9 +5,9 @@ class SchoolLabels extends React.Component {
 
 
   generateLabels() {
-    return this.props.schoolList.map( (school) => {
+    return this.props.schoolList.map( (school, index) => {
       return (
-        <div className='label_box'>
+        <div key={index} className='label_box'>
           <label className='school_label'>
             {school}
           </label>

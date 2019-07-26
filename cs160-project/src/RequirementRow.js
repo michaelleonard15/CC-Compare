@@ -15,7 +15,7 @@ class RequirementRow extends React.Component {
     let groups = []
     for (let i = 0; i < req.length; i++) {
       if( (i > 0) && (req[i].classes[0].name === "") ) {
-        groups.push(<div className="relation_group_empty"></div>)
+        groups.push(<div key={i} className="relation_group_empty"></div>)
       } else {
       groups.push(
           <RelationGroup key={i}

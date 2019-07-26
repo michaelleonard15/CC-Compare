@@ -12,7 +12,7 @@ def create_app(test_config=None):
     app.config.from_mapping(
         SECRET_KEY='dev',
         # DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
-        DATABASE=os.path.join(app.instance_path, 'test-data.sqlite')
+        DATABASE=os.path.join(app.instance_path, 'test.db')
     )
 
     # enabling CORS https://flask-cors.readthedocs.io/en/latest/
