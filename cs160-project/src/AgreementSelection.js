@@ -91,7 +91,7 @@ constructor(props) {
           <div className="column is-narrow">
             <div className="box has-background-light">
               <h4 className="title is-4">Origin School</h4>
-              <div className="box has-background-primary">
+              <div className="box has-background-grey-lighter">
                 <DropDown
                   name="Schools"
                   label="Select your current school"

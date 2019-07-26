@@ -1,5 +1,6 @@
 import React from 'react';
-import 'bulma/css/bulma.css'
+// import 'bulma/css/bulma.css'
+import './mystyles.scss'
 import './App.css'
 import AgreementSelection from './AgreementSelection'
 import ClassSelector from './ClassSelector'

@@ -61,7 +61,7 @@ class SpecificMajorSelection extends React.Component {
    */
   render() {
     return (
-      <div className="box has-background-primary">
+      <div className="box has-background-grey-lighter">
         <div className="columns is-vcentered">
           <div className="column">
             <div className="block">
