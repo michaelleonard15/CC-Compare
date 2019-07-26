@@ -38,12 +38,12 @@ class DropDown extends React.Component {
                     name={this.props.name} 
                     onChange={this.handleSelection} >
 
-              <option className="dropdown_menu_option_2"
+              <option 
                       key ="-1" 
                       value="-1">Select an option...</option> 
               
               {this.props.optionList.map((row, index) => {
-                  return( <option className={"dropdown_menu_option_" + (index % 2 + 1)}
+                  return( <option 
                             key={row.id} 
                             value={row.id}>{row.name}</option> )
                 })

@@ -85,7 +85,7 @@ class DestinationSchoolSelection extends React.Component {
    */
   render() {
     return (
-      <div className="destination_container">
+      <div className="">
         <div className="box has-background-light">
           <h4 className="title is-4">Destination Schools</h4>
           {this.state.agreements.map((agreement, index) => {
