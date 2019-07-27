@@ -1,5 +1,7 @@
 import React from 'react';
-import './App.css';
+// import 'bulma/css/bulma.css'
+import './mystyles.scss'
+import './App.css'
 import AgreementSelectionPage from './AgreementSelectionPage'
 import CourseSelectorPage from './CourseSelectorPage'
 import FinalReportPage from './FinalReportPage'
@@ -121,10 +123,23 @@ class App extends React.Component {
    */
   render () {
     return (
-      <div className="APP">
-        {this.renderAppPage()}
+      <div className="Site">
+        
+        <div className="Site-content">
+          <div className="container">
+            {this.renderAppPage()}
+          </div>
+        </div>
+
+        <footer className="footer">
+          <div className="content has-text-centered">
+          
+          </div>
+          
+        </footer>
+      
       </div>
-    )
+      )
   }
 }
 

@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+// Referenced https://medium.com/@tylermalone/customizing-bulma-in-your-cra-app-91ea1fdba6a3
+// Importing this first allows us to set custom values for our variables.
+@import '../node_modules/bulma/sass/utilities/initial-variables.sass';
+
+$primary:  #63abc7;
+$link: #63abc7;
+
+
+@import "../node_modules/bulma/bulma.sass";

@@ -1,88 +1,17 @@
-.dropdown_menu_box {
-  background-color: #a6c8ff; 
-}
+/* Sticky footer */
 
-.dropdown_menu_label {
-  font-weight: bold;
-}
-
-.dropdown_menu_closed {
-}
-
-.dropdown_menu_option_1 {
-  font-size: 24px;
-  background-color: #d1d1d1; 
-}
-
-.dropdown_menu_option_2 {
-  font-size: 24px;
-  background-color: #a1a1a1; 
-}
-
-.source_selection_menu {
-  position: relative;
-  width: 45%;
-  top: 90px;
-}
-
-.destination_container {
-  position: relative;
-  background-color: #a1a1a1; 
-  top: 20px;
-  width: 45%; 
-  left: 55%
-}
-
-.destination_container_add {
-    position: absolute;
-    left: 50%;
-}
-
-.specific_major_selection {
-  position: relative;
-  margin: 20px
-}
-
-.specific_major_selection_remove {
-    position: absolute;
-    top: 25px;
-    right: 0px;
-}
-
-
-
-.page_two {
-  height: 100vh;
-}
-
-.class_selector {
-  position: relative;
-  top: 200px;
-  width: 600px;
-  left: 50%;
-  margin-left: -300px;
-  text-align: center;
-  background-color: #a6c8ff;
-}
-
-.class_selector_container {
+.Site {
   display: flex;
-  flex-flow: row wrap;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-.class_toggle_selected {
-  font-size: 30px;
-  margin: 12px; 
-  padding: 12px;
-  background-color: #5a9962
+.Site-content {
+  flex: 1;
 }
 
-.class_toggle_not_selected {
-  font-size: 30px;
-  margin: 12px; 
-  padding: 12px;
-  background-color: #a8a8a8
-}
+
+/* Page 3 */
 
 .back_button {
   font-size: 24px;
@@ -95,16 +24,6 @@
   left: 45%;
   top: 800px;
 }
-
-.next_button {
-  font-size: 30px;
-}
-
-
-
-
-
-
 
 
 
@@ -162,10 +81,6 @@
   padding: 6px;
   background-color: #a8a8a8
 }
-
-
-
-
 
 
 .requirement_row_complete {
@@ -244,6 +159,5 @@
 .operator_box {
   font-weight: bold;
   text-decoration: underline;
-  font-size: 24px;
-  text-align: center; 
-}
+  font-size: 24px; 
+} 

@@ -2,7 +2,6 @@ import React from 'react'
 import DropDown from './DropDown'
 import DestinationSchoolSelection from './DestinationSchoolSelection'
 import RequestAPI from './RequestAPI'
-import './App.css';
 
 
 /**
@@ -83,25 +82,46 @@ constructor(props) {
    */
   render () {
   return (
-      <div>
-        <div className="source_selection_menu">  
-          <DropDown 
-            name="Schools" 
-            label="Select a school"
-            optionList={this.state.source}
-            currentSelection={this.state.sourceID}
-            selectOption={this.sourceSelected}
-          />
-        </div>  
-          <DestinationSchoolSelection key={this.state.sourceID}
-                                      destinationSchools={this.state.destinations} 
-                                      specificAgreementSelected={this.specificAgreementSelected}
-                                      sourceID={this.state.sourceID} />
-        <div align="center">  <br/><br/> 
-          <button onClick={this.submitForm}>Next</button>
+    <div>
+      <h1 className="title is-1">College Comparison Tool</h1>
+
+      <div className="box">
+        <div className="columns">
+
+          <div className="column is-narrow">
+            <div className="box has-background-light">
+              <h4 className="title is-4">Origin School</h4>
+              <div className="box has-background-grey-lighter">
+                <DropDown
+                  name="Schools"
+                  label="Select your current school"
+                  optionList={this.state.source}
+                  currentSelection={this.state.sourceID}
+                  selectOption={this.sourceSelected}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="column">
+            <DestinationSchoolSelection
+              key={this.state.sourceID}
+              destinationSchools={this.state.destinations}
+              specificAgreementSelected={this.specificAgreementSelected}
+              sourceID={this.state.sourceID}
+            />
+          </div>
+
+        </div>
+
+        <div className="level-right">
+          <button
+            className="button is-large  level-item"
+            onClick={this.submitForm}>Next</button>
         </div>
       </div>
-    )
+    </div>
+  );
   }
 }
 

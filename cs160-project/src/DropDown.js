@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 
 //Props in the following format
 // name="name of menu" 
@@ -27,29 +26,31 @@ class DropDown extends React.Component {
    */
   render() {
     return(
-      <div className="dropdown_menu_box">
+      <div>
         <form>
-          <label className="dropdown_menu_label"
-                 name={this.props.name}>{this.props.label}:</label>
-          <br/>
-          <select className="dropdown_menu_closed"
-                  value={this.props.currentSelection}
-                  name={this.props.name} 
-                  onChange={this.handleSelection} >
 
-            <option className="dropdown_menu_option_2"
-                    key ="-1" 
-                    value="-1">Choose from this list: </option> 
-            
-            {this.props.optionList.map((row, index) => {
-                return(
-                  <option className={"dropdown_menu_option_" + (index % 2 + 1)}
-                          key={row.id} 
-                          value={row.id}> {row.name} </option>
-                )
-              })
-            }
-          </select>
+          <label className="label" name={this.props.name}>
+            {this.props.label}:
+          </label>
+
+          <div className="select">
+            <select value={this.props.currentSelection}
+                    name={this.props.name} 
+                    onChange={this.handleSelection} >
+
+              <option 
+                      key ="-1" 
+                      value="-1">Select an option...</option> 
+              
+              {this.props.optionList.map((row, index) => {
+                  return( <option 
+                            key={row.id} 
+                            value={row.id}>{row.name}</option> )
+                })
+              }
+            </select>
+          </div>
+
         </form>
       </div>
     )
