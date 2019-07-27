@@ -107,6 +107,42 @@
 
 
 
+
+
+
+
+
+
+
+.school_labels_row {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+
+}
+
+.label_box {
+  width: 300px;
+  height: 100px;
+  background-color: #878787;
+  margin: 25px;
+  display: table;
+  text-align: center;
+}
+
+
+.school_label {
+  display: table-cell;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: underline;
+  vertical-align: middle;
+}
+
+
+
+
+
 .source_column_box {
   text-align: center;
   width: 200px;
@@ -114,15 +150,100 @@
 
 
 .report_toggle_selected {
-  font-size: 18px;
-  margin: 12px; 
-  padding: 12px;
+  font-size: 12px;
+  margin: 6px; 
+  padding: 6px;
   background-color: #5a9962
 }
 
 .report_toggle_not_selected {
-  font-size: 18px;
-  margin: 12px; 
-  padding: 12px;
+  font-size: 12px;
+  margin: 6px; 
+  padding: 6px;
   background-color: #a8a8a8
+}
+
+
+
+
+
+
+.requirement_row_complete {
+  background-color: #00ff08;
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+}
+
+.requirement_row_incomplete {
+  background-color: #363636;
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+}
+
+
+.row_group_complete {
+  background-color: #008fba;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.row_group_incomplete {
+  background-color: #363636;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.relation_group_empty {
+  width: 300px;
+  height: 100px;
+  
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  text-align: center;
+}
+
+.relation_group {
+  width: 300px;
+  height: 100px;
+  background-color: #878787;
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  text-align: center;
+}
+
+.class_label_selected {
+  background-color: #56a65d;
+  width: 100px;
+  height: 40px;
+}
+
+.class_label_not_selected {
+  background-color: #2f65bd;
+  width: 100px;
+  height: 40px;
+}
+
+.relation {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.relation_label {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.operator_box {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 24px;
+  text-align: center; 
 }

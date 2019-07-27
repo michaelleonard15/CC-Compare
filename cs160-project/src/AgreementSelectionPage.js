@@ -13,7 +13,7 @@ import './App.css';
  *          or more desitnation schools/majors
  *     Next button to submit request and load second page
  */
-class AgreementSelection extends React.Component {
+class AgreementSelectionPage extends React.Component {
 
 
 /**
@@ -94,7 +94,6 @@ constructor(props) {
           />
         </div>  
           <DestinationSchoolSelection key={this.state.sourceID}
-                                      sourceID={this.state.sourceID}
                                       destinationSchools={this.state.destinations} 
                                       specificAgreementSelected={this.specificAgreementSelected}
                                       sourceID={this.state.sourceID} />
@@ -107,4 +106,4 @@ constructor(props) {
 }
 
 
-export default AgreementSelection
+export default AgreementSelectionPage

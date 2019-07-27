@@ -92,7 +92,6 @@ class DestinationSchoolSelection extends React.Component {
             <SpecificMajorSelection   
               key={agreement.ID}
               listIndex={agreement.ID}
-              sourceID={this.props.sourceID}
               destinationSchools={this.props.destinationSchools}
               removeAgreement={this.removeAgreement.bind(this, index)} 
               updateIDs={this.updateIDs.bind(this, index)}
