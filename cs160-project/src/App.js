@@ -2,9 +2,9 @@ import React from 'react';
 // import 'bulma/css/bulma.css'
 import './mystyles.scss'
 import './App.css'
-import AgreementSelectionPage from './AgreementSelectionPage'
-import CourseSelectorPage from './CourseSelectorPage'
-import FinalReportPage from './FinalReportPage'
+import AgreementSelectionPage from './page_1/AgreementSelectionPage'
+import CourseSelectorPage from './page_2/CourseSelectorPage'
+import FinalReportPage from './page_3/FinalReportPage'
 
 
 /**

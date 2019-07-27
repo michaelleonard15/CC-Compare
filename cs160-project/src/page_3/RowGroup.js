@@ -1,6 +1,6 @@
 import React from 'react'
 import RequirementRow from './RequirementRow'
-import './App.css'
+import '../App.css'
 
 
 /**
