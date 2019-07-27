@@ -13,7 +13,7 @@ import './App.css';
  *          or more desitnation schools/majors
  *     Next button to submit request and load second page
  */
-class AgreementSelection extends React.Component {
+class AgreementSelectionPage extends React.Component {
 
 
 /**
@@ -106,4 +106,4 @@ constructor(props) {
 }
 
 
-export default AgreementSelection
+export default AgreementSelectionPage

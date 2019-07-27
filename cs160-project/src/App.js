@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import AgreementSelection from './AgreementSelection'
-import ClassSelector from './ClassSelector'
-import FinalReport from './FinalReport'
+import AgreementSelectionPage from './AgreementSelectionPage'
+import ClassSelectorPage from './ClassSelectorPage'
+import FinalReportPage from './FinalReportPage'
 
 
 /**
@@ -92,12 +92,12 @@ class App extends React.Component {
    */
   renderAppPage() {
     if(this.state.pageNumber === 1) { 
-      return  <AgreementSelection 
+      return  <AgreementSelectionPage 
                 onSubmit={this.submitRequest.bind(this)}
               />
     } 
     else if(this.state.pageNumber === 2) {
-      return  <ClassSelector 
+      return  <ClassSelectorPage 
                 lookupTable={this.state.lookupTable}
                 handleToggle={this.handleToggle.bind(this)}
                 backButton={this.handleBackButton.bind(this)}
@@ -105,7 +105,7 @@ class App extends React.Component {
               />
     }
     else if(this.state.pageNumber === 3) {
-      return <FinalReport 
+      return <FinalReportPage 
                 lookupTable={this.state.lookupTable}
                 equivalencyMatrix={this.state.equivalencyMatrix}
                 handleToggle={this.handleToggle.bind(this)}

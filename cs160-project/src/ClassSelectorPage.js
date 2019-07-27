@@ -17,7 +17,7 @@ import './App.css'
  *  loadNextPage A onClick handler for the next button
  *
  */
-class ClassSelector extends React.Component {
+class ClassSelectorPage extends React.Component {
 
 
 
@@ -86,4 +86,4 @@ class ClassSelector extends React.Component {
   }
 }
 
-export default ClassSelector
+export default ClassSelectorPage

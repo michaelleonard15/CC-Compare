@@ -18,7 +18,7 @@ import './App.css'
  *  backButton An onClick handler for the back button
  *  schoolList A list of school names to use as column labels.
  */
-class FinalReport extends React.Component {
+class FinalReportPage extends React.Component {
 
 
   /**
@@ -90,4 +90,4 @@ class FinalReport extends React.Component {
 }
 
 
-export default FinalReport
+export default FinalReportPage
