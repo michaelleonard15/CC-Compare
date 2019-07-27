@@ -73,21 +73,15 @@ class App extends React.Component {
    */
   handleToggle(index) {
     let lookup = this.state.lookupTable
+
     let temp = lookup.get(index)
     temp.isSelected = !temp.isSelected
     lookup.set(index, temp)
+    
     this.setState({lookupTable: lookup})
   }
 
 
-
-  /**
-   * Returns an array of class objects from the values stored in 
-   * the lookupTable
-   */
-  getClassList() {
-    return Array.from(this.state.lookupTable.values())
-  }
 
 
 
@@ -104,7 +98,7 @@ class App extends React.Component {
     } 
     else if(this.state.pageNumber === 2) {
       return  <ClassSelector 
-                courses={this.getClassList()}
+                lookupTable={this.state.lookupTable}
                 handleToggle={this.handleToggle.bind(this)}
                 backButton={this.handleBackButton.bind(this)}
                 loadNextPage={this.loadPageThree.bind(this)}

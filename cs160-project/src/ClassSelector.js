@@ -20,13 +20,24 @@ import './App.css'
 class ClassSelector extends React.Component {
 
 
+
+  /**
+   * Returns an array of class objects from the values stored in 
+   * the lookupTable
+   */
+  getClassList() {
+    return Array.from(this.props.lookupTable.values())
+  }
+
+
+
   /**
    * Maps the array of courses from props to an
    * array of toggle buttons. Button text is set to 
    * the course name, and the onClick is handled by the handleToggle prop
    */
   generateButtons() {
-    let buttons = this.props.courses.map( (row, index) => {  
+    let buttons = this.getClassList().map( (row, index) => {  
       let buttonName = row.isSelected ? 'selected' : 'not_selected'
       return(
         <button key={index}
