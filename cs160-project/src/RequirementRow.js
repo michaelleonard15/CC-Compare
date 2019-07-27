@@ -28,17 +28,17 @@ class RequirementRow extends React.Component {
    * Returns an array of RelationGroup components.
    */
   generateGroups() {
-    let req = this.props.equivalencyRow
+    let row = this.props.equivalencyRow
     let groups = []
-    for (let i = 0; i < req.length; i++) {
-      if( (i > 0) && (req[i].classes[0].name === "") ) {
+    for (let i = 0; i < row.length; i++) {
+      if(this.isEmptyGroup(i, row[i]) ) {
         groups.push(<div key={i} className="relation_group_empty"></div>)
       } else {
       groups.push(
           <RelationGroup key={i}
-                         sourceCol={i === 0}
+                         isSourceCol={i === 0}
                          lookupTable={this.props.lookupTable}
-                         group={req[i]}
+                         group={row[i]}
                          completed={this.props.isComplete}
                          handleToggle={this.props.handleToggle.bind(this)}
                          />
@@ -49,6 +49,16 @@ class RequirementRow extends React.Component {
   }
 
 
+
+  /**
+   * Helper fucntion to check for empty group.
+   */
+  isEmptyGroup(index, group) {
+    if(index > 0) {    // Source col is never empty, also has no classes property.
+      return group.classes[0].name === ""
+    }
+    return false
+  }
 
 
   /**

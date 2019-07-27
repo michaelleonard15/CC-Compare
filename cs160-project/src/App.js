@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import AgreementSelectionPage from './AgreementSelectionPage'
-import ClassSelectorPage from './ClassSelectorPage'
+import CourseSelectorPage from './CourseSelectorPage'
 import FinalReportPage from './FinalReportPage'
 
 
@@ -97,7 +97,7 @@ class App extends React.Component {
               />
     } 
     else if(this.state.pageNumber === 2) {
-      return  <ClassSelectorPage 
+      return  <CourseSelectorPage 
                 lookupTable={this.state.lookupTable}
                 handleToggle={this.handleToggle.bind(this)}
                 backButton={this.handleBackButton.bind(this)}

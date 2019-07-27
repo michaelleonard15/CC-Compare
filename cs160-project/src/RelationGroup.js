@@ -10,7 +10,7 @@ import './App.css'
  *  HTML buttons and labels
  * Props
  *  key A unique identifier for this group
- *  sourceCol Boolean, true if this is a group from the source column.
+ *  isSourceCol Boolean, true if this is a group from the source column.
  *  lookupTable A Map of IDs to class objects
  *  group An array of class objects or IDs, and an array of strings describing 
  *    the relationship between them.
@@ -33,11 +33,11 @@ class RelationGroup extends React.Component {
   generateLabels() {
   let group = this.props.group
   let labels = []
-  let max = this.props.sourceCol ? group.IDs.length : group.classes.length
+  let max = this.props.isSourceCol ? group.IDs.length : group.classes.length
   
   for(let i = 0; i < max; i++) {
   
-    if(this.props.sourceCol) {
+    if(this.props.isSourceCol) {
       let temp = this.props.lookupTable.get(group.IDs[i])
       let selected = temp.isSelected ? 'selected' : 'not_selected'
       labels.push(this.createButton(2*i, selected, temp, group.IDs[i]))

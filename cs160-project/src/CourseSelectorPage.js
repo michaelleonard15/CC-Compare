@@ -17,7 +17,7 @@ import './App.css'
  *  loadNextPage A onClick handler for the next button
  *
  */
-class ClassSelectorPage extends React.Component {
+class CourseSelectorPage extends React.Component {
 
 
 
@@ -25,8 +25,12 @@ class ClassSelectorPage extends React.Component {
    * Returns an array of class objects from the values stored in 
    * the lookupTable
    */
-  getClassList() {
-    return Array.from(this.props.lookupTable.values())
+  getCoursesList() {
+    let courses = []
+    this.props.lookupTable.forEach( (value, key, map) => {
+      courses.push({course: value, ID: key})
+    } )
+    return courses
   }
 
 
@@ -37,14 +41,14 @@ class ClassSelectorPage extends React.Component {
    * the course name, and the onClick is handled by the handleToggle prop
    */
   generateButtons() {
-    let buttons = this.getClassList().map( (row, index) => {  
-      let buttonName = row.isSelected ? 'selected' : 'not_selected'
+    let buttons = this.getCoursesList().map( (row) => {  
+      let buttonName = row.course.isSelected ? 'selected' : 'not_selected'
       return(
-        <button key={index}
+        <button key={row.ID}
                 className={'class_toggle_' + buttonName}
-                onClick={ () => {this.props.handleToggle(index)} }
+                onClick={ () => {this.props.handleToggle(row.ID)} }
         >
-          {row.name}
+          {row.course.name}
         </button>
       )
     })
@@ -86,4 +90,4 @@ class ClassSelectorPage extends React.Component {
   }
 }
 
-export default ClassSelectorPage
+export default CourseSelectorPage
