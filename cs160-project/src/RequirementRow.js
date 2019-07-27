@@ -2,38 +2,69 @@ import React from 'react'
 import RelationGroup from './RelationGroup'
 import './App.css'
 
+
+/**
+ * A component to contain groups of related classes.
+ * The left most group rendered is always from the source school.
+ * Groups from destination schools are rendered in the appropriate columns 
+ * to the right. 
+ * Contains
+ *  RelationGroup 
+ * Props
+ *  key A unique identifier for this row
+ *  lookupTable A Map of IDs to class objects
+ *  equivalencyRow An array with relationships between class requirements.
+ *  isComplete Boolean to indicate if requirements for classes (at destination) are completed
+ *  handleToggle An onClick handler for toggle buttons
+ *
+ */
 class RequirementRow extends React.Component {
 
-//lookupTable={this.props.lookupTable}
-//requirements={this.props.requirements[0]}
 
-
-
-
+  /**
+   * Generates groups of classes from the equivalencyRow prop.
+   * Each element of the equivalencyRow array becomes a RelationGroup component.
+   * If a relation group contains no data, an empty placeholder div is created.
+   * Returns an array of RelationGroup components.
+   */
   generateGroups() {
-    let req = this.props.requirements
+    let row = this.props.equivalencyRow
     let groups = []
-    for (let i = 0; i < req.length; i++) {
-      if( (i > 0) && (req[i].classes[0] === "") ) {
-        groups.push(<div className="relation_group_empty"></div>)
+    for (let i = 0; i < row.length; i++) {
+      if(this.isEmptyGroup(i, row[i]) ) {
+        groups.push(<div key={i} className="relation_group_empty"></div>)
       } else {
       groups.push(
           <RelationGroup key={i}
-                         sourceCol={i === 0}
+                         isSourceCol={i === 0}
                          lookupTable={this.props.lookupTable}
-                         group={req[i]}
+                         group={row[i]}
                          completed={this.props.isComplete}
+                         handleToggle={this.props.handleToggle.bind(this)}
                          />
         )
-    }
+      }
     }
     return groups
   }
 
 
 
+  /**
+   * Helper fucntion to check for empty group.
+   */
+  isEmptyGroup(index, group) {
+    if(index > 0) {    // Source col is never empty, also has no classes property.
+      return group.classes[0].name === ""
+    }
+    return false
+  }
 
 
+  /**
+   * Render function for the component. Renders the RelationGroups in the 
+   * row by calling generateGroups().
+   */
   render() {
     let completed = this.props.isComplete ? 'complete' : 'incomplete'
     return (

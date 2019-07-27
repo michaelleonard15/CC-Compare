@@ -26,6 +26,42 @@
 }
 
 
+
+
+
+
+
+
+
+.school_labels_row {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+
+}
+
+.label_box {
+  width: 300px;
+  height: 100px;
+  background-color: #878787;
+  margin: 25px;
+  display: table;
+  text-align: center;
+}
+
+
+.school_label {
+  display: table-cell;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: underline;
+  vertical-align: middle;
+}
+
+
+
+
+
 .source_column_box {
   text-align: center;
   width: 200px;
@@ -33,16 +69,16 @@
 
 
 .report_toggle_selected {
-  font-size: 18px;
-  margin: 12px; 
-  padding: 12px;
+  font-size: 12px;
+  margin: 6px; 
+  padding: 6px;
   background-color: #5a9962
 }
 
 .report_toggle_not_selected {
-  font-size: 18px;
-  margin: 12px; 
-  padding: 12px;
+  font-size: 12px;
+  margin: 6px; 
+  padding: 6px;
   background-color: #a8a8a8
 }
 
@@ -78,7 +114,7 @@
   margin-bottom: 10px;
 }
 
-.relation_group {
+.relation_group_empty {
   width: 300px;
   height: 100px;
   
