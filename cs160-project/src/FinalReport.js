@@ -13,7 +13,7 @@ import './App.css'
  *  An array of RowGroup components
  * Props
  *  lookupTable A Map of IDs to class objects
- *  requirements A 2D array with relationships between class requirements.
+ *  equivalencyMatrix A 2D array with relationships between class equivalencies.
  *  handleToggle An onClick handler for toggle buttons. 
  *  backButton An onClick handler for the back button
  *  schoolList A list of school names to use as column labels.
@@ -23,23 +23,24 @@ class FinalReport extends React.Component {
 
   /**
    * Generates an array of RowGroup components 
-   * Itterates over the requirements prop, for any row that has
+   * Itterates over the equivalencyMatrix prop, for any row that has
    * a relationToNext the following row is added to the same group.
    */
   generateRows() {
     let rows = []
+    let matrix = this.props.equivalencyMatrix
 
-    for(let i = 0; i < this.props.requirements.length; i++) {
+    for(let i = 0; i < matrix.length; i++) {
       let temp = []
-      temp.push(this.props.requirements[i])
+      temp.push(matrix[i])
     
-      while(this.props.requirements[i][0].relationToNext !== "NONE") {
-        temp.push(this.props.requirements[ i+1 ])
+      while(matrix[i][0].relationToNext !== "NONE") {
+        temp.push(matrix[ i + 1 ])
         i += 1
       }
       rows.push(<RowGroup key={i}
                           lookupTable={this.props.lookupTable}
-                          requirements={temp} 
+                          equivalencySlice={temp} 
                           handleToggle={this.props.handleToggle.bind(this)} 
       />)
     }

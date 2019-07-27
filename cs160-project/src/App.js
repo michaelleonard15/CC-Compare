@@ -15,7 +15,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {pageNumber: 1, lookupTable: [], requirements: []}
+    this.state = {pageNumber: 1, lookupTable: [], equivalencyMatrix: []}
   }
 
 
@@ -24,7 +24,7 @@ class App extends React.Component {
    * Handler for the submit button on the first page of the application
    * Uses RequestAPI to send a GET request to the backend with the
    * source, destination and agreement IDs. Places the response in 
-   * the lookupTabel and requirements state variables. Changes
+   * the lookupTabel and equivalencyMatrix state variables. Changes
    * the pageNumber state to load the second page. 
    */
   submitRequest(IDs) {
@@ -37,7 +37,7 @@ class App extends React.Component {
         for(let i = 0; i < data.lookup.length; i++) {
           lookup.set(data.lookup[i].ID, data.lookup[i].class)
         }
-        this.setState({pageNumber: 2, lookupTable: lookup, requirements: data.requirements})
+        this.setState({pageNumber: 2, lookupTable: lookup, equivalencyMatrix: data.equivalencyMatrix})
       })
       .catch( err => {console.log(err)} )
   }
@@ -113,7 +113,7 @@ class App extends React.Component {
     else if(this.state.pageNumber === 3) {
       return <FinalReport 
                 lookupTable={this.state.lookupTable}
-                requirements={this.state.requirements}
+                equivalencyMatrix={this.state.equivalencyMatrix}
                 handleToggle={this.handleToggle.bind(this)}
                 backButton={this.handleBackButton.bind(this)}
                 schoolList={["SRJC","SJSU","SSU"]} />

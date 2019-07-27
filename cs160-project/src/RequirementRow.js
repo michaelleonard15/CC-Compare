@@ -13,7 +13,7 @@ import './App.css'
  * Props
  *  key A unique identifier for this row
  *  lookupTable A Map of IDs to class objects
- *  requirements An array with relationships between class requirements.
+ *  equivalencyRow An array with relationships between class requirements.
  *  isComplete Boolean to indicate if requirements for classes (at destination) are completed
  *  handleToggle An onClick handler for toggle buttons
  *
@@ -22,13 +22,13 @@ class RequirementRow extends React.Component {
 
 
   /**
-   * Generates groups of classes from the requirements prop.
-   * Each element of the requirements array becomes a RelationGroup component.
+   * Generates groups of classes from the equivalencyRow prop.
+   * Each element of the equivalencyRow array becomes a RelationGroup component.
    * If a relation group contains no data, an empty placeholder div is created.
    * Returns an array of RelationGroup components.
    */
   generateGroups() {
-    let req = this.props.requirements
+    let req = this.props.equivalencyRow
     let groups = []
     for (let i = 0; i < req.length; i++) {
       if( (i > 0) && (req[i].classes[0].name === "") ) {
