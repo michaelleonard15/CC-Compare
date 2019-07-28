@@ -1,17 +1,5 @@
-import os
-import tempfile
+from flask import url_for
 
-import pytest
-import pytest_flask
-
-from flask import url_for, Response
-from flaskr import create_app
-
-
-@pytest.fixture
-def app():
-    app = create_app()
-    return app
 
 def test_hello(client):
     # hello will be a Response object
@@ -22,7 +10,8 @@ def test_hello(client):
     assert text != ""
     assert "Hello" in text
     assert "World" in text
-    
+
+
 def test_index(client):
     response = client.get('/')
     assert response.status_code == 200
