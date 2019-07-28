@@ -28,7 +28,7 @@ class RowGroup extends React.Component {
   groupCompleted() {
 
     let boolArray = this.props.equivalencySlice.map((row) => 
-      {return this.isCompleted(row)} )    
+      {return this.props.isRowCompleted(row)} )    
 
     let expr = boolArray[0]
 
@@ -44,46 +44,6 @@ class RowGroup extends React.Component {
 
 
 
-  /**
-   * Checks an individual row to see if the requirements have been 
-   * satisfied. For a single requirement, returns the value of isSelected 
-   * from the lookupArray. For multiple requirements, calls a helper function.
-   * Returns true or false
-   */
-  isCompleted(row) {
-    let IDs = row[0].IDs
-    let relation = row[0].relation
-    if(IDs.length === 1) {
-      return this.props.lookupTable.get(IDs[0]).isSelected
-    }
-    else {
-      return this.handleConditionalRequirements(IDs, relation)
-    }
-  }
-
-
-
-
-  /**
-   * Given a set of IDs and relationships, checks if a
-   * requirement has been satisfied by checking the isSelected of
-   * each ID and building a boolean expression with the resulting 
-   * true/false values and the relationships. 
-   * Returns true or false
-   */
-  handleConditionalRequirements(IDs, relation) {
-    // Convert IDs in expr to corresponding boolean values.
-    IDs = IDs.map( (ID) => {return this.props.lookupTable.get(ID).isSelected} )
-    // Convert "AND", "OR" to "&&", "||"
-    relation = relation.map( (bool) => {return bool === "OR"  ? "||" : "&&"}  )
-    let expr = IDs[0]
-    for(let i = 0; i < relation.length; i++) {
-      expr += relation[i] + IDs[i +1]
-    }
-    return eval(expr)
-  }
-
-
 
   /**
    * Maps equivalencySlice array to RequirementRow components. If more than
@@ -97,7 +57,7 @@ class RowGroup extends React.Component {
          <RequirementRow  key={2 * index}
                           lookupTable={this.props.lookupTable}
                           equivalencyRow={this.props.equivalencySlice[index]}
-                          isComplete={this.isCompleted(row)} 
+                          isComplete={this.props.isRowCompleted(row)} 
                           handleToggle={this.props.handleToggle.bind(this)} />
       )
     })
