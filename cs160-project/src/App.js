@@ -30,14 +30,14 @@ class App extends React.Component {
    * the pageNumber state to load the second page. 
    */
   submitRequest(IDs) {
-    fetch('./dummyClasses.json')
+    fetch('./dummyClasses_7_27_v2.json')
       .then( response => {
         return response.json()
       })
       .then( data => {
         let lookup = new Map()
         for(let i = 0; i < data.lookup.length; i++) {
-          lookup.set(data.lookup[i].ID, data.lookup[i].class)
+          lookup.set(data.lookup[i].ID, data.lookup[i].course)
         }
         this.setState({pageNumber: 2, lookupTable: lookup, equivalencyMatrix: data.equivalencyMatrix})
       })

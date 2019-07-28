@@ -28,8 +28,10 @@ class CourseSelectorPage extends React.Component {
   getCoursesList() {
     let courses = []
     this.props.lookupTable.forEach( (value, key, map) => {
-      courses.push({course: value, ID: key})
-    } )
+      if(value.isOrigin) {
+        courses.push({course: value, ID: key})
+      }
+    })
     return courses
   }
 

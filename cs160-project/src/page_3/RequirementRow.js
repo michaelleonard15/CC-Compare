@@ -55,7 +55,7 @@ class RequirementRow extends React.Component {
    */
   isEmptyGroup(index, group) {
     if(index > 0) {    // Source col is never empty, also has no classes property.
-      return group.classes[0].name === ""
+      return group.courses[0].name === ""
     }
     return false
   }

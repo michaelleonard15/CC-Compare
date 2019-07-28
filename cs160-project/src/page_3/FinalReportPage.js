@@ -50,6 +50,11 @@ class FinalReportPage extends React.Component {
   }
 
 
+
+
+
+
+
   /**
     * Maps the schoolList prop to an array of labels with 
     * the names of the school as the label text. 
@@ -79,16 +84,14 @@ class FinalReportPage extends React.Component {
    * Returns true or false
    */
   isRowCompleted(row) {
-    let IDs = row[0].IDs
-    let relation = row[0].relation
-    if(IDs.length === 1) {
-      return this.props.lookupTable.get(IDs[0]).isSelected
+    let courses = row[0].courses
+    if( (courses.length === 1) && (courses[0].length === 1) ) {
+      return this.props.lookupTable.get(courses[0][0]).isSelected
     }
     else {
-      return this.handleConditionalRequirements(IDs, relation)
+      return this.handleConditionalRequirements(courses)
     }
   }
-
 
 
 
@@ -99,16 +102,16 @@ class FinalReportPage extends React.Component {
    * true/false values and the relationships. 
    * Returns true or false
    */
-  handleConditionalRequirements(IDs, relation) {
-    // Convert IDs in expr to corresponding boolean values.
-    IDs = IDs.map( (ID) => {return this.props.lookupTable.get(ID).isSelected} )
-    // Convert "AND", "OR" to "&&", "||"
-    relation = relation.map( (bool) => {return bool === "OR"  ? "||" : "&&"}  )
-    let expr = IDs[0]
-    for(let i = 0; i < relation.length; i++) {
-      expr += relation[i] + IDs[i +1]
+  handleConditionalRequirements(courses) {    
+    let result_OR = false
+    for(let or  = 0; or < courses.length; or++) {
+      let result_AND = true
+      for(let and  = 0; and < courses[or].length; and++) {
+        result_AND = result_AND && this.props.lookupTable.get(courses[or][and])
+      }
+      result_OR = result_OR || result_AND 
     }
-    return eval(expr)
+    return result_OR
   }
 
 
