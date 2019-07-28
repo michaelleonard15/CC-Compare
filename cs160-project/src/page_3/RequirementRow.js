@@ -31,7 +31,7 @@ class RequirementRow extends React.Component {
     let row = this.props.equivalencyRow
     let groups = []
     for (let i = 0; i < row.length; i++) {
-      if(this.isEmptyGroup(i, row[i]) ) {
+      if(row[i].courses.length < 1) {
         groups.push(<div key={i} className="relation_group_empty"></div>)
       } else {
       groups.push(
@@ -50,15 +50,7 @@ class RequirementRow extends React.Component {
 
 
 
-  /**
-   * Helper fucntion to check for empty group.
-   */
-  isEmptyGroup(index, group) {
-    if(index > 0) {    // Source col is never empty, also has no classes property.
-      return group.courses[0].name === ""
-    }
-    return false
-  }
+
 
 
   /**

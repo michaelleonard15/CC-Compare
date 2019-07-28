@@ -31,30 +31,42 @@ class RelationGroup extends React.Component {
    * Returns an array of buttons or an array of labels. 
    */
   generateLabels() {
-  let group = this.props.group
-  let labels = []
-  let max = this.props.isSourceCol ? group.IDs.length : group.classes.length
-  
-  for(let i = 0; i < max; i++) {
-  
-    if(this.props.isSourceCol) {
-      let temp = this.props.lookupTable.get(group.IDs[i])
-      let selected = temp.isSelected ? 'selected' : 'not_selected'
-      labels.push(this.createButton(2*i, selected, temp, group.IDs[i]))
-    } 
-    else {
-      let selected = this.props.completed ? 'selected' : 'not_selected'
-      labels.push(this.createLabel(2*i, selected, group.classes[i]))
-    }
+    let courses = this.props.group.courses
+    let labels = []
 
-    if(i < group.relation.length) {
-      labels.push(this.createRelation(2*i + 1, group.relation[i]) )
-    } 
-  }
+    for(let or = 0; or < courses.length; or++) {
+     
+      if(or > 0) {
+        labels.push(this.createRelation(labels.length, "OR"))
+      }
+
+      for(let and = 0; and < courses[or].length; and++) {
+        if(and > 0) {
+          labels.push(this.createRelation(labels.length, "AND"))
+        }
+        labels.push(this.addButtonOrLabel(labels.length, courses[or][and]))
+      }
+
+    }
+ 
   
   return labels
   }
 
+
+
+
+  addButtonOrLabel(key, course) {
+    let temp = this.props.lookupTable.get(course)
+    if(this.props.isSourceCol) {  
+      let selected = temp.isSelected ? 'selected' : 'not_selected'
+      return this.createButton(key, selected, temp, course)
+    } 
+    else {
+      let selected = this.props.completed ? 'selected' : 'not_selected'
+      return this.createLabel(key, selected, temp)
+    }    
+  }
   
 
 
@@ -63,7 +75,7 @@ class RelationGroup extends React.Component {
    * the name and number of units from aClass. 
    * @param key A unique identifier for this button in an array
    * @param selected A boolean indicating if this button should be selected or not selected
-   * @param aClass An object representing a class, containing properties for name and units.
+   * @param aCourse An object representing a class, containing properties for name and units.
    * @param lookupID Identifier to find aClass in the lookupTable prop.
    * @return a div containing a button
    */

@@ -102,12 +102,13 @@ class FinalReportPage extends React.Component {
    * true/false values and the relationships. 
    * Returns true or false
    */
-  handleConditionalRequirements(courses) {    
+  handleConditionalRequirements(courses) {   
+    let { lookupTable }  = this.props
     let result_OR = false
     for(let or  = 0; or < courses.length; or++) {
       let result_AND = true
       for(let and  = 0; and < courses[or].length; and++) {
-        result_AND = result_AND && this.props.lookupTable.get(courses[or][and])
+        result_AND = result_AND && lookupTable.get(courses[or][and]).isSelected
       }
       result_OR = result_OR || result_AND 
     }
