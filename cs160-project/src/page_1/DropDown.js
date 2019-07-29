@@ -14,8 +14,13 @@ class DropDown extends React.Component {
    * parent component.
    */
   handleSelection = (event) => {
-    if(event.target.value >= 0) {
-      this.props.selectOption(event.target.value)
+    let ID = parseInt(event.target.value, 10)
+    if(ID >= 0) {
+      let name = ""
+      this.props.optionList.forEach( (school) => {
+        if(school.id === ID) { name = school.name }
+      })
+      this.props.selectOption(ID, name)
     }
   } 
 

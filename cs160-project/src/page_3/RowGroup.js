@@ -27,8 +27,9 @@ class RowGroup extends React.Component {
    */
   groupCompleted() {
 
-    let boolArray = this.props.equivalencySlice.map((row) => 
-      {return this.props.isRowCompleted(row)} )    
+    let boolArray = this.props.equivalencySlice.map((row) => {
+      return this.props.isRowCompleted(row)
+    })    
 
     let expr = boolArray[0]
 

@@ -23,14 +23,21 @@ class CourseSelectorPage extends React.Component {
 
   /**
    * Returns an array of class objects from the values stored in 
-   * the lookupTable
+   * the lookupTable. Classes are sorted in alphabetical order.
    */
   getCoursesList() {
     let courses = []
     this.props.lookupTable.forEach( (value, key, map) => {
-      courses.push({course: value, ID: key})
-    } )
-    return courses
+      if(value.isOrigin) {
+        courses.push({course: value, ID: key})
+      }
+    })
+    return courses.sort( (c1, c2) => {
+      let name1 = c1.course.name.toUpperCase()
+      let name2 = c2.course.name.toUpperCase()
+      return (name1 < name2) ? -1 : 
+             (name1 > name2) ? 1  : 0
+    })
   }
 
 
@@ -67,7 +74,9 @@ class CourseSelectorPage extends React.Component {
       
         <div className="column is-half is-offset-one-quarter">
           <div className="box has-background-light">
-            <h3 className="title has-text-centered"> What classes have you completed at DUMMY DATA? </h3>
+            <h3 className="title has-text-centered"> 
+              What classes have you completed at {this.props.schoolName}? 
+            </h3>
   
             <div className="buttons is-centered">
               {this.generateButtons()}
