@@ -25,7 +25,7 @@ constructor(props) {
     super(props)
 
     this.state = {source: [], destinations: [], 
-                  sourceID: -1, specificAgreements: []}
+                  selectedSource: {ID: -1, name: ""}, specificAgreements: []}
   }
 
 
@@ -45,18 +45,19 @@ constructor(props) {
    * selection dropdown. Requests the list of possible destination
    * schools based on the ID of the source selected.
    */
-  sourceSelected = (schoolID) => {
+  sourceSelected(schoolID, schoolName) {
       RequestAPI().requestDestinations(schoolID).then( (schools) => {
-      this.setState({destinations: schools, sourceID: schoolID})
+      this.setState({destinations: schools, 
+                     selectedSource: {ID: schoolID, name: schoolName}
+      })
     })
   }
-
 
   /**
    * Updates the list of specific agreements (combinations of
    * destination school and major) that have been selected.
    */
-  specificAgreementSelected = (agreements) => {
+  updateAgreements(agreements) {
     this.setState({specificAgreements: agreements})
   }
 
@@ -66,12 +67,22 @@ constructor(props) {
    * equivalencies matrix, based on the SourceID and 
    * specific agreements selected. 
    */
-  submitForm = () => {
-    let request = {source: this.state.sourceID,
-                   agreements: this.state.specificAgreements}
-    console.log(request) 
-    this.props.onSubmit(request)                  
+  submitForm() {
+    let names = [this.state.selectedSource.name]
+    let IDs = []
+    let agreements = Array.from(this.state.specificAgreements)
+
+    for(let i = 0; i < agreements.length; i++) {
+      names.push(agreements[i].destination.name)
+      IDs.push({destination: agreements[i].destination.ID, 
+                major: agreements[i].major.ID})
+    }
+
+    let request = {source: this.state.selectedSource.ID, agreements: IDs}
+    console.log(request, names) 
+    this.props.onSubmit(request, names)                  
   }
+
 
 
   /**
@@ -96,8 +107,8 @@ constructor(props) {
                   name="Schools"
                   label="Select your current school"
                   optionList={this.state.source}
-                  currentSelection={this.state.sourceID}
-                  selectOption={this.sourceSelected}
+                  currentSelection={this.state.selectedSource.ID}
+                  selectOption={this.sourceSelected.bind(this)}
                 />
               </div>
             </div>
@@ -105,10 +116,9 @@ constructor(props) {
 
           <div className="column">
             <DestinationSchoolSelection
-              key={this.state.sourceID}
               destinationSchools={this.state.destinations}
-              specificAgreementSelected={this.specificAgreementSelected}
-              sourceID={this.state.sourceID}
+              updateAgreements={this.updateAgreements.bind(this)}
+              sourceID={this.state.selectedSource.ID}
             />
           </div>
 
@@ -117,7 +127,7 @@ constructor(props) {
         <div className="level-right">
           <button
             className="button is-large  level-item"
-            onClick={this.submitForm}>Next</button>
+            onClick={this.submitForm.bind(this)}>Next</button>
         </div>
       </div>
     </div>

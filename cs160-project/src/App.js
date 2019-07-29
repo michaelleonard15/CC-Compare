@@ -29,7 +29,8 @@ class App extends React.Component {
    * the lookupTabel and equivalencyMatrix state variables. Changes
    * the pageNumber state to load the second page. 
    */
-  submitRequest(IDs) {
+  submitRequest(IDs, names) {
+    console.log("FROM APP.JS\n", IDs, names)
     fetch('./dummyClasses_7_27_v2.json')
       .then( response => {
         return response.json()

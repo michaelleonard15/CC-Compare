@@ -23,7 +23,8 @@ class SpecificMajorSelection extends React.Component {
    */
   constructor(props) {
     super(props)
-    this.state = {majors: [], destinationID: -1, majorID: -1}
+    this.state = {majorsList: [], destination: {ID: -1, name: ""}, 
+                                  major: {ID: -1, name: ""} }
   }
 
 
@@ -31,12 +32,12 @@ class SpecificMajorSelection extends React.Component {
    * Handler for the destination school dropdown
    * Requests the list of majors for the destination selected.
    */
-  destinationSelected = (destID) => {
-    //if(schoolID === '39') {
-      RequestAPI().requestMajors(this.props.sourceID, destID).then( (majors) => {
-        this.setState({majors: majors, destinationID: destID, majorID: -1})
+  destinationSelected(destID, destName) {
+      RequestAPI().requestMajors(this.props.sourceID, destID).then( (majorsList) => {
+        this.setState({majorsList: majorsList, 
+                       destination: {ID: destID, name: destName}, 
+                       major: {ID: -1, name: ""} })
       })
-    //}
   }
 
 
@@ -45,12 +46,11 @@ class SpecificMajorSelection extends React.Component {
    * Sets the majorID and updates the agreements in 
    * the parent component.
    */
-  majorSelected = (ID) => {
-    this.setState({majorID: ID})
-    let specificAgreement = {ID: this.props.listIndex, 
-                             destinationID: this.state.destinationID,
-                             majorID: ID}
-    this.props.updateIDs(specificAgreement)
+  majorSelected(majorID, majorName) {
+    this.setState({major: {ID: majorID, name: majorName}})
+    let specificAgreement = {destination: this.state.destination,
+                             major: {ID: majorID, name: majorName}}
+    this.props.updateIDs(this.props.listIndex ,specificAgreement)
   }
 
 
@@ -69,16 +69,16 @@ class SpecificMajorSelection extends React.Component {
                 name="Schools"
                 label="Select transfer school"
                 optionList={this.props.destinationSchools}
-                currentSelection={this.state.destinationID}
-                selectOption={this.destinationSelected}/>
+                currentSelection={this.state.destination.ID}
+                selectOption={this.destinationSelected.bind(this)}/>
             </div>
             <div>
               <DropDown
                 name="Majors"
                 label="Select major"
-                optionList={this.state.majors}
-                currentSelection={this.state.majorID}
-                selectOption={this.majorSelected}/>
+                optionList={this.state.majorsList}
+                currentSelection={this.state.major.ID}
+                selectOption={this.majorSelected.bind(this)}/>
             </div>
           </div>
           <div className="column is-narrow">
