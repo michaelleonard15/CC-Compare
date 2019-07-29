@@ -1,6 +1,5 @@
 import re
 
-
 # Per Agreement: Equivalencies < Equivalency < dest/source_list (this) < classList < class
 
 
@@ -11,18 +10,19 @@ import re
 # class < class (this)
 # a basic class
 class Class:
-    key = ""
-    name = ""
-    units = ""
-    isCompleted = False
 
+    
     def __init__(self, key, name, units):
         self.key = key
         self.name = name
         self.units = units
+        self.isCompleted = False
 
     def __init__(self):
-        pass
+        self.key = ""
+        self.name = ""
+        self.units = ""
+        self.isCompleted = False
 
     def setKey(self, key):
         self.key = key
@@ -52,18 +52,30 @@ class Class:
 # classList (this) < class
 # all objects in classes are '&_' together, ALL objs in classes[] should be completed
 class ClassList:
-    classes = []
-    classesCompleted = False
+
+    def __init__(self):
+        self.classes = list()
+        self.classesCompleted = False
+        
 
     # add class to classes
     def addClass(self, classObj):
         if isinstance(classObj, Class):
+            print(self.classes)
             self.classes.append(classObj)
+            print(self.classes)
+        else: raise ValueError("Object added was not Class: " + type(classObj))
 
     # checks if all the &_ classes are completed
     def checkCompletion(self):
+        
+        self.classesCompleted = True
         for x in self.classes:
-            if x.isCompleted is True:
+            # print("x:")
+            # print(x.isCompleted)
+            # print("cc:")
+            # print(self.classesCompleted)
+            if x.isCompleted and self.classesCompleted:
                 self.classesCompleted = True
             else:
                 self.classesCompleted = False
