@@ -118,9 +118,9 @@ class FinalReportPage extends React.Component {
 
 
   linkOriginalAgreements() {
-    let links = this.props.agreementKeys.map( (key) => {
+    let links = this.props.agreementKeys.map( (key, index) => {
       return (
-        <div className="link_box">
+        <div key={index + 1} className="link_box">
           <a className="agreement_link"
              target="_blank"
              rel="noopener noreferrer"
@@ -128,7 +128,7 @@ class FinalReportPage extends React.Component {
         </div>
       )
     })
-    links.splice(0, 0, <div className="link_box" />)
+    links.splice(0, 0, <div key="0" className="link_box" />)
     return links
   }
 

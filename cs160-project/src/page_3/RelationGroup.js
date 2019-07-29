@@ -56,15 +56,15 @@ class RelationGroup extends React.Component {
 
 
 
-  addButtonOrLabel(key, course) {
-    let temp = this.props.lookupTable.get(course)
+  addButtonOrLabel(reactKey, lookupKey) {
+    let temp = this.props.lookupTable.get(lookupKey)
     if(this.props.isSourceCol) {  
       let selected = temp.isSelected ? 'selected' : 'not_selected'
-      return this.createButton(key, selected, temp, course)
+      return this.createButton(reactKey, selected, temp, lookupKey)
     } 
     else {
       let selected = this.props.completed ? 'selected' : 'not_selected'
-      return this.createLabel(key, selected, temp)
+      return this.createLabel(reactKey, selected, temp)
     }    
   }
   
@@ -76,14 +76,14 @@ class RelationGroup extends React.Component {
    * @param key A unique identifier for this button in an array
    * @param selected A boolean indicating if this button should be selected or not selected
    * @param aCourse An object representing a class, containing properties for name and units.
-   * @param lookupID Identifier to find aClass in the lookupTable prop.
+   * @param lookupKey Identifier to find aClass in the lookupTable prop.
    * @return a div containing a button
    */
-  createButton(key, selected, aClass, lookupID) {
+  createButton(key, selected, aClass, lookupKey) {
     return (
       <div key={key} className={'class_label_' + selected}>
         <button className={'report_toggle_' + selected}
-                onClick={this.props.handleToggle.bind(this, lookupID)}>
+                onClick={this.props.handleToggle.bind(this, lookupKey)}>
                 {aClass.name} ({aClass.units})
         </button>
       </div>
