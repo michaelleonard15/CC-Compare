@@ -16,8 +16,13 @@ class Class:
     units = ""
     isCompleted = False
 
-    def __init__(self):
+    def __init__(self, key, name, units):
         self.key = key
+        self.name = name
+        self.units = units
+
+    def __init__(self):
+        pass
 
     def setKey(self, key):
         self.key = key
@@ -38,7 +43,7 @@ class Class:
 
     # the class has been completed
     def complete(self):
-        isCompleted = True
+        self.isCompleted = True
 
 # END Class
 
@@ -48,7 +53,7 @@ class Class:
 # all objects in classes are '&_' together, ALL objs in classes[] should be completed
 class ClassList:
     classes = []
-    classesCompletd = False
+    classesCompleted = False
 
     # add class to classes
     def addClass(self, classObj):
