@@ -2,6 +2,7 @@
   before_install: cd backend
   install:
   - pip install -r requirements.txt
+  - pip install --upgrade pytest
   - pip install -e .
   script:
     - pytest
