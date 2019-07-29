@@ -1,2 +1,4 @@
+-e .
 flask
+flask-cors
 pytest-flask
