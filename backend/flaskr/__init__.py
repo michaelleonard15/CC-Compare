@@ -44,7 +44,7 @@ def create_app(test_config=None):
     @app.route('/api/origin-schools/')
     def origin_schools():
         app.logger.info(request.args.to_dict())
-        return app.send_static_file('schools_ids.json')
+        return app.send_static_file('origin_ids.json')
 
     # API call to get the destinations list
     @app.route('/api/dest-schools/') #, methods=['POST'])
