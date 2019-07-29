@@ -33,8 +33,8 @@ class CourseSelectorPage extends React.Component {
       }
     })
     return courses.sort( (c1, c2) => {
-      let name1 = c1.course.name.toUpperCase()
-      let name2 = c2.course.name.toUpperCase()
+      let name1 = c1.course.courseID.toUpperCase()
+      let name2 = c2.course.courseID.toUpperCase()
       return (name1 < name2) ? -1 : 
              (name1 > name2) ? 1  : 0
     })
@@ -55,7 +55,10 @@ class CourseSelectorPage extends React.Component {
                 className={'button is-large ' + selectedColor}
                 onClick={ () => {this.props.handleToggle(row.ID)} }
         >
-          {row.course.name}
+          <div>
+            <label className="content is-large">{row.course.courseID}</label>
+            <label className="content is-small">{row.course.courseName}</label>
+          </div>
         </button>
       )
     })

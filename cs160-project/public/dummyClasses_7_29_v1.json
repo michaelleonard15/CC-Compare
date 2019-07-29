@@ -1,715 +1,794 @@
 {
   "lookup": [
     {
-      "ID": 0,
+      "key": 0,
       "course": {
         "isSelected": false,
-        "name": "ENGL 5",
+        "courseName": "Dummy Data",
+        "courseID": "ENGL 5",
         "units": 3,
         "isOrigin": true
       }
     },
     {
-      "ID": 1,
+      "key": 1,
       "course": {
         "isSelected": false,
-        "name": "PHIL 5",
+        "courseName": "Dummy Data",
+        "courseID": "PHIL 5",
         "units": 3,
         "isOrigin": true
       }
     },
     {
-      "ID": 2,
+      "key": 2,
       "course": {
         "isSelected": false,
-        "name": "SPCH 9",
+        "courseName": "Dummy Data",
+        "courseID": "SPCH 9",
         "units": 3,
         "isOrigin": true
       }
     },
     {
-      "ID": 3,
+      "key": 3,
       "course": {
         "isSelected": false,
-        "name": "ENGL 1B",
+        "courseName": "Dummy Data",
+        "courseID": "ENGL 1B",
         "units": 3,
         "isOrigin": true
       }
     },
     {
-      "ID": 4,
+      "key": 4,
       "course": {
         "isSelected": false,
-        "name": "MATH 1A",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 1A",
         "units": 5,
         "isOrigin": true
       }
     },
     {
-      "ID": 5,
+      "key": 5,
       "course": {
         "isSelected": false,
-        "name": "MATH 1B",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 1B",
         "units": 5,
         "isOrigin": true
       }
     },
     {
-      "ID": 6,
+      "key": 6,
       "course": {
         "isSelected": false,
-        "name": "MATH 4",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 4",
         "units": 4,
         "isOrigin": true
       }
     },
     {
-      "ID": 7,
+      "key": 7,
       "course": {
         "isSelected": false,
-        "name": "MATH 1C",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 1C",
         "units": 4,
         "isOrigin": true
       }
     },
     {
-      "ID": 8,
+      "key": 8,
       "course": {
         "isSelected": false,
-        "name": "MATH 5",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 5",
         "units": 3,
         "isOrigin": true
       }
     },
     {
-      "ID": 9,
+      "key": 9,
       "course": {
         "isSelected": false,
-        "name": "MATH 2",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 2",
         "units": 3,
         "isOrigin": true
       }
     },
     {
-      "ID": 10,
+      "key": 10,
       "course": {
         "isSelected": false,
-        "name": "MATH 15",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 15",
         "units": 4,
         "isOrigin": true
       }
     },
     {
-      "ID": 11,
+      "key": 11,
       "course": {
         "isSelected": false,
-        "name": "PHYS 40",
+        "courseName": "Dummy Data",
+        "courseID": "PHYS 40",
         "units": 5,
         "isOrigin": true
       }
     },
     {
-      "ID": 12,
+      "key": 12,
       "course": {
         "isSelected": false,
-        "name": "PHYS 41",
+        "courseName": "Dummy Data",
+        "courseID": "PHYS 41",
         "units": 4,
         "isOrigin": true
       }
     },
     {
-      "ID": 13,
+      "key": 13,
       "course": {
         "isSelected": false,
-        "name": "PHYS 42",
+        "courseName": "Dummy Data",
+        "courseID": "PHYS 42",
         "units": 4,
         "isOrigin": true
       }
     },
     {
-      "ID": 14,
+      "key": 14,
       "course": {
         "isSelected": false,
-        "name": "PHYS 43",
+        "courseName": "Dummy Data",
+        "courseID": "PHYS 43",
         "units": 4,
         "isOrigin": true
       }
     },
     {
-      "ID": 15,
+      "key": 15,
       "course": {
         "isSelected": false,
-        "name": "BIO 2.1",
+        "courseName": "Dummy Data",
+        "courseID": "BIO 2.1",
         "units": 5,
         "isOrigin": true
       }
     },
     {
-      "ID": 16,
+      "key": 16,
       "course": {
         "isSelected": false,
-        "name": "BIO 2.2",
+        "courseName": "Dummy Data",
+        "courseID": "BIO 2.2",
         "units": 5,
         "isOrigin": true
       }
     },
     {
-      "ID": 17,
+      "key": 17,
       "course": {
         "isSelected": false,
-        "name": "BIO 2.3",
+        "courseName": "Dummy Data",
+        "courseID": "BIO 2.3",
         "units": 5,
         "isOrigin": true
       }
     },
     {
-      "ID": 18,
+      "key": 18,
       "course": {
         "isSelected": false,
-        "name": "CHEM 1A",
+        "courseName": "Dummy Data",
+        "courseID": "CHEM 1A",
         "units": 5,
         "isOrigin": true
       }
     },
     {
-      "ID": 19,
+      "key": 19,
       "course": {
         "isSelected": false,
-        "name": "CHEM 1B",
+        "courseName": "Dummy Data",
+        "courseID": "CHEM 1B",
         "units": 5,
         "isOrigin": true
       }
     },
     {
-      "ID": 20,
+      "key": 20,
       "course": {
         "isSelected": false,
-        "name": "CHEM 4A",
+        "courseName": "Dummy Data",
+        "courseID": "CHEM 4A",
         "units": 5,
         "isOrigin": true
       }
     },
     {
-      "ID": 21,
+      "key": 21,
       "course": {
         "isSelected": false,
-        "name": "CHEM 4B",
+        "courseName": "Dummy Data",
+        "courseID": "CHEM 4B",
         "units": 5,
         "isOrigin": true
       }
     },
     {
-      "ID": 22,
+      "key": 22,
       "course": {
         "isSelected": false,
-        "name": "GEOL 1",
+        "courseName": "Dummy Data",
+        "courseID": "GEOL 1",
         "units": 3,
         "isOrigin": true
       }
     },
     {
-      "ID": 23,
+      "key": 23,
       "course": {
         "isSelected": false,
-        "name": "GEOL 1L",
+        "courseName": "Dummy Data",
+        "courseID": "GEOL 1L",
         "units": 1,
         "isOrigin": true
       }
     },
     {
-      "ID": 24,
+      "key": 24,
       "course": {
         "isSelected": false,
-        "name": "METRO 10",
+        "courseName": "Dummy Data",
+        "courseID": "METRO 10",
         "units": 3,
         "isOrigin": true
       }
     },
     {
-      "ID": 25,
+      "key": 25,
       "course": {
         "isSelected": false,
-        "name": "CS 10",
+        "courseName": "Dummy Data",
+        "courseID": "CS 10",
         "units": 4,
         "isOrigin": true
       }
     },
     {
-      "ID": 26,
+      "key": 26,
       "course": {
         "isSelected": false,
-        "name": "CS 11",
+        "courseName": "Dummy Data",
+        "courseID": "CS 11",
         "units": 4,
         "isOrigin": true
       }
     },
     {
-      "ID": 27,
+      "key": 27,
       "course": {
         "isSelected": false,
-        "name": "CS 12",
+        "courseName": "Dummy Data",
+        "courseID": "CS 12",
         "units": 4,
         "isOrigin": true
       }
     },
     {
-      "ID": 28,
+      "key": 28,
       "course": {
         "isSelected": false,
-        "name": "CS 81.21",
+        "courseName": "Dummy Data",
+        "courseID": "CS 81.21",
         "units": 4,
         "isOrigin": true
       }
     },
     {
-      "ID": 29,
+      "key": 29,
       "course": {
         "isSelected": false,
-        "name": "ENGL 1A",
+        "courseName": "Dummy Data",
+        "courseID": "ENGL 1A",
         "units": 4,
         "isOrigin": true
       }
     },
 
     {
-      "ID": 30,
+      "key": 30,
       "course": {
         "isSelected": false,
-        "name": "ENGL 2",
+        "courseName": "Dummy Data",
+        "courseID": "ENGL 2",
         "units": 3,
         "isOrigin": false
       }
     },
     {
-      "ID": 31,
+      "key": 31,
       "course": {
         "isSelected": false,
-        "name": "ENGL 1B",
+        "courseName": "Dummy Data",
+        "courseID": "ENGL 1B",
         "units": 3,
         "isOrigin": false
       }
     },
     {
-      "ID": 32,
+      "key": 32,
       "course": {
         "isSelected": false,
-        "name": "MATH 30",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 30",
         "units": 3,
         "isOrigin": false
       }
     },
     {
-      "ID": 33,
+      "key": 33,
       "course": {
         "isSelected": false,
-        "name": "MATH 31",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 31",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 34,
+      "key": 34,
       "course": {
         "isSelected": false,
-        "name": "MATH 42",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 42",
         "units": 3,
         "isOrigin": false
       }
     },
     {
-      "ID": 35,
+      "key": 35,
       "course": {
         "isSelected": false,
-        "name": "MATH 32",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 32",
         "units": 3,
         "isOrigin": false
       }
     },
     {
-      "ID": 36,
+      "key": 36,
       "course": {
         "isSelected": false,
-        "name": "MATH 129A",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 129A",
         "units": 3,
         "isOrigin": false
       }
     },
     {
-      "ID": 37,
+      "key": 37,
       "course": {
         "isSelected": false,
-        "name": "PHYS 50",
+        "courseName": "Dummy Data",
+        "courseID": "PHYS 50",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 38,
+      "key": 38,
       "course": {
         "isSelected": false,
-        "name": "PHYS 51",
+        "courseName": "Dummy Data",
+        "courseID": "PHYS 51",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 39,
+      "key": 39,
       "course": {
         "isSelected": false,
-        "name": "PHYS 52",
+        "courseName": "Dummy Data",
+        "courseID": "PHYS 52",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 40,
+      "key": 40,
       "course": {
         "isSelected": false,
-        "name": "BIO 30",
+        "courseName": "Dummy Data",
+        "courseID": "BIO 30",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 41,
+      "key": 41,
       "course": {
         "isSelected": false,
-        "name": "BIO 31",
+        "courseName": "Dummy Data",
+        "courseID": "BIO 31",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 42,
+      "key": 42,
       "course": {
         "isSelected": false,
-        "name": "CHEM 1A",
+        "courseName": "Dummy Data",
+        "courseID": "CHEM 1A",
         "units": 5,
         "isOrigin": false
       }
     },
     {
-      "ID": 43,
+      "key": 43,
       "course": {
         "isSelected": false,
-        "name": "CHEM 1B",
+        "courseName": "Dummy Data",
+        "courseID": "CHEM 1B",
         "units": 5,
         "isOrigin": false
       }
     },
     {
-      "ID": 44,
+      "key": 44,
       "course": {
         "isSelected": false,
-        "name": "GEOL 1",
+        "courseName": "Dummy Data",
+        "courseID": "GEOL 1",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 45,
+      "key": 45,
       "course": {
         "isSelected": false,
-        "name": "METR 10",
+        "courseName": "Dummy Data",
+        "courseID": "METR 10",
         "units": 3,
         "isOrigin": false
       }
     },
     {
-      "ID": 46,
+      "key": 46,
       "course": {
         "isSelected": false,
-        "name": "CS 46A",
+        "courseName": "Dummy Data",
+        "courseID": "CS 46A",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 47,
+      "key": 47,
       "course": {
         "isSelected": false,
-        "name": "CS 46B",
+        "courseName": "Dummy Data",
+        "courseID": "CS 46B",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 48,
+      "key": 48,
       "course": {
         "isSelected": false,
-        "name": "CS 47",
+        "courseName": "Dummy Data",
+        "courseID": "CS 47",
         "units": 3,
         "isOrigin": false
       }
     },
     {
-      "ID": 49,
+      "key": 49,
       "course": {
         "isSelected": false,
-        "name": "CS 72",
+        "courseName": "Dummy Data",
+        "courseID": "CS 72",
         "units": 3,
         "isOrigin": false
       }
     },
     {
-      "ID": 50,
+      "key": 50,
       "course": {
         "isSelected": false,
-        "name": "CS 49C",
+        "courseName": "Dummy Data",
+        "courseID": "CS 49C",
         "units": 3,
         "isOrigin": false
       }
     },
     {
-      "ID": 51,
+      "key": 51,
       "course": {
         "isSelected": false,
-        "name": "CS 49J",
+        "courseName": "Dummy Data",
+        "courseID": "CS 49J",
         "units": 3,
         "isOrigin": false
       }
     },
 
     {
-      "ID": 52,
+      "key": 52,
       "course": {
         "isSelected": false,
-        "name": "MATH 161",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 161",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 53,
+      "key": 53,
       "course": {
         "isSelected": false,
-        "name": "CS 242",
+        "courseName": "Dummy Data",
+        "courseID": "CS 242",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 54,
+      "key": 54,
       "course": {
         "isSelected": false,
-        "name": "MATH 211",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 211",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 55,
+      "key": 55,
       "course": {
         "isSelected": false,
-        "name": "MATH 222",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 222",
         "units": 3,
         "isOrigin": false
       }
     },
     {
-      "ID": 56,
+      "key": 56,
       "course": {
         "isSelected": false,
-        "name": "MATH 241",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 241",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 57,
+      "key": 57,
       "course": {
         "isSelected": false,
-        "name": "MATH 165",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 165",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 58,
+      "key": 58,
       "course": {
         "isSelected": false,
-        "name": "PHYS 214",
+        "courseName": "Dummy Data",
+        "courseID": "PHYS 214",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 59,
+      "key": 59,
       "course": {
         "isSelected": false,
-        "name": "CS 115",
+        "courseName": "Dummy Data",
+        "courseID": "CS 115",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 60,
+      "key": 60,
       "course": {
         "isSelected": false,
-        "name": "CS 215",
+        "courseName": "Dummy Data",
+        "courseID": "CS 215",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 61,
+      "key": 61,
       "course": {
         "isSelected": false,
-        "name": "CS 252",
+        "courseName": "Dummy Data",
+        "courseID": "CS 252",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 62,
+      "key": 62,
       "course": {
         "isSelected": false,
-        "name": "CS 210",
+        "courseName": "Dummy Data",
+        "courseID": "CS 210",
         "units": 1,
         "isOrigin": false
       }
     },
 
     {
-      "ID": 63,
+      "key": 63,
       "course": {
         "isSelected": false,
-        "name": "MATH 31A",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 31A",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 64,
+      "key": 64,
       "course": {
         "isSelected": false,
-        "name": "MATH 31B",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 31B",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 65,
+      "key": 65,
       "course": {
         "isSelected": false,
-        "name": "MATH 61",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 61",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 66,
+      "key": 66,
       "course": {
         "isSelected": false,
-        "name": "MATH 32A",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 32A",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 67,
+      "key": 67,
       "course": {
         "isSelected": false,
-        "name": "MATH 32B",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 32B",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 68,
+      "key": 68,
       "course": {
         "isSelected": false,
-        "name": "MATH 33A",
+        "courseName": "Dummy Data",
+        "courseID": "MATH 33A",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 69,
+      "key": 69,
       "course": {
         "isSelected": false,
-        "name": "",
+        "courseName": "Dummy Data",
+        "courseID": "",
         "units": "",
         "isOrigin": false
       }
     },
     {
-      "ID": 70,
+      "key": 70,
       "course": {
         "isSelected": false,
-        "name": "COM SCI 32",
+        "courseName": "Dummy Data",
+        "courseID": "COM SCI 32",
         "units": 4,
         "isOrigin": false
       }
     },
     {
-      "ID": 71,
+      "key": 71,
       "course": {
         "isSelected": false,
-        "name": "COM SCI 33",
+        "courseName": "Dummy Data",
+        "courseID": "COM SCI 33",
         "units": 5,
         "isOrigin": false
       }
     },
     {
-      "ID": 72,
+      "key": 72,
       "course": {
         "isSelected": false,
-        "name": "PHYSICS 1A",
+        "courseName": "Dummy Data",
+        "courseID": "PHYSICS 1A",
         "units": 5,
         "isOrigin": false
       }
     },
     {
-      "ID": 73,
+      "key": 73,
       "course": {
         "isSelected": false,
-        "name": "PHYSICS 4AL",
+        "courseName": "Dummy Data",
+        "courseID": "PHYSICS 4AL",
         "units": 2,
         "isOrigin": false
       }
     },
     {
-      "ID": 74,
+      "key": 74,
       "course": {
         "isSelected": false,
-        "name": "PHYSICS 1B",
+        "courseName": "Dummy Data",
+        "courseID": "PHYSICS 1B",
         "units": 5,
         "isOrigin": false
       }
     },
     {
-      "ID": 75,
+      "key": 75,
       "course": {
         "isSelected": false,
-        "name": "PHYSICS 4BL",
+        "courseName": "Dummy Data",
+        "courseID": "PHYSICS 4BL",
         "units": 2,
         "isOrigin": false
       }
     },
     {
-      "ID": 76,
+      "key": 76,
       "course": {
         "isSelected": false,
-        "name": "PHYSICS 1C",
+        "courseName": "Dummy Data",
+        "courseID": "PHYSICS 1C",
         "units": 5,
         "isOrigin": false
       }
     },
     {
-      "ID": 77,
+      "key": 77,
       "course": {
         "isSelected": false,
-        "name": "ENGCOMP 3",
+        "courseName": "Dummy Data",
+        "courseID": "ENGCOMP 3",
         "units": 5,
         "isOrigin": false
       }
     },
     {
-      "ID": 78,
+      "key": 78,
       "course": {
         "isSelected": false,
-        "name": "",
+        "courseName": "Dummy Data",
+        "courseID": "",
         "units": "",
         "isOrigin": false
       }
