@@ -74,7 +74,9 @@ class CourseSelectorPage extends React.Component {
       
         <div className="column is-half is-offset-one-quarter">
           <div className="box has-background-light">
-            <h3 className="title has-text-centered"> What classes have you completed at DUMMY DATA? </h3>
+            <h3 className="title has-text-centered"> 
+              What classes have you completed at {this.props.schoolName}? 
+            </h3>
   
             <div className="buttons is-centered">
               {this.generateButtons()}

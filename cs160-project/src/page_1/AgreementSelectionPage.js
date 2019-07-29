@@ -79,7 +79,11 @@ constructor(props) {
     }
 
     let request = {source: this.state.selectedSource.ID, agreements: IDs}
-    console.log(request, names) 
+
+    ///// REMOVE THIS LINE LATER
+    if(names[0] === "") { names = ["Dummy 1","Dummy 2","Dummy 3","Dummy 4"]}
+    ///// REMOVE THIS LINE LATER
+
     this.props.onSubmit(request, names)                  
   }
 

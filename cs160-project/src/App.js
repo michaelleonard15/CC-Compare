@@ -17,7 +17,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {pageNumber: 1, lookupTable: [], equivalencyMatrix: []}
+    this.state = {pageNumber: 1, lookupTable: [], equivalencyMatrix: [], schoolList: []}
   }
 
 
@@ -30,7 +30,7 @@ class App extends React.Component {
    * the pageNumber state to load the second page. 
    */
   submitRequest(IDs, names) {
-    console.log("FROM APP.JS\n", IDs, names)
+    this.setState({schoolList: names})
     fetch('./dummyClasses_7_27_v2.json')
       .then( response => {
         return response.json()
@@ -105,6 +105,7 @@ class App extends React.Component {
                 handleToggle={this.handleToggle.bind(this)}
                 backButton={this.handleBackButton.bind(this)}
                 loadNextPage={this.loadPageThree.bind(this)}
+                schoolName={this.state.schoolList[0]}
               />
     }
     else if(this.state.pageNumber === 3) {
@@ -113,7 +114,7 @@ class App extends React.Component {
                 equivalencyMatrix={this.state.equivalencyMatrix}
                 handleToggle={this.handleToggle.bind(this)}
                 backButton={this.handleBackButton.bind(this)}
-                schoolList={["SRJC","SJSU","SSU"]} />
+                schoolList={this.state.schoolList} />
     }
   }
 
