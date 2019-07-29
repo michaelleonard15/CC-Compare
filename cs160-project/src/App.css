@@ -161,3 +161,34 @@
   text-decoration: underline;
   font-size: 24px; 
 } 
+
+
+
+
+
+
+.links_row {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+
+}
+
+
+.link_box {
+  width: 300px;
+  height: 25px;
+  background-color: #878787;
+  margin: 25px;
+  display: table;
+  text-align: center;
+}
+
+
+.agreement_link {
+  display: table-cell;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  vertical-align: middle;
+}

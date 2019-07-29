@@ -117,7 +117,19 @@ class FinalReportPage extends React.Component {
 
 
 
-
+  linkOriginalAgreements() {
+    let links = this.props.agreementKeys.map( (key) => {
+      return (
+        <div className="link_box">
+          <a className="agreement_link"
+             target="_blank"
+             href={`https://assist.org/transfer/report/${key}`}>See orginal Report</a>
+        </div>
+      )
+    })
+    links.splice(0, 0, <div className="link_box" />)
+    return links
+  }
 
 
 
@@ -138,7 +150,9 @@ class FinalReportPage extends React.Component {
         <div className="school_labels_row">
           {this.generateLabels()}
         </div>
-
+        <div className="links_row">
+          {this.linkOriginalAgreements()}
+        </div>
         {this.generateRows()}
 
       </div>)

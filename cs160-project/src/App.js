@@ -17,7 +17,8 @@ class App extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {pageNumber: 1, lookupTable: [], equivalencyMatrix: [], schoolList: []}
+    this.state = {pageNumber: 1, lookupTable: [], equivalencyMatrix: [], schoolList: [],
+                  agreementKeys: [] }
   }
 
 
@@ -30,7 +31,10 @@ class App extends React.Component {
    * the pageNumber state to load the second page. 
    */
   submitRequest(IDs, names) {
-    this.setState({schoolList: names})
+    this.setState({schoolList: names, 
+                   agreementKeys: IDs.agreements.map( (arg) => {return arg.major})
+    })
+
     fetch('./dummyClasses_7_27_v2.json')
       .then( response => {
         return response.json()
@@ -114,7 +118,8 @@ class App extends React.Component {
                 equivalencyMatrix={this.state.equivalencyMatrix}
                 handleToggle={this.handleToggle.bind(this)}
                 backButton={this.handleBackButton.bind(this)}
-                schoolList={this.state.schoolList} />
+                schoolList={this.state.schoolList}
+                agreementKeys={this.state.agreementKeys} />
     }
   }
 
