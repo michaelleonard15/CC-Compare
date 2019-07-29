@@ -123,6 +123,7 @@ class FinalReportPage extends React.Component {
         <div className="link_box">
           <a className="agreement_link"
              target="_blank"
+             rel="noopener noreferrer"
              href={`https://assist.org/transfer/report/${key}`}>See orginal Report</a>
         </div>
       )
