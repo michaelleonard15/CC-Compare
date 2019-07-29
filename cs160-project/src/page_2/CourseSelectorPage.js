@@ -23,7 +23,7 @@ class CourseSelectorPage extends React.Component {
 
   /**
    * Returns an array of class objects from the values stored in 
-   * the lookupTable
+   * the lookupTable. Classes are sorted in alphabetical order.
    */
   getCoursesList() {
     let courses = []
@@ -32,7 +32,12 @@ class CourseSelectorPage extends React.Component {
         courses.push({course: value, ID: key})
       }
     })
-    return courses
+    return courses.sort( (c1, c2) => {
+      let name1 = c1.course.name.toUpperCase()
+      let name2 = c2.course.name.toUpperCase()
+      return (name1 < name2) ? -1 : 
+             (name1 > name2) ? 1  : 0
+    })
   }
 
 
