@@ -1,6 +1,7 @@
 import React from 'react'
 import RowGroup from './RowGroup'
 import RequirementRow from './RequirementRow'
+import ConditionalGroup from './ConditionalGroup'
 import evaluation from './evaluation'
 import '../App.css'
 
@@ -35,14 +36,25 @@ class FinalReportPage extends React.Component {
 
     for(let i = 0; i < matrix.length; i++) {
       
-      if("relationToNext" in matrix[i][0]) {
-        let temp = [matrix[i]]
+      if("condition" in matrix[i][0]) {
+        let condition = matrix[i][0].condition
+        let slice = []
+        for(let temp = 0; temp < condition.rows; temp++) {
+          slice.push(matrix[temp + i])
+        }
+        rows.push(this.createConditionalGroup(slice, i, isComplete, condition))
+        i += condition.rows - 1
+      }
+
+      else if("relationToNext" in matrix[i][0]) {
+        let slice = [matrix[i]]
         while("relationToNext" in matrix[i][0] && i < matrix.length) {
-          temp.push(matrix[ i + 1 ])
+          slice.push(matrix[ i + 1 ])
           i += 1
         }
-        rows.push(this.createRowGroup(temp, i, isComplete))
+        rows.push(this.createRowGroup(slice, i, isComplete))
       }
+
       else {
         rows.push(this.createRequirementRow(matrix[i], i, isComplete))
       }
@@ -52,25 +64,30 @@ class FinalReportPage extends React.Component {
   }
 
 
-
-
-
-
-  createRowGroup(rows, index, isComplete) {
+  createConditionalGroup(slice, index, isComplete, condition) { 
     return (
-      <RowGroup 
+      <ConditionalGroup
         key={index}
         lookupTable={this.props.lookupTable}
-        equivalencySlice={rows} 
+        equivalencySlice={slice}
         handleToggle={this.props.handleToggle.bind(this)}
-        isComplete={isComplete}   />
+        isComplete={isComplete}
+        />
     )
   }
 
 
 
-
-
+  createRowGroup(slice, index, isComplete) {
+    return (
+      <RowGroup 
+        key={index}
+        lookupTable={this.props.lookupTable}
+        equivalencySlice={slice} 
+        handleToggle={this.props.handleToggle.bind(this)}
+        isComplete={isComplete}   />
+    )
+  }
 
 
 

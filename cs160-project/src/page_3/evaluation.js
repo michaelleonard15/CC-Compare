@@ -8,8 +8,6 @@ function evaluation(lookupTable) {
   let lookup = lookupTable
 
 
-
-
   /**
    * Given a set of IDs and relationships, checks if a
    * requirement has been satisfied by checking the isSelected of
@@ -29,7 +27,12 @@ function evaluation(lookupTable) {
     return result_OR
   }
 
+
+
+
+
   return {
+    
     /**
      * Function to check if all of the requirements for this 
      * group of rows have been satisfied. Checks for completion of requirements
