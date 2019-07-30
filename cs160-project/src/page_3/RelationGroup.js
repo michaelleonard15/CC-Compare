@@ -84,7 +84,7 @@ class RelationGroup extends React.Component {
       <div key={key} className={'class_label_' + selected}>
         <button className={'report_toggle_' + selected}
                 onClick={this.props.handleToggle.bind(this, lookupKey)}>
-                {aClass.name} ({aClass.units})
+                {aClass.courseID} ({aClass.units})
         </button>
       </div>
     )
@@ -105,7 +105,7 @@ class RelationGroup extends React.Component {
   createLabel(key, completed, aClass)  {
     return (
       <div key={key} className={'class_label_' + completed}>
-        <label className='className'>{aClass.name}</label>
+        <label className='className'>{aClass.courseID}</label>
         <label className='units'> ({aClass.units}) </label>
       </div>
     )
