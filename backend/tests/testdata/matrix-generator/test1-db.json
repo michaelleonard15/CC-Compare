@@ -1,0 +1,48 @@
+{
+	"Section":{
+		"Equivalency":{
+			"Source":{
+				"0": [{"key":"ENGL 1A", "name": "College Composition", "units":"4"}]
+
+			},
+			"Destination":{
+				"0": [{"key":"ENGCOMP 3", "name": "English Composition, Rhetoric, and Language", "units":"5"}]
+
+			},
+			"RelationToNext":"AND"
+		},
+		"Equivalency":{
+			"Source":{
+				"0": [{"key":"", "name": "One additional course in Englsih composition", "units":""}]
+
+			},
+			"Destination":{
+				"0": [{"key":"ENGL 1B", "name":"Literature and Composition", "units":"3"}],
+				"1": [{"key":"ENGL 5", "name": "Advanced Composition and Critical Thinking", "units":"3"}],
+				"2": [{"key":"PHIL 5", "name": "Critical Thinking/Writing", "units":"3"}],
+				"3": [{"key":"ENGL 5", "name": "Critical Thinking and Argumentation", "units":"3"}]
+			
+			}
+	},
+	"Section":{
+		"Equivalency":{
+			"Source":{
+				"0": [{"key":"", "name": "No course articulated", "units":""}]
+
+			},
+			"Destination":{
+				"0": [{"key":"COM SCI 31", "name": "Introduction to Computer Science 1", "units":"4"}]
+
+			},
+			"RelationToNext":"OR"
+		},
+		"Equivalency":{
+			"Source":{
+				"0": [{"key":"ENGR 6", "name": "Programming in MATLAB for Engineers", "units":"3"}]
+
+			},
+			"Destination":{
+				"0": [{"key":"C&EE M20", "name": "Introduction to Computer Programming with MATLAB", "units":"4"}]
+			}
+	},
+}
