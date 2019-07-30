@@ -44,14 +44,14 @@ def test_origin_contains_all_ids(client):
     assert vals.valid_origins == id_list
 
 
-### TESTING DESTINATIONS ENDPOINT
+# ### TESTING DESTINATIONS ENDPOINT
 
 
-# Checks that dest-schools responds with status code 200.
-def test_dest_responds(client):
+# # Checks that dest-schools responds with status code 200.
+# def test_dest_responds(client):
 
-    response = client.get('/api/dest-schools/')
-    assert response.status_code == 200
+#     response = client.get('/api/dest-schools/')
+#     assert response.status_code == 200
 
 
 ## I want to modify this test to work, but at the moment it isn't working...
