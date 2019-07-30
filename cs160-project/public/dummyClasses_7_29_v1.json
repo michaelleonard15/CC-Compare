@@ -802,127 +802,127 @@
       { "courses": [] }
     ],
     [
-      { "courses": [[3]], "relationToNext": "NONE" },
+      { "courses": [[3]] },
       { "courses": [[31]] },
       { "courses": [] },
       { "courses": [] }
     ],
     [
-      { "courses": [[4]], "relationToNext": "NONE" },
+      { "courses": [[4]] },
       { "courses": [[32]] },
       { "courses": [[52]] },
       { "courses": [[63]] }
     ],
     [
-      { "courses": [[5]], "relationToNext": "NONE" },
+      { "courses": [[5]] },
       { "courses": [[33]] },
       { "courses": [] },
       { "courses": [[64]] }
     ],
     [
-      { "courses": [[6]], "relationToNext": "NONE" },
+      { "courses": [[6]] },
       { "courses": [[34]] },
       { "courses": [[53]] },
       { "courses": [[65]] }
     ],
     [
-      { "courses": [[7]], "relationToNext": "NONE" },
+      { "courses": [[7]] },
       { "courses": [[35]] },
       { "courses": [] },
       { "courses": [[66, 67]] }
     ],
     [
-      { "courses": [[8]], "relationToNext": "NONE" },
+      { "courses": [[8]] },
       { "courses": [[36]] },
       { "courses": [] },
       { "courses": [[68]] }
     ],
     [
-      { "courses": [[11]], "relationToNext": "NONE" },
+      { "courses": [[11]] },
       { "courses": [[37]] },
       { "courses": [] },
       { "courses": [] }
     ],
     [
-      { "courses": [[13]], "relationToNext": "NONE" },
+      { "courses": [[13]] },
       { "courses": [[38]] },
       { "courses": [] },
       { "courses": [] }
     ],
     [
-      { "courses": [[12, 13]], "relationToNext": "NONE" },
+      { "courses": [[12, 13]] },
       { "courses": [[39]] },
       { "courses": [] },
       { "courses": [] }
     ],
     [
-      { "courses": [[15]], "relationToNext": "NONE" },
+      { "courses": [[15]] },
       { "courses": [[40]] },
       { "courses": [] },
       { "courses": [] }
     ],
     [
-      { "courses": [[16], [17]], "relationToNext": "NONE" },
+      { "courses": [[16], [17]] },
       { "courses": [[41]] },
       { "courses": [] },
       { "courses": [] }
     ],
     [
-      { "courses": [[18], [20]], "relationToNext": "NONE" },
+      { "courses": [[18], [20]] },
       { "courses": [[42]] },
       { "courses": [] },
       { "courses": [] }
     ],
     [
-      { "courses": [[19], [21]], "relationToNext": "NONE" },
+      { "courses": [[19], [21]] },
       { "courses": [[43]] },
       { "courses": [] },
       { "courses": [] }
     ],
     [
-      { "courses": [[22, 23]], "relationToNext": "NONE" },
+      { "courses": [[22, 23]] },
       { "courses": [[44]] },
       { "courses": [] },
       { "courses": [] }
     ],
     [
-      { "courses": [[24]], "relationToNext": "NONE" },
+      { "courses": [[24]] },
       { "courses": [[45]] },
       { "courses": [] },
       { "courses": [] }
     ],
     [
-      { "courses": [[5]], "relationToNext": "NONE" },
+      { "courses": [[5]] },
       { "courses": [] },
       { "courses": [[54]] },
       { "courses": [] }
     ],
     [
-      { "courses": [[8]], "relationToNext": "NONE" },
+      { "courses": [[8]] },
       { "courses": [] },
       { "courses": [[55]] },
       { "courses": [] }
     ],
     [
-      { "courses": [[8, 9]], "relationToNext": "NONE" },
+      { "courses": [[8, 9]] },
       { "courses": [] },
       { "courses": [[56]] },
       { "courses": [] }
     ],
     [
-      { "courses": [[10]], "relationToNext": "NONE" },
+      { "courses": [[10]] },
       { "courses": [] },
       { "courses": [[57]] },
       { "courses": [] }
     ],
     [
-      { "courses": [[12, 13]], "relationToNext": "NONE" },
+      { "courses": [[12, 13]] },
       { "courses": [] },
       { "courses": [[58]] },
       { "courses": [] }
     ],
     [
-      { "courses": [[25]], "relationToNext": "NONE" },
+      { "courses": [[25]] },
       { "courses": [[46]] },
       { "courses": [[59]] },
       {
@@ -930,19 +930,19 @@
       }
     ],
     [
-      { "courses": [[26]], "relationToNext": "NONE" },
+      { "courses": [[26]] },
       { "courses": [[47]] },
       { "courses": [[60]] },
       { "courses": [[70]] }
     ],
     [
-      { "courses": [[27]], "relationToNext": "NONE" },
+      { "courses": [[27]] },
       { "courses": [[48]] },
       { "courses": [[61]] },
       { "courses": [[71]] }
     ],
     [
-      { "courses": [[28]], "relationToNext": "NONE" },
+      { "courses": [[28]] },
       { "courses": [[49]] },
       { "courses": [[62]] },
       { "courses": [] }
@@ -954,7 +954,7 @@
       { "courses": [] }
     ],
     [
-      { "courses": [[25]], "relationToNext": "NONE" },
+      { "courses": [[25]] },
       { "courses": [[51]] },
       { "courses": [] },
       { "courses": [] }
@@ -966,7 +966,7 @@
       { "courses": [[72, 73]] }
     ],
     [
-      { "courses": [[12, 13]], "relationToNext": "NONE" },
+      { "courses": [[12, 13]] },
       { "courses": [] },
       { "courses": [] },
       {
@@ -980,7 +980,7 @@
       { "courses": [[77]] }
     ],
     [
-      { "courses": [[3], [0], [1], [2]], "relationToNext": "NONE" },
+      { "courses": [[3], [0], [1], [2]] },
       { "courses": [] },
       { "courses": [] },
       { "courses": [[78]] }

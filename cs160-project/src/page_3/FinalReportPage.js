@@ -34,7 +34,7 @@ class FinalReportPage extends React.Component {
       let temp = []
       temp.push(matrix[i])
     
-      while(matrix[i][0].relationToNext !== "NONE") {
+      while("relationToNext" in matrix[i][0]) {
         temp.push(matrix[ i + 1 ])
         i += 1
       }
