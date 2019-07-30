@@ -63,7 +63,7 @@ class RowGroup extends React.Component {
   render() {
     let isComplete = this.props.isComplete
     let slice = this.props.equivalencySlice
-    let groupCompleted = isComplete.group(slice) ? 'complete' : 'incomplete'
+    let groupCompleted = isComplete.rowGroup(slice) ? 'complete' : 'incomplete'
     return(
       <div className={"row_group_" + groupCompleted}> 
         {this.generateRows()}

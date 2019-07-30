@@ -32,7 +32,15 @@ function evaluation(lookupTable) {
 
 
   return {
-    
+
+    conditionalGroup(slice, condition) {
+      return true
+    },
+
+
+
+
+
     /**
      * Function to check if all of the requirements for this 
      * group of rows have been satisfied. Checks for completion of requirements
@@ -40,7 +48,7 @@ function evaluation(lookupTable) {
      * defined in the equivalencySlice prop
      * Returns true or false
      */
-    group(slice) {
+    rowGroup(slice) {
 
       let boolArray = slice.map( (row) => {
         return this.row(row)
