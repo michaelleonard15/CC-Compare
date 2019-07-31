@@ -79,7 +79,7 @@ def _add_to_lookup(db_course, lookup, is_origin):
     course_obj['isOrigin'] = is_origin
     course_obj['isSelected'] = False
     entry_id = __current_id
-    new_entry = { 'id': entry_id, 'course': course_obj }
+    new_entry = { 'key': entry_id, 'course': course_obj }
     lookup.append(new_entry)
     __current_id += 1
     return entry_id
