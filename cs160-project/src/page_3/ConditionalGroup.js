@@ -65,9 +65,8 @@ class ConditionalGroup extends React.Component {
     let groupCompleted = isComplete.conditionalGroup(slice, condition) ? 'complete' : 'incomplete'
     return(
       <div className={"row_group_" + groupCompleted}>    
-        <p>Start of Group<br/><br/></p> 
+        <p>Complete {condition.number} {condition.type.toLowerCase()} from the following: <br/><br/></p> 
         {this.generateRows()}
-        <p>End of Group<br/><br/></p>
       </div>
     )
   }
