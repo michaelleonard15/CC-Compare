@@ -17,7 +17,7 @@ def test_extract_source_row(set_ids):
     # Opening files
     with open(TEST_FILE_PATH + "test1-db.json") as f:
         test1_db = json.load(f)
-    with open(TEST_FILE_PATH + "test1-after-origin.json") as f:
+    with open(TEST_FILE_PATH + "test1-frontend-after-origin.json") as f:
         test1_after_origin = json.load(f)
 
     ## ROW 1
@@ -34,12 +34,12 @@ def test_extract_source_row(set_ids):
     lookup_expected = [{
         "key": 0,
         "course": {
-        "isSelected": False,
-        "courseName": "College Composition",
-        "courseID": "ENGL 1A",
-        "units": 4,
-        "isOrigin": True
-      }}]
+            "isSelected": False,
+            "courseName": "College Composition",
+            "courseID": "ENGL 1A",
+            "units": 4,
+            "isOrigin": True
+        }}]
     matrix_expected = [[{"courses": [[0]], "relationToNext": "AND"}]]
 
     # Assertions
@@ -54,9 +54,12 @@ def test_extract_source_row(set_ids):
     matgen._extract_source_row(row, matrix, src_lookup)
 
     # Expected values
+    lookup_expected = test1_after_origin['lookup'][slice(1, 6)]
+    matrix_expected = test1_after_origin['equivalencyMatrix'][slice(0, 2)]
 
     # Assertions
-
+    assert matrix == matrix_expected
+    assert src_lookup == lookup_expected
 
 def test_add_to_lookup(set_ids):
 

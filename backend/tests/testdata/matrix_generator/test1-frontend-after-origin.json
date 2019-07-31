@@ -24,8 +24,8 @@
       "key": 1,
       "course": {
         "isSelected": false,
-        "courseName": "ENGL 1B",
-        "courseID": "Literature and Composition",
+        "courseName": "Literature and Composition",
+        "courseID": "ENGL 1B",
         "units": 3,
         "isOrigin": true
       }
