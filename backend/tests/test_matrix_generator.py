@@ -74,3 +74,27 @@ def test_add_to_lookup(set_ids):
     assert lookup == lookup_expected
     assert new_id == 0
 
+def test_add_to_lookup_duplicates(set_ids):
+
+    course1 = {"courseID":"ENGL 1A", "courseName": "College Composition", "units":4}
+    course2 = {"courseID":"ENGL 1A", "courseName": "College Composition", "units":4}
+    lookup = []
+
+    lookup_expected = [
+    {"key": 0,
+        "course": {
+            "isSelected": False,
+            "courseName": "College Composition",
+            "courseID": "ENGL 1A",
+            "units": 4,
+            "isOrigin": True}}]
+    
+    new_id = matgen._add_to_lookup(course1, lookup, is_origin=True)
+
+    assert lookup == lookup_expected
+    assert new_id == 0
+
+    new_id = matgen._add_to_lookup(course2, lookup, is_origin=True)
+
+    assert lookup == lookup_expected
+    assert new_id == 0

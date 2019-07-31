@@ -90,9 +90,10 @@ def _add_to_lookup(db_course, lookup, is_origin):
     course_obj['isOrigin'] = is_origin
     course_obj['isSelected'] = False
 
-    for entry in lookup:
-        if entry['courses'] == course_obj:
-            return lookup.index(course_obj)
+
+    for index, entry in enumerate(lookup):
+        if entry['course'] == course_obj:
+            return index
 
     entry_id = __current_id
     new_entry = { 'key': entry_id, 'course': course_obj }
