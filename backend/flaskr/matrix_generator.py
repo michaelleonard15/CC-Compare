@@ -1,6 +1,8 @@
 # The documentation in this file uses Python docstrings.
 # See https://www.python.org/dev/peps/pep-0257/ for more info
 
+
+# TODO: Refactor these to not be file-global
 __current_id = 0
 __current_neg_id = -1
 
@@ -17,6 +19,8 @@ def generate_matrix(agreement_list):
     source_lookup = []
     dest_lookup = []
     matrix = [[]]
+    __current_id = 0
+    __current_neg_id = -1
 
     for agreement in agreement_list:
         # Ignoring section headers for now, since there's nothing there yet
@@ -60,12 +64,25 @@ def _extract_source_row(row, matrix, src_lookup):
     """
     courses = row['Source']['classes']
     for sublist in courses:
-        # add course to src lookup; increment
-        # modify course in-place within the row
-        # add new class to matrix
-        pass
+        for course in sublist:
+            # add course to src lookup; increment
+            _add_to_lookup(course, src_lookup, is_origin=True)
+            # modify course in-place within the row
+            pass
+    # add courses grouping to matrix
     # if applicable, add relationToNext
 
+
+def _add_to_lookup(db_course, lookup, is_origin):
+    global __current_id
+    course_obj = db_course.copy()
+    course_obj['isOrigin'] = is_origin
+    course_obj['isSelected'] = False
+    entry_id = __current_id
+    new_entry = { 'id': entry_id, 'course': course_obj }
+    lookup.append(new_entry)
+    __current_id += 1
+    return entry_id
 
 def _extract_dests(agreement,matrix):
     """

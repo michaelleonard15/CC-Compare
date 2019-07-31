@@ -2,15 +2,17 @@ import pprint
 import os
 import json
 import flaskr.matrix_generator as matgen
+import pytest
 
 TEST_FILE_PATH = os.getcwd() + "/tests/testdata/matrix_generator/"
 ## TEST FILE 1: SINGLE SCHOOL ##
 
-def test_nothing():
-    with open(TEST_FILE_PATH + "test1-db.json") as f:
-        test1_db = json.load(f)
+@pytest.fixture
+def set_ids():
+    matgen.__current_id = 0
+    matgen.__current_neg_id = -1
     
-def test_extract_source_row():
+def test_extract_source_row(set_ids):
 
     # Opening files
     with open(TEST_FILE_PATH + "test1-db.json") as f:
@@ -20,12 +22,12 @@ def test_extract_source_row():
 
     ## ROW 1
 
-    # Initializatio
+    # Initialization
     row = test1_db['Sections'][0]['1']
     matrix = [[]]
     src_lookup = []
 
-    # RUNNING
+    # Running
     matgen._extract_source_row(row, matrix, src_lookup)
 
     # Expected values
@@ -46,9 +48,29 @@ def test_extract_source_row():
 
     row = test1_db['Sections'][0]['2']
 
-    # RUNNING
+    # Running
     matgen._extract_source_row(row, matrix, src_lookup)
 
     # Expected values
 
     # Assertions
+
+
+def test_add_to_lookup(set_ids):
+
+    db_course = {"courseID":"ENGL 1A", "courseName": "College Composition", "units":4}
+    lookup = []
+    new_id = matgen._add_to_lookup(db_course, lookup, is_origin=True)
+
+    lookup_expected = [
+        {"key": 0,
+         "course": {
+             "isSelected": False,
+             "courseName": "College Composition",
+             "courseID": "ENGL 1A",
+             "units": 4,
+             "isOrigin": True}}]
+    
+    assert lookup == lookup_expected
+    assert new_id == 0
+
