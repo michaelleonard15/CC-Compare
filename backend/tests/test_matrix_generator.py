@@ -24,14 +24,16 @@ def test_extract_source_row(set_ids):
 
     # Initialization
     row = test1_db['Sections'][0]['1']
-    matrix = [[]]
+    matrix = []
     src_lookup = []
 
     # Running
     matgen._extract_source_row(row, matrix, src_lookup)
 
     # Expected values
-    lookup_expected = [{"course": {
+    lookup_expected = [{
+        "key": 0,
+        "course": {
         "isSelected": False,
         "courseName": "College Composition",
         "courseID": "ENGL 1A",

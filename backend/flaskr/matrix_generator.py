@@ -18,7 +18,7 @@ def generate_matrix(agreement_list):
     """
     source_lookup = []
     dest_lookup = []
-    matrix = [[]]
+    matrix = []
     __current_id = 0
     __current_neg_id = -1
 
@@ -70,6 +70,8 @@ def _extract_source_row(row, matrix, src_lookup):
     new_cell = {'courses': course_group}
     if "RelationToNext" in row:
         new_cell['relationToNext'] = row['RelationToNext']
+    _add_source_to_matrix(new_cell, matrix)
+    
     
 
     # for sublist in courses:
@@ -81,19 +83,33 @@ def _extract_source_row(row, matrix, src_lookup):
     # if applicable, add relationToNext
 
 
+def _add_source_to_matrix(new_cell, matrix):
+    """
+    """
+    # Checking if the origin already exists in a row
+    for row in matrix:
+        if len(row) > 0 and row[0] == new_cell:
+            return
+    
+    matrix.append([new_cell])
+
+
+
 def _add_to_lookup(db_course, lookup, is_origin):
     """
     Adds the course to the lookup, and returns the lookup ID of that course.
+    If the course already exists in the lookup table, it will return the
+    existing lookup ID of that course.
     """
     global __current_id
     course_obj = db_course.copy()
     course_obj['isOrigin'] = is_origin
     course_obj['isSelected'] = False
 
-
-    for index, entry in enumerate(lookup):
+    # Handles the case that the course is already in the lookup table.
+    for entry in lookup:
         if entry['course'] == course_obj:
-            return index
+            return entry['key']
 
     entry_id = __current_id
     new_entry = { 'key': entry_id, 'course': course_obj }
