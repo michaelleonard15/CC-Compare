@@ -85,21 +85,36 @@ def test_add_to_lookup_duplicates(set_ids):
     course2 = {"courseID":"ENGL 1A", "courseName": "College Composition", "units":4}
     lookup = []
 
-    lookup_expected = [
-    {"key": 0,
-        "course": {
-            "isSelected": False,
-            "courseName": "College Composition",
-            "courseID": "ENGL 1A",
-            "units": 4,
-            "isOrigin": True}}]
-    
     new_id = matgen._add_to_lookup(course1, lookup, is_origin=True)
 
-    assert lookup == lookup_expected
+    lookup_expected = [
+        {"key": 0,
+         "course": {
+             "isSelected": False,
+             "courseName": "College Composition",
+             "courseID": "ENGL 1A",
+             "units": 4,
+             "isOrigin": True}}]
+
     assert new_id == 0
+    assert lookup == lookup_expected
 
     new_id = matgen._add_to_lookup(course2, lookup, is_origin=True)
 
-    assert lookup == lookup_expected
     assert new_id == 0
+    assert lookup == lookup_expected
+
+def test_add_to_lookup_no_courseID(set_ids):
+
+    with open(TEST_FILE_PATH + "test1-frontend-after-origin.json") as f:
+        test1_after_origin = json.load(f)
+    
+    course = {"courseID":"", "courseName": "No course articulated", "units":0}
+    lookup = []
+
+    new_id = matgen._add_to_lookup(course, lookup, is_origin=True)
+
+    lookup_expected = [test1_after_origin['lookup'][0]]
+
+    assert new_id == -1
+    assert lookup == lookup_expected

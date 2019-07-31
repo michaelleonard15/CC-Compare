@@ -34,17 +34,11 @@ def generate_matrix(agreement_list):
         current_dest_lookup = _extract_dests(agreement, matrix)
         dest_lookup = dest_lookup + current_dest_lookup
 
+    # TODO: reassign IDs for destinations, before or after concatenation
     
     # Concatenating lists
     lookup = source_lookup + dest_lookup
-
-    # # Assigning IDs
-    # # ! we might not be able to do this here
-    # i = 0
-    # for course in lookup:
-    #     if 'id' not in course:
-    #         course['id'] = i
-    #         i += 1
+    
 
 
 def _extract_sources(agreement, matrix, source_lookup):
@@ -102,20 +96,29 @@ def _add_to_lookup(db_course, lookup, is_origin):
     existing lookup ID of that course.
     """
     global __current_id
+    global __current_neg_id
     course_obj = db_course.copy()
     course_obj['isOrigin'] = is_origin
     course_obj['isSelected'] = False
 
-    # Handles the case that the course is already in the lookup table.
     for entry in lookup:
         if entry['course'] == course_obj:
             return entry['key']
 
-    entry_id = __current_id
-    new_entry = { 'key': entry_id, 'course': course_obj }
+    # Handles the case that there is no courseID (should set negative key).
+    if db_course['courseID'] == "":
+        course_obj['isOrigin'] = False
+        entry_id = __current_neg_id
+        new_entry = { 'key': entry_id, 'course': course_obj }
+        lookup.insert(0, new_entry)
+        __current_neg_id -= 1
+    # Standard case
+    else:
+        entry_id = __current_id
+        new_entry = { 'key': entry_id, 'course': course_obj }
+        lookup.append(new_entry)
+        __current_id += 1
 
-    lookup.append(new_entry)
-    __current_id += 1
     return entry_id
 
 

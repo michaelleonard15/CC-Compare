@@ -28,7 +28,7 @@
 		{
 			"1":{
 				"Source":{
-					"classes": [[{"courseID":"", "courseName": "No course articulated", "units":""}]]
+					"classes": [[{"courseID":"", "courseName": "No course articulated", "units":0}]]
 				},
 				"Destination":{
 					"classes": [[{"courseID":"COM SCI 31", "courseName": "Introduction to Computer Science 1", "units":4}]]
