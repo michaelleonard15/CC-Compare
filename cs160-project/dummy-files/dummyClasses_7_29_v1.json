@@ -1,0 +1,910 @@
+{
+  "lookup": [
+    {
+      "key": 0,
+      "course": {
+        "isSelected": false,
+        "name": "ENGL 5",
+        "units": 3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 1,
+      "course": {
+        "isSelected": false,
+        "name": "PHIL 5",
+        "units": 3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 2,
+      "course": {
+        "isSelected": false,
+        "name": "SPCH 9",
+        "units": 3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 3,
+      "course": {
+        "isSelected": false,
+        "name": "ENGL 1B",
+        "units": 3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 4,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 1A",
+        "units": 5,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 5,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 1B",
+        "units": 5,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 6,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 4",
+        "units": 4,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 7,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 1C",
+        "units": 4,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 8,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 5",
+        "units": 3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 9,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 2",
+        "units": 3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 10,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 15",
+        "units": 4,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 11,
+      "course": {
+        "isSelected": false,
+        "name": "PHYS 40",
+        "units": 5,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 12,
+      "course": {
+        "isSelected": false,
+        "name": "PHYS 41",
+        "units": 4,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 13,
+      "course": {
+        "isSelected": false,
+        "name": "PHYS 42",
+        "units": 4,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 14,
+      "course": {
+        "isSelected": false,
+        "name": "PHYS 43",
+        "units": 4,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 15,
+      "course": {
+        "isSelected": false,
+        "name": "BIO 2.1",
+        "units": 5,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 16,
+      "course": {
+        "isSelected": false,
+        "name": "BIO 2.2",
+        "units": 5,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 17,
+      "course": {
+        "isSelected": false,
+        "name": "BIO 2.3",
+        "units": 5,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 18,
+      "course": {
+        "isSelected": false,
+        "name": "CHEM 1A",
+        "units": 5,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 19,
+      "course": {
+        "isSelected": false,
+        "name": "CHEM 1B",
+        "units": 5,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 20,
+      "course": {
+        "isSelected": false,
+        "name": "CHEM 4A",
+        "units": 5,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 21,
+      "course": {
+        "isSelected": false,
+        "name": "CHEM 4B",
+        "units": 5,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 22,
+      "course": {
+        "isSelected": false,
+        "name": "GEOL 1",
+        "units": 3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 23,
+      "course": {
+        "isSelected": false,
+        "name": "GEOL 1L",
+        "units": 1,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 24,
+      "course": {
+        "isSelected": false,
+        "name": "METRO 10",
+        "units": 3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 25,
+      "course": {
+        "isSelected": false,
+        "name": "CS 10",
+        "units": 4,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 26,
+      "course": {
+        "isSelected": false,
+        "name": "CS 11",
+        "units": 4,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 27,
+      "course": {
+        "isSelected": false,
+        "name": "CS 12",
+        "units": 4,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 28,
+      "course": {
+        "isSelected": false,
+        "name": "CS 81.21",
+        "units": 4,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 29,
+      "course": {
+        "isSelected": false,
+        "name": "ENGL 1A",
+        "units": 4,
+        "isOrigin": true
+      }
+    },
+
+    {
+      "key": 30,
+      "course": {
+        "isSelected": false,
+        "name": "ENGL 2",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 31,
+      "course": {
+        "isSelected": false,
+        "name": "ENGL 1B",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 32,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 30",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 33,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 31",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 34,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 42",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 35,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 32",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 36,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 129A",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 37,
+      "course": {
+        "isSelected": false,
+        "name": "PHYS 50",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 38,
+      "course": {
+        "isSelected": false,
+        "name": "PHYS 51",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 39,
+      "course": {
+        "isSelected": false,
+        "name": "PHYS 52",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 40,
+      "course": {
+        "isSelected": false,
+        "name": "BIO 30",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 41,
+      "course": {
+        "isSelected": false,
+        "name": "BIO 31",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 42,
+      "course": {
+        "isSelected": false,
+        "name": "CHEM 1A",
+        "units": 5,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 43,
+      "course": {
+        "isSelected": false,
+        "name": "CHEM 1B",
+        "units": 5,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 44,
+      "course": {
+        "isSelected": false,
+        "name": "GEOL 1",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 45,
+      "course": {
+        "isSelected": false,
+        "name": "METR 10",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 46,
+      "course": {
+        "isSelected": false,
+        "name": "CS 46A",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 47,
+      "course": {
+        "isSelected": false,
+        "name": "CS 46B",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 48,
+      "course": {
+        "isSelected": false,
+        "name": "CS 47",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 49,
+      "course": {
+        "isSelected": false,
+        "name": "CS 72",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 50,
+      "course": {
+        "isSelected": false,
+        "name": "CS 49C",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 51,
+      "course": {
+        "isSelected": false,
+        "name": "CS 49J",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+
+    {
+      "key": 52,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 161",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 53,
+      "course": {
+        "isSelected": false,
+        "name": "CS 242",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 54,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 211",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 55,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 222",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 56,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 241",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 57,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 165",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 58,
+      "course": {
+        "isSelected": false,
+        "name": "PHYS 214",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 59,
+      "course": {
+        "isSelected": false,
+        "name": "CS 115",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 60,
+      "course": {
+        "isSelected": false,
+        "name": "CS 215",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 61,
+      "course": {
+        "isSelected": false,
+        "name": "CS 252",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 62,
+      "course": {
+        "isSelected": false,
+        "name": "CS 210",
+        "units": 1,
+        "isOrigin": false
+      }
+    },
+
+    {
+      "key": 63,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 31A",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 64,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 31B",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 65,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 61",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 66,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 32A",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 67,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 32B",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 68,
+      "course": {
+        "isSelected": false,
+        "name": "MATH 33A",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 69,
+      "course": {
+        "isSelected": false,
+        "name": "",
+        "units": "",
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 70,
+      "course": {
+        "isSelected": false,
+        "name": "COM SCI 32",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 71,
+      "course": {
+        "isSelected": false,
+        "name": "COM SCI 33",
+        "units": 5,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 72,
+      "course": {
+        "isSelected": false,
+        "name": "PHYSICS 1A",
+        "units": 5,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 73,
+      "course": {
+        "isSelected": false,
+        "name": "PHYSICS 4AL",
+        "units": 2,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 74,
+      "course": {
+        "isSelected": false,
+        "name": "PHYSICS 1B",
+        "units": 5,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 75,
+      "course": {
+        "isSelected": false,
+        "name": "PHYSICS 4BL",
+        "units": 2,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 76,
+      "course": {
+        "isSelected": false,
+        "name": "PHYSICS 1C",
+        "units": 5,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 77,
+      "course": {
+        "isSelected": false,
+        "name": "ENGCOMP 3",
+        "units": 5,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 78,
+      "course": {
+        "isSelected": false,
+        "name": "",
+        "units": "",
+        "isOrigin": false
+      }
+    }
+  ],
+  "equivalencyMatrix": [
+    [
+      { "courses": [[0], [1], [2]], "relationToNext": "OR" },
+      { "courses": [[30]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[3]], "relationToNext": "NONE" },
+      { "courses": [[31]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[4]], "relationToNext": "NONE" },
+      { "courses": [[32]] },
+      { "courses": [[52]] },
+      { "courses": [[63]] }
+    ],
+    [
+      { "courses": [[5]], "relationToNext": "NONE" },
+      { "courses": [[33]] },
+      { "courses": [] },
+      { "courses": [[64]] }
+    ],
+    [
+      { "courses": [[6]], "relationToNext": "NONE" },
+      { "courses": [[34]] },
+      { "courses": [[53]] },
+      { "courses": [[65]] }
+    ],
+    [
+      { "courses": [[7]], "relationToNext": "NONE" },
+      { "courses": [[35]] },
+      { "courses": [] },
+      { "courses": [[66, 67]] }
+    ],
+    [
+      { "courses": [[8]], "relationToNext": "NONE" },
+      { "courses": [[36]] },
+      { "courses": [] },
+      { "courses": [[68]] }
+    ],
+    [
+      { "courses": [[11]], "relationToNext": "NONE" },
+      { "courses": [[37]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[13]], "relationToNext": "NONE" },
+      { "courses": [[38]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[12, 13]], "relationToNext": "NONE" },
+      { "courses": [[39]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[15]], "relationToNext": "NONE" },
+      { "courses": [[40]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[16], [17]], "relationToNext": "NONE" },
+      { "courses": [[41]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[18], [20]], "relationToNext": "NONE" },
+      { "courses": [[42]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[19], [21]], "relationToNext": "NONE" },
+      { "courses": [[43]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[22, 23]], "relationToNext": "NONE" },
+      { "courses": [[44]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[24]], "relationToNext": "NONE" },
+      { "courses": [[45]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[5]], "relationToNext": "NONE" },
+      { "courses": [] },
+      { "courses": [[54]] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[8]], "relationToNext": "NONE" },
+      { "courses": [] },
+      { "courses": [[55]] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[8, 9]], "relationToNext": "NONE" },
+      { "courses": [] },
+      { "courses": [[56]] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[10]], "relationToNext": "NONE" },
+      { "courses": [] },
+      { "courses": [[57]] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[12, 13]], "relationToNext": "NONE" },
+      { "courses": [] },
+      { "courses": [[58]] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[25]], "relationToNext": "NONE" },
+      { "courses": [[46]] },
+      { "courses": [[59]] },
+      {
+        "courses": [[69]]
+      }
+    ],
+    [
+      { "courses": [[26]], "relationToNext": "NONE" },
+      { "courses": [[47]] },
+      { "courses": [[60]] },
+      { "courses": [[70]] }
+    ],
+    [
+      { "courses": [[27]], "relationToNext": "NONE" },
+      { "courses": [[48]] },
+      { "courses": [[61]] },
+      { "courses": [[71]] }
+    ],
+    [
+      { "courses": [[28]], "relationToNext": "NONE" },
+      { "courses": [[49]] },
+      { "courses": [[62]] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[25]], "relationToNext": "OR" },
+      { "courses": [[50]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[25]], "relationToNext": "NONE" },
+      { "courses": [[51]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [
+      { "courses": [[11]], "relationToNext": "AND" },
+      { "courses": [] },
+      { "courses": [] },
+      { "courses": [[72, 73]] }
+    ],
+    [
+      { "courses": [[12, 13]], "relationToNext": "NONE" },
+      { "courses": [] },
+      { "courses": [] },
+      {
+        "courses": [[74, 75, 76]]
+      }
+    ],
+    [
+      { "courses": [[29]], "relationToNext": "AND" },
+      { "courses": [] },
+      { "courses": [] },
+      { "courses": [[77]] }
+    ],
+    [
+      { "courses": [[3], [0], [1], [2]], "relationToNext": "NONE" },
+      { "courses": [] },
+      { "courses": [] },
+      { "courses": [[78]] }
+    ]
+  ]
+}
