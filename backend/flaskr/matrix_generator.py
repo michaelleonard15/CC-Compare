@@ -1,6 +1,9 @@
 # The documentation in this file uses Python docstrings.
 # See https://www.python.org/dev/peps/pep-0257/ for more info
 
+__current_id = 0
+__current_neg_id = -1
+
 
 def generate_matrix(agreement_list):
     """
@@ -14,11 +17,30 @@ def generate_matrix(agreement_list):
     source_lookup = []
     dest_lookup = []
     matrix = [[]]
+
     for agreement in agreement_list:
         # Ignoring section headers for now, since there's nothing there yet
+
+        # You may wonder why we pass the whole source_lookup into _extract_sources,
+        # but not into _extract_dests.
+        # This is because if we have a duplicate, we want to merge it into the full
+        # sources list. However, with destinations, we only want to merge it if it's
+        # from the same school.
         _extract_sources(agreement, matrix, source_lookup)
         current_dest_lookup = _extract_dests(agreement, matrix)
-        
+        dest_lookup = dest_lookup + current_dest_lookup
+
+    
+    # Concatenating lists
+    lookup = source_lookup + dest_lookup
+
+    # # Assigning IDs
+    # # ! we might not be able to do this here
+    # i = 0
+    # for course in lookup:
+    #     if 'id' not in course:
+    #         course['id'] = i
+    #         i += 1
 
 
 def _extract_sources(agreement, matrix, source_lookup):
@@ -26,7 +48,6 @@ def _extract_sources(agreement, matrix, source_lookup):
     Extracts all sources from an agreement, 
     building onto the existing matrix and source lookup table.
     """
-
     for section in agreement:
         for row in section:
             _extract_source_row(row, matrix, source_lookup)
@@ -37,11 +58,16 @@ def _extract_source_row(row, matrix, src_lookup):
     Extracts source schools from a row, building onto the existing matrix and the
     source lookup table for the current agreement.
     """
+    courses = row['Source']['classes']
+    for sublist in courses:
+        # add course to src lookup; increment
+        # modify course in-place within the row
+        # add new class to matrix
+        pass
+    # if applicable, add relationToNext
 
-    pass
 
-
-def _extract_dests(agreement, matrix):
+def _extract_dests(agreement,matrix):
     """
     Extracts all destinations from an agreement, building onto the existing matrix.
     Returns a new destination lookup table for this agreement.
