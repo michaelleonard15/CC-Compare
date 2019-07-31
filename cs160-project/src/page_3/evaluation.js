@@ -31,35 +31,83 @@ function evaluation(lookupTable) {
 
 
 
+
+  function groupRows(slice) {
+    let groups = []
+
+    for(let i = 0; i < slice.length; i++) {
+      let temp = [slice[i]]
+      if("relationToNext" in slice[i][0]) {
+        while("relationToNext" in slice[i][0] && i < slice.length) {
+          temp.push(slice[ i + 1 ])
+          i += 1
+        }
+      }
+      groups.push(temp)
+    }
+    return groups
+  }
+
+
+
+  function countCompleted(total, group) {
+    let targetCol = 0;
+    let row = group[0]
+    for(let i = 1; i < row.length; i++) {
+      if(row[i].courses.length > 0) { targetCol = i }
+    }
+
+    group.forEach ( (row) => {
+      let courses = row[targetCol].courses
+      for(let i = 0; i < courses.length; i++) {
+        for(let j = 0; j < courses[i].length; j++) {
+          total.courses += 1
+          total.units += lookup.get(courses[i][j]).units
+        }
+      }
+    })
+    return total
+  }
+
+      
+
+
   return {
 
     conditionalGroup(slice, condition) {
-      let tot = 0
-      if (condition.type === "COURSES") {
-        for(let row = 0; row < slice.length; row++) {
-          let courses = slice[row][0].courses
-          for(let i = 0; i < courses.length; i++) {
-            for(let j = 0; j < courses[i].length; j++) {
-              let course = lookup.get(courses[i][j])
+      let totals = {courses: 0, units: 0}  
+
+      let groups = groupRows(slice)
+
+      groups.forEach( (group) => {
+        if(this.rowGroup(group)) {
+            totals = countCompleted(totals, group)
+        }
+      })
+
+
+
+
+/*
+      for(let row = 0; row < slice.length; row++) {
+        let courses = slice[row][0].courses
+        for(let i = 0; i < courses.length; i++) {
+          for(let j = 0; j < courses[i].length; j++) {
+            let course = lookup.get(courses[i][j])
+            if (condition.type === "COURSES") {
+              tot += course.isSelected ? 1 : 0
+            }
+            else if (condition.type === "UNITS") {
               tot += course.isSelected ? course.units : 0
             }
           }
         }
-        return tot >= condition.number
-      } 
-      else if (condition.type === "UNITS") {
-        for(let row = 0; row < slice.length; row++) {
-          let courses = slice[row][0].courses
-          for(let i = 0; i < courses.length; i++) {
-            for(let j = 0; j < courses[i].length; j++) {
-              let course = lookup.get(courses[i][j])
-              tot += course.isSelected ? course.units : 0
-            }
-          }
-        }
-      }  
-      return tot >= condition.number  
+      }*/
+      let finalTotal = condition.type === "UNITS" ? totals.units : totals.courses 
+      return finalTotal >= condition.number
     },
+
+
 
 
 
