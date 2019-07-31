@@ -11,6 +11,25 @@ TEST_FILE_PATH = os.getcwd() + "/tests/testdata/matrix_generator/"
 def set_ids():
     matgen.__current_id = 0
     matgen.__current_neg_id = -1
+
+def test_extract_sources(set_ids):
+        # Opening files
+    with open(TEST_FILE_PATH + "test1-db.json") as f:
+        test1_db = json.load(f)
+    with open(TEST_FILE_PATH + "test1-frontend-after-origin.json") as f:
+        test1_after_origin = json.load(f)
+    
+    matrix = []
+    src_lookup = []
+
+    matgen._extract_sources(test1_db['Sections'], matrix, src_lookup)
+
+    matrix_expected = test1_after_origin['equivalencyMatrix']
+    lookup_expected = test1_after_origin['lookup']
+
+    assert matrix == matrix_expected
+    assert src_lookup == lookup_expected
+
     
 def test_extract_source_row(set_ids):
 

@@ -47,7 +47,7 @@ def _extract_sources(agreement, matrix, source_lookup):
     building onto the existing matrix and source lookup table.
     """
     for section in agreement:
-        for row in section:
+        for key, row in section.items():
             _extract_source_row(row, matrix, source_lookup)
 
 
@@ -107,6 +107,7 @@ def _add_to_lookup(db_course, lookup, is_origin):
 
     # Handles the case that there is no courseID (should set negative key).
     if db_course['courseID'] == "":
+        # We don't want to render these on page 2; setting isOrigin false.
         course_obj['isOrigin'] = False
         entry_id = __current_neg_id
         new_entry = { 'key': entry_id, 'course': course_obj }
