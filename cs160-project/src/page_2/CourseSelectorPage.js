@@ -51,13 +51,14 @@ class CourseSelectorPage extends React.Component {
     let buttons = this.getCoursesList().map( (row) => {  
       let selectedColor = row.course.isSelected ? 'is-primary' : 'has-background-grey-lighter'
       return(
-        <button key={row.ID}
-                className={'button is-large ' + selectedColor}
+        <button   key={row.ID}
+                className={'button ' + selectedColor}
                 onClick={ () => {this.props.handleToggle(row.ID)} }
         >
           <div>
-            <label className="content is-large">{row.course.courseID}</label>
-            <label className="content is-small">{row.course.courseName}</label>
+            <span className="content">{row.course.courseID}</span> 
+            <br/> 
+            <span className="content is-small">{row.course.courseName}</span>
           </div>
         </button>
       )
@@ -81,7 +82,7 @@ class CourseSelectorPage extends React.Component {
               What classes have you completed at {this.props.schoolName}? 
             </h3>
   
-            <div className="buttons is-centered">
+            <div className="buttons is-centered are-large">
               {this.generateButtons()}
             </div>
           

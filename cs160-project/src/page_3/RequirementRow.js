@@ -1,6 +1,6 @@
 import React from 'react'
 import RelationGroup from './RelationGroup'
-import '../App.css'
+
 
 
 /**

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css'
+
 
 
 
@@ -84,7 +84,9 @@ class RelationGroup extends React.Component {
       <div key={key} className={'class_label_' + selected}>
         <button className={'report_toggle_' + selected}
                 onClick={this.props.handleToggle.bind(this, lookupKey)}>
-                {aClass.courseID} ({aClass.units})
+          <span className="content">{aClass.courseID} ({aClass.units})</span> 
+          <br/> 
+          <span className="content is-small">{aClass.courseName}</span>      
         </button>
       </div>
     )

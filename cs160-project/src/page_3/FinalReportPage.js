@@ -3,7 +3,7 @@ import RowGroup from './RowGroup'
 import RequirementRow from './RequirementRow'
 import ConditionalGroup from './ConditionalGroup'
 import evaluation from './evaluation'
-import '../App.css'
+
 
 
 
