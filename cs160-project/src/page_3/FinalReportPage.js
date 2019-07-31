@@ -76,8 +76,6 @@ class FinalReportPage extends React.Component {
     )
   }
 
-
-
   createRowGroup(slice, index, isComplete) {
     return (
       <RowGroup 

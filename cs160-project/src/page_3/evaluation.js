@@ -34,10 +34,32 @@ function evaluation(lookupTable) {
   return {
 
     conditionalGroup(slice, condition) {
-      return true
+      let tot = 0
+      if (condition.type === "COURSES") {
+        for(let row = 0; row < slice.length; row++) {
+          let courses = slice[row][0].courses
+          for(let i = 0; i < courses.length; i++) {
+            for(let j = 0; j < courses[i].length; j++) {
+              let course = lookup.get(courses[i][j])
+              tot += course.isSelected ? course.units : 0
+            }
+          }
+        }
+        return tot >= condition.number
+      } 
+      else if (condition.type === "UNITS") {
+        for(let row = 0; row < slice.length; row++) {
+          let courses = slice[row][0].courses
+          for(let i = 0; i < courses.length; i++) {
+            for(let j = 0; j < courses[i].length; j++) {
+              let course = lookup.get(courses[i][j])
+              tot += course.isSelected ? course.units : 0
+            }
+          }
+        }
+      }  
+      return tot >= condition.number  
     },
-
-
 
 
 

@@ -61,7 +61,7 @@ class ConditionalGroup extends React.Component {
   render() {
     let isComplete = this.props.isComplete
     let slice = this.props.equivalencySlice
-    let condition = slice[0].condition
+    let condition = slice[0][0].condition
     let groupCompleted = isComplete.conditionalGroup(slice, condition) ? 'complete' : 'incomplete'
     return(
       <div className={"row_group_" + groupCompleted}>    
