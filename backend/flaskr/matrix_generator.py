@@ -17,7 +17,7 @@ def generate_matrix(agreement_list):
     for agreement in agreement_list:
         # Ignoring section headers for now, since there's nothing there yet
         _extract_sources(agreement, matrix, source_lookup)
-        current_dest_lookup = _extract_dest(agreement, matrix)
+        current_dest_lookup = _extract_dests(agreement, matrix)
         
 
 
@@ -30,7 +30,6 @@ def _extract_sources(agreement, matrix, source_lookup):
     for section in agreement:
         for row in section:
             _extract_source_row(row, matrix, source_lookup)
-    return cur_src_lookup
 
 
 def _extract_source_row(row, matrix, src_lookup):
@@ -42,7 +41,7 @@ def _extract_source_row(row, matrix, src_lookup):
     pass
 
 
-def _extract_dests(matrix):
+def _extract_dests(agreement, matrix):
     """
     Extracts all destinations from an agreement, building onto the existing matrix.
     Returns a new destination lookup table for this agreement.
