@@ -63,26 +63,44 @@ def _extract_source_row(row, matrix, src_lookup):
     source lookup table for the current agreement.
     """
     courses = row['Source']['classes']
-    for sublist in courses:
-        for course in sublist:
-            # add course to src lookup; increment
-            _add_to_lookup(course, src_lookup, is_origin=True)
-            # modify course in-place within the row
-            pass
+    # This is a nested list comprehension.
+    # It generates a list of the form [[1], [2, 3]]
+    course_group = [[_add_to_lookup(course, src_lookup, is_origin=True)
+                     for course in sublist] for sublist in courses]
+    new_cell = {'courses': course_group}
+    if "RelationToNext" in row:
+        new_cell['relationToNext'] = row['RelationToNext']
+    
+
+    # for sublist in courses:
+    #     for course in sublist:
+    #         # add course to src lookup; increment
+    #         new_id = _add_to_lookup(course, src_lookup, is_origin=True)
+    #         # modify course in-place within the row
     # add courses grouping to matrix
     # if applicable, add relationToNext
 
 
 def _add_to_lookup(db_course, lookup, is_origin):
+    """
+    Adds the course to the lookup, and returns the lookup ID of that course.
+    """
     global __current_id
     course_obj = db_course.copy()
     course_obj['isOrigin'] = is_origin
     course_obj['isSelected'] = False
+
+    for entry in lookup:
+        if entry['courses'] == course_obj:
+            return lookup.index(course_obj)
+
     entry_id = __current_id
     new_entry = { 'key': entry_id, 'course': course_obj }
+
     lookup.append(new_entry)
     __current_id += 1
     return entry_id
+
 
 def _extract_dests(agreement,matrix):
     """
