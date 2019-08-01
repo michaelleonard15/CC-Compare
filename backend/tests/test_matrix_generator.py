@@ -12,23 +12,31 @@ def set_ids():
     matgen.__current_id = 0
     matgen.__current_neg_id = -1
 
-def test_extract_sources(set_ids):
+
+def test_extract_rows(set_ids):
         # Opening files
     with open(TEST_FILE_PATH + "test1-db.json") as f:
         test1_db = json.load(f)
-    with open(TEST_FILE_PATH + "test1-frontend-after-origin.json") as f:
-        test1_after_origin = json.load(f)
+    # with open(TEST_FILE_PATH + "test1-frontend-after-origin.json") as f:
+    #     test1_after_origin = json.load(f)
+    with open(TEST_FILE_PATH + "test1-frontend-ready.json") as f:
+        test1_frontend = json.load(f)
+    with open(TEST_FILE_PATH + "test1-origin-lookup.json") as f:
+        test1_origin_lookup = json.load(f)
+    with open(TEST_FILE_PATH + "test1-dest-lookup.json") as f:
+        test1_dest_lookup = json.load(f)
     
     matrix = []
     src_lookup = []
+    cur_dest_lookup =[]
 
-    matgen._extract_sources(test1_db['Sections'], matrix, src_lookup)
+    matgen._extract_rows(test1_db['Sections'], matrix, src_lookup, cur_dest_lookup)
 
-    matrix_expected = test1_after_origin['equivalencyMatrix']
-    lookup_expected = test1_after_origin['lookup']
+    matrix_expected = test1_frontend['equivalencyMatrix']
 
+    assert src_lookup == test1_origin_lookup
+    assert cur_dest_lookup == test1_dest_lookup
     assert matrix == matrix_expected
-    assert src_lookup == lookup_expected
 
     
 def test_extract_source_row(set_ids):

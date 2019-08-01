@@ -1,7 +1,7 @@
 {
   "lookup": [
     {
-      "key": -2,
+      "key": -1,
       "course": {
         "isSelected": false,
         "courseID":"", 
@@ -11,7 +11,7 @@
       }
     },
     {
-      "key": -1,
+      "key": -2,
       "course": {
         "isSelected": false,
         "courseName": "No course articulated",
@@ -31,7 +31,7 @@
       }
     },
     {
-      "key": 1,
+      "key": 2,
       "course": {
         "isSelected": false,
         "courseName": "Literature and Composition",
@@ -41,7 +41,7 @@
       }
     },
     {
-      "key": 2,
+      "key": 3,
       "course": {
         "isSelected": false,
         "courseID": "ENGL 5",
@@ -51,7 +51,7 @@
       }
     },
     {
-      "key": 3,
+      "key": 4,
       "course": {
         "isSelected": false,
         "courseID":"PHIL 5", 
@@ -61,7 +61,7 @@
       }
     },
     {
-      "key": 4,
+      "key": 5,
       "course": {
         "isSelected": false,
         "courseID":"ENGL 5", 
@@ -71,7 +71,7 @@
       }
     },
     {
-      "key": 5,
+      "key": 7,
       "course": {
         "isSelected": false,
         "courseID":"ENGR 6", 
@@ -81,7 +81,7 @@
       }
     },
     {
-      "key": 6,
+      "key": 1,
       "course": {
         "isSelected": false,
         "courseID":"ENGCOMP 3", 
@@ -91,7 +91,7 @@
       }
     },
     {
-      "key": 7,
+      "key": 6,
       "course": {
         "isSelected": false,
         "courseID":"COM SCI 31", "courseName": 
@@ -114,18 +114,18 @@
   
   "equivalencyMatrix": [
     [{ "courses": [[0]], "relationToNext": "AND" },
-     { "courses": [[6]] }
+     { "courses": [[1]] }
      ],
      
-    [{ "courses": [[1], [2], [3], [4]]},
-     { "courses": [[-2]] } 
+    [{ "courses": [[2], [3], [4], [5]]},
+     { "courses": [[-1]] } 
      ],
 
-    [{ "courses": [[-1]], "relationToNext": "OR"},
-     { "courses": [[7]] }
+    [{ "courses": [[-2]], "relationToNext": "OR"},
+     { "courses": [[6]] }
      ],
 
-     [{ "courses": [[5]]},
+     [{ "courses": [[7]]},
       { "courses": [[8]] }
      ]
   ]

@@ -21,7 +21,7 @@
 					[{"courseID":"ENGL 5", "courseName": "Critical Thinking and Argumentation", "units":3}]]
 				},
 				"Destination":{
-					"classes": [[{"courseID":"", "courseName": "One additional course in English composition", "units":""}]]
+					"classes": [[{"courseID":"", "courseName": "One additional course in English composition", "units":0}]]
 					}
 				}
 			},	
