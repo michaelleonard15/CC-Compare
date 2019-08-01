@@ -50,7 +50,7 @@ def test_generate_matrix_three_agreements():
     assert frontend_obj['equivalencyMatrix'] == frontend_ready['equivalencyMatrix']
 
 
-def test_generate_matrix_gaps_rel2next():
+def test_generate_matrix_rel2next():
     with open(TEST_FILE_PATH + "test3/school1-db.json") as f:
         school1 = json.load(f)
     with open(TEST_FILE_PATH + "test3/school2-db.json") as f:

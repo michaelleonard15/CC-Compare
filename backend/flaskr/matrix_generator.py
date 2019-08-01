@@ -48,6 +48,7 @@ def _extract_rows(sections, matrix, source_lookup, cur_dest_lookup):
     building onto the existing matrix and source lookup table.
     """
     for section in sections:
+        start_index = _section_index_in_matrix(matrix, section)
         for key, row in section.items():
             matrix_index = _extract_source_row(row, matrix, source_lookup)
             _extract_dest_row(row, matrix, cur_dest_lookup, matrix_index)
@@ -143,4 +144,17 @@ def _fill_empty_dests(matrix):
     """
 
     pass
+
+
+def _section_index_in_matrix(matrix, section):
+    """
+    Returns the starting position for the section in the matrix. 
+    If the section is not yet in the matrix, it will append the appropriate
+    amount of space to the end of the matrix.
+    """
+    # Needs to handle relationToNext
+    # ? conditional requirements?
+    # Add space if needed
+    # Should it add the number of cells that are needed to match up columns?
+    return -1
 
