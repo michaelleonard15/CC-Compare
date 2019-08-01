@@ -1,8 +1,13 @@
-import os
 import re
 from FileSearcher import ToolBelt
+from ClassCreator import *
+from Utility import Utility
+###
 id_list = [
-    '14782302.txt',
+    # 'SRC_to_SJSU.txt',
+    # 'SRC_to_SSU.txt',
+    'SRC_to_UCLA.txt',
+    # '14782302.txt',
     # '14782303.txt',
     # '14782304.txt',
     # '14782305.txt',
@@ -21,7 +26,8 @@ tool = ToolBelt(id_list)
 #DEFINE PATTERNS HERE.####
 pattern_left = re.compile(r'(.*)\|.*|----+')
 pattern_right = re.compile(r'\|(.*)|----+')
-class_key = re.compile(r'[A-Z]{2-4}\ ')
+class_key = re.compile(r'(?:[A-Z&]{1,8}\ )+[A-Z0-9.]{1,5}')
+units = re.compile(r'\(\d\)')
 ####
 
 #CREATE MATCHES FROM FILES HERE, PASS PATTERNS, GET MATCHES####
@@ -35,6 +41,23 @@ matches_right = tool.getMatches(pattern_right)
 #tool.printMatches(matches_right)
 
 
+
 ##CREATE LIST OF LISTS FOR SPECIFIED SIDE## 
 masterLeft = tool.createMasterList(matches_left)
 masterRight = tool.createMasterList(matches_right)
+
+##
+#The Master Lists are list of lists. Each sublist in the list is a set of equivalency criteria in the document
+##
+creator = Utility()
+# for sectionLeft,sectionRight in zip(masterLeft,masterRight):
+#     for left,right in zip(sectionLeft,sectionRight):
+#         #print(units.search(left))
+#         #print(class_key.search(left))
+    
+#search multiple sections
+# for sectionLeft,sectionRight in zip(masterLeft,masterRight):
+#     creator.searchSection(sectionLeft,sectionRight)
+equivalency = Equivalency()
+equivalency = creator.searchSection(masterLeft[4],masterRight[4])
+print('end')

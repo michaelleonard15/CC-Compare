@@ -1,5 +1,3 @@
-import re
-
 # Per Agreement: Equivalencies < Equivalency < dest/source_list (this) < classList < class
 
 
@@ -10,33 +8,31 @@ import re
 # class < class (this)
 # a basic class
 class Class:
-
-    
-    def __init__(self, key, name, units):
-        self.key = key
-        self.name = name
+    def __init__(self, courseKey, courseName, units):
+        self.courseKey = courseKey
+        self.courseName = courseName
         self.units = units
         self.isCompleted = False
 
-    def __init__(self):
-        self.key = ""
-        self.name = ""
-        self.units = ""
-        self.isCompleted = False
+    # def __init__(self):
+    #     self.courseKey = ""
+    #     self.courseName = ""
+    #     self.units = ""
+    #     self.isCompleted = False
 
-    def setKey(self, key):
-        self.key = key
+    def setKey(self, courseKey):
+        self.courseKey = courseKey
     
-    def setName(self, name):
-        self.name = name
+    def setCourseName(self, courseName):
+        self.courseName = courseName
     
     def setUnits(self, units):
         self.units = units
 
     def getClass(self):
         x = {
-            "key":self.key,
-            "name":self.name,
+            "courseKey":self.courseKey,
+            "courseName":self.courseName,
             "units":self.units
         }
         return x
@@ -52,7 +48,6 @@ class Class:
 # classList (this) < class
 # all objects in classes are '&_' together, ALL objs in classes[] should be completed
 class ClassList:
-
     def __init__(self):
         self.classes = list()
         self.classesCompleted = False
@@ -91,16 +86,19 @@ class ClassList:
 # dest/source_list (this) < classList < class
 # ONE object in classLists should be completed, representing 'O_R_'
 class Destsource_list:
-    classLists = []
-    completed = False
+    # classLists = []
+    # completed = False
 
+    def __init__(self):
+        self.classLists = []
+        self.completed = False
     #add ClassList obj to classLists
     def addClassList(self, classList):
         if isinstance(classList, ClassList):
             self.classLists.append(classList)
 
     def checkCompletion(self):
-        for x in classLists:
+        for x in self.classLists:
             if x.checkCompletion() is True:
                 self.completed = True
         return self.completed
@@ -111,10 +109,15 @@ class Destsource_list:
 # Equivalency (this) < dest/source_list
 # this object is 1 per section in the agreement, can represent 'AND' as well as 'OR'
 class Equivalency:
-    source = None
-    dest = None
-    relationToNext = ""
-    completed = False
+    # source = None
+    # dest = None
+    # relationToNext = ""
+    # completed = False
+    def __init__(self):
+        self.source = None
+        self.dest = None
+        self.relationToNext = ""
+        self.completed = False
     def setSource(self, sourceList):
         if isinstance(sourceList, Destsource_list):
             self.source = sourceList
@@ -134,9 +137,11 @@ class Equivalency:
 
 # Begin Equivalncies 
 # Equivalencies (this) < Equivalency
-class Equivalencies:
-    equivalencyList = []
-
+class Section:
+    def __init__(self):
+        self.equivalencyList = []
+        self.requirementType = ""
+        self.requirement = 0
     def addEquivalency(self, equivalency):
         if isinstance(equivalency, Equivalency):
             self.equivalencyList.append(equivalency)
@@ -145,37 +150,3 @@ class Equivalencies:
 
 
 ############# E N D STRUCTURES ###########################
-
-
-
-
-############ S T A R T PARSING UTILITY ##########################
-class Utility:
-    class_key = re.compile(r'[A-Z]{2,4}\ [A-Z0-9]{1,4}')
-    units = re.compile(r'\(\d\)')
-    name = re.compile(r'')
-    classes = []
-    #########FUNCTIONS##########################################
-
-    def searchSection(self, leftSection, rightSection):
-        if(leftSection.__len__() is rightSection.__len__()):
-            count = 0
-            while(count < leftSection.__len__()):
-                if(units.search(leftSection[count]) is not None):
-                    unit = units.search(leftSection[count])
-                    key = class_key.search(leftSection[count])
-                
-        else:
-            raise ValueError("Section is not synced properly")
-
-
-
-
-    # def createSubsection(self, currIndex, section):
-    #     subSection = []
-    #     while(currIndex < section.__len__()):
-    #         startIndex = currIndex
-    #         if(section(currIndex).contains('OR')):
-    #             print(currIndex)
-    #             subSection.append(section[startIndex:currIndex])
-    #             return subSection

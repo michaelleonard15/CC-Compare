@@ -4,6 +4,8 @@ class ToolBelt:
     fileList = []
     def __init__(self,files):
         self.fileList = files
+    
+    #Get matches for the pattern within the file list
     def getMatches(self, pattern):
         matches = []
         for x in self.fileList:
@@ -27,5 +29,4 @@ class ToolBelt:
                     if found.group(1) is None:
                             masterList.append(temp.copy())
                             temp.clear()
-        return masterList
-                                
+        return masterList    
