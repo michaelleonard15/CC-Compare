@@ -31,21 +31,23 @@ def generate_matrix(agreement_list):
         # sources list. However, with destinations, we only want to merge it if it's
         # from the same school.
         current_dest_lookup = []
-        _extract_rows(agreement, matrix, source_lookup, current_dest_lookup)
+        _extract_rows(agreement['Sections'], matrix, source_lookup, current_dest_lookup)
         _fill_empty_dests(matrix)
+        dest_lookup = dest_lookup + current_dest_lookup
 
     # TODO: reassign IDs for destinations, before or after concatenation
     
     # Concatenating lists
     lookup = source_lookup + dest_lookup
+    return {'lookup': lookup, "equivalencyMatrix": matrix}
     
 
-def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup):
+def _extract_rows(sections, matrix, source_lookup, cur_dest_lookup):
     """
     Extracts all sources from an agreement, 
     building onto the existing matrix and source lookup table.
     """
-    for section in agreement:
+    for section in sections:
         for key, row in section.items():
             matrix_index = _extract_source_row(row, matrix, source_lookup)
             _extract_dest_row(row, matrix, cur_dest_lookup, matrix_index)
