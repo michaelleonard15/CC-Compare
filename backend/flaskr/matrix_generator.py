@@ -30,9 +30,9 @@ def generate_matrix(agreement_list):
         # This is because if we have a duplicate, we want to merge it into the full
         # sources list. However, with destinations, we only want to merge it if it's
         # from the same school.
-        _extract_sources(agreement, matrix, source_lookup)
-        current_dest_lookup = _extract_dests(agreement, matrix)
-        dest_lookup = dest_lookup + current_dest_lookup
+        current_dest_lookup = []
+        _extract_rows(agreement, matrix, source_lookup, current_dest_lookup)
+        _fill_empty_dests(matrix)
 
     # TODO: reassign IDs for destinations, before or after concatenation
     
@@ -40,15 +40,15 @@ def generate_matrix(agreement_list):
     lookup = source_lookup + dest_lookup
     
 
-
-def _extract_sources(agreement, matrix, source_lookup):
+def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup):
     """
     Extracts all sources from an agreement, 
     building onto the existing matrix and source lookup table.
     """
     for section in agreement:
         for key, row in section.items():
-            _extract_source_row(row, matrix, source_lookup)
+            matrix_index = _extract_source_row(row, matrix, source_lookup)
+            _extract_dest_row(row, matrix, cur_dest_lookup, matrix_index)
 
 
 def _extract_source_row(row, matrix, src_lookup):
@@ -57,38 +57,32 @@ def _extract_source_row(row, matrix, src_lookup):
     source lookup table for the current agreement.
     """
     courses = row['Source']['classes']
+    
     # This is a nested list comprehension.
     # It generates a list of the form [[1], [2, 3]]
     course_group = [[_add_to_lookup(course, src_lookup, is_origin=True)
                      for course in sublist] for sublist in courses]
+
     new_cell = {'courses': course_group}
     if "RelationToNext" in row:
         new_cell['relationToNext'] = row['RelationToNext']
-    _add_source_to_matrix(new_cell, matrix)
-    
-    
-
-    # for sublist in courses:
-    #     for course in sublist:
-    #         # add course to src lookup; increment
-    #         new_id = _add_to_lookup(course, src_lookup, is_origin=True)
-    #         # modify course in-place within the row
-    # add courses grouping to matrix
-    # if applicable, add relationToNext
+    matrix_index = _add_source_to_matrix(new_cell, matrix)
+    return matrix_index
 
 
 def _add_source_to_matrix(new_cell, matrix):
     """
     """
     # Checking if the origin already exists in a row
-    for row in matrix:
+    for idx, row in enumerate(matrix):
         if len(row) > 0 and row[0] == new_cell:
-            return
+            return idx
     
     matrix.append([new_cell])
+    return (len(matrix) - 1)
 
 
-
+# TODO: can this be refactored into multiple functions for readability?
 def _add_to_lookup(db_course, lookup, is_origin):
     """
     Adds the course to the lookup, and returns the lookup ID of that course.
@@ -113,6 +107,7 @@ def _add_to_lookup(db_course, lookup, is_origin):
         new_entry = { 'key': entry_id, 'course': course_obj }
         lookup.insert(0, new_entry)
         __current_neg_id -= 1
+
     # Standard case
     else:
         entry_id = __current_id
@@ -123,27 +118,38 @@ def _add_to_lookup(db_course, lookup, is_origin):
     return entry_id
 
 
-def _extract_dests(agreement,matrix):
-    """
-    Extracts all destinations from an agreement, building onto the existing matrix.
-    Returns a new destination lookup table for this agreement.
-    """
-    cur_dest_lookup = []
-    for section in agreement:
-        for row in section:
-            _extract_dest_row(row, matrix, cur_dest_lookup)
+# def _extract_dests(agreement,matrix):
+#     """
+#     Extracts all destinations from an agreement, building onto the existing matrix.
+#     Returns a new destination lookup table for this agreement.
+#     """
+#     cur_dest_lookup = []
+#     for section in agreement:
+#         for row in section:
+#             _extract_dest_row(row, matrix, cur_dest_lookup)
     
-    _fill_empty_dests(matrix)
-    return cur_dest_lookup
+#     _fill_empty_dests(matrix)
+#     return cur_dest_lookup
 
 
-def _extract_dest_row(row, matrix, cur_dest_lookup):
+def _extract_dest_row(row, matrix, cur_dest_lookup, src_index):
     """
     Extracts destination classes from a row, building onto the existing matrix and the 
     source lookup table for the current agreement.
     """
+    dest_courses = row['Destination']['classes']
+    
+    # This is a nested list comprehension.
+    # It generates a list of the form [[1], [2, 3]]
+    dest_course_group = [[_add_to_lookup(course, cur_dest_lookup, is_origin=False)
+                         for course in sublist] for sublist in dest_courses]
+    
+    new_cell = {'courses': dest_course_group}
+    _add_dest_to_matrix(new_cell, matrix, src_index)
 
-    pass
+
+def _add_dest_to_matrix(new_cell, matrix, src_index):
+    matrix[src_index].append(new_cell)
 
 
 def _fill_empty_dests(matrix):
