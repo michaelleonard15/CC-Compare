@@ -34,8 +34,6 @@ def generate_matrix(agreement_list):
         _extract_rows(agreement['Sections'], matrix, source_lookup, current_dest_lookup)
         _fill_empty_dests(matrix)
         dest_lookup = dest_lookup + current_dest_lookup
-
-    # TODO: reassign IDs for destinations, before or after concatenation
     
     # Concatenating lists
     lookup = source_lookup + dest_lookup
@@ -120,20 +118,6 @@ def _add_to_lookup(db_course, lookup, is_origin):
     return entry_id
 
 
-# def _extract_dests(agreement,matrix):
-#     """
-#     Extracts all destinations from an agreement, building onto the existing matrix.
-#     Returns a new destination lookup table for this agreement.
-#     """
-#     cur_dest_lookup = []
-#     for section in agreement:
-#         for row in section:
-#             _extract_dest_row(row, matrix, cur_dest_lookup)
-    
-#     _fill_empty_dests(matrix)
-#     return cur_dest_lookup
-
-
 def _extract_dest_row(row, matrix, cur_dest_lookup, src_index):
     """
     Extracts destination classes from a row, building onto the existing matrix and the 
@@ -147,10 +131,6 @@ def _extract_dest_row(row, matrix, cur_dest_lookup, src_index):
                          for course in sublist] for sublist in dest_courses]
     
     new_cell = {'courses': dest_course_group}
-    _add_dest_to_matrix(new_cell, matrix, src_index)
-
-
-def _add_dest_to_matrix(new_cell, matrix, src_index):
     matrix[src_index].append(new_cell)
 
 
@@ -162,11 +142,3 @@ def _fill_empty_dests(matrix):
 
     pass
 
-
-### NOTES
-# relationToNext ==> relationToNext 
-    # key ==> courseID
-    # name ==> courseName
-    # units (string) ==> units (integer)
-    # after replacing objects with numbers, array structure should be IDENTICAL
-# 

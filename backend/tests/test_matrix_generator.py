@@ -29,7 +29,8 @@ def test_generate_matrix_single_agreement():
 
     pprint.pprint(frontend_obj)
     assert is_lookup_equal(frontend_obj['lookup'], test1_frontend['lookup'])
-    # TODO: Write helper function to check if equivalency matrix is equal, ignoring order of rows
+    # TODO: Write helper function to check if equivalency matrix is equal, ignoring order of rows, 
+    #       but maintaining unit/class groupings and AND/OR row relationships.
     assert frontend_obj['equivalencyMatrix'] == test1_frontend['equivalencyMatrix']
 
 
