@@ -20,9 +20,9 @@ def is_lookup_equal(lookup1, lookup2):
 
 
 def test_generate_matrix_single_agreement():
-    with open(TEST_FILE_PATH + "test1-db.json") as f:
+    with open(TEST_FILE_PATH + "test1/dbformat.json") as f:
         test1_db = json.load(f)
-    with open(TEST_FILE_PATH + "test1-frontend-ready.json") as f:
+    with open(TEST_FILE_PATH + "test1/frontend-ready.json") as f:
         test1_frontend = json.load(f)
     
     frontend_obj = matgen.generate_matrix([test1_db])
@@ -52,15 +52,15 @@ def test_generate_matrix_three_agreements():
 
 def test_extract_rows(set_ids):
         # Opening files
-    with open(TEST_FILE_PATH + "test1-db.json") as f:
+    with open(TEST_FILE_PATH + "test1/dbformat.json") as f:
         test1_db = json.load(f)
     # with open(TEST_FILE_PATH + "test1-frontend-after-origin.json") as f:
     #     test1_after_origin = json.load(f)
-    with open(TEST_FILE_PATH + "test1-frontend-ready.json") as f:
+    with open(TEST_FILE_PATH + "test1/frontend-ready.json") as f:
         test1_frontend = json.load(f)
-    with open(TEST_FILE_PATH + "test1-origin-lookup.json") as f:
+    with open(TEST_FILE_PATH + "test1/origin-lookup.json") as f:
         test1_origin_lookup = json.load(f)
-    with open(TEST_FILE_PATH + "test1-dest-lookup.json") as f:
+    with open(TEST_FILE_PATH + "test1/dest-lookup.json") as f:
         test1_dest_lookup = json.load(f)
     
     matrix = []
@@ -79,9 +79,9 @@ def test_extract_rows(set_ids):
 def test_extract_source_row(set_ids):
 
     # Opening files
-    with open(TEST_FILE_PATH + "test1-db.json") as f:
+    with open(TEST_FILE_PATH + "test1/dbformat.json") as f:
         test1_db = json.load(f)
-    with open(TEST_FILE_PATH + "test1-frontend-after-origin.json") as f:
+    with open(TEST_FILE_PATH + "test1/frontend-after-origin.json") as f:
         test1_after_origin = json.load(f)
 
     ## ROW 1
@@ -170,7 +170,7 @@ def test_add_to_lookup_duplicates(set_ids):
 
 def test_add_to_lookup_no_courseID(set_ids):
 
-    with open(TEST_FILE_PATH + "test1-frontend-after-origin.json") as f:
+    with open(TEST_FILE_PATH + "test1/frontend-after-origin.json") as f:
         test1_after_origin = json.load(f)
     
     course = {"courseID":"", "courseName": "No course articulated", "units":0}
