@@ -16,6 +16,8 @@ def generate_matrix(agreement_list):
         agreement_list: A list containing 4 agreement maps (which were converted from JSON).
                         This argument will be mutated by this function.
     """
+    global __current_id
+    global __current_neg_id
     source_lookup = []
     dest_lookup = []
     matrix = []
