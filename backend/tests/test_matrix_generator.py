@@ -33,6 +33,22 @@ def test_generate_matrix_single_agreement():
     #       but maintaining unit/class groupings and AND/OR row relationships.
     assert frontend_obj['equivalencyMatrix'] == test1_frontend['equivalencyMatrix']
 
+def test_generate_matrix_three_agreements():
+    with open(TEST_FILE_PATH + "test2/school1-db.json") as f:
+        school1 = json.load(f)
+    with open(TEST_FILE_PATH + "test2/school2-db.json") as f:
+        school2 = json.load(f)        
+    with open(TEST_FILE_PATH + "test2/school3-db.json") as f:
+        school3 = json.load(f)
+    with open(TEST_FILE_PATH + "test2/frontend-ready.json") as f:
+        frontend_ready = json.load(f)
+
+    frontend_obj = matgen.generate_matrix([school1, school2, school3])
+    pprint.pprint(frontend_obj)
+    
+    assert is_lookup_equal(frontend_obj['lookup'], frontend_ready['lookup'])
+    assert frontend_obj['equivalencyMatrix'] == frontend_ready['equivalencyMatrix']
+
 
 def test_extract_rows(set_ids):
         # Opening files

@@ -1,0 +1,30 @@
+{
+  "Sections": [
+    {
+      "1": {
+        "Source": {
+          "classes": [
+            [
+              {
+                "courseID": "CLS 1",
+                "courseName": "Class 1",
+                "units": 3
+              }
+            ]
+          ]
+        },
+        "Destination": {
+          "classes": [
+            [
+              {
+                "courseID": "CLS 4",
+                "courseName": "Class 4",
+                "units": 4
+              }
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}
