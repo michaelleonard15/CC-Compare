@@ -40,7 +40,7 @@
 					"classes": [[{"courseID":"ENGR 6", "courseName": "Programming in MATLAB for Engineers", "units":3}]]
 				},
 				"Destination":{
-					"0": [[{"courseID":"C&EE M20", "courseName": "Introduction to Computer Programming with MATLAB", "units":4}]]
+					"classes": [[{"courseID":"C&EE M20", "courseName": "Introduction to Computer Programming with MATLAB", "units":4}]]
 				}
 			}
 		}
