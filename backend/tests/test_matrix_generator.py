@@ -13,10 +13,10 @@ def set_ids():
     matgen.__current_neg_id = -1
 
 
-def is_lookup_equal(lookup1, lookup2):
+def assert_lookup_equal(lookup1, lookup2):
     # https://stackoverflow.com/a/73050
     # This compares the two lookups, sorted by key.
-    return sorted(lookup1, key=lambda k: k['key']) == sorted(lookup2, key=lambda k: k['key'])
+    assert sorted(lookup1, key=lambda k: k['key']) == sorted(lookup2, key=lambda k: k['key'])
 
 
 def test_generate_matrix_single_agreement():
@@ -28,7 +28,7 @@ def test_generate_matrix_single_agreement():
     frontend_obj = matgen.generate_matrix([test1_db])
 
     pprint.pprint(frontend_obj)
-    assert is_lookup_equal(frontend_obj['lookup'], test1_frontend['lookup'])
+    assert_lookup_equal(frontend_obj['lookup'], test1_frontend['lookup'])
     # TODO: Write helper function to check if equivalency matrix is equal, ignoring order of rows, 
     #       but maintaining unit/class groupings and AND/OR row relationships.
     assert frontend_obj['equivalencyMatrix'] == test1_frontend['equivalencyMatrix']
@@ -46,7 +46,24 @@ def test_generate_matrix_three_agreements():
     frontend_obj = matgen.generate_matrix([school1, school2, school3])
     pprint.pprint(frontend_obj)
     
-    assert is_lookup_equal(frontend_obj['lookup'], frontend_ready['lookup'])
+    assert_lookup_equal(frontend_obj['lookup'], frontend_ready['lookup'])
+    assert frontend_obj['equivalencyMatrix'] == frontend_ready['equivalencyMatrix']
+
+
+def test_generate_matrix_gaps_rel2next():
+    with open(TEST_FILE_PATH + "test3/school1-db.json") as f:
+        school1 = json.load(f)
+    with open(TEST_FILE_PATH + "test3/school2-db.json") as f:
+        school2 = json.load(f)        
+    with open(TEST_FILE_PATH + "test3/school3-db.json") as f:
+        school3 = json.load(f)
+    with open(TEST_FILE_PATH + "test3/frontend-ready.json") as f:
+        frontend_ready = json.load(f)
+
+    frontend_obj = matgen.generate_matrix([school1, school2, school3])
+    pprint.pprint(frontend_obj)
+
+    assert_lookup_equal(frontend_obj['lookup'], frontend_ready['lookup'])
     assert frontend_obj['equivalencyMatrix'] == frontend_ready['equivalencyMatrix']
 
 
