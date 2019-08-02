@@ -1,0 +1,202 @@
+
+
+
+
+
+          5/6/2019                        www.assist.org                         Page   1
+                                   Articulation Agreement by Major
+                              Effective during the 16-17 Academic Year
+             To: UCLA                              |From: Santa Rosa Junior College
+                                            Quarter|                              Semester
+          ================================================================================
+
+                                   ====Computer Science/B.S.====
+          Admission to the Henry Samueli School of Engineering and Applied Science
+          (HSSEAS) at UCLA is highly competitive. The most important selection criteria
+          are completion of the required preparatory courses and academic performance. A
+          minimum transferable cumulative GPA of 3.30 is required for consideration.
+          Effective Fall 2017, all applicants must have a minimum transferable cumulative
+          gpa of 3.4. Preparatory courses should be completed by the end of the Spring
+          term prior to Fall enrollment. All major-preparation courses must be taken for a
+          letter grade. HSSEAS admits students by major and does not consider applicants
+          for alternate majors.
+
+          Applicants are not required to complete the HSSEAS General Education
+          Requirements in order to be admitted, although it is beneficial for students to
+          complete 1 course from each of the following areas: arts, humanities, social
+          sciences, and life sciences. Applicants to specific majors can fulfill the lower
+          division Breadth and General Education requirements by completion of the
+          Intersegmental General Education Transfer Curriculum(IGETC). Partial IGETC is
+          NOT accepted.
+
+
+          For more information regarding IGETC acceptance, this major and UCLA's transfer
+          selection process, please refer to www.engineer.ucla.edu and
+          www.admissions.ucla.edu. If you still have specific questions, you may email the
+          HSSEAS admission office at e_r_k_k_i_@_s_e_a_s_._u_c_l_a_._e_d_u_._
+
+          PLEASE NOTE: The community college courses listed below have been approved to
+          satisfy the preparation requirements for this major at UCLA, but they m_a_y_notbe
+          exact equivalents of the UCLA courses listed.
+          --------------------------------------------------------------------------------
+          The following courses are R_E_Q_U_I_R_E_D_foradmissiontothismajor
+          --------------------------------------------------------------------------------
+          MATH 31A    Differential and Integral (4)|MATH 1A    Calculus, First Course  (5)
+                      Calculus                     |
+          --------------------------------------------------------------------------------
+          MATH 31B    Integration and Infinite  (4)|MATH 1B    Calculus, Second Course (5)
+                      Series                       |
+          --------------------------------------------------------------------------------
+          MATH 32A    Calculus of Several       (4)|MATH 1C    Calculus, Third Course  (4)
+                      Variables                    |
+          --------------------------------------------------------------------------------
+          MATH 32B    Calculus of Several       (4)|MATH 1C    Calculus, Third Course  (4)
+                      Variables                    |
+          --------------------------------------------------------------------------------
+          MATH 33A    Linear Algebra and        (4)|MATH 5    Introduction to Linear   (3)
+                      Applications                 |          Algebra
+          --------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          5/6/2019                        www.assist.org                         Page   2
+                          To: UCLA, From: Santa Rosa Junior College, 16-17
+          ================================================================================
+          Computer Science/B.S. (continued)
+          MATH 33B    Differential Equations    (4)|MATH 2    Calculus, Fourth Course  (3)
+                                                   |          - Differential Equations
+          --------------------------------------------------------------------------------
+          NOTE: You should complete the entire Physics Series at one community college (or
+          at community colleges within the same district where courses are exact
+          equivalents).
+          PHYSICS 1A  &_ Physics for Scientists (5)|PHYS 40    Classical Mechanics for (5)
+                         and Engineers:            |           Scientists and
+                         Mechanics                 |           Engineers
+          PHYSICS 4AL    Physics Laboratory for (2)|
+                         Scientists and            |
+                         Engineers: Mechanics      |
+                             AND                   |                 AND
+          PHYSICS 1B  &_ Physics for Scientists (5)|PHYS 41 &_ Waves, Optics and       (4)
+                         and Engineers:            |           Thermodynamics for
+                         Oscillations, Waves,      |           Scientists & Engineers
+                         Electric and Magnetic     |
+                         Fields                    |
+          PHYSICS 4BL &_ Physics Laboratory for (2)|PHYS 42    Electricity and         (4)
+                         Scientists and            |           Magnetism for
+                         Engineers: Electricity    |           Scientists and
+                         and Magnetism             |           Engineers
+          PHYSICS 1C     Physics for Scientists (5)|
+                         and Engineers:            |
+                         Electrodynamics,          |
+                         Optics, and Special       |
+                         Relativity                |
+          --------------------------------------------------------------------------------
+          ENGCOMP 3    English Composition,     (5)|ENGL 1A    College Composition     (4)
+                       Rhetoric, and Language      |
+                             AND                   |                 AND
+          One additional course in English         |ENGL 1B    Literature and          (3)
+          composition                              |           Composition
+                                                   |   O_R_
+                                                   |ENGL 5     Advanced Composition    (3)
+                                                   |           and Critical Thinking
+                                                   |   O_R_
+                                                   |PHIL 5     Critical                (3)
+                                                   |           Thinking/Writing
+                                                   |   O_R_
+                                                   |SPCH 9     Critical Thinking and   (3)
+                                                   |           Argumentation
+          --------------------------------------------------------------------------------
+          One course in computer programming:      |CS 10    Introduction to Computer  (4)
+          C++ is preferred for this major          |         Programming
+                                                   |
+          NOTE: A course equivalent to UCLA's Computer Science 31 will be accepted towards
+          this requirement.
+          --------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          5/6/2019                        www.assist.org                         Page   3
+                          To: UCLA, From: Santa Rosa Junior College, 16-17
+          ================================================================================
+          Computer Science/B.S. (continued)
+          Listed below are additional degree requirements for this major that are
+          s_t_r_o_n_g_l_y_recommendedandcanbemetwithcommunitycollege courses:
+          --------------------------------------------------------------------------------
+          COM SCI 31    Introduction to         (4)|No course articulated
+                        Computer Science I         |
+          --------------------------------------------------------------------------------
+          COM SCI 32    Introduction to         (4)|CS 11    Data Structures and       (4)
+                        Computer Science II        |         Algorithms
+          --------------------------------------------------------------------------------
+          COM SCI 33    Introduction to         (5)|CS 12    Assembly Language         (4)
+                        Computer Organization      |         Programming
+          --------------------------------------------------------------------------------
+          COM SCI M51A    Logic Design of       (4)|No course articulated
+                          Digital Systems          |
+          --------------------------------------------------------------------------------
+          MATH 61    Introduction to Discrete   (4)|MATH 4    Discrete Mathematics     (4)
+                     Structures                    |
+          --------------------------------------------------------------------------------
+          END OF MAJOR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

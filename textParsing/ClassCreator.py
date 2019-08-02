@@ -165,7 +165,7 @@ class Section:
                     units = classObj.units
                     x ={
                         'courseName':courseName,
-                        'courseKey':courseKey,
+                        'courseID':courseKey,
                         'units': units
                     }
                     jclasses.append(x)
@@ -182,7 +182,7 @@ class Section:
                     units = classObj.units
                     x ={
                         'courseName': courseName,
-                        'courseKey': courseKey,
+                        'courseID': courseKey,
                         'units': units
                     }
                     jclasses.append(x)
@@ -192,13 +192,13 @@ class Section:
             x = {
                 'Destination': dest,
                 'Source': source,
-                "relationToNext": equivalency.relationToNext
+                'relationToNext': equivalency.relationToNext
             }
             equivalencies.append(x)
         finObj = {
-            "requirement" : self.requirement,
-            "requirementType": self.requirementType,
-            "Equivalencies:" : equivalencies
+            'requirement' : self.requirement,
+            'requirementType': self.requirementType,
+            'Equivalencies' : equivalencies
 
         }
         return finObj

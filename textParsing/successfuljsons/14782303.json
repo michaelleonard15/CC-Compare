@@ -1,0 +1,643 @@
+[
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ARO 101L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No Comparable Course",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ECE 231",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "ECE 231L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MAT 114",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "MAT 115",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "MAT 116",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 1A",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "MATH 1B",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "MATH 1C",
+                "units": 5
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 1AH",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "MATH 1BH",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "MATH 1CH",
+                "units": 5
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 1AH",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "MATH 1BH",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "MATH 1CH",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MAT 214",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "MAT 215",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 1C",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "MATH 1D",
+                "units": 5
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 1CH",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "MATH 1DH",
+                "units": 5
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 1CH",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "MATH 1DH",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MAT 216",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 2A",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MTE 207",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHY 131",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 131L",
+                "units": 1
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 132",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 132L",
+                "units": 1
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 133",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 133L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHYS 4A",
+                "units": 6
+              },
+              {
+                "courseName": "",
+                "courseID": "PHYS 4B",
+                "units": 6
+              },
+              {
+                "courseName": "",
+                "courseID": "PHYS 4C",
+                "units": 6
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ME 214",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "ME 224L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ENGR 35",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ME 215",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CHM 121",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 121L",
+                "units": 1
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 122",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 122L",
+                "units": 1
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 123",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 123L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CHEM 1A",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "CHEM 1B",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "CHEM 1C",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ARO 102L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No Comparable Course",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ARO 103L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No Comparable Course",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ARO 201L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No Comparable Course",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ARO 202L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No Comparable Course",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ARO 203L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No Comparable Course",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  }
+]

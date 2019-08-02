@@ -1,0 +1,392 @@
+[
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "HST 101",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "HST 102",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "HST 103",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "HIST 3A",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "HIST 3B",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "HIST 3C",
+                "units": 4
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "HIST 3AH",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "HIST 3BH",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "HIST 3CH",
+                "units": 4
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "HIST 3AH",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "HIST 3BH",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "HIST 3CH",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ART 140A",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ARTS 4A",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "ARTS 4B",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ART 150A",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ARTS 8",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ART 212",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "ART 213",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "ART 214",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ARTS 2A",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "ARTS 2B",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "ARTS 2C",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "ARTS 2D",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ART 212",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ARTS 2A",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "ARTS 2B",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ART 213",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ARTS 2C",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ART 214",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No Comparable Course",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ART 211",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ARTS 2J",
+                "units": 4
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "INTL 22",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ART 216",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ARTS 2G",
+                "units": 4
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "INTL 10",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  }
+]

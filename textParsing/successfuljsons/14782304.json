@@ -1,0 +1,839 @@
+[
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHY 102",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "BIO 115",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "BIO 115L",
+                "units": 1
+              },
+              {
+                "courseName": "",
+                "courseID": "BIO 115A",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "BIOL 10",
+                "units": 5
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "BIOL 10H",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CHM 121",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 121L",
+                "units": 1
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 122",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 122L",
+                "units": 1
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 123",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 123L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CHEM 1A",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "CHEM 1B",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "CHEM 1C",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "AG 101",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ABM 224",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No Comparable Course",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "AVS 101",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 131",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PLT 131L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 220",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PLT 220L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 231",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PLT 231L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "AVS 112",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "AVS 114L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "AVS 113",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "AVS 115L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 223",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PLT 223L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 202",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PLT 202L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 211",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PLT 211L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 232",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 240",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PLT 240L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 245",
+                "units": 2
+              },
+              {
+                "courseName": "",
+                "courseID": "PLT 245L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 132",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PLT 132L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 133",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PLT 133L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 203",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PLT 203L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No Comparable Course",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 214",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 222",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PLT 233",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PLT 233L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  }
+]

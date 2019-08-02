@@ -1,0 +1,698 @@
+[
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "BIO 121",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "BIO 121L",
+                "units": 2
+              },
+              {
+                "courseName": "",
+                "courseID": "BIO 122",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "BIO 122L",
+                "units": 2
+              },
+              {
+                "courseName": "",
+                "courseID": "BIO 123",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "BIO 123L",
+                "units": 2
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "BIOL 6A",
+                "units": 6
+              },
+              {
+                "courseName": "",
+                "courseID": "BIOL 6B",
+                "units": 6
+              },
+              {
+                "courseName": "",
+                "courseID": "BIOL 6C",
+                "units": 6
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "BIOL 6AH",
+                "units": 6
+              },
+              {
+                "courseName": "",
+                "courseID": "BIOL 6B",
+                "units": 6
+              },
+              {
+                "courseName": "",
+                "courseID": "BIOL 6CH",
+                "units": 6
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "BIOL 6AH",
+                "units": 6
+              },
+              {
+                "courseName": "",
+                "courseID": "BIOL 6B",
+                "units": 6
+              },
+              {
+                "courseName": "",
+                "courseID": "BIOL 6CH",
+                "units": 6
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MAT 105",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CHM 121",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 121L",
+                "units": 1
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 122",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 122L",
+                "units": 1
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 123",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "CHM 123L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CHEM 1A",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "CHEM 1B",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "CHEM 1C",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MAT 106",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No Comparable Course",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MAT 105",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "MAT 106",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No Comparable CourseCourse Denied: MATH 41 + MATH 42",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHY 121",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 121L",
+                "units": 1
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 122",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 122L",
+                "units": 1
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 123",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 123L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHYS 2A",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "PHYS 2B",
+                "units": 5
+              },
+              {
+                "courseName": "",
+                "courseID": "PHYS 2C",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": "OR"
+      },
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHY 131",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 131L",
+                "units": 1
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 132",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 132L",
+                "units": 1
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 133",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "PHY 133L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHYS 4A",
+                "units": 6
+              },
+              {
+                "courseName": "",
+                "courseID": "PHYS 4B",
+                "units": 6
+              },
+              {
+                "courseName": "",
+                "courseID": "PHYS 4C",
+                "units": 6
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MIC 201",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "MIC 201L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "BIOL 26",
+                "units": 6
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "STA 120",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 10",
+                "units": 5
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 10H",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "AG 101",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "AVS 211",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "AVS 101",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "AVS 112",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "AVS 114L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "AVS 113",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "AVS 115L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": "OR"
+      },
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "AVS 125",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "AVS 125L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "AVS 201",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  }
+]

@@ -7,7 +7,7 @@ class Utility():
     class_key = re.compile(r'(?:[A-Z&]{1,8}\ )+[A-Z0-9.]{1,5}')
     units = re.compile(r'\((\d)\)')
     courseName = re.compile(r'')
-    checkNCA = re.compile(r'(No\scourse\sarticulated)|(No\sCurrent\sArticulation)', re.IGNORECASE)
+    checkNCA = re.compile(r'(No\scourse\sarticulated)|(No\sCurrent\sArticulation)|(Not\sArticulated)', re.IGNORECASE)
     checkAND = re.compile(r'\sAND\s')
     checkO_R = re.compile(r'\sO_R_\s')
     checkand = re.compile(r'\s&_\s')
@@ -35,7 +35,6 @@ class Utility():
     # there is class key and unit information at the classpoint index, start at it
     def getClassPoints(self, section, startPoint, breakpoint):
         classPoints = list()
-        classPoints.clear()
         count = startPoint
         while count < breakpoint:
             if((self.units.search(section[count]) is not None) and (self.class_key.search(section[count]) is not None)):
@@ -73,8 +72,8 @@ class Utility():
                         dest_list = self.constructDestSource(leftSection[previous:])
                         source_list = self.constructDestSource(rightSection[previous:])
                     else:
-                        dest_list = self.constructDestSource(leftSection[previous:breakpoints[count]-1])
-                        source_list = self.constructDestSource(rightSection[previous:breakpoints[count]-1])
+                        dest_list = self.constructDestSource(leftSection[previous:breakpoints[count]])
+                        source_list = self.constructDestSource(rightSection[previous:breakpoints[count]])
                         previous = breakpoints[count]+1
                     equivalency.setDest(dest_list)
                     equivalency.setSource(source_list)
