@@ -125,7 +125,8 @@ class Equivalency:
     def setDest(self, destList):
         if isinstance(destList, Destsource_list):
             self.dest = destList
-    
+    def setRelation(self, relation):
+        self.relationtoNext = relation
     def checkCompletion(self):
         if source.checkCompletion() or dest.checkCompletion():
             completed = True

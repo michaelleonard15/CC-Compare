@@ -27,6 +27,11 @@ class Utility():
                 count+=1
         return breakpoints.copy()
 
+    def findRelation(self, line):
+        if self.checkAND.search(line) is not None:
+            return 'AND'
+        if self.checkOR.search(line) is not None:
+            return 'OR'
     # there is class key and unit information at the classpoint index, start at it
     def getClassPoints(self, section, startPoint, breakpoint):
         classPoints = list()
@@ -38,36 +43,55 @@ class Utility():
             count+=1
         return classPoints.copy()
                 
-    
-    def constructEquivalency(self, leftSection, rightSection):
-        equivalency = Equivalency()
-        dest_list = self.getDestSourceList(leftSection,rightSection)
-        source_list = self.getDestSourceList(rightSection,leftSection)
-        equivalency.setDest(dest_list)
-        equivalency.setSource(source_list)
-        return equivalency
-
-    def getDestSourceList(self, toBeSearched, otherSection):
-        ##check if section is synced
-        if(toBeSearched.__len__() is otherSection.__len__()):
-            section = Section()
-            count = 0
-            breakpoints = self.getBreakPoints(toBeSearched)
+    def sync(self, leftSection,rightSection):
+        if(leftSection.__len__() is rightSection.__len__()):
+            return True
         else:
             raise ValueError("Section is not synced properly")
+        return False
+        
+    def constructSection(self, leftSection, rightSection):
+        if(self.sync(leftSection,rightSection)):
+            breakpoints = self.getBreakPoints(leftSection)
 
-        #contains no ANDs or ORs, dealing with strictly &_, O_Rs
-        if breakpoints.__len__() is 0:
-            return self.searchNoBPSection(toBeSearched)
-        #contains ANDs and ORs
-        else:
-            for point in breakpoints:
-                print(point)
+            if breakpoints.__len__() is 0:
+                section = Section()
+                equivalency = Equivalency()
+                dest_list = self.constructDestSource(leftSection)
+                source_list = self.constructDestSource(rightSection)
+                equivalency.setDest(dest_list)
+                equivalency.setSource(source_list)
+                section.addEquivalency(equivalency)
+                return section
+            else:
+                section = Section()
+                previous = 0
+                count = 0
+                while count <= breakpoints.__len__():
+                    equivalency = Equivalency()
+                    if count is breakpoints.__len__():
+                        dest_list = self.constructDestSource(leftSection[previous:])
+                        source_list = self.constructDestSource(rightSection[previous:])
+                    else:
+                        dest_list = self.constructDestSource(leftSection[previous:breakpoints[count]-1])
+                        source_list = self.constructDestSource(rightSection[previous:breakpoints[count]-1])
+                        previous = breakpoints[count]+1
+                    equivalency.setDest(dest_list)
+                    equivalency.setSource(source_list)
+
+                    #if the count is at the last breakpoint, there will be no relation to next
+                    #this is also the only time we look right at the AND or OR
+                    if count is not breakpoints.__len__():
+                        relation = self.findRelation(leftSection[breakpoints[count]])
+                        equivalency.setRelation(relation)
+                    count+=1
+                    section.addEquivalency(equivalency)
+                return section
 
 
 
     #returns a destsourcelist
-    def searchNoBPSection(self, section):
+    def constructDestSource(self, section):
         count = 0
         #LEFT SIDE HANDLING OF THE SECTIONG
         dslist = Destsource_list()
@@ -81,8 +105,8 @@ class Utility():
             #Case 1: it contains no course articulated.
             if(points.__len__() is 0 and self.checkNCA.search(section[0])):
                 tempClass = Class('',"No course articulated", 0) 
-                tempClassList.append(tempClass)
-                dslist.addClassList(tempClassList.copy())
+                tempClassList.addClass(tempClass)
+                dslist.addClassList(tempClassList)
                 return dslist
             #Case 2: it contains a misc. string
             elif(points.__len__() is 0):
@@ -123,54 +147,3 @@ class Utility():
                     dslist.addClassList(tempClassList) 
                 count+=1
             return dslist
-
-
-    # def searchForMisc(self, section):
-    #     tempClassList = ClassList()
-    #     tempDestSource = Destsource_list()
-    #     if  (self.checkNCA.search(section[0]) is not None):
-    #         tempClass = Class('',"No course articulated", 0) 
-    #         tempClassList.append(tempClass)
-    #         tempDestSource.addClassList(tempClassList.copy())
-    #         return tempDestSource
-    #     #Case 2: it contains a misc. string
-    #     else:
-    #         name = ""
-    #         for line in section:
-    #             name.__add__(line)
-    #         " ".join(name.split())
-    #         tempClass = Class('',name, 0) 
-    #         tempClassList.addClass(tempClass)
-    #         dslist.addClassList(tempClassList)
-    #         break
-
-    # def createSubsection(self, currIndex, section):
-    #     subSection = []
-    #     while(currIndex < section.__len__()):
-    #         startIndex = currIndex
-    #         if(section(currIndex).contains('OR')):
-    #             print(currIndex)
-    #             subSection.append(section[startIndex:currIndex])
-    #             return subSection
-
-
-
-
-
-
-
-    # classList = ClassList()
-
-    # # prelimanary cases
-    # if self.units.search(toBeSearched[count]) is not None:
-    #     unit = self.units.search(toBeSearched[count])
-    #     courseKey = self.class_key.search(toBeSearched[count])
-
-    # # handle 'No course articulated'
-    # elif self.checkNCA is not None:
-    #     tempClass = Class()
-    #     tempClass.setCourseName("No course articulated")
-
-
-    # if self.checkand(toBeSearched[count]):
-    #     classList.addClasss(Class(courseKey, "",unit))

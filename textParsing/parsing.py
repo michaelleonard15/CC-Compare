@@ -58,7 +58,16 @@ creator = Utility()
 #search multiple sections
 # for sectionLeft,sectionRight in zip(masterLeft,masterRight):
 #     creator.searchSection(sectionLeft,sectionRight)
-equivalency = Equivalency()
-equivalency = creator.constructEquivalency(masterLeft[13],masterRight[13])
+count = 1
+sections = []
+while count < masterLeft.__len__():
+    if masterLeft[count].__len__() is 0:
+        count+=1
+        continue
+    section = Section()
+    section = creator.constructSection(masterLeft[count],masterRight[count])
+    sections.append(section)
+    count+=1
+    
 print('end')
 
