@@ -4,9 +4,9 @@ from ClassCreator import *
 from Utility import Utility
 ###
 id_list = [
-    # 'SRC_to_SJSU.txt',
-    # 'SRC_to_SSU.txt',
-    'SRC_to_UCLA.txt',
+    'SRC_to_SJSU.txt',
+    #'SRC_to_SSU.txt',
+    #'SRC_to_UCLA.txt',
     # '14782302.txt',
     # '14782303.txt',
     # '14782304.txt',
@@ -59,5 +59,6 @@ creator = Utility()
 # for sectionLeft,sectionRight in zip(masterLeft,masterRight):
 #     creator.searchSection(sectionLeft,sectionRight)
 equivalency = Equivalency()
-equivalency = creator.searchSection(masterLeft[4],masterRight[4])
+equivalency = creator.constructEquivalency(masterLeft[13],masterRight[13])
 print('end')
+

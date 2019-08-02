@@ -5,7 +5,7 @@ from ClassCreator import *
 class Utility():
     import re
     class_key = re.compile(r'(?:[A-Z&]{1,8}\ )+[A-Z0-9.]{1,5}')
-    units = re.compile(r'\(\d\)')
+    units = re.compile(r'\((\d)\)')
     courseName = re.compile(r'')
     checkNCA = re.compile(r'(No\scourse\sarticulated)|(No\sCurrent\sArticulation)', re.IGNORECASE)
     checkAND = re.compile(r'\sAND\s')
@@ -34,85 +34,115 @@ class Utility():
         count = startPoint
         while count < breakpoint:
             if((self.units.search(section[count]) is not None) and (self.class_key.search(section[count]) is not None)):
-                classPoints.append(count+1)
+                classPoints.append(count)
             count+=1
         return classPoints.copy()
                 
     
-    def searchSection(self, leftSection, rightSection):
-        if(leftSection.__len__() is rightSection.__len__()):
+    def constructEquivalency(self, leftSection, rightSection):
+        equivalency = Equivalency()
+        dest_list = self.getDestSourceList(leftSection,rightSection)
+        source_list = self.getDestSourceList(rightSection,leftSection)
+        equivalency.setDest(dest_list)
+        equivalency.setSource(source_list)
+        return equivalency
+
+    def getDestSourceList(self, toBeSearched, otherSection):
+        ##check if section is synced
+        if(toBeSearched.__len__() is otherSection.__len__()):
             section = Section()
             count = 0
-            breakpoints = self.getBreakPoints(leftSection)
+            breakpoints = self.getBreakPoints(toBeSearched)
+        else:
+            raise ValueError("Section is not synced properly")
 
-
-        #contains no AND or OR
+        #contains no ANDs or ORs, dealing with strictly &_, O_Rs
         if breakpoints.__len__() is 0:
-            count = 0
-            #LEFT SIDE HANDLING OF THE SECTIONG
-            dest_list = Destsource_list()
-            points = self.getClassPoints(leftSection, count, leftSection.__len__())
-            equivalency = Equivalency()
-            while count < leftSection.__len__():
-                tempClassList = ClassList()
-
-                # there is class key and unit information at the classpoint index, start at it
-
-                # it means that there was no class info here ###########
-                #Case 1: it contains no course articulated.
-                if(points.__len__() is 0 and self.checkNCA.search(leftSection[0])):
-                    tempClass = Class('',"No course articulated", 0) 
-                    tempClassList.append(tempClass)
-                    dest_list.addClassList(tempClassList.copy())
-                    break
-                #Case 2: it contains a misc. string
-                elif(points.__len__() is 0):
-                    name = ""
-                    for line in leftSection:
-                        name.__add__(line)
-                    " ".join(name.split())
-                    tempClass = Class('',name, 0) 
-                    tempClassList.addClass(tempClass)
-                    dest_list.addClassList(tempClassList)
-                    break
-
-
-                # this loop will run for EVERY class
-                prevHadAnd = False
-                for point in points:
-                    if prevHadAnd:
-                        # get class at the current point and add it the class list
-                        unit = self.units.search(leftSection[point])
-                        key = self.class_key.search(leftSection[point])
-                        tempClass = Class(key,'', unit)
-                        tempClassList.addClass(tempClass) 
-                        if self.checkand.search(leftSection[point] is not None):
-                            prevHadAnd = True
-                        else:
-                            prevHadAnd = False
-                    elif(point>0 and (self.checkO_R.search(leftSection[point-1]) is None)):
-                        if self.checkand.search(leftSection[point]) is not None:
-                            prevHadAnd = True
-                        unit = self.units.search(leftSection[point-1])
-                        key = self.class_key.search(leftSection[point-1])
-                        tempClass = Class(key,'', unit)
-                        tempClassList.addClass(tempClass)
-                        dest_list.addClassList(tempClassList)
-                        equivalency.setDest(dest_list) 
-                    count+=1
-                return equivalency
-                
-
-
-
+            return self.searchNoBPSection(toBeSearched)
+        #contains ANDs and ORs
         else:
             for point in breakpoints:
                 print(point)
-        if(leftSection.__len__() is not rightSection.__len__()):
-            raise ValueError("Section is not synced properly")
 
 
 
+    #returns a destsourcelist
+    def searchNoBPSection(self, section):
+        count = 0
+        #LEFT SIDE HANDLING OF THE SECTIONG
+        dslist = Destsource_list()
+        points = self.getClassPoints(section, count, section.__len__())
+        while count < section.__len__():
+            tempClassList = ClassList()
+
+            # there is class key and unit information at the classpoint index, start at it
+
+            # it means that there was no class info here ###########
+            #Case 1: it contains no course articulated.
+            if(points.__len__() is 0 and self.checkNCA.search(section[0])):
+                tempClass = Class('',"No course articulated", 0) 
+                tempClassList.append(tempClass)
+                dslist.addClassList(tempClassList.copy())
+                return dslist
+            #Case 2: it contains a misc. string
+            elif(points.__len__() is 0):
+                name = ""
+                for line in section:
+                    name+=line
+                name = " ".join(name.split())
+                tempClass = Class('',name, 0) 
+                tempClassList.addClass(tempClass)
+                dslist.addClassList(tempClassList)
+                return dslist
+                
+
+
+            # this loop will run for EVERY class
+            prevHadAnd = True
+            for point in points:
+                if prevHadAnd:
+                    # get class at the current point and add it the class list
+                    unit = self.units.search(section[point]).group(1)
+                    key = self.class_key.search(section[point]).group(0)
+                    tempClass = Class(key,'', int(unit))
+                    tempClassList.addClass(tempClass) 
+                    if self.checkand.search(section[point]) is not None:
+                        prevHadAnd = True
+                    else:
+                        prevHadAnd = False
+                        dslist.addClassList(tempClassList)
+                # elif(point>0 and (self.checkO_R.search(section[point-1]) is None)):
+                else:
+                    tempClassList = ClassList()
+                    if self.checkand.search(section[point]) is not None:
+                        prevHadAnd = True
+                    unit = self.units.search(section[point]).group(1)
+                    key = self.class_key.search(section[point]).group(0)
+                    tempClass = Class(key,'', int(unit))
+                    tempClassList.addClass(tempClass)
+                    dslist.addClassList(tempClassList) 
+                count+=1
+            return dslist
+
+
+    # def searchForMisc(self, section):
+    #     tempClassList = ClassList()
+    #     tempDestSource = Destsource_list()
+    #     if  (self.checkNCA.search(section[0]) is not None):
+    #         tempClass = Class('',"No course articulated", 0) 
+    #         tempClassList.append(tempClass)
+    #         tempDestSource.addClassList(tempClassList.copy())
+    #         return tempDestSource
+    #     #Case 2: it contains a misc. string
+    #     else:
+    #         name = ""
+    #         for line in section:
+    #             name.__add__(line)
+    #         " ".join(name.split())
+    #         tempClass = Class('',name, 0) 
+    #         tempClassList.addClass(tempClass)
+    #         dslist.addClassList(tempClassList)
+    #         break
 
     # def createSubsection(self, currIndex, section):
     #     subSection = []
@@ -132,9 +162,9 @@ class Utility():
     # classList = ClassList()
 
     # # prelimanary cases
-    # if self.units.search(leftSection[count]) is not None:
-    #     unit = self.units.search(leftSection[count])
-    #     courseKey = self.class_key.search(leftSection[count])
+    # if self.units.search(toBeSearched[count]) is not None:
+    #     unit = self.units.search(toBeSearched[count])
+    #     courseKey = self.class_key.search(toBeSearched[count])
 
     # # handle 'No course articulated'
     # elif self.checkNCA is not None:
@@ -142,5 +172,5 @@ class Utility():
     #     tempClass.setCourseName("No course articulated")
 
 
-    # if self.checkand(leftSection[count]):
+    # if self.checkand(toBeSearched[count]):
     #     classList.addClasss(Class(courseKey, "",unit))
