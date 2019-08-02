@@ -68,6 +68,11 @@ while count < masterLeft.__len__():
     section = creator.constructSection(masterLeft[count],masterRight[count])
     sections.append(section)
     count+=1
-    
+
+with open('SRC_SJSU.json', 'w') as f:
+    tempList = list()
+    for section in sections:
+        tempList.append(section.jsonify())
+    json.dump(tempList, f, indent = 2)
 print('end')
 

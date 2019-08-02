@@ -1,5 +1,5 @@
 # Per Agreement: Equivalencies < Equivalency < dest/source_list (this) < classList < class
-
+import json
 
 
 
@@ -126,7 +126,7 @@ class Equivalency:
         if isinstance(destList, Destsource_list):
             self.dest = destList
     def setRelation(self, relation):
-        self.relationtoNext = relation
+        self.relationToNext = relation
     def checkCompletion(self):
         if source.checkCompletion() or dest.checkCompletion():
             completed = True
@@ -146,6 +146,63 @@ class Section:
     def addEquivalency(self, equivalency):
         if isinstance(equivalency, Equivalency):
             self.equivalencyList.append(equivalency)
+            
+    def jsonify(self):
+        #Section containing multiple equivalency sets between AND and OR
+        equivalencies = list()
+        for equivalency in self.equivalencyList:
+            dest = list()
+            source = list()
+
+            #Left side of the equivalency has multiple class lists
+            for leftClassList in equivalency.dest.classLists:
+                destClassList = list()
+                #In the classlists there are multiple core lists, even with one class
+                jclasses = list()
+                for classObj in leftClassList.classes:
+                    courseName = classObj.courseName
+                    courseKey = classObj.courseKey
+                    units = classObj.units
+                    x ={
+                        'courseName':courseName,
+                        'courseKey':courseKey,
+                        'units': units
+                    }
+                    jclasses.append(x)
+                destClassList.append(jclasses.copy())
+                jclasses.clear()
+                dest.append(destClassList)
+            for rightClassList in equivalency.source.classLists:
+                destClassList = list()
+                #In the classlists there are multiple core lists, even with one class
+                jclasses = list()
+                for classObj in rightClassList.classes:
+                    courseName = classObj.courseName
+                    courseKey = classObj.courseKey
+                    units = classObj.units
+                    x ={
+                        'courseName': courseName,
+                        'courseKey': courseKey,
+                        'units': units
+                    }
+                    jclasses.append(x)
+                destClassList.append(jclasses.copy())
+                jclasses.clear()
+                source.append(destClassList)
+            x = {
+                'Destination': dest,
+                'Source': source,
+                "relationToNext": equivalency.relationToNext
+            }
+            equivalencies.append(x)
+        finObj = {
+            "requirement" : self.requirement,
+            "requirementType": self.requirementType,
+            "Equivalencies:" : equivalencies
+
+        }
+        return finObj
+            
 
 # E N D Equivalencies 
 
