@@ -78,12 +78,13 @@ constructor(props) {
                 major: agreements[i].major.ID})
     }
 
+    ///// REMOVE THIS LINE LATER
+    if(names[0] === "") { names = ["Dummy 1","Dummy 2","Dummy 3","Dummy 4"]}  
+    if(IDs.length < 1) {IDs.push(14973184); IDs.push(14984221); IDs.push(15036781);}
+    ///// REMOVE THIS LINE LATER
+
+
     let request = {source: this.state.selectedSource.ID, agreements: IDs}
-
-    ///// REMOVE THIS LINE LATER
-    if(names[0] === "") { names = ["Dummy 1","Dummy 2","Dummy 3","Dummy 4"]}
-    ///// REMOVE THIS LINE LATER
-
     this.props.onSubmit(request, names)                  
   }
 

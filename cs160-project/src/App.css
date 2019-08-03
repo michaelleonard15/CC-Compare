@@ -11,6 +11,26 @@
 }
 
 
+
+
+/* Added to customize Bulma */
+
+
+.button {
+  line-height: 0.5;
+}
+
+
+
+
+
+/* END */
+
+
+
+
+
+
 /* Page 3 */
 
 .back_button {
@@ -26,9 +46,6 @@
 }
 
 
-.button {
-  line-height: 0.5;
-}
 
 
 

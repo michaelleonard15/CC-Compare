@@ -59,11 +59,11 @@ class RelationGroup extends React.Component {
   addButtonOrLabel(reactKey, lookupKey) {
     let temp = this.props.lookupTable.get(lookupKey)
     if(this.props.isSourceCol) {  
-      let selected = temp.isSelected ? 'selected' : 'not_selected'
+      let selected = temp.isSelected ? 'is-primary' : 'has-background-grey-lighter'
       return this.createButton(reactKey, selected, temp, lookupKey)
     } 
     else {
-      let selected = this.props.completed ? 'selected' : 'not_selected'
+      let selected = this.props.completed ? 'is-primary' : 'has-background-grey-lighter'
       return this.createLabel(reactKey, selected, temp)
     }    
   }
@@ -79,10 +79,10 @@ class RelationGroup extends React.Component {
    * @param lookupKey Identifier to find aClass in the lookupTable prop.
    * @return a div containing a button
    */
-  createButton(key, selected, aClass, lookupKey) {
+  createButton(key, selectedColor, aClass, lookupKey) {
     return (
-      <div key={key} className={'class_label_' + selected}>
-        <button className={'report_toggle_' + selected}
+      <div key={key} className="buttons is-centered are-large">
+        <button className={'button ' + selectedColor}
                 onClick={this.props.handleToggle.bind(this, lookupKey)}>
           <span className="content">{aClass.courseID} ({aClass.units})</span> 
           <br/> 
@@ -104,9 +104,9 @@ class RelationGroup extends React.Component {
    * @param aClass An object representing a class, containing properties for name and units.
    * @return a div containing a label
    */
-  createLabel(key, completed, aClass)  {
+  createLabel(key, completedColor, aClass)  {
     return (
-      <div key={key} className={'class_label_' + completed}>
+      <div key={key} className={`container is-${completedColor}`}>
         <label className='className'>{aClass.courseID}</label>
         <label className='units'> ({aClass.units}) </label>
       </div>
@@ -138,7 +138,7 @@ class RelationGroup extends React.Component {
    */
   render () {
     return (
-      <div className='relation_group'>
+      <div className='box has-background-grey-light'>
         {this.generateLabels()}
       </div>
     )

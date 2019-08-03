@@ -42,7 +42,10 @@ class FinalReportPage extends React.Component {
         for(let temp = 0; temp < condition.rows; temp++) {
           slice.push(matrix[temp + i])
         }
-        rows.push(this.createConditionalGroup(slice, i, isComplete, condition))
+        rows.push(
+          <div className="section">
+            {this.createConditionalGroup(slice, i, isComplete, condition)}
+          </div>)
         i += condition.rows - 1
       }
 
@@ -52,11 +55,17 @@ class FinalReportPage extends React.Component {
           slice.push(matrix[ i + 1 ])
           i += 1
         }
-        rows.push(this.createRowGroup(slice, i, isComplete))
+        rows.push(
+          <div className="section">
+            {this.createRowGroup(slice, i, isComplete)}
+          </div>)
       }
 
       else {
-        rows.push(this.createRequirementRow(matrix[i], i, isComplete))
+        rows.push(
+          <div className="section">
+            {this.createRequirementRow(matrix[i], i, isComplete)}
+          </div>)
       }
     }
 
@@ -111,16 +120,20 @@ class FinalReportPage extends React.Component {
     * the names of the school as the label text. 
     */
   generateLabels() {
-    return this.props.schoolList.map( (school, index) => {
+    let colWidth = 12 / this.props.schoolList.length
+    let labels = this.props.schoolList.map( (school, index) => {
       return (
-        <div key={index} className='label_box'>
+        <div key={index} className={`column is-${colWidth} has-background-info`}>
           <label className='school_label'>
             {school}
           </label>
         </div>
       )
     })
+    return labels
   }
+
+
 
 
 
@@ -132,9 +145,10 @@ class FinalReportPage extends React.Component {
 
 
   linkOriginalAgreements() {
+    let colWidth = 12 / this.props.schoolList.length
     let links = this.props.agreementKeys.map( (key, index) => {
       return (
-        <div key={index + 1} className="link_box">
+        <div key={index + 1} className={`column is-${colWidth} has-background-info has-same-height`}>
           <a className="agreement_link"
              target="_blank"
              rel="noopener noreferrer"
@@ -142,9 +156,11 @@ class FinalReportPage extends React.Component {
         </div>
       )
     })
-    links.splice(0, 0, <div key="0" className="link_box" />)
+    links.splice(0, 0, <div key="0" className={`column is-${colWidth} has-background-info has-same-height`} />)
     return links
   }
+
+
 
 
 
@@ -158,17 +174,22 @@ class FinalReportPage extends React.Component {
   render() {
     return (
       <div>
-        <div align='right'>
-          <button className="back_button"
+        <div className="level-left">
+          <button className="button is-large level-item"
                   onClick={this.props.backButton}>Back</button>
         </div>
-        <div className="school_labels_row">
-          {this.generateLabels()}
-        </div>
-        <div className="links_row">
-          {this.linkOriginalAgreements()}
-        </div>
-        {this.generateRows()}
+        <section className="section">
+          <div className="columns">
+            {this.generateLabels()}
+          </div>
+          <hr/>
+          <div className="columns">
+            {this.linkOriginalAgreements()}
+          </div>
+        </section>
+        <section>
+          {this.generateRows()}
+        </section>
 
       </div>)
   }
