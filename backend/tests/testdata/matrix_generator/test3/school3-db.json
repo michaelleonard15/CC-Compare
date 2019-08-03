@@ -25,7 +25,8 @@
               }
             ]
           ]
-        ]
+        ],
+        "relationToNext": ""
       }
     ]
   },
@@ -55,7 +56,8 @@
               }
             ]
           ]
-        ]
+        ],
+        "relationToNext": ""
       }
     ]
   }
