@@ -121,6 +121,7 @@ def _is_same_class_group(db_courses, matrix_courses, lookup):
             matrix_course = _get_course(lookup, lookup_key)
 
             # should courseName be added to this check? (probably not)
+            # TODO: add courseName to this check (for ID-less courses, at least)
             if (db_course['courseID'] != matrix_course['courseID'] or 
                 db_course['units'] != matrix_course['units']):
                 return False
