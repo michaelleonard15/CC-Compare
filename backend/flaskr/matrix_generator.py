@@ -23,8 +23,8 @@ def generate_matrix(agreement_list):
     matrix = []
     __current_id = 0
     __current_neg_id = -1
-
     dest_num = 1
+    
     for agreement in agreement_list:
         # Ignoring section headers for now, since there's nothing there yet
 
