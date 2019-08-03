@@ -24,6 +24,7 @@ def generate_matrix(agreement_list):
     __current_id = 0
     __current_neg_id = -1
 
+    dest_num = 1
     for agreement in agreement_list:
         # Ignoring section headers for now, since there's nothing there yet
 
@@ -33,16 +34,17 @@ def generate_matrix(agreement_list):
         # sources list. However, with destinations, we only want to merge it if it's
         # from the same school.
         current_dest_lookup = []
-        _extract_rows(agreement, matrix, source_lookup, current_dest_lookup)
-        _fill_empty_dests(matrix)
+        _extract_rows(agreement, matrix, source_lookup, current_dest_lookup, dest_num)
+        _fill_empty_dests(matrix, dest_num)
         dest_lookup = dest_lookup + current_dest_lookup
+        dest_num += 1
     
     # Concatenating lists
     lookup = source_lookup + dest_lookup
     return {'lookup': lookup, "equivalencyMatrix": matrix}
     
 
-def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup):
+def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup, dest_num):
     """
     Extracts all sources from an agreement, 
     building onto the existing matrix and source lookup table.
@@ -51,7 +53,7 @@ def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup):
         start_index = _section_index_in_matrix(matrix, section, source_lookup)
         for i, row in enumerate(section['Equivalencies']):
             if(matrix[start_index + i] == []):
-                matrix_index = _extract_source_row(row, matrix, source_lookup, start_index + i)
+                matrix_index = _extract_source_row(row, matrix, source_lookup, start_index + i, dest_num)
             _extract_dest_row(row, matrix, cur_dest_lookup, start_index + i)
 
 
@@ -128,7 +130,7 @@ def _get_course(lookup, course_key):
         raise LookupError('Tried to lookup nonexistant ID in lookup table')
 
 
-def _extract_source_row(row, matrix, src_lookup, row_index):
+def _extract_source_row(row, matrix, src_lookup, row_index, dest_num):
     """
     Extracts source schools from a row, building onto the existing matrix and the
     source lookup table for the current agreement.
@@ -144,6 +146,11 @@ def _extract_source_row(row, matrix, src_lookup, row_index):
     if "relationToNext" in row and row['relationToNext'] != "":
         new_cell['relationToNext'] = row['relationToNext']
     matrix[row_index].append(new_cell)
+
+    # Adding extra cells, if they're needed for column alignment
+    for i in range(1, dest_num):
+        matrix[row_index].append({'courses':[]})
+    
 
 
 def _extract_dest_row(row, matrix, cur_dest_lookup, row_index):
@@ -210,16 +217,15 @@ def _add_to_lookup(db_course, lookup, is_origin):
 #     return (len(matrix) - 1)
 
 
-def _fill_empty_dests(matrix):
+def _fill_empty_dests(matrix, dest_num):
     """
     Goes through the matrix and adds empty destination classes wherever there is
     a cell missing in the column.
     """
     if len(matrix) <= 1:
         return
-    row_width = max(len(row) for row in matrix)
     for row in matrix:
-        needed_cells = row_width - len(row)
+        needed_cells = dest_num - len(row)
         for i in range(0, needed_cells):
             row.append({'courses':[]})
 
