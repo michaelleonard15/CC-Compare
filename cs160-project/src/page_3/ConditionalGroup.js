@@ -64,8 +64,12 @@ class ConditionalGroup extends React.Component {
     let condition = slice[0][0].condition
     let groupCompleted = isComplete.conditionalGroup(slice, condition) ? 'success' : 'light'
     return(
-      <div className={"box has-background-" + groupCompleted}>    
-        <p>Complete {condition.number} {condition.type.toLowerCase()} from the following: <br/><br/></p> 
+      <div className={"box has-background-" + groupCompleted}> 
+        <span className="level">   
+          <h4 className="level-item title is-4">
+            Complete {condition.number} {condition.type.toLowerCase()} from the following: 
+          </h4>
+        </span> 
         {this.generateRows()}
       </div>
     )

@@ -74,29 +74,42 @@ class CourseSelectorPage extends React.Component {
    */
   render() {
     return (
-      <div className="columns">
+      <div>
+        <h1 className="title is-1">College Comparison Tool</h1>
+
+        <p className="content">
+        To present more useful information on the report 
+        we have generated, please select the classes you have already completed. 
+        This will highlight requirements you have already completed on the next page. 
+        </p>
+
+
+        <div className="box">  
+          <div className="columns">
+          
+            <div className="column is-half is-offset-one-quarter">
+              <div className="box has-background-light">
+                <h3 className="title has-text-centered"> 
+                  What classes have you completed at {this.props.schoolName}? 
+                </h3>
       
-        <div className="column is-half is-offset-one-quarter">
-          <div className="box has-background-light">
-            <h3 className="title has-text-centered"> 
-              What classes have you completed at {this.props.schoolName}? 
-            </h3>
-  
-            <div className="buttons is-centered are-large">
-              {this.generateButtons()}
-            </div>
-          
-          
-            <div className="level is-mobile">
-  
-              <div className="level-left">
-                <button className="button is-large level-item"
-                        onClick={this.props.backButton}>Back</button>
-              </div>
-                  
-              <div className="level-right">
-                <button className="button is-large level-item"
-                        onClick={this.props.loadNextPage}>Next</button>
+                <div className="buttons is-centered are-large">
+                  {this.generateButtons()}
+                </div>
+              
+              
+                <div className="level is-mobile">
+      
+                  <div className="level-left">
+                    <button className="button is-large level-item"
+                            onClick={this.props.backButton}>Back</button>
+                  </div>
+                      
+                  <div className="level-right">
+                    <button className="button is-large level-item"
+                            onClick={this.props.loadNextPage}>Next</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

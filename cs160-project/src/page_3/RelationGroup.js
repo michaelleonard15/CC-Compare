@@ -81,7 +81,8 @@ class RelationGroup extends React.Component {
    */
   createButton(key, selectedColor, aClass, lookupKey) {
     return (
-        <button className={'button is-medium ' + selectedColor}
+      <span className="level">
+        <button className={'button level-item is-medium ' + selectedColor}
                 onClick={this.props.handleToggle.bind(this, lookupKey)}>
           <div>
             <span className="content">{aClass.courseID} ({aClass.units})</span> 
@@ -89,6 +90,7 @@ class RelationGroup extends React.Component {
             <span className="content is-small">{aClass.courseName}</span>      
           </div>
         </button>
+      </span>
     )
   }
 
@@ -106,9 +108,8 @@ class RelationGroup extends React.Component {
    */
   createLabel(key, completedColor, aClass)  {
     return (
-      <span key={key} className={`box has-text-centered ${completedColor}`}>
-        <span className='content'>{aClass.courseID}</span>
-        <span className='content'> ({aClass.units}) </span>
+      <span key={key} className={`level ${completedColor}`}>
+        <span className='level-item'>{aClass.courseID} ({aClass.units}) </span>
       </span>
     )
   }
@@ -125,9 +126,9 @@ class RelationGroup extends React.Component {
    */
   createRelation(key, relation) {
     return (
-        <div key={key} className='container has-text-centered'>
-          <span className='content relation_label'>{relation}</span>
-        </div>
+        <span key={key} className='level'>
+          <span className='level-item relation_label'>{relation}</span>
+        </span>
     )
   }  
 

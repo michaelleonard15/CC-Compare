@@ -63,7 +63,7 @@ class RequirementRow extends React.Component {
   render() {
     let completedColor = this.props.isComplete ? 'success' : 'grey-lighter'
     return (
-      <div className={`columns has-background-${completedColor}`}>
+      <div className={`columns is-vcentered has-background-${completedColor}`}>
         {this.generateGroups()}
       </div>
     )

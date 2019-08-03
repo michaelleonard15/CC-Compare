@@ -181,26 +181,44 @@ class FinalReportPage extends React.Component {
    */
   render() {
     return (
-      <div className="box">
-        <div className="level-right">
-          <button className="button is-large level-item"
-                  onClick={this.props.backButton}>Back</button>
-        </div>
-        <div className="section">
-          <div className="box has-background-light">
-            <div className="columns">
-              {this.generateLabels()}
-            </div>
-          </div>
-          <div className="box has-background-light">
-            <div className="columns">
-              {this.linkOriginalAgreements()}
-            </div>
-          </div>
-        </div>
-        {this.generateRows()}
+      <div>
 
-      </div>)
+        <div className="level">
+          <div className='level-left'>
+            <span className="title is-1">College Comparison Tool</span>
+          </div>
+          <div className="level-right">
+            <button className="button is-large level-item"
+                    onClick={this.props.backButton}>Back</button>
+          </div>
+        </div>
+        <p className="content">
+        Here is the report based on your selections. The requirements for 
+        each school are listed in columns, with the corresponding classes at your community college 
+        in the left most column. Below the schoool name is a link the original agreement from 
+        Assist.org. Highlighted rows and sections indicate the requirement has already been satisfied. 
+        If you need to make any changes to your selections from the previous page, you can click 
+        the buttons in the left column. 
+        </p>  
+      
+        <div className="box">
+          <div className="section">
+            <div className="box has-background-light">
+              <div className="columns is-vcentered">
+                {this.generateLabels()}
+              </div>
+            </div>
+            <div className="box has-background-light">
+              <div className="columns is-vcentered">
+                {this.linkOriginalAgreements()}
+              </div>
+            </div>
+          </div>
+          {this.generateRows()}
+
+        </div>
+      </div>
+    )
   }
 }
 
