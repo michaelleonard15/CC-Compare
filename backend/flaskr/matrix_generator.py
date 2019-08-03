@@ -74,7 +74,7 @@ def _section_index_in_matrix(matrix, section, src_lookup):
 
             # Check that relationToNext is relationToNext
             sect_row = sect_rows[i]
-            if(sect_row['relationToNext'] != mtx_row[0]['relationToNext']):
+            if(not _has_same_rel2next(sect_row, mtx_row)):
                 continue
             
             # Check that source classes are the same
@@ -91,12 +91,37 @@ def _section_index_in_matrix(matrix, section, src_lookup):
 
 
 def _has_same_rel2next(sect_row, mtx_row):
-    # is_same = True
-    pass
+
+    if('relationToNext' not in mtx_row[0]):
+        return sect_row['relationToNext'] == ""
+    else: 
+        return sect_row['relationToNext'] == mtx_row[0]['relationToNext']
 
 
-def _is_same_class_group(db_classes, matrix_classes, lookup):
-    pass
+def _is_same_class_group(db_courses, matrix_courses, lookup):
+    if len(db_courses) != len(matrix_courses):
+        return False
+    for i, subarray in enumerate(matrix_courses):
+        if len(subarray) != len(db_courses[i]):
+            return False
+        for j, lookup_key in enumerate(subarray):
+            db_course = db_courses[i][j]
+            matrix_course = _get_course(lookup, lookup_key)
+
+            # should courseName be added to this check? (probably not)
+            if (db_course['courseID'] != matrix_course['courseID'] or 
+                db_course['units'] != matrix_course['units']):
+                return False
+        
+    return True
+            
+
+def _get_course(lookup, course_key):
+    for course in lookup:
+        if course['key'] == course_key:
+            return course['course']
+    else:
+        raise LookupError('Tried to lookup nonexistant ID in lookup table')
 
 
 def _append_blank_section(matrix, section_length):
