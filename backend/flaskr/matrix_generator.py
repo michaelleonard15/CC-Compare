@@ -215,9 +215,13 @@ def _fill_empty_dests(matrix):
     Goes through the matrix and adds empty destination classes wherever there is
     a cell missing in the column.
     """
-    
-        
-    pass
+    if len(matrix) <= 1:
+        return
+    row_width = max(len(row) for row in matrix)
+    for row in matrix:
+        needed_cells = row_width - len(row)
+        for i in range(0, needed_cells):
+            row.append({'courses':[]})
 
 
 

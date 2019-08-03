@@ -61,7 +61,11 @@ def test_generate_matrix_rel2next():
         frontend_ready = json.load(f)
 
     frontend_obj = matgen.generate_matrix([school1, school2, school3])
-    pprint.pprint(frontend_obj)
+    # pprint.pprint(frontend_obj)
+    print("expected matrix:")
+    pprint.pprint(frontend_ready['equivalencyMatrix'])
+    print("actual matrix:")
+    pprint.pprint(frontend_obj['equivalencyMatrix'])
 
     assert_lookup_equal(frontend_obj['lookup'], frontend_ready['lookup'])
     assert frontend_obj['equivalencyMatrix'] == frontend_ready['equivalencyMatrix']
