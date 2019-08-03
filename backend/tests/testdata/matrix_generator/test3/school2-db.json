@@ -1,9 +1,11 @@
-{
-  "Sections": [
-    {
-      "1": {
-        "Source": {
-          "classes": [
+[
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Source": [
+          [
             [
               {
                 "courseID": "CLS 1",
@@ -12,9 +14,9 @@
               }
             ]
           ]
-        },
-        "Destination": {
-          "classes": [
+        ],
+        "Destination": [
+          [
             [
               {
                 "courseID": "CLS 4",
@@ -23,12 +25,12 @@
               }
             ]
           ]
-        },
+        ],
         "relationToNext": "OR"
       },
-      "2": {
-        "Source": {
-          "classes": [
+      {
+        "Source": [
+          [
             [
               {
                 "courseID": "CLS 3",
@@ -37,9 +39,9 @@
               }
             ]
           ]
-        },
-        "Destination": {
-          "classes": [
+        ],
+        "Destination": [
+          [
             [
               {
                 "courseID": "CLS 5",
@@ -48,8 +50,8 @@
               }
             ]
           ]
-        }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
+]
