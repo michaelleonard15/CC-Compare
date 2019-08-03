@@ -33,7 +33,7 @@ def generate_matrix(agreement_list):
         # sources list. However, with destinations, we only want to merge it if it's
         # from the same school.
         current_dest_lookup = []
-        _extract_rows(agreement['Sections'], matrix, source_lookup, current_dest_lookup)
+        _extract_rows(agreement, matrix, source_lookup, current_dest_lookup)
         _fill_empty_dests(matrix)
         dest_lookup = dest_lookup + current_dest_lookup
     
@@ -42,14 +42,14 @@ def generate_matrix(agreement_list):
     return {'lookup': lookup, "equivalencyMatrix": matrix}
     
 
-def _extract_rows(sections, matrix, source_lookup, cur_dest_lookup):
+def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup):
     """
     Extracts all sources from an agreement, 
     building onto the existing matrix and source lookup table.
     """
-    for section in sections:
+    for section in agreement:
         start_index = _section_index_in_matrix(matrix, section)
-        for key, row in section.items():
+        for row in section['Equivalencies']:
             matrix_index = _extract_source_row(row, matrix, source_lookup)
             _extract_dest_row(row, matrix, cur_dest_lookup, matrix_index)
 
@@ -59,7 +59,7 @@ def _extract_source_row(row, matrix, src_lookup):
     Extracts source schools from a row, building onto the existing matrix and the
     source lookup table for the current agreement.
     """
-    courses = row['Source']['classes']
+    courses = row['Source'][0]
     
     # This is a nested list comprehension.
     # It generates a list of the form [[1], [2, 3]]
@@ -126,7 +126,7 @@ def _extract_dest_row(row, matrix, cur_dest_lookup, src_index):
     Extracts destination classes from a row, building onto the existing matrix and the 
     source lookup table for the current agreement.
     """
-    dest_courses = row['Destination']['classes']
+    dest_courses = row['Destination'][0]
     
     # This is a nested list comprehension.
     # It generates a list of the form [[1], [2, 3]]

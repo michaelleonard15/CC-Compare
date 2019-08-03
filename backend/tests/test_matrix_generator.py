@@ -84,7 +84,7 @@ def test_extract_rows(set_ids):
     src_lookup = []
     cur_dest_lookup =[]
 
-    matgen._extract_rows(test1_db['Sections'], matrix, src_lookup, cur_dest_lookup)
+    matgen._extract_rows(test1_db, matrix, src_lookup, cur_dest_lookup)
 
     matrix_expected = test1_frontend['equivalencyMatrix']
 
@@ -104,7 +104,7 @@ def test_extract_source_row(set_ids):
     ## ROW 1
 
     # Initialization
-    row = test1_db['Sections'][0]['1']
+    row = test1_db[0]['Equivalencies'][0]
     matrix = []
     src_lookup = []
 
@@ -129,7 +129,7 @@ def test_extract_source_row(set_ids):
 
     ## ROW 2 ##
 
-    row = test1_db['Sections'][0]['2']
+    row = test1_db[0]['Equivalencies'][1]
 
     # Running
     matgen._extract_source_row(row, matrix, src_lookup)
