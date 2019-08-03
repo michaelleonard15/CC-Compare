@@ -42,7 +42,8 @@ def generate_matrix(agreement_list):
     _fill_empty_dests(matrix, dest_num)
     # Concatenating lists
     lookup = source_lookup + dest_lookup
-    return {'lookup': lookup, "equivalencyMatrix": matrix}
+    sorted_lookup = sorted(lookup, key=lambda k: k['key'])
+    return {'lookup': sorted_lookup, "equivalencyMatrix": matrix}
     
 
 def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup, dest_num):
