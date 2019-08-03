@@ -42,6 +42,19 @@ def generate_matrix(agreement_list):
     return {'lookup': lookup, "equivalencyMatrix": matrix}
     
 
+def _section_index_in_matrix(matrix, section):
+    """
+    Returns the starting position for the section in the matrix. 
+    If the section is not yet in the matrix, it will append the appropriate
+    amount of space to the end of the matrix.
+    """
+    # Needs to handle relationToNext
+    # ? conditional requirements?
+    # Add space if needed
+    # Should it add the number of cells that are needed to match up columns?
+    return -1
+
+
 def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup):
     """
     Extracts all sources from an agreement, 
@@ -73,16 +86,20 @@ def _extract_source_row(row, matrix, src_lookup):
     return matrix_index
 
 
-def _add_source_to_matrix(new_cell, matrix):
+def _extract_dest_row(row, matrix, cur_dest_lookup, src_index):
     """
+    Extracts destination classes from a row, building onto the existing matrix and the 
+    source lookup table for the current agreement.
     """
-    # Checking if the origin already exists in a row
-    for idx, row in enumerate(matrix):
-        if len(row) > 0 and row[0] == new_cell:
-            return idx
+    dest_courses = row['Destination'][0]
     
-    matrix.append([new_cell])
-    return (len(matrix) - 1)
+    # This is a nested list comprehension.
+    # It generates a list of the form [[1], [2, 3]]
+    dest_course_group = [[_add_to_lookup(course, cur_dest_lookup, is_origin=False)
+                         for course in sublist] for sublist in dest_courses]
+    
+    new_cell = {'courses': dest_course_group}
+    matrix[src_index].append(new_cell)
 
 
 # TODO: can this be refactored into multiple functions for readability?
@@ -121,20 +138,16 @@ def _add_to_lookup(db_course, lookup, is_origin):
     return entry_id
 
 
-def _extract_dest_row(row, matrix, cur_dest_lookup, src_index):
+def _add_source_to_matrix(new_cell, matrix):
     """
-    Extracts destination classes from a row, building onto the existing matrix and the 
-    source lookup table for the current agreement.
     """
-    dest_courses = row['Destination'][0]
+    # Checking if the origin already exists in a row
+    for idx, row in enumerate(matrix):
+        if len(row) > 0 and row[0] == new_cell:
+            return idx
     
-    # This is a nested list comprehension.
-    # It generates a list of the form [[1], [2, 3]]
-    dest_course_group = [[_add_to_lookup(course, cur_dest_lookup, is_origin=False)
-                         for course in sublist] for sublist in dest_courses]
-    
-    new_cell = {'courses': dest_course_group}
-    matrix[src_index].append(new_cell)
+    matrix.append([new_cell])
+    return (len(matrix) - 1)
 
 
 def _fill_empty_dests(matrix):
@@ -146,15 +159,4 @@ def _fill_empty_dests(matrix):
     pass
 
 
-def _section_index_in_matrix(matrix, section):
-    """
-    Returns the starting position for the section in the matrix. 
-    If the section is not yet in the matrix, it will append the appropriate
-    amount of space to the end of the matrix.
-    """
-    # Needs to handle relationToNext
-    # ? conditional requirements?
-    # Add space if needed
-    # Should it add the number of cells that are needed to match up columns?
-    return -1
 
