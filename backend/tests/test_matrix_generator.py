@@ -105,11 +105,11 @@ def test_extract_source_row(set_ids):
 
     # Initialization
     row = test1_db[0]['Equivalencies'][0]
-    matrix = []
+    matrix = [[]]
     src_lookup = []
 
     # Running
-    matgen._extract_source_row(row, matrix, src_lookup)
+    matgen._extract_source_row(row, matrix, src_lookup, 0)
 
     # Expected values
     lookup_expected = [{
@@ -130,9 +130,10 @@ def test_extract_source_row(set_ids):
     ## ROW 2 ##
 
     row = test1_db[0]['Equivalencies'][1]
+    matrix.append([])
 
     # Running
-    matgen._extract_source_row(row, matrix, src_lookup)
+    matgen._extract_source_row(row, matrix, src_lookup, 1)
 
     # Expected values
     lookup_expected = test1_after_origin['lookup'][slice(1, 6)]

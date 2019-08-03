@@ -26,7 +26,7 @@
             ]
           ]
         ],
-        "RelationToNext": "AND"
+        "relationToNext": "AND"
       },
       {
         "Source": [
@@ -65,7 +65,8 @@
               }
             ]
           ]
-        ]
+        ],
+        "relationToNext": ""
       }
     ]
   },
@@ -86,7 +87,7 @@
             ]
           ]
         ],
-        "RelationToNext": "OR"
+        "relationToNext": "OR"
       },
       {
         "Source": [
@@ -110,7 +111,8 @@
               }
             ]
           ]
-        ]
+        ],
+        "relationToNext": ""
       }
     ]
   }
