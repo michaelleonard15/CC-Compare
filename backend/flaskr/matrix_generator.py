@@ -39,6 +39,7 @@ def generate_matrix(agreement_list):
         dest_lookup = dest_lookup + current_dest_lookup
         dest_num += 1
     
+    _fill_empty_dests(matrix, dest_num)
     # Concatenating lists
     lookup = source_lookup + dest_lookup
     return {'lookup': lookup, "equivalencyMatrix": matrix}
@@ -75,11 +76,16 @@ def _section_index_in_matrix(matrix, section, src_lookup):
         # Searching through matrix to find a correct spot
         for i, mtx_row in enumerate(submatrix):
 
+            # # Check that previous cell relationToNext is ""
+            if (start_pos > 0):
+                if (i == 0) and ('relationToNext' in matrix[start_pos-1][0]):
+                    break
+
             # Check that relationToNext is relationToNext
             sect_row = sect_rows[i]
             if(not _has_same_rel2next(sect_row, mtx_row)):
                 break
-            
+
             # Check that source classes are the same
             sect_origin_classes = sect_row['Source'][0]
             mtx_origin_classes = mtx_row[0]['courses']
