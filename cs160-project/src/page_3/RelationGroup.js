@@ -63,7 +63,7 @@ class RelationGroup extends React.Component {
       return this.createButton(reactKey, selected, temp, lookupKey)
     } 
     else {
-      let selected = this.props.completed ? 'is-primary' : 'has-background-grey-lighter'
+      let selected = this.props.completed ? 'has-background-primary' : 'has-background-grey-lighter'
       return this.createLabel(reactKey, selected, temp)
     }    
   }
@@ -81,14 +81,14 @@ class RelationGroup extends React.Component {
    */
   createButton(key, selectedColor, aClass, lookupKey) {
     return (
-      <div key={key} className="buttons is-centered are-large">
-        <button className={'button ' + selectedColor}
+        <button className={'button is-medium ' + selectedColor}
                 onClick={this.props.handleToggle.bind(this, lookupKey)}>
-          <span className="content">{aClass.courseID} ({aClass.units})</span> 
-          <br/> 
-          <span className="content is-small">{aClass.courseName}</span>      
+          <div>
+            <span className="content">{aClass.courseID} ({aClass.units})</span> 
+            <br/><br/> 
+            <span className="content is-small">{aClass.courseName}</span>      
+          </div>
         </button>
-      </div>
     )
   }
 
@@ -106,10 +106,10 @@ class RelationGroup extends React.Component {
    */
   createLabel(key, completedColor, aClass)  {
     return (
-      <div key={key} className={`container is-${completedColor}`}>
-        <label className='className'>{aClass.courseID}</label>
-        <label className='units'> ({aClass.units}) </label>
-      </div>
+      <span key={key} className={`box has-text-centered ${completedColor}`}>
+        <span className='content'>{aClass.courseID}</span>
+        <span className='content'> ({aClass.units}) </span>
+      </span>
     )
   }
 
@@ -125,8 +125,8 @@ class RelationGroup extends React.Component {
    */
   createRelation(key, relation) {
     return (
-        <div key={key} className='relation'>
-          <label className='relation_label'>{relation}</label>
+        <div key={key} className='container has-text-centered'>
+          <span className='content relation_label'>{relation}</span>
         </div>
     )
   }  

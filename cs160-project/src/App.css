@@ -20,7 +20,10 @@
   line-height: 0.5;
 }
 
-
+.relation_label {
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 
 

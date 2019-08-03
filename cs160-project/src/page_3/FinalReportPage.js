@@ -123,10 +123,10 @@ class FinalReportPage extends React.Component {
     let colWidth = 12 / this.props.schoolList.length
     let labels = this.props.schoolList.map( (school, index) => {
       return (
-        <div key={index} className={`column is-${colWidth} has-background-info`}>
-          <label className='school_label'>
-            {school}
-          </label>
+        <div key={index} className={`column is-${colWidth} has-text-centered `}>
+          <span className="box has-background-grey-lighter">
+            <span className="content is-large">{school}</span>
+          </span>
         </div>
       )
     })
@@ -148,15 +148,23 @@ class FinalReportPage extends React.Component {
     let colWidth = 12 / this.props.schoolList.length
     let links = this.props.agreementKeys.map( (key, index) => {
       return (
-        <div key={index + 1} className={`column is-${colWidth} has-background-info has-same-height`}>
-          <a className="agreement_link"
-             target="_blank"
-             rel="noopener noreferrer"
-             href={`https://assist.org/transfer/report/${key}`}>See orginal Report</a>
+        <div key={index + 1} className={`column is-${colWidth} has-text-centered`}>
+          <span className="box has-background-grey-lighter">
+            <a className="content has-text-link"
+               target="_blank"
+               rel="noopener noreferrer"
+               href={`https://assist.org/transfer/report/${key}`}>See orginal Report</a>
+          </span>
         </div>
       )
     })
-    links.splice(0, 0, <div key="0" className={`column is-${colWidth} has-background-info has-same-height`} />)
+    links.splice(0, 0, 
+      <div key="0" className={`column is-${colWidth} has-background-light`}>
+        <span className="box has-background-grey-lighter has-text-centered">
+          <span className="content">Use the links to the right to view 
+                                    the original report on Assist.org</span>
+        </span>
+      </div>)
     return links
   }
 
@@ -173,23 +181,24 @@ class FinalReportPage extends React.Component {
    */
   render() {
     return (
-      <div>
-        <div className="level-left">
+      <div className="box">
+        <div className="level-right">
           <button className="button is-large level-item"
                   onClick={this.props.backButton}>Back</button>
         </div>
-        <section className="section">
-          <div className="columns">
-            {this.generateLabels()}
+        <div className="section">
+          <div className="box has-background-light">
+            <div className="columns">
+              {this.generateLabels()}
+            </div>
           </div>
-          <hr/>
-          <div className="columns">
-            {this.linkOriginalAgreements()}
+          <div className="box has-background-light">
+            <div className="columns">
+              {this.linkOriginalAgreements()}
+            </div>
           </div>
-        </section>
-        <section>
-          {this.generateRows()}
-        </section>
+        </div>
+        {this.generateRows()}
 
       </div>)
   }
