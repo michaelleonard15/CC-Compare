@@ -87,7 +87,8 @@ def _section_index_in_matrix(matrix, section, src_lookup):
         return start_pos
 
     # If we've fallen out of the above loop, we need to add a blank section to the bottom
-    return _append_blank_section(matrix, len(sect_rows))
+    for i in range(0, len(section)):
+        matrix.append([])
 
 
 def _has_same_rel2next(sect_row, mtx_row):
@@ -123,14 +124,6 @@ def _get_course(lookup, course_key):
     else:
         raise LookupError('Tried to lookup nonexistant ID in lookup table')
 
-
-def _append_blank_section(matrix, section_length):
-    """
-    Helper function for _section_index_in_matrix which creates a new section when it is needed.
-    """
-    # Should it add the number of cells that are needed to match up columns? (no)
-
-    pass
 
 def _extract_source_row(row, matrix, src_lookup):
     """
