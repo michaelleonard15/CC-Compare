@@ -42,30 +42,70 @@ def generate_matrix(agreement_list):
     return {'lookup': lookup, "equivalencyMatrix": matrix}
     
 
-def _section_index_in_matrix(matrix, section):
-    """
-    Returns the starting position for the section in the matrix. 
-    If the section is not yet in the matrix, it will append the appropriate
-    amount of space to the end of the matrix.
-    """
-    # Needs to handle relationToNext
-    # ? conditional requirements?
-    # Add space if needed
-    # Should it add the number of cells that are needed to match up columns?
-    return -1
-
-
 def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup):
     """
     Extracts all sources from an agreement, 
     building onto the existing matrix and source lookup table.
     """
     for section in agreement:
-        start_index = _section_index_in_matrix(matrix, section)
+        start_index = _section_index_in_matrix(matrix, section, source_lookup)
         for row in section['Equivalencies']:
             matrix_index = _extract_source_row(row, matrix, source_lookup)
             _extract_dest_row(row, matrix, cur_dest_lookup, matrix_index)
 
+
+def _section_index_in_matrix(matrix, section, src_lookup):
+    """
+    Returns the starting position for the section in the matrix. 
+    If the section is not yet in the matrix, it will append the appropriate
+    amount of space to the end of the matrix.
+    """
+
+    sect_rows = section['Equivalencies']
+    
+    for start_pos in range(0, len(matrix) - len(sect_rows)):
+
+        # TODO: conditional requirements?
+
+        # Gets a slice of the matrix to check against
+        submatrix = matrix[start_pos:(start_pos + len(sect_rows))]
+        # Searching through matrix to find a correct spot
+        for i, mtx_row in enumerate(submatrix):
+
+            # Check that relationToNext is relationToNext
+            sect_row = sect_rows[i]
+            if(sect_row['relationToNext'] != mtx_row[0]['relationToNext']):
+                continue
+            
+            # Check that source classes are the same
+            sect_origin_classes = sect_row['Source']
+            mtx_origin_classes = mtx_row[0]['courses']
+            if(not _is_same_class_group(sect_origin_classes, mtx_origin_classes, src_lookup)):
+                continue
+
+        # if we're here, it matches up and we've found our section!
+        return start_pos
+
+    # If we've fallen out of the above loop, we need to add a blank section to the bottom
+    return _append_blank_section(matrix, len(sect_rows))
+
+
+def _has_same_rel2next(sect_row, mtx_row):
+    # is_same = True
+    pass
+
+
+def _is_same_class_group(db_classes, matrix_classes, lookup):
+    pass
+
+
+def _append_blank_section(matrix, section_length):
+    """
+    Helper function for _section_index_in_matrix which creates a new section when it is needed.
+    """
+    # Should it add the number of cells that are needed to match up columns? (no)
+
+    pass
 
 def _extract_source_row(row, matrix, src_lookup):
     """
@@ -155,7 +195,8 @@ def _fill_empty_dests(matrix):
     Goes through the matrix and adds empty destination classes wherever there is
     a cell missing in the column.
     """
-
+    
+        
     pass
 
 
