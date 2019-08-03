@@ -53,7 +53,6 @@ def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup):
             if(matrix[start_index + i] == []):
                 matrix_index = _extract_source_row(row, matrix, source_lookup, start_index + i)
             _extract_dest_row(row, matrix, cur_dest_lookup, start_index + i)
-            i+= 1
 
 
 def _section_index_in_matrix(matrix, section, src_lookup):
@@ -65,7 +64,7 @@ def _section_index_in_matrix(matrix, section, src_lookup):
 
     sect_rows = section['Equivalencies']
     
-    for start_pos in range(0, len(matrix) - len(sect_rows)):
+    for start_pos in range(0, len(matrix) + 1 - len(sect_rows)):
 
         # TODO: conditional requirements?
 
@@ -77,16 +76,16 @@ def _section_index_in_matrix(matrix, section, src_lookup):
             # Check that relationToNext is relationToNext
             sect_row = sect_rows[i]
             if(not _has_same_rel2next(sect_row, mtx_row)):
-                continue
+                break
             
             # Check that source classes are the same
-            sect_origin_classes = sect_row['Source']
+            sect_origin_classes = sect_row['Source'][0]
             mtx_origin_classes = mtx_row[0]['courses']
             if(not _is_same_class_group(sect_origin_classes, mtx_origin_classes, src_lookup)):
-                continue
+                break
 
-        # if we're here, it matches up and we've found our section!
-        return start_pos
+            # if we're here, it matches up and we've found our section!
+            return start_pos
 
     # If we've fallen out of the above loop, we need to add a blank section to the bottom
     for i in range(0, len(sect_rows)):

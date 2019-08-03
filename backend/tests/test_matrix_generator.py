@@ -88,12 +88,13 @@ def test_extract_rows(set_ids):
 
     matrix_expected = test1_frontend['equivalencyMatrix']
 
-    pprint.pprint(src_lookup)
-    pprint.pprint(test1_origin_lookup)
+    pprint.pprint(matrix_expected)
+    print("actual:")
+    pprint.pprint(matrix)
 
+    assert matrix == matrix_expected
     assert src_lookup == test1_origin_lookup
     assert cur_dest_lookup == test1_dest_lookup
-    assert matrix == matrix_expected
 
     
 def test_extract_source_row(set_ids):
