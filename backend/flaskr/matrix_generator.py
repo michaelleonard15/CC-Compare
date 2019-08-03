@@ -50,9 +50,10 @@ def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup):
     for section in agreement:
         start_index = _section_index_in_matrix(matrix, section, source_lookup)
         for i, row in enumerate(section['Equivalencies']):
-            if(matrix[start_index] == []):
+            if(matrix[start_index + i] == []):
                 matrix_index = _extract_source_row(row, matrix, source_lookup, start_index + i)
             _extract_dest_row(row, matrix, cur_dest_lookup, start_index + i)
+            i+= 1
 
 
 def _section_index_in_matrix(matrix, section, src_lookup):
@@ -88,10 +89,10 @@ def _section_index_in_matrix(matrix, section, src_lookup):
         return start_pos
 
     # If we've fallen out of the above loop, we need to add a blank section to the bottom
-    for i in range(0, len(section)):
+    for i in range(0, len(sect_rows)):
         matrix.append([])
 
-    return len(matrix) - len(section)
+    return len(matrix) - len(sect_rows)
 
 
 def _has_same_rel2next(sect_row, mtx_row):
