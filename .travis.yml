@@ -5,4 +5,4 @@
   - pip install --upgrade pytest
   - pip install -e .
   script:
-    - pytest
+    - pytest -vv

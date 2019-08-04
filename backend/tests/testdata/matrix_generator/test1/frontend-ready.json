@@ -1,0 +1,134 @@
+{
+  "lookup": [
+    {
+      "key": -1,
+      "course": {
+        "isSelected": false,
+        "courseID":"", 
+        "courseName": "One additional course in English composition", 
+        "units":0,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": -2,
+      "course": {
+        "isSelected": false,
+        "courseName": "No course articulated",
+        "courseID": "",
+        "units": 0,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 0,
+      "course": {
+        "isSelected": false,
+        "courseName": "College Composition",
+        "courseID": "ENGL 1A",
+        "units": 4,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 2,
+      "course": {
+        "isSelected": false,
+        "courseName": "Literature and Composition",
+        "courseID": "ENGL 1B",
+        "units": 3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 3,
+      "course": {
+        "isSelected": false,
+        "courseID": "ENGL 5",
+        "courseName": "Advanced Composition and Critical Thinking",
+        "units": 3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 4,
+      "course": {
+        "isSelected": false,
+        "courseID":"PHIL 5", 
+        "courseName": "Critical Thinking/Writing", 
+        "units":3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 5,
+      "course": {
+        "isSelected": false,
+        "courseID":"ENGL 5", 
+        "courseName": "Critical Thinking and Argumentation", 
+        "units":3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 7,
+      "course": {
+        "isSelected": false,
+        "courseID":"ENGR 6", 
+        "courseName": "Programming in MATLAB for Engineers", 
+        "units":3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 1,
+      "course": {
+        "isSelected": false,
+        "courseID":"ENGCOMP 3", 
+        "courseName": "English Composition, Rhetoric, and Language", 
+        "units":5,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 6,
+      "course": {
+        "isSelected": false,
+        "courseID":"COM SCI 31", "courseName": 
+        "Introduction to Computer Science 1", 
+        "units":4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 8,
+      "course": {
+        "isSelected": false,
+        "courseID":"C&EE M20", 
+        "courseName": "Introduction to Computer Programming with MATLAB", 
+        "units":4,
+        "isOrigin": false
+      }
+    }
+  ],
+  
+  "equivalencyMatrix": [
+    [{ "courses": [[0]], "relationToNext": "AND" },
+     { "courses": [[1]] }
+     ],
+     
+    [{ "courses": [[2], [3], [4], [5]]},
+     { "courses": [[-1]] } 
+     ],
+
+    [{ "courses": [[-2]], "relationToNext": "OR"},
+     { "courses": [[6]] }
+     ],
+
+     [{ "courses": [[7]]},
+      { "courses": [[8]] }
+     ]
+  ]
+}
+  
+

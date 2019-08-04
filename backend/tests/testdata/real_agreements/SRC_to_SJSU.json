@@ -1,0 +1,758 @@
+[
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Critical Thinking and Writing",
+                "courseID": "ENGL 2",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Advanced Composition and Critical Thinking",
+                "courseID": "ENGL 5",
+                "units": 3.0
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "Critical Thinking/Writing",
+                "courseID": "PHIL 5",
+                "units": 3.0
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "Critical Thinking and Argumentation",
+                "courseID": "SPCH 9",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": "OR"
+      },
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Argument and Analysis",
+                "courseID": "ENGL 1B",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Literature and Composition",
+                "courseID": "ENGL 1B",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Calculus I",
+                "courseID": "MATH 30",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Calculus, First Course",
+                "courseID": "MATH 1A",
+                "units": 5.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Calculus II",
+                "courseID": "MATH 31",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Calculus, Second Course",
+                "courseID": "MATH 1B",
+                "units": 5.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Discrete Mathematics",
+                "courseID": "MATH 42",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Discrete Mathematics",
+                "courseID": "MATH 4",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Calculus III",
+                "courseID": "MATH 32",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Calculus, Third Course",
+                "courseID": "MATH 1C",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Linear Algebra I",
+                "courseID": "MATH 129A",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Introduction to Linear Algebra",
+                "courseID": "MATH 5",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "General Physics/Mechanics",
+                "courseID": "PHYS 50",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Classical Mechanics for Scientists and Engineers",
+                "courseID": "PHYS 40",
+                "units": 5.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "General Physics/Electricity and Magnetism",
+                "courseID": "PHYS 51",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Electricity and Magnetism for Scientists and Engineers",
+                "courseID": "PHYS 42",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "General Physics/Heat and Light",
+                "courseID": "PHYS 52",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Waves, Optics and Thermodynamics for Scientists & Engineers",
+                "courseID": "PHYS 41",
+                "units": 4.0
+              },
+              {
+                "courseName": "Modern Physics for Scientists and Engineers",
+                "courseID": "PHYS 43",
+                "units": 2.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Principles of Biology I",
+                "courseID": "BIOL 30",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Fundamentals of Biology (Cell and Molecular)",
+                "courseID": "BIO 2.1",
+                "units": 5.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Principles of Biology II",
+                "courseID": "BIOL 31",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Fundamentals of Biology (Evolution, Genetics, and Zoology)",
+                "courseID": "BIO 2.2",
+                "units": 5.0
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "Fundamentals of Biology (Botany and Ecology)",
+                "courseID": "BIO 2.3",
+                "units": 5.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "General Chemistry",
+                "courseID": "CHEM 1A",
+                "units": 5.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "General Chemistry",
+                "courseID": "CHEM 1A",
+                "units": 5.0
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "General Chemistry with Quantitative Analysis",
+                "courseID": "CHEM 4A",
+                "units": 5.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "General Chemistry",
+                "courseID": "CHEM 1B",
+                "units": 5.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "General Chemistry",
+                "courseID": "CHEM 1B",
+                "units": 5.0
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "General Chemistry with Quantitative Analysis",
+                "courseID": "CHEM 4B",
+                "units": 5.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "General Geology",
+                "courseID": "GEOL 1",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "The Earth",
+                "courseID": "GEOL 1",
+                "units": 3.0
+              },
+              {
+                "courseName": "Geology Laboratory",
+                "courseID": "GEOL 1L",
+                "units": 1.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Earth, Time and Life",
+                "courseID": "GEOL 7",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Weather and Climate",
+                "courseID": "METR 10",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Introduction to Meteorology",
+                "courseID": "METRO 10",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Introduction to Programming",
+                "courseID": "CS 46A",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Introduction to Computer Programming",
+                "courseID": "CS 10",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Introduction to Data Structures",
+                "courseID": "CS 46B",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Data Structures and Algorithms",
+                "courseID": "CS 11",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Introduction to Computer Systems",
+                "courseID": "CS 47",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Assembly Language Programming",
+                "courseID": "CS 12",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Unix and Unix Utilities",
+                "courseID": "CS 72",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Intro to UNIX",
+                "courseID": "CS 81.21",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Programming in C",
+                "courseID": "CS 49C",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "Introduction to Computer Programming",
+                "courseID": "CS 10",
+                "units": 4.0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": "OR"
+      },
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "Programming in Java",
+                "courseID": "CS 49J",
+                "units": 3.0
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  }
+]
