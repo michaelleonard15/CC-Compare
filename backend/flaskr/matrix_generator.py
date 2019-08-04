@@ -122,7 +122,6 @@ def _is_same_class_group(db_courses, matrix_courses, lookup):
             matrix_course = _get_course(lookup, lookup_key)
 
             # should courseName be added to this check? (probably not)
-            # TODO: add courseName to this check (for ID-less courses, at least)
             if (db_course['courseID'] != matrix_course['courseID'] or 
                 db_course['units'] != matrix_course['units']):
                 return False
@@ -187,7 +186,7 @@ def _add_to_lookup(db_course, lookup, is_origin):
     global __current_id
     global __current_neg_id
     course_obj = db_course.copy()
-    course_obj['isOrigin'] = is_origin
+    course_obj['isOrigin'] = False if (db_course['courseID'] == "") else is_origin
     course_obj['isSelected'] = False
 
     for entry in lookup:
