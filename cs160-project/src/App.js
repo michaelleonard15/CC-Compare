@@ -35,7 +35,7 @@ class App extends React.Component {
                    agreementKeys: IDs.agreements.map( (arg) => {return arg.major})
     })
 
-    fetch('./dummyClasses_7_29_v1.json')
+    fetch('./combined-out.json')
       .then( response => {
         return response.json()
       })

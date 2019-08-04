@@ -50,6 +50,36 @@ class CourseSelectorPage extends React.Component {
   generateButtons() {
     let buttons = this.getCoursesList().map( (row) => {  
       let selectedColor = row.course.isSelected ? 'is-primary' : 'has-background-grey-lighter'
+      let name = row.course.courseName
+
+      console.log(name)
+      console.log(name.length)
+
+
+
+      let btnText = () => { 
+        if(name.length < 20 || name.indexOf(" ", 20) < 0) {
+          return(<span className="content is-small">{name}</span>)
+        } 
+        else {
+          let space = name.indexOf(" ", 20)
+          console.log(space)
+          let p1 = name.slice(0, space)
+          let p2 = name.slice(space + 1)
+          console.log(p1 + "      " + p2)
+          return(
+            <div>
+              <span className="content is-small">{p1}</span>
+              <br/>
+              <span className="content is-small">{p2}</span>
+            </div>
+            )
+        }
+      }
+
+
+
+
       return(
         <button   key={row.ID}
                 className={'button ' + selectedColor}
@@ -58,7 +88,8 @@ class CourseSelectorPage extends React.Component {
           <div>
             <span className="content">{row.course.courseID}</span> 
             <br/> 
-            <span className="content is-small">{row.course.courseName}</span>
+            {/*<span className="content is-small">{row.course.courseName}</span>*/}
+            {btnText()}
           </div>
         </button>
       )
