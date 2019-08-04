@@ -5,6 +5,7 @@ import flaskr.matrix_generator as matgen
 import pytest
 
 TEST_FILE_PATH = os.getcwd() + "/tests/testdata/real_agreements/"
+OUTPUT_FILE_PATH = os.getcwd() + "/tests/output/"
 
 
 def test_srjc_sjsu():
@@ -13,8 +14,10 @@ def test_srjc_sjsu():
 
     frontend_obj = matgen.generate_matrix([sjsu])
 
-    pprint.pprint(frontend_obj)
+    with open(OUTPUT_FILE_PATH + 'srjc-sjsu-out.json', 'w') as fp:
+        json.dump(frontend_obj, fp)
 
+    pprint.pprint(frontend_obj)
     ## Uncomment this if you want to see the output on pytest
     # assert False
 
@@ -25,8 +28,10 @@ def test_srjc_ssu():
 
     frontend_obj = matgen.generate_matrix([ssu])
 
-    pprint.pprint(frontend_obj)
+    with open(OUTPUT_FILE_PATH + 'srjc-ssu-out.json', 'w') as fp:
+        json.dump(frontend_obj, fp)
 
+    pprint.pprint(frontend_obj)
     ## Uncomment this if you want to see the output on pytest
     # assert False
 
@@ -37,8 +42,10 @@ def test_srjc_ucla():
 
     frontend_obj = matgen.generate_matrix([ucla])
 
-    pprint.pprint(frontend_obj)
+    with open(OUTPUT_FILE_PATH + 'srjc-ucla-out.json', 'w') as fp:
+        json.dump(frontend_obj, fp)
 
+    pprint.pprint(frontend_obj)
     ## Uncomment this if you want to see the output on pytest
     # assert False
 
@@ -53,7 +60,9 @@ def test_all_three():
 
     frontend_obj = matgen.generate_matrix([sjsu, ssu, ucla])
 
-    pprint.pprint(frontend_obj)
+    with open(OUTPUT_FILE_PATH + 'combined-out.json', 'w') as fp:
+        json.dump(frontend_obj, fp)
 
+    pprint.pprint(frontend_obj)
     # ## Uncomment this if you want to see the output on pytest
     # assert False
