@@ -8,9 +8,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Advocacy and Argument",
                 "courseID": "COM 204",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -19,18 +19,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Argumentation and Critical Inquiry in Oral Communication",
                 "courseID": "SPCH 8",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Argumentation and Critical Inquiry in Oral Communication - HONORS",
                 "courseID": "SPCH 8H",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -48,9 +48,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Freshman English II",
                 "courseID": "ENG 130",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -59,54 +59,54 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Reading, Writing and Research",
                 "courseID": "EWRT 1B",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Reading, Writing and Research - HONORS",
                 "courseID": "EWRT 1BH",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Critical Reading, Writing and Thinking",
                 "courseID": "EWRT 2",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Critical Reading, Writing and Thinking - HONORS",
                 "courseID": "EWRT 2H",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Critical Thinking and Writing",
                 "courseID": "PHIL 3",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Argumentation: Analysis of Oral and Written Communication",
                 "courseID": "SPCH 9",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -124,9 +124,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Trigonometry",
                 "courseID": "MAT 106",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -155,14 +155,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "College Physics",
                 "courseID": "PHY 121",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "College Physics Laboratory",
                 "courseID": "PHY 121L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -171,9 +171,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Introductory Physics",
                 "courseID": "PHYS 2A",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -185,14 +185,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Physics",
                 "courseID": "PHY 131",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "General Physics Laboratory",
                 "courseID": "PHY 131L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -201,9 +201,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Physics for Scientists and Engineers: Mechanics",
                 "courseID": "PHYS 4A",
-                "units": 6
+                "units": 6.0
               }
             ]
           ]
@@ -221,9 +221,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Foundation Digital Design Tools 1",
                 "courseID": "ARC 151",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -252,9 +252,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Foundation Digital Design Tools 2",
                 "courseID": "ARC 152",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -283,9 +283,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Intermediate Digital Design Tools 1",
                 "courseID": "ARC 251",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -314,9 +314,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Intermediate Digital Design Tools 2",
                 "courseID": "ARC 252",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -345,9 +345,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Intermediate Digital Design Tools 3",
                 "courseID": "ARC 253",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]

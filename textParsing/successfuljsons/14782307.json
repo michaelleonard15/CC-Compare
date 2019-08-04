@@ -8,9 +8,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Industrial Costs and Controls",
                 "courseID": "IME 239",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -33,14 +33,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Financial Accounting for Decision Making",
                 "courseID": "ACC 207",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "Financial Accounting for Decision Making",
                 "courseID": "ACC 207A",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -49,36 +49,36 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Financial Accounting I",
                 "courseID": "ACCT 1A",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Financial Accounting I - HONORS",
                 "courseID": "ACCT 1AH",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Financial Accounting II",
                 "courseID": "ACCT 1B",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Financial Accounting II - HONORS",
                 "courseID": "ACCT 1BH",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -90,9 +90,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Accounting for Agribusiness",
                 "courseID": "ABM 224",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -121,9 +121,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Agriculture and the Modern World",
                 "courseID": "AG 101",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -152,9 +152,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elementary Statistics with Applications",
                 "courseID": "STA 120",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -163,18 +163,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elementary Statistics and Probability",
                 "courseID": "MATH 10",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elementary Statistics and Probability - HONORS",
                 "courseID": "MATH 10H",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -192,14 +192,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Consumer Chemistry",
                 "courseID": "CHM 101",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "Consumer Chemistry (Lab)",
                 "courseID": "CHM 101L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -222,9 +222,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Fundamentals of Physics",
                 "courseID": "PHY 102",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -253,34 +253,34 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHM 121",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry Laboratory",
                 "courseID": "CHM 121L",
-                "units": 1
+                "units": 1.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHM 122",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry Laboratory",
                 "courseID": "CHM 122L",
-                "units": 1
+                "units": 1.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHM 123",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry Laboratory",
                 "courseID": "CHM 123L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -289,19 +289,19 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHEM 1A",
-                "units": 5
+                "units": 5.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHEM 1B",
-                "units": 5
+                "units": 5.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry and Qualitative Analysis",
                 "courseID": "CHEM 1C",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -319,9 +319,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Culture, People, and Dress",
                 "courseID": "AMM 108",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -350,9 +350,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "American Demographics and Lifestyles",
                 "courseID": "AMM 120",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -381,9 +381,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Consumerism: Impact and Issues",
                 "courseID": "AMM 245",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -412,14 +412,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Visual Merchandising/Store Design I",
                 "courseID": "AMM 270",
-                "units": 2
+                "units": 2.0
               },
               {
-                "courseName": "",
+                "courseName": "Visual Merchandising/Store Design I",
                 "courseID": "AMM 270A",
-                "units": 2
+                "units": 2.0
               }
             ]
           ]
@@ -448,9 +448,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Microcomputing",
                 "courseID": "CIS 101",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -459,9 +459,9 @@
           [
             [
               {
-                "courseName": "CIS 3 Business Information (4.5) SystemsCourse denied: CIS 50",
-                "courseID": "",
-                "units": 0
+                "courseName": "Business Information Systems",
+                "courseID": "CIS 3",
+                "units": 4.5
               }
             ]
           ]
@@ -479,9 +479,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Economics",
                 "courseID": "EC 201",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -490,18 +490,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Microeconomics",
                 "courseID": "ECON 2",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Microeconomics - HONORS",
                 "courseID": "ECON 2H",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -513,9 +513,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Economics",
                 "courseID": "EC 202",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -524,18 +524,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Macroeconomics",
                 "courseID": "ECON 1",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Macroeconomics - HONORS",
                 "courseID": "ECON 1H",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -553,9 +553,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Legal Environment of Business-Transactions",
                 "courseID": "FRL 201",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -564,9 +564,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Business Law I",
                 "courseID": "BUS 18",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -584,9 +584,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elementary Spanish I",
                 "courseID": "SPN 151",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -595,9 +595,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elementary Spanish (First Quarter)",
                 "courseID": "SPAN 1",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -609,9 +609,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elementary Chinese I",
                 "courseID": "FL 171",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -620,9 +620,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elementary Mandarin (First Quarter)",
                 "courseID": "MAND 1",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -640,9 +640,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Apparel Retailing",
                 "courseID": "AMM 296",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -671,9 +671,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Fashion Industry",
                 "courseID": "AMM 101",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -702,9 +702,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Digital Illustration for Fashion",
                 "courseID": "AMM 112L",
-                "units": 2
+                "units": 2.0
               }
             ]
           ]
@@ -733,14 +733,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Textile Sciences",
                 "courseID": "AMM 160",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "Introduction to Textile Science Lab",
                 "courseID": "AMM 160L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -769,9 +769,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Apparel Construction Lab",
                 "courseID": "AMM 180L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -800,14 +800,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Apparel Design Analysis",
                 "courseID": "AMM 210",
-                "units": 2
+                "units": 2.0
               },
               {
-                "courseName": "",
+                "courseName": "Apparel Design Analysis",
                 "courseID": "AMM 210A",
-                "units": 2
+                "units": 2.0
               }
             ]
           ]
@@ -836,9 +836,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Fashion Promotion",
                 "courseID": "AMM 230",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -867,14 +867,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Apparel Merchandise Buying I",
                 "courseID": "AMM 251",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "Apparel Merchandise Buying I Activity",
                 "courseID": "AMM 251A",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -903,14 +903,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Textile Fabrications",
                 "courseID": "AMM 260",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "Textile Fabrications - Laboratory",
                 "courseID": "AMM 260L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]

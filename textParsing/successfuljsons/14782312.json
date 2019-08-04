@@ -8,9 +8,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Biological Anthropology",
                 "courseID": "ANT 101",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -19,18 +19,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Physical Anthropology",
                 "courseID": "ANTH 1",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Physical Anthropology - HONORS",
                 "courseID": "ANTH 1H",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -48,9 +48,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Cultural Anthropology",
                 "courseID": "ANT 102",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -59,18 +59,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Cultural Anthropology",
                 "courseID": "ANTH 2",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Cultural Anthropology - HONORS",
                 "courseID": "ANTH 2H",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -88,9 +88,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Archaeology and Prehistory",
                 "courseID": "ANT 103",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -99,14 +99,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "World Prehistory",
                 "courseID": "ANTH 4",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "Introduction to Archaeology",
                 "courseID": "ANTH 3",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -124,9 +124,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Linguistic Anthropology",
                 "courseID": "ANT 104",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -135,9 +135,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Linguistic Anthropology",
                 "courseID": "ANTH 6",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]

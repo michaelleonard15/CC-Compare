@@ -8,9 +8,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Programming I",
                 "courseID": "CS 115",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -19,9 +19,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Computer Programming",
                 "courseID": "CS 10",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -39,9 +39,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to UNIX",
                 "courseID": "CS 210",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -50,9 +50,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Intro to UNIX",
                 "courseID": "CS 81.21",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -70,9 +70,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Programming II",
                 "courseID": "CS 215",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -81,9 +81,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Data Structures and Algorithms",
                 "courseID": "CS 11",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -101,9 +101,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Discrete Structures for CS",
                 "courseID": "CS 242",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -112,9 +112,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Discrete Mathematics",
                 "courseID": "MATH 4",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -132,9 +132,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Intro to Computer Organization",
                 "courseID": "CS 252",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -143,9 +143,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Assembly Language Programming",
                 "courseID": "CS 12",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -163,9 +163,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Differential & Integral Calc I",
                 "courseID": "MATH 161",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -174,9 +174,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus, First Course",
                 "courseID": "MATH 1A",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -194,9 +194,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elementary Applied Statistics",
                 "courseID": "MATH 165",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -205,9 +205,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elementary Statistics",
                 "courseID": "MATH 15",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -225,9 +225,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Differential & Integral Calc II",
                 "courseID": "MATH 211",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -236,9 +236,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus, Second Course",
                 "courseID": "MATH 1B",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -256,9 +256,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elementary Applied Linear Algebra",
                 "courseID": "MATH 222",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -267,9 +267,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Linear Algebra",
                 "courseID": "MATH 5",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -287,9 +287,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Linear Algebra with Applications in Differential Equations",
                 "courseID": "MATH 241",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -298,14 +298,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus, Fourth Course - Differential Equations",
                 "courseID": "MATH 2",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "Introduction to Linear Algebra",
                 "courseID": "MATH 5",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -323,9 +323,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Physics II",
                 "courseID": "PHYS 214",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -334,14 +334,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Waves, Optics and Thermodynamics for Scientists & Engineers",
                 "courseID": "PHYS 41",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "Electricity and Magnetism for Scientists and Engineers",
                 "courseID": "PHYS 42",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]

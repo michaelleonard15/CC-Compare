@@ -5,13 +5,16 @@ from ClassCreator import *
 class Utility():
     import re
     class_key = re.compile(r'(?:[A-Z&]{1,8}\ )+[A-Z0-9.]{1,5}')
-    units = re.compile(r'\((\d)\)')
+    units = re.compile(r'(\((\d)\))|(\((\d\.\d)\))|(\((\d\-\d)\))')
     courseName = re.compile(r'')
     checkNCA = re.compile(r'(No\scourse\sarticulated)|(No\sCurrent\sArticulation)|(Not\sArticulated)', re.IGNORECASE)
     checkAND = re.compile(r'\sAND\s')
-    checkO_R = re.compile(r'\sO_R_\s')
+    checkO_R = re.compile(r'\sO_R_\s?')
     checkand = re.compile(r'\s&_\s')
-    checkOR = re.compile(r'\sOR\s')
+    checkOR = re.compile(r'\sOR\s?')
+    checkDenied = re.compile(r'Course Denied:',re.IGNORECASE)
+    checkSameAs = re.compile(r'Same as:',re.IGNORECASE)
+    nameGroup = re.compile(r'((?:[A-Z&]{1,8}\ )+[A-Z0-9.]{1,5})(\s.*)((\((\d)\))|(\((\d\.\d)\))|(\((\d\-\d)\)))')
     #########FUNCTIONS##########################################
 
     # there is an AND or an OR at the breakpoint index, +1 over it
@@ -122,14 +125,44 @@ class Utility():
 
             # this loop will run for EVERY class
             prevHadAnd = True
-            for point in points:
+            i = 0
+            # prevPoint = 0
+            # for point in points:
+            #     if prevHadAnd:
+            #         # get class at the current point and add it the class list
+            #         unit = self.units.search(section[point]).group(1)
+            #         key = self.class_key.search(section[point]).group(0)
+            #         name = getClassName(section[prevPoint:point])
+            #         tempClass = Class(key,'', int(unit))
+            #         tempClassList.addClass(tempClass) 
+            #         if self.checkand.search(section[point]) is not None:
+            #             prevHadAnd = True
+            #         else:
+            #             prevHadAnd = False
+            #             dslist.addClassList(tempClassList)
+            #     # elif(point>0 and (self.checkO_R.search(section[point-1]) is None)):
+            #     else:
+            #         tempClassList = ClassList()
+            #         if self.checkand.search(section[point]) is not None:
+            #             prevHadAnd = True
+            #         unit = self.units.search(section[point]).group(1)
+            #         key = self.class_key.search(section[point]).group(0)
+            #         tempClass = Class(key,'', int(unit))
+            #         tempClassList.addClass(tempClass)
+            #         dslist.addClassList(tempClassList) 
+            #     count+=1
+            while i < points.__len__():
                 if prevHadAnd:
                     # get class at the current point and add it the class list
-                    unit = self.units.search(section[point]).group(1)
-                    key = self.class_key.search(section[point]).group(0)
-                    tempClass = Class(key,'', int(unit))
+                    unit = self.getUnits(section[points[i]])
+                    key = self.class_key.search(section[points[i]]).group(0)
+                    if points.__len__() is 1 or count is points.__len__()-1:
+                        name = self.getClassName(section[points[i]:])
+                    else:
+                        name = self.getClassName(section[points[i]:points[i+1]])
+                    tempClass = Class(key,name, float(unit))
                     tempClassList.addClass(tempClass) 
-                    if self.checkand.search(section[point]) is not None:
+                    if self.checkand.search(section[points[i]]) is not None:
                         prevHadAnd = True
                     else:
                         prevHadAnd = False
@@ -137,12 +170,57 @@ class Utility():
                 # elif(point>0 and (self.checkO_R.search(section[point-1]) is None)):
                 else:
                     tempClassList = ClassList()
-                    if self.checkand.search(section[point]) is not None:
+                    if self.checkand.search(section[points[i]]) is not None:
                         prevHadAnd = True
-                    unit = self.units.search(section[point]).group(1)
-                    key = self.class_key.search(section[point]).group(0)
-                    tempClass = Class(key,'', int(unit))
+                    unit = self.getUnits(section[points[i]])
+                    key = self.class_key.search(section[points[i]]).group(0)
+                    if points.__len__() is 1 or count is points.__len__()-1:
+                        name = self.getClassName(section[points[i]:])
+                    else:
+                        name = self.getClassName(section[points[i]:points[i+1]])
+                    tempClass = Class(key,name, float(unit))
                     tempClassList.addClass(tempClass)
                     dslist.addClassList(tempClassList) 
+                i+=1
                 count+=1
             return dslist
+
+    def getUnits(self, line):
+        unit = self.units.search(line).group(0)
+        unit = unit.replace("(", "")
+        unit = unit.replace(")", "")
+        return unit
+    def getClassName(self, section):
+        name = self.nameGroup.search(section[0]).group(2)
+        if self.checkand.search(name) is not None:
+            name = name.replace("&", "")
+            name = name.replace("_", "")
+
+        count = 1
+        while count < section.__len__():
+            if(self.checkO_R.search(section[count]) is not None):
+                count+=1
+                continue
+            if(self.checkAND.search(section[count]) is not None):
+                count+=1
+                continue
+            if(self.checkOR.search(section[count]) is not None):
+                count+=1
+                continue
+            if(self.checkNCA.search(section[count]) is not None):
+                count+=1
+                continue
+            if(self.checkDenied.search(section[count]) is not None):
+                count+=1
+                continue 
+            if(self.checkSameAs.search(section[count]) is not None):
+                count+=1
+                continue  
+            name +=section[count]
+            count+=1
+        name = " ".join(name.split())
+        return name
+
+            
+            
+

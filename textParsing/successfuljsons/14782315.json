@@ -8,19 +8,19 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of World Civilization: The Ancient Period",
                 "courseID": "HST 101",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "History of World Civilization: The Middle Period",
                 "courseID": "HST 102",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "History of World Civilization: The Modern Period",
                 "courseID": "HST 103",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -29,57 +29,57 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "World History from Prehistory to 750 CE",
                 "courseID": "HIST 3A",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "World History from 750 CE to 1750 CE",
                 "courseID": "HIST 3B",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "World History from 1750 CE to the Present",
                 "courseID": "HIST 3C",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "World History from Prehistory to 750 CE - HONORS",
                 "courseID": "HIST 3AH",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "World History from 750 CE to 1750 CE - HONORS",
                 "courseID": "HIST 3BH",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "World History from 1750 CE to the Present - Honors",
                 "courseID": "HIST 3CH",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "World History from Prehistory to 750 CE - HONORS",
                 "courseID": "HIST 3AH",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "World History from 750 CE to 1750 CE - HONORS",
                 "courseID": "HIST 3BH",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "World History from 1750 CE to the Present - Honors",
                 "courseID": "HIST 3CH",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -97,9 +97,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Foundations of Drawing I",
                 "courseID": "ART 140A",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -108,14 +108,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Beginning Drawing",
                 "courseID": "ARTS 4A",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "Intermediate Drawing",
                 "courseID": "ARTS 4B",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -133,9 +133,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Foundations of Two-Dimensional Design",
                 "courseID": "ART 150A",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -144,9 +144,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Two-Dimensional Design",
                 "courseID": "ARTS 8",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -164,19 +164,19 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "World Art: Prehistory to Medieval Europe",
                 "courseID": "ART 212",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "World Art: Renaissance and Baroque",
                 "courseID": "ART 213",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "World Art: Modern Europe and the United States",
                 "courseID": "ART 214",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -185,24 +185,24 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of Art: Europe from Prehistory through Early Christianity",
                 "courseID": "ARTS 2A",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "History of Art: Europe During the Middle Ages and the Renaissance",
                 "courseID": "ARTS 2B",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "History of Art: Europe from the Baroque Period through Impressionism",
                 "courseID": "ARTS 2C",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "History of Art: Europe and the United States from Post-Impressionism to the Present",
                 "courseID": "ARTS 2D",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -220,9 +220,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "World Art: Prehistory to Medieval Europe",
                 "courseID": "ART 212",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -231,14 +231,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of Art: Europe from Prehistory through Early Christianity",
                 "courseID": "ARTS 2A",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "History of Art: Europe During the Middle Ages and the Renaissance",
                 "courseID": "ARTS 2B",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -256,9 +256,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "World Art: Renaissance and Baroque",
                 "courseID": "ART 213",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -267,9 +267,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of Art: Europe from the Baroque Period through Impressionism",
                 "courseID": "ARTS 2C",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -287,9 +287,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "World Art: Modern Europe and the United States",
                 "courseID": "ART 214",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -318,9 +318,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "World Art: Arts of Africa, Oceania and Native America",
                 "courseID": "ART 211",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -329,18 +329,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of Art: Africa, Oceania and Native North America",
                 "courseID": "ARTS 2J",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of Art (Africa, Oceania and Native North America)",
                 "courseID": "INTL 22",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -358,9 +358,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "World Art: Asia (Prehistory to 12th Century)",
                 "courseID": "ART 216",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -369,18 +369,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of Art: Arts of Asia",
                 "courseID": "ARTS 2G",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of Art (Arts of Asia)",
                 "courseID": "INTL 10",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]

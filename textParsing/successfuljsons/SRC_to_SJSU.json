@@ -8,9 +8,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Critical Thinking and Writing",
                 "courseID": "ENGL 2",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -19,27 +19,27 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Advanced Composition and Critical Thinking",
                 "courseID": "ENGL 5",
-                "units": 3
+                "units": 3.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Critical Thinking/Writing",
                 "courseID": "PHIL 5",
-                "units": 3
+                "units": 3.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Critical Thinking and Argumentation",
                 "courseID": "SPCH 9",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -51,9 +51,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Argument and Analysis",
                 "courseID": "ENGL 1B",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -62,9 +62,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Literature and Composition",
                 "courseID": "ENGL 1B",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -82,9 +82,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus I",
                 "courseID": "MATH 30",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -93,9 +93,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus, First Course",
                 "courseID": "MATH 1A",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -113,9 +113,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus II",
                 "courseID": "MATH 31",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -124,9 +124,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus, Second Course",
                 "courseID": "MATH 1B",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -144,9 +144,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Discrete Mathematics",
                 "courseID": "MATH 42",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -155,9 +155,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Discrete Mathematics",
                 "courseID": "MATH 4",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -175,9 +175,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus III",
                 "courseID": "MATH 32",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -186,9 +186,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus, Third Course",
                 "courseID": "MATH 1C",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -206,9 +206,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Linear Algebra I",
                 "courseID": "MATH 129A",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -217,9 +217,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Linear Algebra",
                 "courseID": "MATH 5",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -237,9 +237,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Physics/Mechanics",
                 "courseID": "PHYS 50",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -248,9 +248,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Classical Mechanics for Scientists and Engineers",
                 "courseID": "PHYS 40",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -268,9 +268,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Physics/Electricity and Magnetism",
                 "courseID": "PHYS 51",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -279,9 +279,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Electricity and Magnetism for Scientists and Engineers",
                 "courseID": "PHYS 42",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -299,9 +299,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Physics/Heat and Light",
                 "courseID": "PHYS 52",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -310,14 +310,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Waves, Optics and Thermodynamics for Scientists & Engineers",
                 "courseID": "PHYS 41",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "Modern Physics for Scientists and Engineers",
                 "courseID": "PHYS 43",
-                "units": 2
+                "units": 2.0
               }
             ]
           ]
@@ -335,9 +335,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Biology I",
                 "courseID": "BIOL 30",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -346,9 +346,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Fundamentals of Biology (Cell and Molecular)",
                 "courseID": "BIO 2.1",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -366,9 +366,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Biology II",
                 "courseID": "BIOL 31",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -377,18 +377,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Fundamentals of Biology (Evolution, Genetics, and Zoology)",
                 "courseID": "BIO 2.2",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Fundamentals of Biology (Botany and Ecology)",
                 "courseID": "BIO 2.3",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -406,9 +406,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHEM 1A",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -417,18 +417,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHEM 1A",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Chemistry with Quantitative Analysis",
                 "courseID": "CHEM 4A",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -446,9 +446,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHEM 1B",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -457,18 +457,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHEM 1B",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Chemistry with Quantitative Analysis",
                 "courseID": "CHEM 4B",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -486,9 +486,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Geology",
                 "courseID": "GEOL 1",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -497,14 +497,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "The Earth",
                 "courseID": "GEOL 1",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "Geology Laboratory",
                 "courseID": "GEOL 1L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -522,9 +522,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Earth, Time and Life",
                 "courseID": "GEOL 7",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -553,9 +553,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Weather and Climate",
                 "courseID": "METR 10",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -564,9 +564,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Meteorology",
                 "courseID": "METRO 10",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -584,9 +584,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Programming",
                 "courseID": "CS 46A",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -595,9 +595,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Computer Programming",
                 "courseID": "CS 10",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -615,9 +615,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Data Structures",
                 "courseID": "CS 46B",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -626,9 +626,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Data Structures and Algorithms",
                 "courseID": "CS 11",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -646,9 +646,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Computer Systems",
                 "courseID": "CS 47",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -657,9 +657,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Assembly Language Programming",
                 "courseID": "CS 12",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -677,9 +677,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Unix and Unix Utilities",
                 "courseID": "CS 72",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -688,9 +688,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Intro to UNIX",
                 "courseID": "CS 81.21",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -708,9 +708,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Programming in C",
                 "courseID": "CS 49C",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -719,9 +719,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Computer Programming",
                 "courseID": "CS 10",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -733,9 +733,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Programming in Java",
                 "courseID": "CS 49J",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]

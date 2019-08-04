@@ -8,9 +8,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Aeronautics",
                 "courseID": "ARO 101L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -39,14 +39,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elements of Electrical Engineering",
                 "courseID": "ECE 231",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "Elements of Electrical Engineering Lab",
                 "courseID": "ECE 231L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -75,19 +75,19 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Analytic Geometry and Calculus I",
                 "courseID": "MAT 114",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "Analytic Geometry and Calculus II",
                 "courseID": "MAT 115",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "Analytic Geometry and Calculus III",
                 "courseID": "MAT 116",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -96,57 +96,57 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus",
                 "courseID": "MATH 1A",
-                "units": 5
+                "units": 5.0
               },
               {
-                "courseName": "",
+                "courseName": "Calculus",
                 "courseID": "MATH 1B",
-                "units": 5
+                "units": 5.0
               },
               {
-                "courseName": "",
+                "courseName": "Calculus",
                 "courseID": "MATH 1C",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus - HONORS",
                 "courseID": "MATH 1AH",
-                "units": 5
+                "units": 5.0
               },
               {
-                "courseName": "",
+                "courseName": "Calculus - HONORS",
                 "courseID": "MATH 1BH",
-                "units": 5
+                "units": 5.0
               },
               {
-                "courseName": "",
+                "courseName": "Calculus - HONORS",
                 "courseID": "MATH 1CH",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus - HONORS",
                 "courseID": "MATH 1AH",
-                "units": 5
+                "units": 5.0
               },
               {
-                "courseName": "",
+                "courseName": "Calculus - HONORS",
                 "courseID": "MATH 1BH",
-                "units": 5
+                "units": 5.0
               },
               {
-                "courseName": "",
+                "courseName": "Calculus - HONORS",
                 "courseID": "MATH 1CH",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -164,14 +164,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus of Several Variables I",
                 "courseID": "MAT 214",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "Calculus of Several Variables II",
                 "courseID": "MAT 215",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -180,42 +180,42 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus",
                 "courseID": "MATH 1C",
-                "units": 5
+                "units": 5.0
               },
               {
-                "courseName": "",
+                "courseName": "Calculus",
                 "courseID": "MATH 1D",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus - HONORS",
                 "courseID": "MATH 1CH",
-                "units": 5
+                "units": 5.0
               },
               {
-                "courseName": "",
+                "courseName": "Calculus - HONORS",
                 "courseID": "MATH 1DH",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus - HONORS",
                 "courseID": "MATH 1CH",
-                "units": 5
+                "units": 5.0
               },
               {
-                "courseName": "",
+                "courseName": "Calculus - HONORS",
                 "courseID": "MATH 1DH",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -233,9 +233,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Differential Equations",
                 "courseID": "MAT 216",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -244,9 +244,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Differential Equations",
                 "courseID": "MATH 2A",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -264,9 +264,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Materials Science and Engineering",
                 "courseID": "MTE 207",
-                "units": 3
+                "units": 3.0
               }
             ]
           ]
@@ -295,34 +295,34 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Physics",
                 "courseID": "PHY 131",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "General Physics Laboratory",
                 "courseID": "PHY 131L",
-                "units": 1
+                "units": 1.0
               },
               {
-                "courseName": "",
+                "courseName": "General Physics",
                 "courseID": "PHY 132",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "General Physics Laboratory",
                 "courseID": "PHY 132L",
-                "units": 1
+                "units": 1.0
               },
               {
-                "courseName": "",
+                "courseName": "General Physics",
                 "courseID": "PHY 133",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "General Physics Laboratory",
                 "courseID": "PHY 133L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -331,19 +331,19 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Physics for Scientists and Engineers: Mechanics",
                 "courseID": "PHYS 4A",
-                "units": 6
+                "units": 6.0
               },
               {
-                "courseName": "",
+                "courseName": "Physics for Scientists and Engineers: Electricity and Magnetism",
                 "courseID": "PHYS 4B",
-                "units": 6
+                "units": 6.0
               },
               {
-                "courseName": "",
+                "courseName": "Physics for Scientists and Engineers: Fluids, Waves, Optics and Thermodynamics",
                 "courseID": "PHYS 4C",
-                "units": 6
+                "units": 6.0
               }
             ]
           ]
@@ -361,14 +361,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Vector Statics",
                 "courseID": "ME 214",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "Mechanics Lab",
                 "courseID": "ME 224L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -377,9 +377,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Statics",
                 "courseID": "ENGR 35",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -397,9 +397,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Vector Dynamics",
                 "courseID": "ME 215",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -428,34 +428,34 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHM 121",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry Laboratory",
                 "courseID": "CHM 121L",
-                "units": 1
+                "units": 1.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHM 122",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry Laboratory",
                 "courseID": "CHM 122L",
-                "units": 1
+                "units": 1.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHM 123",
-                "units": 3
+                "units": 3.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry Laboratory",
                 "courseID": "CHM 123L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -464,19 +464,19 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHEM 1A",
-                "units": 5
+                "units": 5.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry",
                 "courseID": "CHEM 1B",
-                "units": 5
+                "units": 5.0
               },
               {
-                "courseName": "",
+                "courseName": "General Chemistry and Qualitative Analysis",
                 "courseID": "CHEM 1C",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -494,9 +494,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Astronautics",
                 "courseID": "ARO 102L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -525,9 +525,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Aerospace Propulsion",
                 "courseID": "ARO 103L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -556,9 +556,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Fundamentals of Systems Engineering",
                 "courseID": "ARO 201L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -587,9 +587,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Fundamentals of Aeronautics",
                 "courseID": "ARO 202L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -618,9 +618,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Fundamentals of Astronautics",
                 "courseID": "ARO 203L",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]

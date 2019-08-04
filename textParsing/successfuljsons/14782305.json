@@ -8,9 +8,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Cultural Anthropology",
                 "courseID": "ANT 102",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -19,18 +19,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Cultural Anthropology",
                 "courseID": "ANTH 2",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Cultural Anthropology - HONORS",
                 "courseID": "ANTH 2H",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -48,9 +48,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Survey of American Literature II",
                 "courseID": "ENG 212",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -59,18 +59,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Major American Writers (The Advent of Realism, 1865-1914)",
                 "courseID": "ELIT 48B",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Major American Writers (The Modern Age, 1914 - The Present)",
                 "courseID": "ELIT 48C",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -88,9 +88,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Multicultural Literature in the U.S.",
                 "courseID": "ENG 213",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -119,9 +119,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Ethnic Studies",
                 "courseID": "EWS 140",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -130,18 +130,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Race, Ethnicity, and Inequality",
                 "courseID": "ICS 4",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Race and Ethnicity: Belonging and Exclusion in the U.S.",
                 "courseID": "ICS 9",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -159,9 +159,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to the Study of Women and Men in Society",
                 "courseID": "EWS 145",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -190,9 +190,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Food and Culture",
                 "courseID": "FN 228",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -221,9 +221,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "United States History",
                 "courseID": "HST 202",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -232,36 +232,36 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of the United States From 1800 to 1900",
                 "courseID": "HIST 17B",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of the United States From 1900 to the Present",
                 "courseID": "HIST 17C",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of the United States from 1800 to 1900 - HONORS",
                 "courseID": "HIST 17BH",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of the United States From 1900 to the Present - HONORS",
                 "courseID": "HIST 17CH",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -279,9 +279,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "United States History",
                 "courseID": "HST 201",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -290,18 +290,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of the United States to Early National Era",
                 "courseID": "HIST 17A",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "History of the United States to Early National Era - HONORS",
                 "courseID": "HIST 17AH",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]

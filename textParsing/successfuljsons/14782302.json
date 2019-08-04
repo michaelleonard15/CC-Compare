@@ -8,9 +8,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elementary Statistics with Applications",
                 "courseID": "STA 120",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -19,18 +19,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elementary Statistics and Probability",
                 "courseID": "MATH 10",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Elementary Statistics and Probability - HONORS",
                 "courseID": "MATH 10H",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -48,9 +48,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introductory Calculus for Business",
                 "courseID": "MAT 125",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -59,9 +59,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introductory Calculus for Business and Social Science",
                 "courseID": "MATH 12",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -73,9 +73,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Analytic Geometry and Calculus I",
                 "courseID": "MAT 114",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -84,18 +84,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus",
                 "courseID": "MATH 1A",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Calculus - HONORS",
                 "courseID": "MATH 1AH",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -113,9 +113,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Economics",
                 "courseID": "EC 201",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -124,18 +124,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Microeconomics",
                 "courseID": "ECON 2",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Microeconomics - HONORS",
                 "courseID": "ECON 2H",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -153,9 +153,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Economics",
                 "courseID": "EC 202",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -164,18 +164,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Macroeconomics",
                 "courseID": "ECON 1",
-                "units": 4
+                "units": 4.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Principles of Macroeconomics - HONORS",
                 "courseID": "ECON 1H",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -193,9 +193,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Freshman English II",
                 "courseID": "ENG 130",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -204,54 +204,54 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Reading, Writing and Research",
                 "courseID": "EWRT 1B",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Reading, Writing and Research - HONORS",
                 "courseID": "EWRT 1BH",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Critical Reading, Writing and Thinking",
                 "courseID": "EWRT 2",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Critical Reading, Writing and Thinking - HONORS",
                 "courseID": "EWRT 2H",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Critical Thinking and Writing",
                 "courseID": "PHIL 3",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Argumentation: Analysis of Oral and Written Communication",
                 "courseID": "SPCH 9",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -269,9 +269,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Introduction to Microcomputing",
                 "courseID": "CIS 101",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -280,9 +280,9 @@
           [
             [
               {
-                "courseName": "CIS 3 Business Information (4.5) SystemsCourse denied: CIS 50",
-                "courseID": "",
-                "units": 0
+                "courseName": "Business Information Systems",
+                "courseID": "CIS 3",
+                "units": 4.5
               }
             ]
           ]
@@ -300,9 +300,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Legal Environment of Business-Transactions",
                 "courseID": "FRL 201",
-                "units": 4
+                "units": 4.0
               }
             ]
           ]
@@ -311,9 +311,9 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Business Law I",
                 "courseID": "BUS 18",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -331,14 +331,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Financial Accounting for Decision Making",
                 "courseID": "ACC 207",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "Financial Accounting for Decision Making",
                 "courseID": "ACC 207A",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -347,36 +347,36 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Financial Accounting I",
                 "courseID": "ACCT 1A",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Financial Accounting I - HONORS",
                 "courseID": "ACCT 1AH",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Financial Accounting II",
                 "courseID": "ACCT 1B",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Financial Accounting II - HONORS",
                 "courseID": "ACCT 1BH",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
@@ -394,14 +394,14 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Managerial Accounting for Decision Making",
                 "courseID": "ACC 208",
-                "units": 4
+                "units": 4.0
               },
               {
-                "courseName": "",
+                "courseName": "Managerial Accounting for Decision Making",
                 "courseID": "ACC 208A",
-                "units": 1
+                "units": 1.0
               }
             ]
           ]
@@ -410,18 +410,18 @@
           [
             [
               {
-                "courseName": "",
+                "courseName": "Managerial Accounting",
                 "courseID": "ACCT 1C",
-                "units": 5
+                "units": 5.0
               }
             ]
           ],
           [
             [
               {
-                "courseName": "",
+                "courseName": "Managerial Accounting - HONORS",
                 "courseID": "ACCT 1CH",
-                "units": 5
+                "units": 5.0
               }
             ]
           ]
