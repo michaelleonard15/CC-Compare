@@ -838,7 +838,7 @@
       { "courses": [[68]] }
     ],
     [
-      { "courses": [[11]] },
+      { "courses": [[11]], "condition": {"type": "UNITS", "number": 11, "rows": 9} },
       { "courses": [[37]] },
       { "courses": [] },
       { "courses": [] }
@@ -850,7 +850,7 @@
       { "courses": [] }
     ],
     [
-      { "courses": [[12, 13]] },
+      { "courses": [[12, 14]] },
       { "courses": [[39]] },
       { "courses": [] },
       { "courses": [] }
@@ -892,7 +892,7 @@
       { "courses": [] }
     ],
     [
-      { "courses": [[5]] },
+      { "courses": [[5]], "condition": {"type": "COURSES", "number": 2, "rows": 5}},
       { "courses": [] },
       { "courses": [[54]] },
       { "courses": [] }
