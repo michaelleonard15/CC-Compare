@@ -6,24 +6,20 @@
       {
         "Source": [
           [
-            [
-              {
-                "courseID": "ENGL 1A",
-                "courseName": "College Composition",
-                "units": 4
-              }
-            ]
+            {
+              "courseID": "ENGL 1A",
+              "courseName": "College Composition",
+              "units": 4
+            }
           ]
         ],
         "Destination": [
           [
-            [
-              {
-                "courseID": "ENGCOMP 3",
-                "courseName": "English Composition, Rhetoric, and Language",
-                "units": 5
-              }
-            ]
+            {
+              "courseID": "ENGCOMP 3",
+              "courseName": "English Composition, Rhetoric, and Language",
+              "units": 5
+            }
           ]
         ],
         "relationToNext": "AND"
@@ -31,39 +27,41 @@
       {
         "Source": [
           [
-            [
-              {
-                "courseID": "ENGL 1B",
-                "courseName": "Literature and Composition",
-                "units": 3
-              }
-            ],
-            [
-              {
-                "courseID": "ENGL 5",
-                "courseName": "Advanced Composition and Critical Thinking",
-                "units": 3
-              }
-            ],
-            [{ "courseID": "PHIL 5", "courseName": "Critical Thinking/Writing", "units": 3 }],
-            [
-              {
-                "courseID": "ENGL 5",
-                "courseName": "Critical Thinking and Argumentation",
-                "units": 3
-              }
-            ]
+            {
+              "courseID": "ENGL 1B",
+              "courseName": "Literature and Composition",
+              "units": 3
+            }
+          ],
+          [
+            {
+              "courseID": "ENGL 5",
+              "courseName": "Advanced Composition and Critical Thinking",
+              "units": 3
+            }
+          ],
+          [
+            {
+              "courseID": "PHIL 5",
+              "courseName": "Critical Thinking/Writing",
+              "units": 3
+            }
+          ],
+          [
+            {
+              "courseID": "ENGL 5",
+              "courseName": "Critical Thinking and Argumentation",
+              "units": 3
+            }
           ]
         ],
         "Destination": [
           [
-            [
-              {
-                "courseID": "",
-                "courseName": "One additional course in English composition",
-                "units": 0
-              }
-            ]
+            {
+              "courseID": "",
+              "courseName": "One additional course in English composition",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -75,16 +73,22 @@
     "requirementType": "",
     "Equivalencies": [
       {
-        "Source": [[[{ "courseID": "", "courseName": "No course articulated", "units": 0 }]]],
+        "Source": [
+          [
+            {
+              "courseID": "",
+              "courseName": "No course articulated",
+              "units": 0
+            }
+          ]
+        ],
         "Destination": [
           [
-            [
-              {
-                "courseID": "COM SCI 31",
-                "courseName": "Introduction to Computer Science 1",
-                "units": 4
-              }
-            ]
+            {
+              "courseID": "COM SCI 31",
+              "courseName": "Introduction to Computer Science 1",
+              "units": 4
+            }
           ]
         ],
         "relationToNext": "OR"
@@ -92,24 +96,20 @@
       {
         "Source": [
           [
-            [
-              {
-                "courseID": "ENGR 6",
-                "courseName": "Programming in MATLAB for Engineers",
-                "units": 3
-              }
-            ]
+            {
+              "courseID": "ENGR 6",
+              "courseName": "Programming in MATLAB for Engineers",
+              "units": 3
+            }
           ]
         ],
         "Destination": [
           [
-            [
-              {
-                "courseID": "C&EE M20",
-                "courseName": "Introduction to Computer Programming with MATLAB",
-                "units": 4
-              }
-            ]
+            {
+              "courseID": "C&EE M20",
+              "courseName": "Introduction to Computer Programming with MATLAB",
+              "units": 4
+            }
           ]
         ],
         "relationToNext": ""

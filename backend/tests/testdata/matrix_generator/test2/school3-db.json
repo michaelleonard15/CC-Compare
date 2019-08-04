@@ -6,24 +6,20 @@
       {
         "Source": [
           [
-            [
-              {
-                "courseID": "CLS 1",
-                "courseName": "Class 1",
-                "units": 3
-              }
-            ]
+            {
+              "courseID": "CLS 1",
+              "courseName": "Class 1",
+              "units": 3
+            }
           ]
         ],
         "Destination": [
           [
-            [
-              {
-                "courseID": "CLS 4",
-                "courseName": "Class 4",
-                "units": 4
-              }
-            ]
+            {
+              "courseID": "CLS 4",
+              "courseName": "Class 4",
+              "units": 4
+            }
           ]
         ],
         "relationToNext": ""
