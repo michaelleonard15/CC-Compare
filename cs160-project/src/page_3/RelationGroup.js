@@ -81,8 +81,8 @@ class RelationGroup extends React.Component {
    */
   createButton(key, selectedColor, aClass, lookupKey) {
     return (
-      <span className="level">
-        <button className={'button level-item is-medium ' + selectedColor}
+      <span key={key} className="level">
+        <button className={'button level-item ' + selectedColor}
                 onClick={this.props.handleToggle.bind(this, lookupKey)}>
           <div>
             <span className="content">{aClass.courseID} ({aClass.units})</span> 

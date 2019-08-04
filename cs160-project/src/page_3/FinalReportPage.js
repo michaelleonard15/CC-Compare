@@ -43,7 +43,7 @@ class FinalReportPage extends React.Component {
           slice.push(matrix[temp + i])
         }
         rows.push(
-          <div className="section">
+          <div key={i} className="section">
             {this.createConditionalGroup(slice, i, isComplete, condition)}
           </div>)
         i += condition.rows - 1
@@ -56,14 +56,14 @@ class FinalReportPage extends React.Component {
           i += 1
         }
         rows.push(
-          <div className="section">
+          <div key={i} className="section">
             {this.createRowGroup(slice, i, isComplete)}
           </div>)
       }
 
       else {
         rows.push(
-          <div className="section">
+          <div key={i} className="section">
             {this.createRequirementRow(matrix[i], i, isComplete)}
           </div>)
       }
@@ -146,25 +146,29 @@ class FinalReportPage extends React.Component {
 
   linkOriginalAgreements() {
     let colWidth = 12 / this.props.schoolList.length
-    let links = this.props.agreementKeys.map( (key, index) => {
-      return (
-        <div key={index + 1} className={`column is-${colWidth} has-text-centered`}>
-          <span className="box has-background-grey-lighter">
-            <a className="content has-text-link"
-               target="_blank"
-               rel="noopener noreferrer"
-               href={`https://assist.org/transfer/report/${key}`}>See orginal Report</a>
-          </span>
-        </div>
-      )
-    })
-    links.splice(0, 0, 
+    let links = []
+    links.push(
       <div key="0" className={`column is-${colWidth} has-background-light`}>
         <span className="box has-background-grey-lighter has-text-centered">
           <span className="content">Use the links to the right to view 
                                     the original report on Assist.org</span>
         </span>
       </div>)
+    if(colWidth < 12) {
+      links = links.concat(this.props.agreementKeys.map( (key, index) => {
+        return (
+          <div key={index + 1} className={`column is-${colWidth} has-text-centered`}>
+            <span className="box has-background-grey-lighter">
+              <a className="content has-text-link"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 href={`https://assist.org/transfer/report/${key}`}>See orginal Report</a>
+            </span>
+          </div>
+        )
+      })
+      )
+    }
     return links
   }
 

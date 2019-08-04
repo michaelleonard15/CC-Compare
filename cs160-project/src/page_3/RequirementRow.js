@@ -36,9 +36,8 @@ class RequirementRow extends React.Component {
         groups.push(<div key={i} className={`column is-${colWidth}`}></div>)
       } else {
       groups.push(
-        <div className={`column is-${colWidth}`}>
-          <RelationGroup key={i}
-                         isSourceCol={i === 0}
+        <div key={i} className={`column is-${colWidth}`}>
+          <RelationGroup isSourceCol={i === 0}
                          lookupTable={this.props.lookupTable}
                          group={row[i]}
                          completed={this.props.isComplete}
@@ -63,9 +62,9 @@ class RequirementRow extends React.Component {
   render() {
     let completedColor = this.props.isComplete ? 'success' : 'grey-lighter'
     return (
-      <div className={`columns is-vcentered has-background-${completedColor}`}>
-        {this.generateGroups()}
-      </div>
+        <div className={`columns is-vcentered has-background-${completedColor}`}>
+          {this.generateGroups()}
+        </div>
     )
   }
 }
