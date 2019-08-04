@@ -88,7 +88,7 @@ def _section_index_in_matrix(matrix, section, src_lookup):
                 break
 
             # Check that source classes are the same
-            sect_origin_classes = sect_row['Source'][0]
+            sect_origin_classes = sect_row['Source']
             mtx_origin_classes = mtx_row[0]['courses']
             if(not _is_same_class_group(sect_origin_classes, mtx_origin_classes, src_lookup)):
                 break
@@ -142,7 +142,7 @@ def _extract_source_row(row, matrix, src_lookup, row_index, dest_num):
     Extracts source schools from a row, building onto the existing matrix and the
     source lookup table for the current agreement.
     """
-    courses = row['Source'][0]
+    courses = row['Source']
     
     # This is a nested list comprehension.
     # It generates a list of the form [[1], [2, 3]]
@@ -165,7 +165,7 @@ def _extract_dest_row(row, matrix, cur_dest_lookup, row_index):
     Extracts destination classes from a row, building onto the existing matrix and the 
     source lookup table for the current agreement.
     """
-    dest_courses = row['Destination'][0]
+    dest_courses = row['Destination']
     
     # This is a nested list comprehension.
     # It generates a list of the form [[1], [2, 3]]
