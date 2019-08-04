@@ -55,7 +55,7 @@ def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup, dest_num):
         start_index = _section_index_in_matrix(matrix, section, source_lookup)
         for i, row in enumerate(section['Equivalencies']):
             if(matrix[start_index + i] == []):
-                matrix_index = _extract_source_row(row, matrix, source_lookup, start_index + i, dest_num)
+                _extract_source_row(row, matrix, source_lookup, start_index + i, dest_num)
             _extract_dest_row(row, matrix, cur_dest_lookup, start_index + i)
 
 
