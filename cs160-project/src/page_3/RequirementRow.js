@@ -1,6 +1,6 @@
 import React from 'react'
 import RelationGroup from './RelationGroup'
-import '../App.css'
+
 
 
 /**
@@ -29,19 +29,21 @@ class RequirementRow extends React.Component {
    */
   generateGroups() {
     let row = this.props.equivalencyRow
+    let colWidth = 12 / row.length
     let groups = []
     for (let i = 0; i < row.length; i++) {
       if(row[i].courses.length < 1) {
-        groups.push(<div key={i} className="relation_group_empty"></div>)
+        groups.push(<div key={i} className={`column is-${colWidth}`}></div>)
       } else {
       groups.push(
-          <RelationGroup key={i}
-                         isSourceCol={i === 0}
+        <div key={i} className={`column is-${colWidth}`}>
+          <RelationGroup isSourceCol={i === 0}
                          lookupTable={this.props.lookupTable}
                          group={row[i]}
                          completed={this.props.isComplete}
                          handleToggle={this.props.handleToggle.bind(this)}
                          />
+        </div>
         )
       }
     }
@@ -58,11 +60,11 @@ class RequirementRow extends React.Component {
    * row by calling generateGroups().
    */
   render() {
-    let completed = this.props.isComplete ? 'complete' : 'incomplete'
+    let completedColor = this.props.isComplete ? 'success' : 'grey-lighter'
     return (
-      <div className={'requirement_row_' + completed}>
-        {this.generateGroups()}
-      </div>
+        <div className={`columns is-vcentered has-background-${completedColor}`}>
+          {this.generateGroups()}
+        </div>
     )
   }
 }

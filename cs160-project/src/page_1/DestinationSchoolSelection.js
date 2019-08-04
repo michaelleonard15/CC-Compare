@@ -30,7 +30,7 @@ class DestinationSchoolSelection extends React.Component {
    */
   addAgreement() {
     let map = this.state.agreements
-    if(map.size < 5) {
+    if(map.size < 3) {
       let key = this.getRandomInt(100)
       while(map.has(key)) { key = this.getRandomInt(100) }
       map.set(key, null)

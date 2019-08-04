@@ -1,6 +1,6 @@
 import React from 'react'
 import RequirementRow from './RequirementRow'
-import '../App.css'
+
 
 
 /**
@@ -46,8 +46,8 @@ class RowGroup extends React.Component {
       let operator = this.props.equivalencySlice[i - 1][0].relationToNext
       
       rowsArray.splice(i, 0, 
-        <div key={i} className="operator_box">
-          <label> {operator} </label>
+        <div key={i} className="level">
+            <span className="level-item operator_box"> {operator} </span>
         </div>
       )
     }
@@ -63,9 +63,9 @@ class RowGroup extends React.Component {
   render() {
     let isComplete = this.props.isComplete
     let slice = this.props.equivalencySlice
-    let groupCompleted = isComplete.rowGroup(slice) ? 'complete' : 'incomplete'
+    let groupCompleted = isComplete.rowGroup(slice) ? 'success' : 'light'
     return(
-      <div className={"row_group_" + groupCompleted}> 
+      <div className={"box has-background-" + groupCompleted}> 
         {this.generateRows()}
       </div>
     )

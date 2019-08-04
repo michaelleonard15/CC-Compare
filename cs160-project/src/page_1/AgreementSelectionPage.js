@@ -78,12 +78,13 @@ constructor(props) {
                 major: agreements[i].major.ID})
     }
 
+    ///// REMOVE THIS LINE LATER
+    if(names[0] === "") { names = ["Dummy 1","Dummy 2","Dummy 3","Dummy 4"]}  
+    if(IDs.length < 1) {IDs.push(14973184); IDs.push(14984221); IDs.push(15036781);}
+    ///// REMOVE THIS LINE LATER
+
+
     let request = {source: this.state.selectedSource.ID, agreements: IDs}
-
-    ///// REMOVE THIS LINE LATER
-    if(names[0] === "") { names = ["Dummy 1","Dummy 2","Dummy 3","Dummy 4"]}
-    ///// REMOVE THIS LINE LATER
-
     this.props.onSubmit(request, names)                  
   }
 
@@ -99,6 +100,25 @@ constructor(props) {
   return (
     <div>
       <h1 className="title is-1">College Comparison Tool</h1>
+
+      <p className="content">
+      This page uses data from <a href="https://www.assist.org/">Assist.org</a> to provide a 
+      way to compare major-specific admission requirements to different universities when transferring 
+      from a community college. The requirements from the articulation agreements for the schools 
+      you selected will be displayed in an easy to compare format that allows you to mark 
+      which classes you have already completed. 
+      </p>
+      <p className="content">
+      <strong>Please note:</strong> This page is intended to aid in comparing requirements, not as a definitive 
+      resource for what the requirements for each school are. The information presented here has 
+      been gathered from reports on Assist with as much detail as possible, but we can not 
+      guarantee complete accuracy. Before making any decisions, view the official reports at 
+      <a href="https://www.assist.org/"> Assist.org</a>. 
+      </p>
+      <p className="content">
+      To get started, please select your community college and up 
+      to three universities or majors you are considering.
+      </p>
 
       <div className="box">
         <div className="columns">

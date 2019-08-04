@@ -3,7 +3,7 @@ import RowGroup from './RowGroup'
 import RequirementRow from './RequirementRow'
 import ConditionalGroup from './ConditionalGroup'
 import evaluation from './evaluation'
-import '../App.css'
+
 
 
 
@@ -42,7 +42,10 @@ class FinalReportPage extends React.Component {
         for(let temp = 0; temp < condition.rows; temp++) {
           slice.push(matrix[temp + i])
         }
-        rows.push(this.createConditionalGroup(slice, i, isComplete, condition))
+        rows.push(
+          <div key={i} className="section">
+            {this.createConditionalGroup(slice, i, isComplete, condition)}
+          </div>)
         i += condition.rows - 1
       }
 
@@ -52,11 +55,17 @@ class FinalReportPage extends React.Component {
           slice.push(matrix[ i + 1 ])
           i += 1
         }
-        rows.push(this.createRowGroup(slice, i, isComplete))
+        rows.push(
+          <div key={i} className="section">
+            {this.createRowGroup(slice, i, isComplete)}
+          </div>)
       }
 
       else {
-        rows.push(this.createRequirementRow(matrix[i], i, isComplete))
+        rows.push(
+          <div key={i} className="section">
+            {this.createRequirementRow(matrix[i], i, isComplete)}
+          </div>)
       }
     }
 
@@ -111,16 +120,20 @@ class FinalReportPage extends React.Component {
     * the names of the school as the label text. 
     */
   generateLabels() {
-    return this.props.schoolList.map( (school, index) => {
+    let colWidth = 12 / this.props.schoolList.length
+    let labels = this.props.schoolList.map( (school, index) => {
       return (
-        <div key={index} className='label_box'>
-          <label className='school_label'>
-            {school}
-          </label>
+        <div key={index} className={`column is-${colWidth} has-text-centered `}>
+          <span className="box has-background-grey-lighter">
+            <span className="content is-large">{school}</span>
+          </span>
         </div>
       )
     })
+    return labels
   }
+
+
 
 
 
@@ -132,19 +145,34 @@ class FinalReportPage extends React.Component {
 
 
   linkOriginalAgreements() {
-    let links = this.props.agreementKeys.map( (key, index) => {
-      return (
-        <div key={index + 1} className="link_box">
-          <a className="agreement_link"
-             target="_blank"
-             rel="noopener noreferrer"
-             href={`https://assist.org/transfer/report/${key}`}>See orginal Report</a>
-        </div>
+    let colWidth = 12 / this.props.schoolList.length
+    let links = []
+    links.push(
+      <div key="0" className={`column is-${colWidth} has-background-light`}>
+        <span className="box has-background-grey-lighter has-text-centered">
+          <span className="content">Use the links to the right to view 
+                                    the original report on Assist.org</span>
+        </span>
+      </div>)
+    if(colWidth < 12) {
+      links = links.concat(this.props.agreementKeys.map( (key, index) => {
+        return (
+          <div key={index + 1} className={`column is-${colWidth} has-text-centered`}>
+            <span className="box has-background-grey-lighter">
+              <a className="content has-text-link"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 href={`https://assist.org/transfer/report/${key}`}>See orginal Report</a>
+            </span>
+          </div>
+        )
+      })
       )
-    })
-    links.splice(0, 0, <div key="0" className="link_box" />)
+    }
     return links
   }
+
+
 
 
 
@@ -158,19 +186,43 @@ class FinalReportPage extends React.Component {
   render() {
     return (
       <div>
-        <div align='right'>
-          <button className="back_button"
-                  onClick={this.props.backButton}>Back</button>
-        </div>
-        <div className="school_labels_row">
-          {this.generateLabels()}
-        </div>
-        <div className="links_row">
-          {this.linkOriginalAgreements()}
-        </div>
-        {this.generateRows()}
 
-      </div>)
+        <div className="level">
+          <div className='level-left'>
+            <span className="title is-1">College Comparison Tool</span>
+          </div>
+          <div className="level-right">
+            <button className="button is-large level-item"
+                    onClick={this.props.backButton}>Back</button>
+          </div>
+        </div>
+        <p className="content">
+        Here is the report based on your selections. The requirements for 
+        each school are listed in columns, with the corresponding classes at your community college 
+        in the left most column. Below the schoool name is a link the original agreement from 
+        Assist.org. Highlighted rows and sections indicate the requirement has already been satisfied. 
+        If you need to make any changes to your selections from the previous page, you can click 
+        the buttons in the left column. 
+        </p>  
+      
+        <div className="box">
+          <div className="section">
+            <div className="box has-background-light">
+              <div className="columns is-vcentered">
+                {this.generateLabels()}
+              </div>
+            </div>
+            <div className="box has-background-light">
+              <div className="columns is-vcentered">
+                {this.linkOriginalAgreements()}
+              </div>
+            </div>
+          </div>
+          {this.generateRows()}
+
+        </div>
+      </div>
+    )
   }
 }
 

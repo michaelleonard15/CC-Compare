@@ -11,6 +11,29 @@
 }
 
 
+
+
+/* Added to customize Bulma */
+
+
+.button {
+  line-height: 0.5;
+}
+
+.relation_label {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+
+/* END */
+
+
+
+
+
+
 /* Page 3 */
 
 .back_button {
@@ -24,9 +47,6 @@
   left: 45%;
   top: 800px;
 }
-
-
-
 
 
 
