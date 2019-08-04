@@ -6,97 +6,72 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Foundations of Biology: Energy and Matter - Cycles and Flows",
-                "courseID": "BIO 121",
-                "units": 3.0
-              },
-              {
-                "courseName": "Foundations of Biology: Energy and Matter - Cycles and Flows Lab",
-                "courseID": "BIO 121L",
-                "units": 2.0
-              },
-              {
-                "courseName": "Foundations of Biology: Reproduction and Development",
-                "courseID": "BIO 122",
-                "units": 3.0
-              },
-              {
-                "courseName": "Foundations of Biology: Reproduction and Development Lab",
-                "courseID": "BIO 122L",
-                "units": 2.0
-              },
-              {
-                "courseName": "Foundations of Biology: Biodiversity",
-                "courseID": "BIO 123",
-                "units": 3.0
-              },
-              {
-                "courseName": "Foundations of Biology: Biodiversity Lab",
-                "courseID": "BIO 123L",
-                "units": 2.0
-              }
-            ]
+            {
+              "courseName": "Foundations of Biology: Energy and Matter - Cycles and Flows",
+              "courseID": "BIO 121",
+              "units": 3.0
+            },
+            {
+              "courseName": "Foundations of Biology: Energy and Matter - Cycles and Flows Lab",
+              "courseID": "BIO 121L",
+              "units": 2.0
+            },
+            {
+              "courseName": "Foundations of Biology: Reproduction and Development",
+              "courseID": "BIO 122",
+              "units": 3.0
+            },
+            {
+              "courseName": "Foundations of Biology: Reproduction and Development Lab",
+              "courseID": "BIO 122L",
+              "units": 2.0
+            },
+            {
+              "courseName": "Foundations of Biology: Biodiversity",
+              "courseID": "BIO 123",
+              "units": 3.0
+            },
+            {
+              "courseName": "Foundations of Biology: Biodiversity Lab",
+              "courseID": "BIO 123L",
+              "units": 2.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Form and Function in the Biological World",
-                "courseID": "BIOL 6A",
-                "units": 6.0
-              },
-              {
-                "courseName": "Cell and Molecular Biology",
-                "courseID": "BIOL 6B",
-                "units": 6.0
-              },
-              {
-                "courseName": "Evolution and Ecology",
-                "courseID": "BIOL 6C",
-                "units": 6.0
-              }
-            ]
+            {
+              "courseName": "Form and Function in the Biological World",
+              "courseID": "BIOL 6A",
+              "units": 6.0
+            },
+            {
+              "courseName": "Cell and Molecular Biology",
+              "courseID": "BIOL 6B",
+              "units": 6.0
+            },
+            {
+              "courseName": "Evolution and Ecology",
+              "courseID": "BIOL 6C",
+              "units": 6.0
+            }
           ],
           [
-            [
-              {
-                "courseName": "Form and Function in the Biological World - HONORS",
-                "courseID": "BIOL 6AH",
-                "units": 6.0
-              },
-              {
-                "courseName": "Cell and Molecular Biology",
-                "courseID": "BIOL 6B",
-                "units": 6.0
-              },
-              {
-                "courseName": "Ecology and Evolution - HONORS",
-                "courseID": "BIOL 6CH",
-                "units": 6.0
-              }
-            ]
-          ],
-          [
-            [
-              {
-                "courseName": "Form and Function in the Biological World - HONORS",
-                "courseID": "BIOL 6AH",
-                "units": 6.0
-              },
-              {
-                "courseName": "Cell and Molecular Biology",
-                "courseID": "BIOL 6B",
-                "units": 6.0
-              },
-              {
-                "courseName": "Ecology and Evolution - HONORS",
-                "courseID": "BIOL 6CH",
-                "units": 6.0
-              }
-            ]
+            {
+              "courseName": "Form and Function in the Biological World - HONORS",
+              "courseID": "BIOL 6AH",
+              "units": 6.0
+            },
+            {
+              "courseName": "Cell and Molecular Biology",
+              "courseID": "BIOL 6B",
+              "units": 6.0
+            },
+            {
+              "courseName": "Ecology and Evolution - HONORS",
+              "courseID": "BIOL 6CH",
+              "units": 6.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -110,24 +85,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "College Algebra",
-                "courseID": "MAT 105",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "College Algebra",
+              "courseID": "MAT 105",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -141,59 +112,55 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHM 121",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Chemistry Laboratory",
-                "courseID": "CHM 121L",
-                "units": 1.0
-              },
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHM 122",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Chemistry Laboratory",
-                "courseID": "CHM 122L",
-                "units": 1.0
-              },
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHM 123",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Chemistry Laboratory",
-                "courseID": "CHM 123L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHM 121",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Chemistry Laboratory",
+              "courseID": "CHM 121L",
+              "units": 1.0
+            },
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHM 122",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Chemistry Laboratory",
+              "courseID": "CHM 122L",
+              "units": 1.0
+            },
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHM 123",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Chemistry Laboratory",
+              "courseID": "CHM 123L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHEM 1A",
-                "units": 5.0
-              },
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHEM 1B",
-                "units": 5.0
-              },
-              {
-                "courseName": "General Chemistry and Qualitative Analysis",
-                "courseID": "CHEM 1C",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHEM 1A",
+              "units": 5.0
+            },
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHEM 1B",
+              "units": 5.0
+            },
+            {
+              "courseName": "General Chemistry and Qualitative Analysis",
+              "courseID": "CHEM 1C",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -207,24 +174,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Trigonometry",
-                "courseID": "MAT 106",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Trigonometry",
+              "courseID": "MAT 106",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No Comparable Course",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No Comparable Course",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -238,29 +201,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "College Algebra",
-                "courseID": "MAT 105",
-                "units": 4.0
-              },
-              {
-                "courseName": "Trigonometry",
-                "courseID": "MAT 106",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "College Algebra",
+              "courseID": "MAT 105",
+              "units": 4.0
+            },
+            {
+              "courseName": "Trigonometry",
+              "courseID": "MAT 106",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No Comparable CourseCourse Denied: MATH 41 + MATH 42",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No Comparable CourseCourse Denied: MATH 41 + MATH 42",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -274,59 +233,55 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "College Physics",
-                "courseID": "PHY 121",
-                "units": 3.0
-              },
-              {
-                "courseName": "College Physics Laboratory",
-                "courseID": "PHY 121L",
-                "units": 1.0
-              },
-              {
-                "courseName": "College Physics",
-                "courseID": "PHY 122",
-                "units": 3.0
-              },
-              {
-                "courseName": "College Physics Laboratory",
-                "courseID": "PHY 122L",
-                "units": 1.0
-              },
-              {
-                "courseName": "College Physics",
-                "courseID": "PHY 123",
-                "units": 3.0
-              },
-              {
-                "courseName": "College Physics Laboratory",
-                "courseID": "PHY 123L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "College Physics",
+              "courseID": "PHY 121",
+              "units": 3.0
+            },
+            {
+              "courseName": "College Physics Laboratory",
+              "courseID": "PHY 121L",
+              "units": 1.0
+            },
+            {
+              "courseName": "College Physics",
+              "courseID": "PHY 122",
+              "units": 3.0
+            },
+            {
+              "courseName": "College Physics Laboratory",
+              "courseID": "PHY 122L",
+              "units": 1.0
+            },
+            {
+              "courseName": "College Physics",
+              "courseID": "PHY 123",
+              "units": 3.0
+            },
+            {
+              "courseName": "College Physics Laboratory",
+              "courseID": "PHY 123L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "General Introductory Physics",
-                "courseID": "PHYS 2A",
-                "units": 5.0
-              },
-              {
-                "courseName": "General Introductory Physics",
-                "courseID": "PHYS 2B",
-                "units": 5.0
-              },
-              {
-                "courseName": "General Introductory Physics",
-                "courseID": "PHYS 2C",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "General Introductory Physics",
+              "courseID": "PHYS 2A",
+              "units": 5.0
+            },
+            {
+              "courseName": "General Introductory Physics",
+              "courseID": "PHYS 2B",
+              "units": 5.0
+            },
+            {
+              "courseName": "General Introductory Physics",
+              "courseID": "PHYS 2C",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": "OR"
@@ -334,59 +289,55 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "General Physics",
-                "courseID": "PHY 131",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Physics Laboratory",
-                "courseID": "PHY 131L",
-                "units": 1.0
-              },
-              {
-                "courseName": "General Physics",
-                "courseID": "PHY 132",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Physics Laboratory",
-                "courseID": "PHY 132L",
-                "units": 1.0
-              },
-              {
-                "courseName": "General Physics",
-                "courseID": "PHY 133",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Physics Laboratory",
-                "courseID": "PHY 133L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "General Physics",
+              "courseID": "PHY 131",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Physics Laboratory",
+              "courseID": "PHY 131L",
+              "units": 1.0
+            },
+            {
+              "courseName": "General Physics",
+              "courseID": "PHY 132",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Physics Laboratory",
+              "courseID": "PHY 132L",
+              "units": 1.0
+            },
+            {
+              "courseName": "General Physics",
+              "courseID": "PHY 133",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Physics Laboratory",
+              "courseID": "PHY 133L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Physics for Scientists and Engineers: Mechanics",
-                "courseID": "PHYS 4A",
-                "units": 6.0
-              },
-              {
-                "courseName": "Physics for Scientists and Engineers: Electricity and Magnetism",
-                "courseID": "PHYS 4B",
-                "units": 6.0
-              },
-              {
-                "courseName": "Physics for Scientists and Engineers: Fluids, Waves, Optics and Thermodynamics",
-                "courseID": "PHYS 4C",
-                "units": 6.0
-              }
-            ]
+            {
+              "courseName": "Physics for Scientists and Engineers: Mechanics",
+              "courseID": "PHYS 4A",
+              "units": 6.0
+            },
+            {
+              "courseName": "Physics for Scientists and Engineers: Electricity and Magnetism",
+              "courseID": "PHYS 4B",
+              "units": 6.0
+            },
+            {
+              "courseName": "Physics for Scientists and Engineers: Fluids, Waves, Optics and Thermodynamics",
+              "courseID": "PHYS 4C",
+              "units": 6.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -400,29 +351,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Basic Microbiology",
-                "courseID": "MIC 201",
-                "units": 3.0
-              },
-              {
-                "courseName": "Basic Microbiology",
-                "courseID": "MIC 201L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Basic Microbiology",
+              "courseID": "MIC 201",
+              "units": 3.0
+            },
+            {
+              "courseName": "Basic Microbiology",
+              "courseID": "MIC 201L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Introductory Microbiology",
-                "courseID": "BIOL 26",
-                "units": 6.0
-              }
-            ]
+            {
+              "courseName": "Introductory Microbiology",
+              "courseID": "BIOL 26",
+              "units": 6.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -436,33 +383,27 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Elementary Statistics with Applications",
-                "courseID": "STA 120",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Elementary Statistics with Applications",
+              "courseID": "STA 120",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Elementary Statistics and Probability",
-                "courseID": "MATH 10",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Elementary Statistics and Probability",
+              "courseID": "MATH 10",
+              "units": 5.0
+            }
           ],
           [
-            [
-              {
-                "courseName": "Elementary Statistics and Probability - HONORS",
-                "courseID": "MATH 10H",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Elementary Statistics and Probability - HONORS",
+              "courseID": "MATH 10H",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -476,24 +417,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Agriculture and the Modern World",
-                "courseID": "AG 101",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Agriculture and the Modern World",
+              "courseID": "AG 101",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -507,24 +444,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Drugs and Society",
-                "courseID": "AVS 211",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Drugs and Society",
+              "courseID": "AVS 211",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -538,24 +471,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Fundamentals of Animal Nutrition",
-                "courseID": "AVS 101",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Fundamentals of Animal Nutrition",
+              "courseID": "AVS 101",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -569,29 +498,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Animal Science I: Food Animal Science",
-                "courseID": "AVS 112",
-                "units": 4.0
-              },
-              {
-                "courseName": "Animal Science I: Food & Animal Management Laboratory",
-                "courseID": "AVS 114L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Animal Science I: Food Animal Science",
+              "courseID": "AVS 112",
+              "units": 4.0
+            },
+            {
+              "courseName": "Animal Science I: Food & Animal Management Laboratory",
+              "courseID": "AVS 114L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -605,29 +530,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Animal Science II: Companion, Lab, and Exotic Animal Science",
-                "courseID": "AVS 113",
-                "units": 4.0
-              },
-              {
-                "courseName": "Animal Science II: Companion, Lab, and Exotic Animal Science Lab",
-                "courseID": "AVS 115L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Animal Science II: Companion, Lab, and Exotic Animal Science",
+              "courseID": "AVS 113",
+              "units": 4.0
+            },
+            {
+              "courseName": "Animal Science II: Companion, Lab, and Exotic Animal Science Lab",
+              "courseID": "AVS 115L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": "OR"
@@ -635,29 +556,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Equine Management Science",
-                "courseID": "AVS 125",
-                "units": 3.0
-              },
-              {
-                "courseName": "Equine Management Science",
-                "courseID": "AVS 125L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Equine Management Science",
+              "courseID": "AVS 125",
+              "units": 3.0
+            },
+            {
+              "courseName": "Equine Management Science",
+              "courseID": "AVS 125L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -671,24 +588,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Animal Diseases",
-                "courseID": "AVS 201",
-                "units": 3.0
-              }
-            ]
+            {
+              "courseName": "Animal Diseases",
+              "courseID": "AVS 201",
+              "units": 3.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""

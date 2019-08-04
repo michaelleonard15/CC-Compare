@@ -6,38 +6,32 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Computer Applications in Agriculture",
-                "courseID": "AG 128",
-                "units": 2.0
-              },
-              {
-                "courseName": "Computer Applications in Agriculture Lab",
-                "courseID": "AG 128L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Computer Applications in Agriculture",
+              "courseID": "AG 128",
+              "units": 2.0
+            },
+            {
+              "courseName": "Computer Applications in Agriculture Lab",
+              "courseID": "AG 128L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Introduction to Computers, Data Processing and Applications",
-                "courseID": "CIS 50",
-                "units": 3.0
-              }
-            ]
+            {
+              "courseName": "Introduction to Computers, Data Processing and Applications",
+              "courseID": "CIS 50",
+              "units": 3.0
+            }
           ],
           [
-            [
-              {
-                "courseName": "Business Information Systems",
-                "courseID": "CIS 3",
-                "units": 4.5
-              }
-            ]
+            {
+              "courseName": "Business Information Systems",
+              "courseID": "CIS 3",
+              "units": 4.5
+            }
           ]
         ],
         "relationToNext": ""
@@ -51,29 +45,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Elements of Organic Chemistry",
-                "courseID": "CHM 201",
-                "units": 3.0
-              },
-              {
-                "courseName": "Elements of Organic Chemistry Lab",
-                "courseID": "CHM 250L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Elements of Organic Chemistry",
+              "courseID": "CHM 201",
+              "units": 3.0
+            },
+            {
+              "courseName": "Elements of Organic Chemistry Lab",
+              "courseID": "CHM 250L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -87,59 +77,55 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHM 121",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Chemistry Laboratory",
-                "courseID": "CHM 121L",
-                "units": 1.0
-              },
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHM 122",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Chemistry Laboratory",
-                "courseID": "CHM 122L",
-                "units": 1.0
-              },
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHM 123",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Chemistry Laboratory",
-                "courseID": "CHM 123L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHM 121",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Chemistry Laboratory",
+              "courseID": "CHM 121L",
+              "units": 1.0
+            },
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHM 122",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Chemistry Laboratory",
+              "courseID": "CHM 122L",
+              "units": 1.0
+            },
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHM 123",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Chemistry Laboratory",
+              "courseID": "CHM 123L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHEM 1A",
-                "units": 5.0
-              },
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHEM 1B",
-                "units": 5.0
-              },
-              {
-                "courseName": "General Chemistry and Qualitative Analysis",
-                "courseID": "CHEM 1C",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHEM 1A",
+              "units": 5.0
+            },
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHEM 1B",
+              "units": 5.0
+            },
+            {
+              "courseName": "General Chemistry and Qualitative Analysis",
+              "courseID": "CHEM 1C",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -153,24 +139,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "College Algebra",
-                "courseID": "MAT 105",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "College Algebra",
+              "courseID": "MAT 105",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -184,29 +166,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Basic Microbiology",
-                "courseID": "MIC 201",
-                "units": 3.0
-              },
-              {
-                "courseName": "Basic Microbiology",
-                "courseID": "MIC 201L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Basic Microbiology",
+              "courseID": "MIC 201",
+              "units": 3.0
+            },
+            {
+              "courseName": "Basic Microbiology",
+              "courseID": "MIC 201L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Introductory Microbiology",
-                "courseID": "BIOL 26",
-                "units": 6.0
-              }
-            ]
+            {
+              "courseName": "Introductory Microbiology",
+              "courseID": "BIOL 26",
+              "units": 6.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -220,33 +198,27 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Elementary Statistics with Applications",
-                "courseID": "STA 120",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Elementary Statistics with Applications",
+              "courseID": "STA 120",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Elementary Statistics and Probability",
-                "courseID": "MATH 10",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Elementary Statistics and Probability",
+              "courseID": "MATH 10",
+              "units": 5.0
+            }
           ],
           [
-            [
-              {
-                "courseName": "Elementary Statistics and Probability - HONORS",
-                "courseID": "MATH 10H",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Elementary Statistics and Probability - HONORS",
+              "courseID": "MATH 10H",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -260,43 +232,37 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Basic Biology",
-                "courseID": "BIO 115",
-                "units": 3.0
-              },
-              {
-                "courseName": "Basic Biology Lab",
-                "courseID": "BIO 115L",
-                "units": 1.0
-              },
-              {
-                "courseName": "Basic Biology Activity",
-                "courseID": "BIO 115A",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Basic Biology",
+              "courseID": "BIO 115",
+              "units": 3.0
+            },
+            {
+              "courseName": "Basic Biology Lab",
+              "courseID": "BIO 115L",
+              "units": 1.0
+            },
+            {
+              "courseName": "Basic Biology Activity",
+              "courseID": "BIO 115A",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Introductory Biology",
-                "courseID": "BIOL 10",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Introductory Biology",
+              "courseID": "BIOL 10",
+              "units": 5.0
+            }
           ],
           [
-            [
-              {
-                "courseName": "Introductory Biology - HONORS",
-                "courseID": "BIOL 10H",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Introductory Biology - HONORS",
+              "courseID": "BIOL 10H",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -310,24 +276,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Agriculture and the Modern World",
-                "courseID": "AG 101",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Agriculture and the Modern World",
+              "courseID": "AG 101",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -341,24 +303,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Drugs and Society",
-                "courseID": "AVS 211",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Drugs and Society",
+              "courseID": "AVS 211",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -372,38 +330,32 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Introduction to Vertebrate Zoology",
-                "courseID": "ZOO 238",
-                "units": 3.0
-              },
-              {
-                "courseName": "Introduction to Vertebrate Zoology Lab",
-                "courseID": "ZOO 238L",
-                "units": 2.0
-              }
-            ]
+            {
+              "courseName": "Introduction to Vertebrate Zoology",
+              "courseID": "ZOO 238",
+              "units": 3.0
+            },
+            {
+              "courseName": "Introduction to Vertebrate Zoology Lab",
+              "courseID": "ZOO 238L",
+              "units": 2.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Form and Function in the Biological World",
-                "courseID": "BIOL 6A",
-                "units": 6.0
-              }
-            ]
+            {
+              "courseName": "Form and Function in the Biological World",
+              "courseID": "BIOL 6A",
+              "units": 6.0
+            }
           ],
           [
-            [
-              {
-                "courseName": "Form and Function in the Biological World - HONORS",
-                "courseID": "BIOL 6AH",
-                "units": 6.0
-              }
-            ]
+            {
+              "courseName": "Form and Function in the Biological World - HONORS",
+              "courseID": "BIOL 6AH",
+              "units": 6.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -417,33 +369,27 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Principles of Economics",
-                "courseID": "EC 201",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Principles of Economics",
+              "courseID": "EC 201",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Principles of Microeconomics",
-                "courseID": "ECON 2",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Principles of Microeconomics",
+              "courseID": "ECON 2",
+              "units": 4.0
+            }
           ],
           [
-            [
-              {
-                "courseName": "Principles of Microeconomics - HONORS",
-                "courseID": "ECON 2H",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Principles of Microeconomics - HONORS",
+              "courseID": "ECON 2H",
+              "units": 4.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -457,38 +403,32 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Managerial Accounting for Decision Making",
-                "courseID": "ACC 208",
-                "units": 4.0
-              },
-              {
-                "courseName": "Managerial Accounting for Decision Making",
-                "courseID": "ACC 208A",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Managerial Accounting for Decision Making",
+              "courseID": "ACC 208",
+              "units": 4.0
+            },
+            {
+              "courseName": "Managerial Accounting for Decision Making",
+              "courseID": "ACC 208A",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Managerial Accounting",
-                "courseID": "ACCT 1C",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Managerial Accounting",
+              "courseID": "ACCT 1C",
+              "units": 5.0
+            }
           ],
           [
-            [
-              {
-                "courseName": "Managerial Accounting - HONORS",
-                "courseID": "ACCT 1CH",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Managerial Accounting - HONORS",
+              "courseID": "ACCT 1CH",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -502,24 +442,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Legal Environment of Business-Transactions",
-                "courseID": "FRL 201",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Legal Environment of Business-Transactions",
+              "courseID": "FRL 201",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Business Law I",
-                "courseID": "BUS 18",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Business Law I",
+              "courseID": "BUS 18",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -533,24 +469,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Managing Agribusiness Organizations",
-                "courseID": "ABM 201",
-                "units": 3.0
-              }
-            ]
+            {
+              "courseName": "Managing Agribusiness Organizations",
+              "courseID": "ABM 201",
+              "units": 3.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -564,24 +496,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Orientation and Careers in Animal Health Science",
-                "courseID": "AHS 104",
-                "units": 2.0
-              }
-            ]
+            {
+              "courseName": "Orientation and Careers in Animal Health Science",
+              "courseID": "AHS 104",
+              "units": 2.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -595,24 +523,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Veterinary Office Procedures",
-                "courseID": "AHS 115",
-                "units": 2.0
-              }
-            ]
+            {
+              "courseName": "Veterinary Office Procedures",
+              "courseID": "AHS 115",
+              "units": 2.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -626,29 +550,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Clinical Nutrition",
-                "courseID": "AHS 220",
-                "units": 4.0
-              },
-              {
-                "courseName": "Clinical Nutrition Lab",
-                "courseID": "AHS 220L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Clinical Nutrition",
+              "courseID": "AHS 220",
+              "units": 4.0
+            },
+            {
+              "courseName": "Clinical Nutrition Lab",
+              "courseID": "AHS 220L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -662,29 +582,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Animal Science I: Food Animal Science",
-                "courseID": "AVS 112",
-                "units": 4.0
-              },
-              {
-                "courseName": "Animal Science I: Food & Animal Management Laboratory",
-                "courseID": "AVS 114L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Animal Science I: Food Animal Science",
+              "courseID": "AVS 112",
+              "units": 4.0
+            },
+            {
+              "courseName": "Animal Science I: Food & Animal Management Laboratory",
+              "courseID": "AVS 114L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -698,29 +614,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Companion Animal Care",
-                "courseID": "AHS 128",
-                "units": 3.0
-              },
-              {
-                "courseName": "Companion Animal Nursing Skills Lab",
-                "courseID": "AHS 128L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Companion Animal Care",
+              "courseID": "AHS 128",
+              "units": 3.0
+            },
+            {
+              "courseName": "Companion Animal Nursing Skills Lab",
+              "courseID": "AHS 128L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -734,29 +646,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Animal Handling and Restraint",
-                "courseID": "AHS 129",
-                "units": 2.0
-              },
-              {
-                "courseName": "Animal Handling and Restraint - Lab",
-                "courseID": "AHS 129L",
-                "units": 2.0
-              }
-            ]
+            {
+              "courseName": "Animal Handling and Restraint",
+              "courseID": "AHS 129",
+              "units": 2.0
+            },
+            {
+              "courseName": "Animal Handling and Restraint - Lab",
+              "courseID": "AHS 129L",
+              "units": 2.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -770,29 +678,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Clinical Anatomy and Physiology for Veterinary Technicians",
-                "courseID": "AHS 202",
-                "units": 4.0
-              },
-              {
-                "courseName": "Clinical Anatomy and Physiology for Veterinary Technicians",
-                "courseID": "AHS 202L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Clinical Anatomy and Physiology for Veterinary Technicians",
+              "courseID": "AHS 202",
+              "units": 4.0
+            },
+            {
+              "courseName": "Clinical Anatomy and Physiology for Veterinary Technicians",
+              "courseID": "AHS 202L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -806,29 +710,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Veterinary Radiology and Ultrasound",
-                "courseID": "AHS 208",
-                "units": 2.0
-              },
-              {
-                "courseName": "Veterinary Radiology and Ultrasound",
-                "courseID": "AHS 208L",
-                "units": 2.0
-              }
-            ]
+            {
+              "courseName": "Veterinary Radiology and Ultrasound",
+              "courseID": "AHS 208",
+              "units": 2.0
+            },
+            {
+              "courseName": "Veterinary Radiology and Ultrasound",
+              "courseID": "AHS 208L",
+              "units": 2.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -842,24 +742,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Veterinary Terminology and Law",
-                "courseID": "AHS 210",
-                "units": 3.0
-              }
-            ]
+            {
+              "courseName": "Veterinary Terminology and Law",
+              "courseID": "AHS 210",
+              "units": 3.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -873,29 +769,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Lab Procedures for Veterinary Technicians",
-                "courseID": "AHS 235",
-                "units": 1.0
-              },
-              {
-                "courseName": "Lab Procedures for Veterinary Technicians Lab",
-                "courseID": "AHS 235L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Lab Procedures for Veterinary Technicians",
+              "courseID": "AHS 235",
+              "units": 1.0
+            },
+            {
+              "courseName": "Lab Procedures for Veterinary Technicians Lab",
+              "courseID": "AHS 235L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -909,29 +801,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Surgical Nursing Skills",
-                "courseID": "AHS 263",
-                "units": 1.0
-              },
-              {
-                "courseName": "Surgical Nursing Skills Lab",
-                "courseID": "AHS 263L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Surgical Nursing Skills",
+              "courseID": "AHS 263",
+              "units": 1.0
+            },
+            {
+              "courseName": "Surgical Nursing Skills Lab",
+              "courseID": "AHS 263L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -945,24 +833,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Work Experience in Animal Health Sciences",
-                "courseID": "AHS 244",
-                "units": 2.0
-              }
-            ]
+            {
+              "courseName": "Work Experience in Animal Health Sciences",
+              "courseID": "AHS 244",
+              "units": 2.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -976,24 +860,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Clinical Externship",
-                "courseID": "AHS 245",
-                "units": 2.0
-              }
-            ]
+            {
+              "courseName": "Clinical Externship",
+              "courseID": "AHS 245",
+              "units": 2.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""

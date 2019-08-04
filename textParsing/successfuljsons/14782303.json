@@ -6,24 +6,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Introduction to Aeronautics",
-                "courseID": "ARO 101L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Introduction to Aeronautics",
+              "courseID": "ARO 101L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No Comparable Course",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No Comparable Course",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -37,29 +33,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Elements of Electrical Engineering",
-                "courseID": "ECE 231",
-                "units": 3.0
-              },
-              {
-                "courseName": "Elements of Electrical Engineering Lab",
-                "courseID": "ECE 231L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Elements of Electrical Engineering",
+              "courseID": "ECE 231",
+              "units": 3.0
+            },
+            {
+              "courseName": "Elements of Electrical Engineering Lab",
+              "courseID": "ECE 231L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -73,82 +65,106 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Analytic Geometry and Calculus I",
-                "courseID": "MAT 114",
-                "units": 4.0
-              },
-              {
-                "courseName": "Analytic Geometry and Calculus II",
-                "courseID": "MAT 115",
-                "units": 4.0
-              },
-              {
-                "courseName": "Analytic Geometry and Calculus III",
-                "courseID": "MAT 116",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Analytic Geometry and Calculus I",
+              "courseID": "MAT 114",
+              "units": 4.0
+            },
+            {
+              "courseName": "Analytic Geometry and Calculus II",
+              "courseID": "MAT 115",
+              "units": 4.0
+            },
+            {
+              "courseName": "Analytic Geometry and Calculus III",
+              "courseID": "MAT 116",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Calculus",
-                "courseID": "MATH 1A",
-                "units": 5.0
-              },
-              {
-                "courseName": "Calculus",
-                "courseID": "MATH 1B",
-                "units": 5.0
-              },
-              {
-                "courseName": "Calculus",
-                "courseID": "MATH 1C",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Calculus",
+              "courseID": "MATH 1A",
+              "units": 5.0
+            },
+            {
+              "courseName": "Calculus",
+              "courseID": "MATH 1B",
+              "units": 5.0
+            },
+            {
+              "courseName": "Calculus",
+              "courseID": "MATH 1C",
+              "units": 5.0
+            }
           ],
           [
-            [
-              {
-                "courseName": "Calculus - HONORS",
-                "courseID": "MATH 1AH",
-                "units": 5.0
-              },
-              {
-                "courseName": "Calculus - HONORS",
-                "courseID": "MATH 1BH",
-                "units": 5.0
-              },
-              {
-                "courseName": "Calculus - HONORS",
-                "courseID": "MATH 1CH",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Calculus - HONORS",
+              "courseID": "MATH 1AH",
+              "units": 5.0
+            },
+            {
+              "courseName": "Calculus - HONORS",
+              "courseID": "MATH 1BH",
+              "units": 5.0
+            },
+            {
+              "courseName": "Calculus - HONORS",
+              "courseID": "MATH 1CH",
+              "units": 5.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Calculus of Several Variables I",
+              "courseID": "MAT 214",
+              "units": 3.0
+            },
+            {
+              "courseName": "Calculus of Several Variables II",
+              "courseID": "MAT 215",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Calculus",
+              "courseID": "MATH 1C",
+              "units": 5.0
+            },
+            {
+              "courseName": "Calculus",
+              "courseID": "MATH 1D",
+              "units": 5.0
+            }
           ],
           [
-            [
-              {
-                "courseName": "Calculus - HONORS",
-                "courseID": "MATH 1AH",
-                "units": 5.0
-              },
-              {
-                "courseName": "Calculus - HONORS",
-                "courseID": "MATH 1BH",
-                "units": 5.0
-              },
-              {
-                "courseName": "Calculus - HONORS",
-                "courseID": "MATH 1CH",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Calculus - HONORS",
+              "courseID": "MATH 1CH",
+              "units": 5.0
+            },
+            {
+              "courseName": "Calculus - HONORS",
+              "courseID": "MATH 1DH",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -162,62 +178,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Calculus of Several Variables I",
-                "courseID": "MAT 214",
-                "units": 3.0
-              },
-              {
-                "courseName": "Calculus of Several Variables II",
-                "courseID": "MAT 215",
-                "units": 3.0
-              }
-            ]
+            {
+              "courseName": "Differential Equations",
+              "courseID": "MAT 216",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Calculus",
-                "courseID": "MATH 1C",
-                "units": 5.0
-              },
-              {
-                "courseName": "Calculus",
-                "courseID": "MATH 1D",
-                "units": 5.0
-              }
-            ]
-          ],
-          [
-            [
-              {
-                "courseName": "Calculus - HONORS",
-                "courseID": "MATH 1CH",
-                "units": 5.0
-              },
-              {
-                "courseName": "Calculus - HONORS",
-                "courseID": "MATH 1DH",
-                "units": 5.0
-              }
-            ]
-          ],
-          [
-            [
-              {
-                "courseName": "Calculus - HONORS",
-                "courseID": "MATH 1CH",
-                "units": 5.0
-              },
-              {
-                "courseName": "Calculus - HONORS",
-                "courseID": "MATH 1DH",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Differential Equations",
+              "courseID": "MATH 2A",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -231,24 +205,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Differential Equations",
-                "courseID": "MAT 216",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Materials Science and Engineering",
+              "courseID": "MTE 207",
+              "units": 3.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Differential Equations",
-                "courseID": "MATH 2A",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -262,24 +232,55 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Materials Science and Engineering",
-                "courseID": "MTE 207",
-                "units": 3.0
-              }
-            ]
+            {
+              "courseName": "General Physics",
+              "courseID": "PHY 131",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Physics Laboratory",
+              "courseID": "PHY 131L",
+              "units": 1.0
+            },
+            {
+              "courseName": "General Physics",
+              "courseID": "PHY 132",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Physics Laboratory",
+              "courseID": "PHY 132L",
+              "units": 1.0
+            },
+            {
+              "courseName": "General Physics",
+              "courseID": "PHY 133",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Physics Laboratory",
+              "courseID": "PHY 133L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "Physics for Scientists and Engineers: Mechanics",
+              "courseID": "PHYS 4A",
+              "units": 6.0
+            },
+            {
+              "courseName": "Physics for Scientists and Engineers: Electricity and Magnetism",
+              "courseID": "PHYS 4B",
+              "units": 6.0
+            },
+            {
+              "courseName": "Physics for Scientists and Engineers: Fluids, Waves, Optics and Thermodynamics",
+              "courseID": "PHYS 4C",
+              "units": 6.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -293,59 +294,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "General Physics",
-                "courseID": "PHY 131",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Physics Laboratory",
-                "courseID": "PHY 131L",
-                "units": 1.0
-              },
-              {
-                "courseName": "General Physics",
-                "courseID": "PHY 132",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Physics Laboratory",
-                "courseID": "PHY 132L",
-                "units": 1.0
-              },
-              {
-                "courseName": "General Physics",
-                "courseID": "PHY 133",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Physics Laboratory",
-                "courseID": "PHY 133L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Vector Statics",
+              "courseID": "ME 214",
+              "units": 3.0
+            },
+            {
+              "courseName": "Mechanics Lab",
+              "courseID": "ME 224L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Physics for Scientists and Engineers: Mechanics",
-                "courseID": "PHYS 4A",
-                "units": 6.0
-              },
-              {
-                "courseName": "Physics for Scientists and Engineers: Electricity and Magnetism",
-                "courseID": "PHYS 4B",
-                "units": 6.0
-              },
-              {
-                "courseName": "Physics for Scientists and Engineers: Fluids, Waves, Optics and Thermodynamics",
-                "courseID": "PHYS 4C",
-                "units": 6.0
-              }
-            ]
+            {
+              "courseName": "Statics",
+              "courseID": "ENGR 35",
+              "units": 4.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -359,29 +326,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Vector Statics",
-                "courseID": "ME 214",
-                "units": 3.0
-              },
-              {
-                "courseName": "Mechanics Lab",
-                "courseID": "ME 224L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Vector Dynamics",
+              "courseID": "ME 215",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Statics",
-                "courseID": "ENGR 35",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -395,24 +353,55 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Vector Dynamics",
-                "courseID": "ME 215",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHM 121",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Chemistry Laboratory",
+              "courseID": "CHM 121L",
+              "units": 1.0
+            },
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHM 122",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Chemistry Laboratory",
+              "courseID": "CHM 122L",
+              "units": 1.0
+            },
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHM 123",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Chemistry Laboratory",
+              "courseID": "CHM 123L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHEM 1A",
+              "units": 5.0
+            },
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHEM 1B",
+              "units": 5.0
+            },
+            {
+              "courseName": "General Chemistry and Qualitative Analysis",
+              "courseID": "CHEM 1C",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -426,59 +415,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHM 121",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Chemistry Laboratory",
-                "courseID": "CHM 121L",
-                "units": 1.0
-              },
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHM 122",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Chemistry Laboratory",
-                "courseID": "CHM 122L",
-                "units": 1.0
-              },
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHM 123",
-                "units": 3.0
-              },
-              {
-                "courseName": "General Chemistry Laboratory",
-                "courseID": "CHM 123L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Introduction to Astronautics",
+              "courseID": "ARO 102L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHEM 1A",
-                "units": 5.0
-              },
-              {
-                "courseName": "General Chemistry",
-                "courseID": "CHEM 1B",
-                "units": 5.0
-              },
-              {
-                "courseName": "General Chemistry and Qualitative Analysis",
-                "courseID": "CHEM 1C",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "No Comparable Course",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -492,24 +442,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Introduction to Astronautics",
-                "courseID": "ARO 102L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Introduction to Aerospace Propulsion",
+              "courseID": "ARO 103L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No Comparable Course",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No Comparable Course",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -523,24 +469,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Introduction to Aerospace Propulsion",
-                "courseID": "ARO 103L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Fundamentals of Systems Engineering",
+              "courseID": "ARO 201L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No Comparable Course",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No Comparable Course",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -554,24 +496,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Fundamentals of Systems Engineering",
-                "courseID": "ARO 201L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Fundamentals of Aeronautics",
+              "courseID": "ARO 202L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No Comparable Course",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No Comparable Course",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -585,55 +523,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Fundamentals of Aeronautics",
-                "courseID": "ARO 202L",
-                "units": 1.0
-              }
-            ]
+            {
+              "courseName": "Fundamentals of Astronautics",
+              "courseID": "ARO 203L",
+              "units": 1.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No Comparable Course",
-                "courseID": "",
-                "units": 0
-              }
-            ]
-          ]
-        ],
-        "relationToNext": ""
-      }
-    ]
-  },
-  {
-    "requirement": 0,
-    "requirementType": "",
-    "Equivalencies": [
-      {
-        "Destination": [
-          [
-            [
-              {
-                "courseName": "Fundamentals of Astronautics",
-                "courseID": "ARO 203L",
-                "units": 1.0
-              }
-            ]
-          ]
-        ],
-        "Source": [
-          [
-            [
-              {
-                "courseName": "No Comparable Course",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No Comparable Course",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""

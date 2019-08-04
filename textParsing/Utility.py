@@ -172,6 +172,8 @@ class Utility():
                     tempClassList = ClassList()
                     if self.checkand.search(section[points[i]]) is not None:
                         prevHadAnd = True
+                    else:
+                        prevHadAnd = False
                     unit = self.getUnits(section[points[i]])
                     key = self.class_key.search(section[points[i]]).group(0)
                     if points.__len__() is 1 or count is points.__len__()-1:
@@ -180,7 +182,8 @@ class Utility():
                         name = self.getClassName(section[points[i]:points[i+1]])
                     tempClass = Class(key,name, float(unit))
                     tempClassList.addClass(tempClass)
-                    dslist.addClassList(tempClassList) 
+                    if self.checkand.search(section[points[i]]) is None:
+                        dslist.addClassList(tempClassList) 
                 i+=1
                 count+=1
             return dslist

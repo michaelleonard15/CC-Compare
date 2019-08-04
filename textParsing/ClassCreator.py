@@ -169,9 +169,11 @@ class Section:
                         'units': units
                     }
                     jclasses.append(x)
-                destClassList.append(jclasses.copy())
+                # destClassList.append(jclasses.copy())
+                # jclasses.clear()
+                # dest.append(destClassList)
+                dest.append(jclasses.copy())
                 jclasses.clear()
-                dest.append(destClassList)
             for rightClassList in equivalency.source.classLists:
                 destClassList = list()
                 #In the classlists there are multiple core lists, even with one class
@@ -186,9 +188,11 @@ class Section:
                         'units': units
                     }
                     jclasses.append(x)
-                destClassList.append(jclasses.copy())
+                # destClassList.append(jclasses.copy())
+                # jclasses.clear()
+                # source.append(destClassList)
+                source.append(jclasses.copy())
                 jclasses.clear()
-                source.append(destClassList)
             x = {
                 'Destination': dest,
                 'Source': source,
