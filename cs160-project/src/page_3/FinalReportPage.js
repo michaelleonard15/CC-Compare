@@ -64,7 +64,9 @@ class FinalReportPage extends React.Component {
       else {
         rows.push(
           <div key={i} className="section">
-            {this.createRequirementRow(matrix[i], i, isComplete)}
+            <div className="box has-background-light">
+              {this.createRequirementRow(matrix[i], i, isComplete)}
+            </div>
           </div>)
       }
     }

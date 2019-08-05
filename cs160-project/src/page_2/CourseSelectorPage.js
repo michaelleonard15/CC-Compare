@@ -52,8 +52,26 @@ class CourseSelectorPage extends React.Component {
       let selectedColor = row.course.isSelected ? 'is-primary' : 'has-background-grey-lighter'
       let name = row.course.courseName
 
-      let btnText = () => { 
-        if(name.length < 20 || name.indexOf(" ", 20) < 0) {
+
+      return(
+        <button   key={row.ID}
+                className={'button ' + selectedColor}
+                onClick={ () => {this.props.handleToggle(row.ID)} }
+        >
+          <div>
+            <span className="content">{row.course.courseID}</span> 
+            <br/> 
+            {this.multilineButtonText(name)}
+          </div>
+        </button>
+      )
+    })
+    return buttons
+  }
+
+
+  multilineButtonText(name) {
+    if(name.length < 20 || name.indexOf(" ", 20) < 0) {
           return(<span className="content is-small">{name}</span>)
         } 
         else {
@@ -68,27 +86,9 @@ class CourseSelectorPage extends React.Component {
             </div>
             )
         }
-      }
-
-
-
-
-      return(
-        <button   key={row.ID}
-                className={'button ' + selectedColor}
-                onClick={ () => {this.props.handleToggle(row.ID)} }
-        >
-          <div>
-            <span className="content">{row.course.courseID}</span> 
-            <br/> 
-            {/*<span className="content is-small">{row.course.courseName}</span>*/}
-            {btnText()}
-          </div>
-        </button>
-      )
-    })
-    return buttons
   }
+
+
 
 
   /**
@@ -117,7 +117,7 @@ class CourseSelectorPage extends React.Component {
                   What classes have you completed at {this.props.schoolName}? 
                 </h3>
       
-                <div className="buttons is-centered are-large">
+                <div className="buttons is-centered are-medium">
                   {this.generateButtons()}
                 </div>
               

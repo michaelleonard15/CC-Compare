@@ -53,7 +53,7 @@ function RequestAPI() {
 
     requestAgreements(IDs) {
       let majorIDs = IDs.agreements.map( (agr) => { return agr.major }) 
-      
+
       console.log("Majors are: " + majorIDs)
 
       let request = `http://127.0.0.1:5000/api/agreements?num=${majorIDs.length}&`
@@ -68,6 +68,7 @@ function RequestAPI() {
 
 
       return fetch('./combined-out.json')
+      //return fetch('./dummyClasses_7_29_v1.json')
       .then( response => {
         return response.json()
       })
