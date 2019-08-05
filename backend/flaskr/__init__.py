@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, request, url_for, render_template
+from flask import Flask, request, url_for, render_template, json
 from flask_cors import CORS
 
 # TODO: Write instructions on running backend in README
@@ -60,6 +60,28 @@ def create_app(test_config=None):
         origin_id = request.args.get('origin')
         dest_id = request.args.get('dest')
         return db.get_majors(origin_id, dest_id)
+
+
+
+    @app.route('/api/agreements/')
+    def agreements():
+        app.logger.info(request.args.to_dict())
+        num = int(request.args.get('num'))
+        ids = []
+        for x in range(0, num):
+            ids.append(request.args.get('id' + str(x)))
+         
+        app.logger.info("the IDs are")
+        app.logger.info(ids)
+
+        agreement_jsons = []
+        for x in range(0, num):
+            #app.logger.info(db.get_agreement( ids[x] ))
+            agreement_jsons.append(json.loads(db.get_agreement(ids[x])) )
+
+        app.logger.info(agreement_jsons)
+
+        return {"request": "success"}
 
     # This section runs our init_app function in db.
     from . import db

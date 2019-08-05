@@ -51,7 +51,28 @@ function RequestAPI() {
 
 
 
-    requestAgreements() {
+    requestAgreements(IDs) {
+      let majorIDs = IDs.agreements.map( (agr) => { return agr.major }) 
+      
+      console.log("Majors are: " + majorIDs)
+
+      let request = `http://127.0.0.1:5000/api/agreements?num=${majorIDs.length}&`
+      for(let i = 0; i < majorIDs.length; i++) {
+        request += `id${i}=${majorIDs[i]}&`
+      }
+      request = request.slice(0, -1)
+
+      console.log(request)
+
+      console.log(runFetch(request))
+
+
+      return fetch('./combined-out.json')
+      .then( response => {
+        return response.json()
+      })
+
+
 
     },
 

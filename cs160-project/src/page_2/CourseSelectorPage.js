@@ -52,21 +52,14 @@ class CourseSelectorPage extends React.Component {
       let selectedColor = row.course.isSelected ? 'is-primary' : 'has-background-grey-lighter'
       let name = row.course.courseName
 
-      console.log(name)
-      console.log(name.length)
-
-
-
       let btnText = () => { 
         if(name.length < 20 || name.indexOf(" ", 20) < 0) {
           return(<span className="content is-small">{name}</span>)
         } 
         else {
           let space = name.indexOf(" ", 20)
-          console.log(space)
           let p1 = name.slice(0, space)
           let p2 = name.slice(space + 1)
-          console.log(p1 + "      " + p2)
           return(
             <div>
               <span className="content is-small">{p1}</span>
