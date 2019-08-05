@@ -162,8 +162,8 @@
     ]
   },
   {
-    "requirement": 0,
-    "requirementType": "",
+    "requirement":2,
+    "requirementType": "COURSES",
     "Equivalencies": [
       {
         "Destination": [
@@ -189,8 +189,8 @@
     ]
   },
   {
-    "requirement": 0,
-    "requirementType": "",
+    "requirement":2,
+    "requirementType": "COURSES",
     "Equivalencies": [
       {
         "Destination": [
@@ -216,8 +216,8 @@
     ]
   },
   {
-    "requirement": 0,
-    "requirementType": "",
+    "requirement":2,
+    "requirementType": "COURSES",
     "Equivalencies": [
       {
         "Destination": [
@@ -243,8 +243,8 @@
     ]
   },
   {
-    "requirement": 0,
-    "requirementType": "",
+    "requirement":2,
+    "requirementType": "COURSES",
     "Equivalencies": [
       {
         "Destination": [
@@ -275,8 +275,8 @@
     ]
   },
   {
-    "requirement": 0,
-    "requirementType": "",
+    "requirement":2,
+    "requirementType": "COURSES",
     "Equivalencies": [
       {
         "Destination": [
