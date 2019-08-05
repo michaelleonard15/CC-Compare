@@ -6,24 +6,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Differential and Integral Calculus",
-                "courseID": "MATH 31A",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Differential and Integral Calculus",
+              "courseID": "MATH 31A",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Calculus, First Course",
-                "courseID": "MATH 1A",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Calculus, First Course",
+              "courseID": "MATH 1A",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -37,24 +33,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Integration and Infinite Series",
-                "courseID": "MATH 31B",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Integration and Infinite Series",
+              "courseID": "MATH 31B",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Calculus, Second Course",
-                "courseID": "MATH 1B",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Calculus, Second Course",
+              "courseID": "MATH 1B",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -68,24 +60,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Calculus of Several Variables",
-                "courseID": "MATH 32A",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Calculus of Several Variables",
+              "courseID": "MATH 32A",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Calculus, Third Course",
-                "courseID": "MATH 1C",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Calculus, Third Course",
+              "courseID": "MATH 1C",
+              "units": 4.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -99,24 +87,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Calculus of Several Variables",
-                "courseID": "MATH 32B",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Calculus of Several Variables",
+              "courseID": "MATH 32B",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Calculus, Third Course",
-                "courseID": "MATH 1C",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Calculus, Third Course",
+              "courseID": "MATH 1C",
+              "units": 4.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -130,24 +114,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Linear Algebra and Applications",
-                "courseID": "MATH 33A",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Linear Algebra and Applications",
+              "courseID": "MATH 33A",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Introduction to Linear Algebra",
-                "courseID": "MATH 5",
-                "units": 3.0
-              }
-            ]
+            {
+              "courseName": "Introduction to Linear Algebra",
+              "courseID": "MATH 5",
+              "units": 3.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -161,24 +141,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Differential Equations",
-                "courseID": "MATH 33B",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Differential Equations",
+              "courseID": "MATH 33B",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Calculus, Fourth Course - Differential Equations",
-                "courseID": "MATH 2",
-                "units": 3.0
-              }
-            ]
+            {
+              "courseName": "Calculus, Fourth Course - Differential Equations",
+              "courseID": "MATH 2",
+              "units": 3.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -192,29 +168,25 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Physics for Scientists and Engineers: Mechanics",
-                "courseID": "PHYSICS 1A",
-                "units": 5.0
-              },
-              {
-                "courseName": "Physics Laboratory for Scientists and Engineers: Mechanics",
-                "courseID": "PHYSICS 4AL",
-                "units": 2.0
-              }
-            ]
+            {
+              "courseName": "Physics for Scientists and Engineers: Mechanics",
+              "courseID": "PHYSICS 1A",
+              "units": 5.0
+            },
+            {
+              "courseName": "Physics Laboratory for Scientists and Engineers: Mechanics",
+              "courseID": "PHYSICS 4AL",
+              "units": 2.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Classical Mechanics for Scientists and Engineers",
-                "courseID": "PHYS 40",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Classical Mechanics for Scientists and Engineers",
+              "courseID": "PHYS 40",
+              "units": 5.0
+            }
           ]
         ],
         "relationToNext": "AND"
@@ -222,39 +194,35 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Physics for Scientists and Engineers: Oscillations, Waves, Electric and Magnetic Fields",
-                "courseID": "PHYSICS 1B",
-                "units": 5.0
-              },
-              {
-                "courseName": "Physics Laboratory for Scientists and Engineers: Electricity and Magnetism",
-                "courseID": "PHYSICS 4BL",
-                "units": 2.0
-              },
-              {
-                "courseName": "Physics for Scientists and Engineers: Electrodynamics, Optics, and Special Relativity",
-                "courseID": "PHYSICS 1C",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Physics for Scientists and Engineers: Oscillations, Waves, Electric and Magnetic Fields",
+              "courseID": "PHYSICS 1B",
+              "units": 5.0
+            },
+            {
+              "courseName": "Physics Laboratory for Scientists and Engineers: Electricity and Magnetism",
+              "courseID": "PHYSICS 4BL",
+              "units": 2.0
+            },
+            {
+              "courseName": "Physics for Scientists and Engineers: Electrodynamics, Optics, and Special Relativity",
+              "courseID": "PHYSICS 1C",
+              "units": 5.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Waves, Optics and Thermodynamics for Scientists & Engineers",
-                "courseID": "PHYS 41",
-                "units": 4.0
-              },
-              {
-                "courseName": "Electricity and Magnetism for Scientists and Engineers",
-                "courseID": "PHYS 42",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Waves, Optics and Thermodynamics for Scientists & Engineers",
+              "courseID": "PHYS 41",
+              "units": 4.0
+            },
+            {
+              "courseName": "Electricity and Magnetism for Scientists and Engineers",
+              "courseID": "PHYS 42",
+              "units": 4.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -268,24 +236,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "English Composition, Rhetoric, and Language",
-                "courseID": "ENGCOMP 3",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "English Composition, Rhetoric, and Language",
+              "courseID": "ENGCOMP 3",
+              "units": 5.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "College Composition",
-                "courseID": "ENGL 1A",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "College Composition",
+              "courseID": "ENGL 1A",
+              "units": 4.0
+            }
           ]
         ],
         "relationToNext": "AND"
@@ -293,51 +257,41 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "One additional course in English composition",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "One additional course in English composition",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Literature and Composition",
-                "courseID": "ENGL 1B",
-                "units": 3.0
-              }
-            ]
+            {
+              "courseName": "Literature and Composition",
+              "courseID": "ENGL 1B",
+              "units": 3.0
+            }
           ],
           [
-            [
-              {
-                "courseName": "Advanced Composition and Critical Thinking",
-                "courseID": "ENGL 5",
-                "units": 3.0
-              }
-            ]
+            {
+              "courseName": "Advanced Composition and Critical Thinking",
+              "courseID": "ENGL 5",
+              "units": 3.0
+            }
           ],
           [
-            [
-              {
-                "courseName": "Critical Thinking/Writing",
-                "courseID": "PHIL 5",
-                "units": 3.0
-              }
-            ]
+            {
+              "courseName": "Critical Thinking/Writing",
+              "courseID": "PHIL 5",
+              "units": 3.0
+            }
           ],
           [
-            [
-              {
-                "courseName": "Critical Thinking and Argumentation",
-                "courseID": "SPCH 9",
-                "units": 3.0
-              }
-            ]
+            {
+              "courseName": "Critical Thinking and Argumentation",
+              "courseID": "SPCH 9",
+              "units": 3.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -351,24 +305,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "One course in computer programming: C++ is preferred for this major",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "One course in computer programming: C++ is preferred for this major",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Introduction to Computer Programming",
-                "courseID": "CS 10",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Introduction to Computer Programming",
+              "courseID": "CS 10",
+              "units": 4.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -382,24 +332,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Introduction to Computer Science I",
-                "courseID": "COM SCI 31",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Introduction to Computer Science I",
+              "courseID": "COM SCI 31",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -413,24 +359,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Introduction to Computer Science II",
-                "courseID": "COM SCI 32",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Introduction to Computer Science II",
+              "courseID": "COM SCI 32",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Data Structures and Algorithms",
-                "courseID": "CS 11",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Data Structures and Algorithms",
+              "courseID": "CS 11",
+              "units": 4.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -444,24 +386,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Introduction to Computer Organization",
-                "courseID": "COM SCI 33",
-                "units": 5.0
-              }
-            ]
+            {
+              "courseName": "Introduction to Computer Organization",
+              "courseID": "COM SCI 33",
+              "units": 5.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Assembly Language Programming",
-                "courseID": "CS 12",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Assembly Language Programming",
+              "courseID": "CS 12",
+              "units": 4.0
+            }
           ]
         ],
         "relationToNext": ""
@@ -475,24 +413,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Logic Design of Digital Systems",
-                "courseID": "COM SCI M51A",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Logic Design of Digital Systems",
+              "courseID": "COM SCI M51A",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "No course articulated",
-                "courseID": "",
-                "units": 0
-              }
-            ]
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
           ]
         ],
         "relationToNext": ""
@@ -506,24 +440,20 @@
       {
         "Destination": [
           [
-            [
-              {
-                "courseName": "Introduction to Discrete Structures",
-                "courseID": "MATH 61",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Introduction to Discrete Structures",
+              "courseID": "MATH 61",
+              "units": 4.0
+            }
           ]
         ],
         "Source": [
           [
-            [
-              {
-                "courseName": "Discrete Mathematics",
-                "courseID": "MATH 4",
-                "units": 4.0
-              }
-            ]
+            {
+              "courseName": "Discrete Mathematics",
+              "courseID": "MATH 4",
+              "units": 4.0
+            }
           ]
         ],
         "relationToNext": ""
