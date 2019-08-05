@@ -51,12 +51,35 @@ def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup, dest_num):
     Extracts all sources from an agreement, 
     building onto the existing matrix and source lookup table.
     """
+    running_cond = ""
+    running_cond_val = 0
+    cond_row_count = 0
     for section in agreement:
+
+        if running_cond != "":
+            if section['requirementType'] == running_cond:
+                cond_row_count += _get_row_count(section)
+            else:
+                # "condition": {"type": "UNITS", "number": 11, "rows": 9} 
+                sect_first_row = matrix[len(matrix) - cond_row_count]
+                cond_obj = {'type': running_cond, 'number': running_cond_val, 'rows':cond_row_count}
+                # Adding it as an object inside the origin cell for this row
+                sect_first_row[0]['condition'] = cond_obj
+                # add condition to curr_index - cond_row_count
+        # reset running cond
+        if section['requirementType'] != running_cond:
+            running_cond = section['requirementType']
+            running_cond_val = section['requirement']
+            cond_row_count = 0
+
         start_index = _section_index_in_matrix(matrix, section, source_lookup)
         for i, row in enumerate(section['Equivalencies']):
             if(matrix[start_index + i] == []):
                 _extract_source_row(row, matrix, source_lookup, start_index + i, dest_num)
             _extract_dest_row(row, matrix, cur_dest_lookup, start_index + i)
+            
+def _get_row_count(section):
+    return len(section['Equivalencies'])
 
 
 def _section_index_in_matrix(matrix, section, src_lookup):
@@ -71,6 +94,8 @@ def _section_index_in_matrix(matrix, section, src_lookup):
     for start_pos in range(0, len(matrix) + 1 - len(sect_rows)):
 
         # TODO: conditional requirements?
+        if section['requirementType'] != "":
+            return _add_section_to_end(matrix, sect_rows)
 
         # Gets a slice of the matrix to check against
         submatrix = matrix[start_pos:(start_pos + len(sect_rows))]
@@ -97,6 +122,11 @@ def _section_index_in_matrix(matrix, section, src_lookup):
             return start_pos
 
     # If we've fallen out of the above loop, we need to add a blank section to the bottom
+    return _add_section_to_end(matrix, sect_rows)
+
+
+
+def _add_section_to_end(matrix, sect_rows):
     for i in range(0, len(sect_rows)):
         matrix.append([])
 
@@ -235,6 +265,5 @@ def _fill_empty_dests(matrix, dest_num):
         needed_cells = dest_num - len(row)
         for i in range(0, needed_cells):
             row.append({'courses':[]})
-
 
 
