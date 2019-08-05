@@ -2,6 +2,7 @@ import React from 'react';
 // import 'bulma/css/bulma.css'
 import './mystyles.scss'
 import './App.css'
+import RequestAPI from './page_1/RequestAPI'
 import AgreementSelectionPage from './page_1/AgreementSelectionPage'
 import CourseSelectorPage from './page_2/CourseSelectorPage'
 import FinalReportPage from './page_3/FinalReportPage'
@@ -35,10 +36,7 @@ class App extends React.Component {
                    agreementKeys: IDs.agreements.map( (arg) => {return arg.major})
     })
 
-    fetch('./combined-out.json')
-      .then( response => {
-        return response.json()
-      })
+      RequestAPI().requestAgreements(IDs)
       .then( data => {
         let lookup = new Map()
         for(let i = 0; i < data.lookup.length; i++) {

@@ -6,6 +6,8 @@
 
 $primary:  #63abc7;
 $link: #63abc7;
-
+$purple: #faebff;  //#eebaff;
+$purple-invert: findColorInvert($purple);
+$custom-colors: ("purple": ($purple, $purple-invert));
 
 @import "../node_modules/bulma/bulma.sass";

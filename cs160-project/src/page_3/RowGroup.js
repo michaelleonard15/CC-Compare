@@ -63,7 +63,7 @@ class RowGroup extends React.Component {
   render() {
     let isComplete = this.props.isComplete
     let slice = this.props.equivalencySlice
-    let groupCompleted = isComplete.rowGroup(slice) ? 'success' : 'light'
+    let groupCompleted = isComplete.rowGroup(slice) ? 'success' : 'purple'
     return(
       <div className={"box has-background-" + groupCompleted}> 
         {this.generateRows()}

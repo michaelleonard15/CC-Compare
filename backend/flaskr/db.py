@@ -66,6 +66,31 @@ def get_majors(origin_id, dest_id):
     return jsonify(major_array)
 
 
+
+
+
+
+
+def get_agreement(agreement_id):
+    db = get_db()
+
+    click.echo("Calling get_agreement with agreement_id: ")
+    click.echo(agreement_id)
+
+    query = "SELECT agreement_json FROM agreements WHERE agreement_id=(?)"
+    row = db.execute(query, (agreement_id,)).fetchone()
+
+    click.echo(row[0])
+
+    return row[0]
+
+
+
+
+
+
+
+
 def reset_db():
     db = get_db()
 

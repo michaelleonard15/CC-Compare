@@ -36,7 +36,7 @@ class RequirementRow extends React.Component {
         groups.push(<div key={i} className={`column is-${colWidth}`}></div>)
       } else {
       groups.push(
-        <div key={i} className={`column is-${colWidth}`}>
+        <div key={i} className={`column final-report is-${colWidth}`}>
           <RelationGroup isSourceCol={i === 0}
                          lookupTable={this.props.lookupTable}
                          group={row[i]}
