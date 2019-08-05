@@ -56,12 +56,13 @@ def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup, dest_num):
     cond_row_count = 0
     for section in agreement:
 
+        cond_row_count += _get_row_count(section)
         if running_cond != "":
-            cond_row_count += _get_row_count(section)
             if section['requirementType'] != running_cond:
                 _add_section_header(matrix, running_cond, running_cond_val, cond_row_count)
-        # reset running cond
+
         if section['requirementType'] != running_cond:
+            # reset running cond
             running_cond = section['requirementType']
             running_cond_val = section['requirement']
             cond_row_count = 0
@@ -74,7 +75,7 @@ def _extract_rows(agreement, matrix, source_lookup, cur_dest_lookup, dest_num):
 
     # Handling any remaining condition groups
     if running_cond != "":
-        _add_section_header(matrix, running_cond, running_cond_val, cond_row_count)
+        _add_section_header(matrix, running_cond, running_cond_val, cond_row_count + 1)
 
 
 def _add_section_header(matrix, cond, cond_val, row_count):
@@ -83,7 +84,7 @@ def _add_section_header(matrix, cond, cond_val, row_count):
 
     sect_first_row = matrix[len(matrix) - row_count]
     cond_obj = {'type': cond, 'number': cond_val, 'rows':row_count}
-    
+
     # Adding it as an object inside the origin cell for this row
     sect_first_row[0]['condition'] = cond_obj
 
