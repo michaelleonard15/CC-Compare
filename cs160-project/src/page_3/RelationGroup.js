@@ -58,7 +58,13 @@ class RelationGroup extends React.Component {
 
   addButtonOrLabel(reactKey, lookupKey) {
     let temp = this.props.lookupTable.get(lookupKey)
-    if(this.props.isSourceCol) {  
+    if(lookupKey < 0) {
+      return (
+        <span key={reactKey} className="level">
+          <span className='content is-large level-item'>{this.multilineButtonText(temp.courseName)}</span>
+        </span>)
+    }
+    else if(this.props.isSourceCol) {  
       let selected = temp.isSelected ? 'is-primary' : 'has-background-grey-lighter'
       return this.createButton(reactKey, selected, temp, lookupKey)
     } 
