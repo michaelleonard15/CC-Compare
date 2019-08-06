@@ -1,4 +1,6 @@
 import os
+import pprint
+from flaskr import matrix_generator 
 
 from flask import Flask, request, url_for, render_template, json
 from flask_cors import CORS
@@ -79,9 +81,13 @@ def create_app(test_config=None):
             #app.logger.info(db.get_agreement( ids[x] ))
             agreement_jsons.append(json.loads(db.get_agreement(ids[x])) )
 
-        app.logger.info(agreement_jsons)
+        ##pprint.pprint(agreement_jsons) 
 
-        return {"request": "success"}
+        finalMatrix = matrix_generator.generate_matrix(agreement_jsons)
+
+        pprint.pprint(finalMatrix)
+
+        return finalMatrix
 
     # This section runs our init_app function in db.
     from . import db

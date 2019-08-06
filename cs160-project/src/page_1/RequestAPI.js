@@ -64,14 +64,14 @@ function RequestAPI() {
 
       console.log(request)
 
-      console.log(runFetch(request))
+      return runFetch(request)
 
 
-      return fetch('./combined-out.json')
+      //return fetch('./combined-out.json')
       //return fetch('./dummyClasses_7_29_v1.json')
-      .then( response => {
-        return response.json()
-      })
+      //.then( response => {
+      //  return response.json()
+      //})
 
 
 
