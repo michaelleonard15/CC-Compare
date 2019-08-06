@@ -35,6 +35,11 @@
   padding-left: 1.5rem;
 }
 
+
+.box.extra-padding {
+  padding: 35px;
+}
+
 /* END */
 
 
