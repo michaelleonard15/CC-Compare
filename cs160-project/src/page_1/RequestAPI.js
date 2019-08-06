@@ -22,8 +22,10 @@ function RequestAPI() {
               if(response.ok) {
                 return response.json()
               }
-            }).catch( (err) => 
-                console.log('Failed to open resourse: ' + err)) 
+            }).catch( (err) => {
+                console.log('Failed to open resourse: ' + err)
+                return []
+              }) 
   }
 
   return {
