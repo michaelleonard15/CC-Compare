@@ -24,7 +24,7 @@ class AgreementSelectionPage extends React.Component {
 constructor(props) {
     super(props)
 
-    this.state = {source: [], destinations: [], 
+    this.state = {source: [], destinations: [], isLoading: false,
                   selectedSource: {ID: -1, name: ""}, specificAgreements: []}
   }
 
@@ -68,6 +68,7 @@ constructor(props) {
    * specific agreements selected. 
    */
   submitForm() {
+    this.setState({isLoading: true})
     let names = [this.state.selectedSource.name]
     let IDs = []
     let agreements = Array.from(this.state.specificAgreements)
@@ -150,7 +151,7 @@ constructor(props) {
 
         <div className="level-right">
           <button
-            className="button is-large  level-item"
+            className={"button is-large level-item " + (this.state.isLoading ? "is-primary is-loading" : "")}
             onClick={this.submitForm.bind(this)}>Next</button>
         </div>
       </div>
