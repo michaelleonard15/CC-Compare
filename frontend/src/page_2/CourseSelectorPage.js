@@ -99,7 +99,7 @@ class CourseSelectorPage extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="title is-1">College Comparison Tool</h1>
+        <h1 className="title is-1">CC Compare</h1>
 
         <p className="content">
         To present more useful information on the report 

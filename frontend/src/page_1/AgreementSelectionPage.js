@@ -86,16 +86,16 @@ constructor(props) {
     }
     else {
       ///// REMOVE THIS LINE LATER
-        names = ["Dummy 1","Dummy 2","Dummy 3","Dummy 4"]
-        IDs.push({major: 14973184}); IDs.push({major: 14984221}); IDs.push({major: 15036781})
-        let request = {source: this.state.selectedSource.ID, agreements: IDs}
-        this.props.onSubmit(request, names)
+      //  names = ["Dummy 1","Dummy 2","Dummy 3","Dummy 4"]
+      //  IDs.push({major: 14973184}); IDs.push({major: 14984221}); IDs.push({major: 15036781})
+      //  let request = {source: this.state.selectedSource.ID, agreements: IDs}
+      //  this.props.onSubmit(request, names)
       ///// REMOVE THIS LINE LATER
       
       //// ADD THIS LATER
-      //  let error = "Failed to submit request, no schools/majors selected. "
-      //  this.setState({isLoading: false, errorMessage: error})
-      //  console.log(error)
+        let error = "Failed to submit request, no schools/majors selected. "
+        this.setState({isLoading: false, errorMessage: error})
+        console.log(error)
       //// ADD THIS LATER
     }
   }
@@ -111,7 +111,7 @@ constructor(props) {
   render () {
   return (
     <div>
-      <h1 className="title is-1">College Comparison Tool</h1>
+      <h1 className="title is-1">CC Compare</h1>
 
       <p className="content">
       This page uses data from <a href="https://www.assist.org/">Assist.org</a> to provide a 
