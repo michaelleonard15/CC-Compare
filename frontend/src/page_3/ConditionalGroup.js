@@ -62,7 +62,7 @@ class ConditionalGroup extends React.Component {
     let isComplete = this.props.isComplete
     let slice = this.props.equivalencySlice
     let condition = slice[0][0].condition
-    let groupCompleted = isComplete.conditionalGroup(slice, condition) ? 'success' : 'purple'
+    let groupCompleted = isComplete.conditionalGroup(slice, condition) ? 'success' : 'light-blue'
     return(
         <div className={"box extra-padding has-background-" + groupCompleted}> 
           <span className="level">   
