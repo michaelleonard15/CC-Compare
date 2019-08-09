@@ -1,0 +1,745 @@
+[
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Fundamentals of Physics",
+              "courseID": "PHY 102",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Basic Biology",
+              "courseID": "BIO 115",
+              "units": 3.0
+            },
+            {
+              "courseName": "Basic Biology Lab",
+              "courseID": "BIO 115L",
+              "units": 1.0
+            },
+            {
+              "courseName": "Basic Biology Activity",
+              "courseID": "BIO 115A",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Introductory Biology",
+              "courseID": "BIOL 10",
+              "units": 5.0
+            }
+          ],
+          [
+            {
+              "courseName": "Introductory Biology - HONORS",
+              "courseID": "BIOL 10H",
+              "units": 5.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHM 121",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Chemistry Laboratory",
+              "courseID": "CHM 121L",
+              "units": 1.0
+            },
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHM 122",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Chemistry Laboratory",
+              "courseID": "CHM 122L",
+              "units": 1.0
+            },
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHM 123",
+              "units": 3.0
+            },
+            {
+              "courseName": "General Chemistry Laboratory",
+              "courseID": "CHM 123L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHEM 1A",
+              "units": 5.0
+            },
+            {
+              "courseName": "General Chemistry",
+              "courseID": "CHEM 1B",
+              "units": 5.0
+            },
+            {
+              "courseName": "General Chemistry and Qualitative Analysis",
+              "courseID": "CHEM 1C",
+              "units": 5.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Agriculture and the Modern World",
+              "courseID": "AG 101",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Accounting for Agribusiness",
+              "courseID": "ABM 224",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No Comparable Course",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Fundamentals of Animal Nutrition",
+              "courseID": "AVS 101",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Landscape Horticulture",
+              "courseID": "PLT 131",
+              "units": 3.0
+            },
+            {
+              "courseName": "Landscape Horticulture Lab",
+              "courseID": "PLT 131L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Agronomic Principles and Practice",
+              "courseID": "PLT 220",
+              "units": 3.0
+            },
+            {
+              "courseName": "Agronomic Principles and Practice",
+              "courseID": "PLT 220L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Basic Soil Science",
+              "courseID": "PLT 231",
+              "units": 3.0
+            },
+            {
+              "courseName": "Basic Soil Science Lab",
+              "courseID": "PLT 231L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Animal Science I: Food Animal Science",
+              "courseID": "AVS 112",
+              "units": 4.0
+            },
+            {
+              "courseName": "Animal Science I: Food & Animal Management Laboratory",
+              "courseID": "AVS 114L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Animal Science II: Companion, Lab, and Exotic Animal Science",
+              "courseID": "AVS 113",
+              "units": 4.0
+            },
+            {
+              "courseName": "Animal Science II: Companion, Lab, and Exotic Animal Science Lab",
+              "courseID": "AVS 115L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Pasture and Forage Systems",
+              "courseID": "PLT 223",
+              "units": 3.0
+            },
+            {
+              "courseName": "Pasture and Forage Systems Lab",
+              "courseID": "PLT 223L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Subtropical Fruits",
+              "courseID": "PLT 202",
+              "units": 3.0
+            },
+            {
+              "courseName": "Subtropical Fruits",
+              "courseID": "PLT 202L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Landscape Drafting and Design",
+              "courseID": "PLT 211",
+              "units": 3.0
+            },
+            {
+              "courseName": "Landscape Drafting and Design Lab",
+              "courseID": "PLT 211L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Irrigation & Water Management",
+              "courseID": "PLT 232",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Turf Management",
+              "courseID": "PLT 240",
+              "units": 3.0
+            },
+            {
+              "courseName": "Turf Management Lab",
+              "courseID": "PLT 240L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "General Surveying",
+              "courseID": "PLT 245",
+              "units": 2.0
+            },
+            {
+              "courseName": "General Surveying Lab",
+              "courseID": "PLT 245L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Plant Propagation",
+              "courseID": "PLT 132",
+              "units": 3.0
+            },
+            {
+              "courseName": "Plant Propagation Lab",
+              "courseID": "PLT 132L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Agricultural Cropping System",
+              "courseID": "PLT 133",
+              "units": 3.0
+            },
+            {
+              "courseName": "Agricultural Cropping System",
+              "courseID": "PLT 133L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Pomology",
+              "courseID": "PLT 203",
+              "units": 3.0
+            },
+            {
+              "courseName": "Pomology Lab",
+              "courseID": "PLT 203L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No Comparable Course",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "History of Garden Art",
+              "courseID": "PLT 214",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Culinary Produce Technology",
+              "courseID": "PLT 222",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Introduction to Arthropods",
+              "courseID": "PLT 233",
+              "units": 3.0
+            },
+            {
+              "courseName": "Introduction to Arthropods",
+              "courseID": "PLT 233L",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  }
+]

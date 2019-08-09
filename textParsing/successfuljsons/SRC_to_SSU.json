@@ -1,0 +1,309 @@
+[
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Programming I",
+              "courseID": "CS 115",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Introduction to Computer Programming",
+              "courseID": "CS 10",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Introduction to UNIX",
+              "courseID": "CS 210",
+              "units": 1.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Intro to UNIX",
+              "courseID": "CS 81.21",
+              "units": 3.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Programming II",
+              "courseID": "CS 215",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Data Structures and Algorithms",
+              "courseID": "CS 11",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Discrete Structures for CS",
+              "courseID": "CS 242",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Discrete Mathematics",
+              "courseID": "MATH 4",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Intro to Computer Organization",
+              "courseID": "CS 252",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Assembly Language Programming",
+              "courseID": "CS 12",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Differential & Integral Calc I",
+              "courseID": "MATH 161",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Calculus, First Course",
+              "courseID": "MATH 1A",
+              "units": 5.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Elementary Applied Statistics",
+              "courseID": "MATH 165",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Elementary Statistics",
+              "courseID": "MATH 15",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Differential & Integral Calc II",
+              "courseID": "MATH 211",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Calculus, Second Course",
+              "courseID": "MATH 1B",
+              "units": 5.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Elementary Applied Linear Algebra",
+              "courseID": "MATH 222",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Introduction to Linear Algebra",
+              "courseID": "MATH 5",
+              "units": 3.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Linear Algebra with Applications in Differential Equations",
+              "courseID": "MATH 241",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Calculus, Fourth Course - Differential Equations",
+              "courseID": "MATH 2",
+              "units": 3.0
+            },
+            {
+              "courseName": "Introduction to Linear Algebra",
+              "courseID": "MATH 5",
+              "units": 3.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Introduction to Physics II",
+              "courseID": "PHYS 214",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Waves, Optics and Thermodynamics for Scientists & Engineers",
+              "courseID": "PHYS 41",
+              "units": 4.0
+            },
+            {
+              "courseName": "Electricity and Magnetism for Scientists and Engineers",
+              "courseID": "PHYS 42",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  }
+]

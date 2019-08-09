@@ -1,0 +1,135 @@
+
+
+
+
+
+          5/5/2019                        www.assist.org                         Page   1
+                                   Articulation Agreement by Major
+                              Effective during the 16-17 Academic Year
+             To: Sonoma State                      |From: Santa Rosa Junior College
+             16-17 General Catalog         Semester|16-17 General Catalog         Semester
+          ================================================================================
+
+                                   ====Computer Science B.S.====
+                                     I_M_P_O_R_T_A_N_T__T_R_A_N_S_F_E_R__I_N_F_O_R_M_A_T_I_O_N_
+          All courses submitted towards either major or minor requirements in the Computer
+          Science Department must be taken for a letter grade (A-F).  This includes
+          electives in CS and all other courses taken to satisfy the major.  Only those
+          classes for which a student has received a C- or better may be used to satisfy
+          prerequisite requirements.
+          --------------------------------------------------------------------------------
+          L_o_w_e_r__D_i_v_i_s_i_o_n__M_a_j_o_r__R_e_q_u_i_r_e_m_e_n_t_s_:_
+          --------------------------------------------------------------------------------
+                                         MAJOR CORE REQUIREMENTS
+          --------------------------------------------------------------------------------
+          CS 115    Programming I               (4)|CS 10    Introduction to Computer  (4)
+                                                   |         Programming
+          --------------------------------------------------------------------------------
+          CS 210    Introduction to UNIX        (1)|CS 81.21    Intro to UNIX          (3)
+          --------------------------------------------------------------------------------
+          CS 215    Programming II              (4)|CS 11    Data Structures and       (4)
+                                                   |         Algorithms
+          --------------------------------------------------------------------------------
+          CS 242    Discrete Structures for CS  (4)|MATH 4    Discrete Mathematics     (4)
+          --------------------------------------------------------------------------------
+          CS 252    Intro to Computer           (4)|CS 12    Assembly Language         (4)
+                    Organization                   |         Programming
+          --------------------------------------------------------------------------------
+                                      REQUIRED SUPPORTING COURSES
+          --------------------------------------------------------------------------------
+          MATH 161    Differential & Integral   (4)|MATH 1A    Calculus, First Course  (5)
+                      Calc I                       |
+          --------------------------------------------------------------------------------
+          Two additional courses from the following (lower division options, see SSU
+          catalog for complete list which includes upper division options):
+          --------------------------------------------------------------------------------
+          MATH 165    Elementary Applied        (4)|MATH 15    Elementary Statistics   (4)
+                      Statistics                   |
+          --------------------------------------------------------------------------------
+          MATH 211    Differential & Integral   (4)|MATH 1B    Calculus, Second Course (5)
+                      Calc II                      |
+          --------------------------------------------------------------------------------
+
+
+
+          This agreement is subject to revision without prior notice.  Please check with a
+          counselor every semester to obtain current information about possible changes in
+          the agreement.  To learn more about the courses and programs offered at Sonoma
+          State University or the upper-division requirements for each major please refer
+          to the university catalog at: http://www.sonoma.edu/catalog/
+
+
+
+
+
+
+
+
+
+
+
+
+
+          5/5/2019                        www.assist.org                         Page   2
+                      To: Sonoma State, From: Santa Rosa Junior College, 16-17
+          ================================================================================
+          Computer Science B.S. (continued)
+          MATH 222    Elementary Applied Linear (3)|MATH 5    Introduction to Linear   (3)
+                      Algebra                      |          Algebra
+          --------------------------------------------------------------------------------
+          MATH 241    Linear Algebra with       (4)|MATH 2 &_ Calculus, Fourth Course  (3)
+                      Applications in              |          - Differential Equations
+                      Differential Equations       |
+                                                   |MATH 5    Introduction to Linear   (3)
+                                                   |          Algebra
+          --------------------------------------------------------------------------------
+          PHYS 214    Introduction to Physics   (4)|PHYS 41 &_ Waves, Optics and       (4)
+                      II                           |           Thermodynamics for
+                                                   |           Scientists & Engineers
+                                                   |PHYS 42    Electricity and         (4)
+                                                   |           Magnetism for
+                                                   |           Scientists and
+                                                   |           Engineers
+          --------------------------------------------------------------------------------
+          END OF MAJOR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          This agreement is subject to revision without prior notice.  Please check with a
+          counselor every semester to obtain current information about possible changes in
+          the agreement.  To learn more about the courses and programs offered at Sonoma
+          State University or the upper-division requirements for each major please refer
+          to the university catalog at: http://www.sonoma.edu/catalog/
+
+
+
+
+
+
+
+
+

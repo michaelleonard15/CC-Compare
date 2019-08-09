@@ -1,0 +1,854 @@
+[
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Introduction to Digital Photography - Activity",
+              "courseID": "ART 275A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Foundations of Ceramics",
+              "courseID": "ART 130A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Ceramics",
+              "courseID": "ARTS 18A",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Foundations of Craft Design",
+              "courseID": "ART 190A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Introduction to Painting",
+              "courseID": "ART 220A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Acrylic Painting I",
+              "courseID": "ARTS 15A",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Fundamentals of Watercolor Painting",
+              "courseID": "ART 225A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Watercolor Painting I",
+              "courseID": "ARTS 14A",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Ceramics I",
+              "courseID": "ART 230A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Intermediate Drawing",
+              "courseID": "ART 242A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Intermediate Drawing",
+              "courseID": "ARTS 4B",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": "OR"
+      },
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Beginning Life Drawing",
+              "courseID": "ART 244A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Life Drawing",
+              "courseID": "ARTS 4C",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Fundamentals of Sculpture",
+              "courseID": "ART 280A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Sculpture",
+              "courseID": "ARTS 37A",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "World Art: Arts of Africa, Oceania and Native America",
+              "courseID": "ART 211",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "History of Art: Africa, Oceania and Native North America",
+              "courseID": "ARTS 2J",
+              "units": 4.0
+            }
+          ],
+          [
+            {
+              "courseName": "History of Art (Africa, Oceania and Native North America)",
+              "courseID": "INTL 22",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "World Art: Asia (Prehistory to 12th Century)",
+              "courseID": "ART 216",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "History of Art: Arts of Asia",
+              "courseID": "ARTS 2G",
+              "units": 4.0
+            }
+          ],
+          [
+            {
+              "courseName": "History of Art (Arts of Asia)",
+              "courseID": "INTL 10",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Foundations of Three-Dimensional Design - Activity",
+              "courseID": "ART 180A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Photojournalism",
+              "courseID": "COM 232",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Principles and Practice of Theatrical Design",
+              "courseID": "TH 231",
+              "units": 2.0
+            },
+            {
+              "courseName": "Principles and Practices of Theatrical Design",
+              "courseID": "TH 231A",
+              "units": 2.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Foundations of Drawing I",
+              "courseID": "ART 140A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Beginning Drawing",
+              "courseID": "ARTS 4A",
+              "units": 4.0
+            },
+            {
+              "courseName": "Intermediate Drawing",
+              "courseID": "ARTS 4B",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Foundations of Drawing II",
+              "courseID": "ART 141A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Foundations of Two-Dimensional Design",
+              "courseID": "ART 150A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Two-Dimensional Design",
+              "courseID": "ARTS 8",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Foundations of Digital Design",
+              "courseID": "ART 155A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "World Art: Prehistory to Medieval Europe",
+              "courseID": "ART 212",
+              "units": 4.0
+            },
+            {
+              "courseName": "World Art: Renaissance and Baroque",
+              "courseID": "ART 213",
+              "units": 4.0
+            },
+            {
+              "courseName": "World Art: Modern Europe and the United States",
+              "courseID": "ART 214",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "History of Art: Europe from Prehistory through Early Christianity",
+              "courseID": "ARTS 2A",
+              "units": 4.0
+            },
+            {
+              "courseName": "History of Art: Europe During the Middle Ages and the Renaissance",
+              "courseID": "ARTS 2B",
+              "units": 4.0
+            },
+            {
+              "courseName": "History of Art: Europe from the Baroque Period through Impressionism",
+              "courseID": "ARTS 2C",
+              "units": 4.0
+            },
+            {
+              "courseName": "History of Art: Europe and the United States from Post-Impressionism to the Present",
+              "courseID": "ARTS 2D",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "World Art: Prehistory to Medieval Europe",
+              "courseID": "ART 212",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "History of Art: Europe from Prehistory through Early Christianity",
+              "courseID": "ARTS 2A",
+              "units": 4.0
+            },
+            {
+              "courseName": "History of Art: Europe During the Middle Ages and the Renaissance",
+              "courseID": "ARTS 2B",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "World Art: Renaissance and Baroque",
+              "courseID": "ART 213",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "History of Art: Europe from the Baroque Period through Impressionism",
+              "courseID": "ARTS 2C",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "World Art: Modern Europe and the United States",
+              "courseID": "ART 214",
+              "units": 4.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No Comparable Course",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Intermediate Drawing",
+              "courseID": "ART 242A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Intermediate Drawing",
+              "courseID": "ARTS 4B",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": "OR"
+      },
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Beginning Life Drawing",
+              "courseID": "ART 244A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Life Drawing",
+              "courseID": "ARTS 4C",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Lettering and Typography",
+              "courseID": "ART 251A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Graphic Design-Communication: Typography",
+              "courseID": "ARTS 57",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Graphic Design I",
+              "courseID": "ART 252A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Graphic Design-Communication III: Production Techniques",
+              "courseID": "ARTS 55C",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Design and Color Theory",
+              "courseID": "ART 253A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "Design and Color",
+              "courseID": "ARTS 12",
+              "units": 4.0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Typography II: Normative to Expressive",
+              "courseID": "ART 254A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Digital Image Design",
+              "courseID": "ART 255A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            {
+              "courseName": "Printmaking",
+              "courseID": "ART 260A",
+              "units": 3.0
+            }
+          ]
+        ],
+        "Source": [
+          [
+            {
+              "courseName": "No course articulated",
+              "courseID": "",
+              "units": 0
+            }
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  }
+]

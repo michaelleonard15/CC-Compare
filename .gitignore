@@ -8,6 +8,7 @@
 
 
 .vscode/settings.json
+*.pyc
 python_webreader/jsons/*
 
 ## Other

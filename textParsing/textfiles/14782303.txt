@@ -1,0 +1,135 @@
+
+
+
+
+
+          5/1/2019                        www.assist.org                         Page   1
+                                   Articulation Agreement by Major
+                              Effective during the 16-17 Academic Year
+             To: Cal Poly Pomona                   |From: De Anza College
+             16-18 General Catalog          Quarter|16-17 General Catalog          Quarter
+          ================================================================================
+
+                                 ====Aerospace Engineering B.S.====
+
+                             T_H_I_S__I_S__A_N__I_M_P_A_C_T_E_D__M_A_J_O_R__A_T__C_A_L__P_O_L_Y__P_O_M_O_N_A_
+
+          More students apply to this major than can be accommodated, and a supplementary
+          admissions process is required by the University and the Department.  Please
+          refer to the Office of Admissions & Outreach web site for
+          admission requirements.
+
+          https://www.cpp.edu/~admissions/transfer/impacted-majors.shtml
+
+          --------------------------------------------------------------------------------
+          G_E_N_E_R_A_L__E_D_U_C_A_T_I_O_N__C_O_U_R_S_E_S_:
+
+          Transfer students may satisfy General Education requirements by completing the
+          CSU Breadth General Education Certification pattern, the Intersegmental General
+          Education Transfer Curriculum (IGETC), or by completing an
+          for Transfer (AA-T/AS-T) (www.adegreewithaguarantee.com).  See your California
+          community college counselor for more details.
+          --------------------------------------------------------------------------------
+          R_E_Q_U_I_R_E_D__S_U_P_P_O_R_T__C_O_U_R_S_E_S_:
+          --------------------------------------------------------------------------------
+          ARO 101L    Introduction to           (1)|No Comparable Course
+                      Aeronautics                  |
+          --------------------------------------------------------------------------------
+          ECE 231  &_ Elements of Electrical    (3)|Not Articulated
+                      Engineering                  |
+          ECE 231L    Elements of Electrical    (1)|
+                      Engineering Lab              |
+          --------------------------------------------------------------------------------
+          MAT 114 &_ Analytic Geometry and      (4)|MATH 1A  &_ Calculus               (5)
+                     Calculus I                    |MATH 1B  &_ Calculus               (5)
+          MAT 115 &_ Analytic Geometry and      (4)|MATH 1C     Calculus               (5)
+                     Calculus II                   |   O_R_
+          MAT 116    Analytic Geometry and      (4)|MATH 1AH &_ Calculus - HONORS      (5)
+                     Calculus III                  |MATH 1BH &_ Calculus - HONORS      (5)
+                                                   |MATH 1CH    Calculus - HONORS      (5)
+          --------------------------------------------------------------------------------
+          MAT 214 &_ Calculus of Several        (3)|MATH 1C  &_ Calculus               (5)
+                     Variables I                   |MATH 1D     Calculus               (5)
+          MAT 215    Calculus of Several        (3)|   O_R_
+                     Variables II                  |MATH 1CH &_ Calculus - HONORS      (5)
+                                                   |MATH 1DH    Calculus - HONORS      (5)
+          --------------------------------------------------------------------------------
+          MAT 216    Differential Equations     (4)|MATH 2A    Differential Equations  (5)
+          --------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          5/1/2019                        www.assist.org                         Page   2
+                         To: Cal Poly Pomona, From: De Anza College, 16-17
+          ================================================================================
+          Aerospace Engineering B.S. (continued)
+          MTE 207    Materials Science and      (3)|Not Articulated
+                     Engineering                   |
+          --------------------------------------------------------------------------------
+          PHY 131  &_ General Physics           (3)|PHYS 4A &_ Physics for Scientists  (6)
+          PHY 131L &_ General Physics           (1)|           and Engineers:
+                      Laboratory                   |           Mechanics
+          PHY 132  &_ General Physics           (3)|PHYS 4B &_ Physics for Scientists  (6)
+          PHY 132L &_ General Physics           (1)|           and Engineers:
+                      Laboratory                   |           Electricity and
+          PHY 133  &_ General Physics           (3)|           Magnetism
+          PHY 133L    General Physics           (1)|PHYS 4C    Physics for Scientists  (6)
+                      Laboratory                   |           and Engineers: Fluids,
+                                                   |           Waves, Optics and
+                                                   |           Thermodynamics
+          --------------------------------------------------------------------------------
+          ME 214  &_ Vector Statics             (3)|ENGR 35    Statics                 (4)
+          ME 224L    Mechanics Lab              (1)|
+          --------------------------------------------------------------------------------
+          ME 215    Vector Dynamics             (4)|Not Articulated
+          --------------------------------------------------------------------------------
+          CHM 121  &_ General Chemistry         (3)|CHEM 1A &_ General Chemistry       (5)
+          CHM 121L &_ General Chemistry         (1)|CHEM 1B &_ General Chemistry       (5)
+                      Laboratory                   |CHEM 1C    General Chemistry and   (5)
+          CHM 122  &_ General Chemistry         (3)|           Qualitative Analysis
+          CHM 122L &_ General Chemistry         (1)|
+                      Laboratory                   |
+          CHM 123  &_ General Chemistry         (3)|
+          CHM 123L    General Chemistry         (1)|
+                      Laboratory                   |
+          --------------------------------------------------------------------------------
+          R_E_Q_U_I_R_E_D__C_O_R_E__C_O_U_R_S_E_S_:
+          --------------------------------------------------------------------------------
+          ARO 102L    Introduction to           (1)|No Comparable Course
+                      Astronautics                 |
+          --------------------------------------------------------------------------------
+          ARO 103L    Introduction to Aerospace (1)|No Comparable Course
+                      Propulsion                   |
+          --------------------------------------------------------------------------------
+          ARO 201L    Fundamentals of Systems   (1)|No Comparable Course
+                      Engineering                  |
+          --------------------------------------------------------------------------------
+          ARO 202L    Fundamentals of           (1)|No Comparable Course
+                      Aeronautics                  |
+          --------------------------------------------------------------------------------
+          ARO 203L    Fundamentals of           (1)|No Comparable Course
+                      Astronautics                 |
+          --------------------------------------------------------------------------------
+          END OF MAJOR
+
+
+
+
+
+
+
+
+
+
+

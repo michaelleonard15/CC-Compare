@@ -1,0 +1,758 @@
+[
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ENGL 2",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ENGL 5",
+                "units": 3
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHIL 5",
+                "units": 3
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "SPCH 9",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "relationToNext": "OR"
+      },
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ENGL 1B",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "ENGL 1B",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 30",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 1A",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 31",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 1B",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 42",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 4",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 32",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 1C",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 129A",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "MATH 5",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHYS 50",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHYS 40",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHYS 51",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHYS 42",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHYS 52",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "PHYS 41",
+                "units": 4
+              },
+              {
+                "courseName": "",
+                "courseID": "PHYS 43",
+                "units": 2
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "BIOL 30",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "BIO 2.1",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "BIOL 31",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "BIO 2.2",
+                "units": 5
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "BIO 2.3",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CHEM 1A",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CHEM 1A",
+                "units": 5
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CHEM 4A",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CHEM 1B",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CHEM 1B",
+                "units": 5
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CHEM 4B",
+                "units": 5
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "GEOL 1",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "GEOL 1",
+                "units": 3
+              },
+              {
+                "courseName": "",
+                "courseID": "GEOL 1L",
+                "units": 1
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "GEOL 7",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "METR 10",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "METRO 10",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CS 46A",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CS 10",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CS 46B",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CS 11",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CS 47",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CS 12",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CS 72",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CS 81.21",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  },
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CS 49C",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CS 10",
+                "units": 4
+              }
+            ]
+          ]
+        ],
+        "relationToNext": "OR"
+      },
+      {
+        "Destination": [
+          [
+            [
+              {
+                "courseName": "",
+                "courseID": "CS 49J",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Source": [
+          [
+            [
+              {
+                "courseName": "No course articulated",
+                "courseID": "",
+                "units": 0
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  }
+]
