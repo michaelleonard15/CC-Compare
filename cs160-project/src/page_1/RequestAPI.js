@@ -1,6 +1,3 @@
-//For testing menus
-import Parse from './Parse'
-///////////////////
 
 
 /**
@@ -33,31 +30,23 @@ function RequestAPI() {
 
     requestSources() {
       let request = 'http://127.0.0.1:5000/api/origin-schools'
-      //return runFetch(request)
-
-      // FOR TESTING ////
-      return Parse('institutions.json')
-      /////////////////// 
+      return runFetch(request)
     },
 
 
 
     requestDestinations(SourceID) {
       let request = 'http://127.0.0.1:5000/api/dest-schools?origin=' + SourceID
-      //return runFetch(request)
-      
-      // FOR TESTING ////
-      return Parse('agreements-' + SourceID + '.json')    
-      /////////////////// 
+      return runFetch(request)
     },
 
 
 
-    requestMajors(sourceID) {
+    requestMajors(sourceID, destID) {
 
-      // FOR TESTING ////
-      return Parse('majors.json')
-      ///////////////////
+      console.info(`%c Major request: sourceID is ${sourceID} and destID is ${destID}`, 'color: purple; font-weight: bold;')
+      let request = `http://127.0.0.1:5000/api/majors?origin=${sourceID}&dest=${destID}`
+      return runFetch(request)
     },
 
 

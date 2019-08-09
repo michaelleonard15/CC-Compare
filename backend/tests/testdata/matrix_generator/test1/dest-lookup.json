@@ -1,0 +1,42 @@
+[
+  {
+    "key": -1,
+    "course": {
+      "isSelected": false,
+      "courseID": "",
+      "courseName": "One additional course in English composition",
+      "units": 0,
+      "isOrigin": false
+    }
+  },
+  {
+    "key": 1,
+    "course": {
+      "isSelected": false,
+      "courseID": "ENGCOMP 3",
+      "courseName": "English Composition, Rhetoric, and Language",
+      "units": 5,
+      "isOrigin": false
+    }
+  },
+  {
+    "key": 6,
+    "course": {
+      "isSelected": false,
+      "courseID": "COM SCI 31",
+      "courseName": "Introduction to Computer Science 1",
+      "units": 4,
+      "isOrigin": false
+    }
+  },
+  {
+    "key": 8,
+    "course": {
+      "isSelected": false,
+      "courseID": "C&EE M20",
+      "courseName": "Introduction to Computer Programming with MATLAB",
+      "units": 4,
+      "isOrigin": false
+    }
+  }
+]

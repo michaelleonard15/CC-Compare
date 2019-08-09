@@ -1,0 +1,852 @@
+{
+  "lookup": [
+    {
+      "key": -3,
+      "course": {
+        "courseName": "One course in computer programming: C++ is preferred for this major",
+        "courseID": "",
+        "units": 0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": -2,
+      "course": {
+        "courseName": "One additional course in English composition",
+        "courseID": "",
+        "units": 0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": -1,
+      "course": {
+        "courseName": "No course articulated",
+        "courseID": "",
+        "units": 0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 0,
+      "course": {
+        "courseName": "Advanced Composition and Critical Thinking",
+        "courseID": "ENGL 5",
+        "units": 3.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 1,
+      "course": {
+        "courseName": "Critical Thinking and Writing",
+        "courseID": "ENGL 2",
+        "units": 3.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 2,
+      "course": {
+        "courseName": "Literature and Composition",
+        "courseID": "ENGL 1B",
+        "units": 3.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 3,
+      "course": {
+        "courseName": "Argument and Analysis",
+        "courseID": "ENGL 1B",
+        "units": 3.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 4,
+      "course": {
+        "courseName": "Calculus, First Course",
+        "courseID": "MATH 1A",
+        "units": 5.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 5,
+      "course": {
+        "courseName": "Calculus I",
+        "courseID": "MATH 30",
+        "units": 3.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 6,
+      "course": {
+        "courseName": "Calculus, Second Course",
+        "courseID": "MATH 1B",
+        "units": 5.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 7,
+      "course": {
+        "courseName": "Calculus II",
+        "courseID": "MATH 31",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 8,
+      "course": {
+        "courseName": "Discrete Mathematics",
+        "courseID": "MATH 4",
+        "units": 4.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 9,
+      "course": {
+        "courseName": "Discrete Mathematics",
+        "courseID": "MATH 42",
+        "units": 3.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 10,
+      "course": {
+        "courseName": "Calculus, Third Course",
+        "courseID": "MATH 1C",
+        "units": 4.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 11,
+      "course": {
+        "courseName": "Calculus III",
+        "courseID": "MATH 32",
+        "units": 3.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 12,
+      "course": {
+        "courseName": "Introduction to Linear Algebra",
+        "courseID": "MATH 5",
+        "units": 3.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 13,
+      "course": {
+        "courseName": "Linear Algebra I",
+        "courseID": "MATH 129A",
+        "units": 3.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 14,
+      "course": {
+        "courseName": "Classical Mechanics for Scientists and Engineers",
+        "courseID": "PHYS 40",
+        "units": 5.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 15,
+      "course": {
+        "courseName": "General Physics/Mechanics",
+        "courseID": "PHYS 50",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 16,
+      "course": {
+        "courseName": "Electricity and Magnetism for Scientists and Engineers",
+        "courseID": "PHYS 42",
+        "units": 4.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 17,
+      "course": {
+        "courseName": "General Physics/Electricity and Magnetism",
+        "courseID": "PHYS 51",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 18,
+      "course": {
+        "courseName": "Waves, Optics and Thermodynamics for Scientists & Engineers",
+        "courseID": "PHYS 41",
+        "units": 4.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 19,
+      "course": {
+        "courseName": "Modern Physics for Scientists and Engineers",
+        "courseID": "PHYS 43",
+        "units": 2.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 20,
+      "course": {
+        "courseName": "General Physics/Heat and Light",
+        "courseID": "PHYS 52",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 21,
+      "course": {
+        "courseName": "Fundamentals of Biology (Cell and Molecular)",
+        "courseID": "BIO 2.1",
+        "units": 5.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 22,
+      "course": {
+        "courseName": "Principles of Biology I",
+        "courseID": "BIOL 30",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 23,
+      "course": {
+        "courseName": "Fundamentals of Biology (Evolution, Genetics, and Zoology)",
+        "courseID": "BIO 2.2",
+        "units": 5.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 24,
+      "course": {
+        "courseName": "Principles of Biology II",
+        "courseID": "BIOL 31",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 25,
+      "course": {
+        "courseName": "General Chemistry",
+        "courseID": "CHEM 1A",
+        "units": 5.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 26,
+      "course": {
+        "courseName": "General Chemistry",
+        "courseID": "CHEM 1A",
+        "units": 5.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 27,
+      "course": {
+        "courseName": "General Chemistry",
+        "courseID": "CHEM 1B",
+        "units": 5.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 28,
+      "course": {
+        "courseName": "General Chemistry",
+        "courseID": "CHEM 1B",
+        "units": 5.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 29,
+      "course": {
+        "courseName": "The Earth",
+        "courseID": "GEOL 1",
+        "units": 3.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 30,
+      "course": {
+        "courseName": "Geology Laboratory",
+        "courseID": "GEOL 1L",
+        "units": 1.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 31,
+      "course": {
+        "courseName": "General Geology",
+        "courseID": "GEOL 1",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 32,
+      "course": {
+        "courseName": "Earth, Time and Life",
+        "courseID": "GEOL 7",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 33,
+      "course": {
+        "courseName": "Introduction to Meteorology",
+        "courseID": "METRO 10",
+        "units": 3.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 34,
+      "course": {
+        "courseName": "Weather and Climate",
+        "courseID": "METR 10",
+        "units": 3.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 35,
+      "course": {
+        "courseName": "Introduction to Computer Programming",
+        "courseID": "CS 10",
+        "units": 4.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 36,
+      "course": {
+        "courseName": "Introduction to Programming",
+        "courseID": "CS 46A",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 37,
+      "course": {
+        "courseName": "Data Structures and Algorithms",
+        "courseID": "CS 11",
+        "units": 4.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 38,
+      "course": {
+        "courseName": "Introduction to Data Structures",
+        "courseID": "CS 46B",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 39,
+      "course": {
+        "courseName": "Assembly Language Programming",
+        "courseID": "CS 12",
+        "units": 4.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 40,
+      "course": {
+        "courseName": "Introduction to Computer Systems",
+        "courseID": "CS 47",
+        "units": 3.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 41,
+      "course": {
+        "courseName": "Intro to UNIX",
+        "courseID": "CS 81.21",
+        "units": 3.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 42,
+      "course": {
+        "courseName": "Unix and Unix Utilities",
+        "courseID": "CS 72",
+        "units": 3.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 43,
+      "course": {
+        "courseName": "Programming in C",
+        "courseID": "CS 49C",
+        "units": 3.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 44,
+      "course": {
+        "courseName": "Programming in Java",
+        "courseID": "CS 49J",
+        "units": 3.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 45,
+      "course": {
+        "courseName": "Programming I",
+        "courseID": "CS 115",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 46,
+      "course": {
+        "courseName": "Introduction to UNIX",
+        "courseID": "CS 210",
+        "units": 1.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 47,
+      "course": {
+        "courseName": "Programming II",
+        "courseID": "CS 215",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 48,
+      "course": {
+        "courseName": "Discrete Structures for CS",
+        "courseID": "CS 242",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 49,
+      "course": {
+        "courseName": "Intro to Computer Organization",
+        "courseID": "CS 252",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 50,
+      "course": {
+        "courseName": "Differential & Integral Calc I",
+        "courseID": "MATH 161",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 51,
+      "course": {
+        "courseName": "Elementary Statistics",
+        "courseID": "MATH 15",
+        "units": 4.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 52,
+      "course": {
+        "courseName": "Elementary Applied Statistics",
+        "courseID": "MATH 165",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 53,
+      "course": {
+        "courseName": "Differential & Integral Calc II",
+        "courseID": "MATH 211",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 54,
+      "course": {
+        "courseName": "Elementary Applied Linear Algebra",
+        "courseID": "MATH 222",
+        "units": 3.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 55,
+      "course": {
+        "courseName": "Calculus, Fourth Course - Differential Equations",
+        "courseID": "MATH 2",
+        "units": 3.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 56,
+      "course": {
+        "courseName": "Linear Algebra with Applications in Differential Equations",
+        "courseID": "MATH 241",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 57,
+      "course": {
+        "courseName": "Introduction to Physics II",
+        "courseID": "PHYS 214",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 58,
+      "course": {
+        "courseName": "Differential and Integral Calculus",
+        "courseID": "MATH 31A",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 59,
+      "course": {
+        "courseName": "Integration and Infinite Series",
+        "courseID": "MATH 31B",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 60,
+      "course": {
+        "courseName": "Calculus of Several Variables",
+        "courseID": "MATH 32A",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 61,
+      "course": {
+        "courseName": "Calculus of Several Variables",
+        "courseID": "MATH 32B",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 62,
+      "course": {
+        "courseName": "Linear Algebra and Applications",
+        "courseID": "MATH 33A",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 63,
+      "course": {
+        "courseName": "Differential Equations",
+        "courseID": "MATH 33B",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 64,
+      "course": {
+        "courseName": "Physics for Scientists and Engineers: Mechanics",
+        "courseID": "PHYSICS 1A",
+        "units": 5.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 65,
+      "course": {
+        "courseName": "Physics Laboratory for Scientists and Engineers: Mechanics",
+        "courseID": "PHYSICS 4AL",
+        "units": 2.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 66,
+      "course": {
+        "courseName": "Physics for Scientists and Engineers: Oscillations, Waves, Electric and Magnetic Fields",
+        "courseID": "PHYSICS 1B",
+        "units": 5.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 67,
+      "course": {
+        "courseName": "Physics Laboratory for Scientists and Engineers: Electricity and Magnetism",
+        "courseID": "PHYSICS 4BL",
+        "units": 2.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 68,
+      "course": {
+        "courseName": "Physics for Scientists and Engineers: Electrodynamics, Optics, and Special Relativity",
+        "courseID": "PHYSICS 1C",
+        "units": 5.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 69,
+      "course": {
+        "courseName": "College Composition",
+        "courseID": "ENGL 1A",
+        "units": 4.0,
+        "isOrigin": true,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 70,
+      "course": {
+        "courseName": "English Composition, Rhetoric, and Language",
+        "courseID": "ENGCOMP 3",
+        "units": 5.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 71,
+      "course": {
+        "courseName": "Introduction to Computer Science I",
+        "courseID": "COM SCI 31",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 72,
+      "course": {
+        "courseName": "Introduction to Computer Science II",
+        "courseID": "COM SCI 32",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 73,
+      "course": {
+        "courseName": "Introduction to Computer Organization",
+        "courseID": "COM SCI 33",
+        "units": 5.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 74,
+      "course": {
+        "courseName": "Logic Design of Digital Systems",
+        "courseID": "COM SCI M51A",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    },
+    {
+      "key": 75,
+      "course": {
+        "courseName": "Introduction to Discrete Structures",
+        "courseID": "MATH 61",
+        "units": 4.0,
+        "isOrigin": false,
+        "isSelected": false
+      }
+    }
+  ],
+  "equivalencyMatrix": [
+    [
+      { "courses": [[0]], "relationToNext": "OR" },
+      { "courses": [[1]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [{ "courses": [[2]] }, { "courses": [[3]] }, { "courses": [] }, { "courses": [] }],
+    [{ "courses": [[4]] }, { "courses": [[5]] }, { "courses": [[50]] }, { "courses": [[58]] }],
+    [{ "courses": [[6]] }, { "courses": [[7]] }, { "courses": [[53]] }, { "courses": [[59]] }],
+    [{ "courses": [[8]] }, { "courses": [[9]] }, { "courses": [[48]] }, { "courses": [[75]] }],
+    [{ "courses": [[10]] }, { "courses": [[11]] }, { "courses": [[60]] }, { "courses": [[61]] }],
+    [{ "courses": [[12]] }, { "courses": [[13]] }, { "courses": [[54]] }, { "courses": [[62]] }],
+    [{ "courses": [[14]] }, { "courses": [[15]] }, { "courses": [] }, { "courses": [] }],
+    [{ "courses": [[16]] }, { "courses": [[17]] }, { "courses": [] }, { "courses": [] }],
+    [{ "courses": [[18, 19]] }, { "courses": [[20]] }, { "courses": [] }, { "courses": [] }],
+    [{ "courses": [[21]] }, { "courses": [[22]] }, { "courses": [] }, { "courses": [] }],
+    [{ "courses": [[23]] }, { "courses": [[24]] }, { "courses": [] }, { "courses": [] }],
+    [{ "courses": [[25]] }, { "courses": [[26]] }, { "courses": [] }, { "courses": [] }],
+    [{ "courses": [[27]] }, { "courses": [[28]] }, { "courses": [] }, { "courses": [] }],
+    [{ "courses": [[29, 30]] }, { "courses": [[31]] }, { "courses": [] }, { "courses": [] }],
+    [{ "courses": [[-1]] }, { "courses": [[32]] }, { "courses": [[71]] }, { "courses": [[74]] }],
+    [{ "courses": [[33]] }, { "courses": [[34]] }, { "courses": [] }, { "courses": [] }],
+    [{ "courses": [[35]] }, { "courses": [[36]] }, { "courses": [[45]] }, { "courses": [[-3]] }],
+    [{ "courses": [[37]] }, { "courses": [[38]] }, { "courses": [[47]] }, { "courses": [[72]] }],
+    [{ "courses": [[39]] }, { "courses": [[40]] }, { "courses": [[49]] }, { "courses": [[73]] }],
+    [{ "courses": [[41]] }, { "courses": [[42]] }, { "courses": [[46]] }, { "courses": [] }],
+    [
+      { "courses": [[35]], "relationToNext": "OR" },
+      { "courses": [[43]] },
+      { "courses": [] },
+      { "courses": [] }
+    ],
+    [{ "courses": [[-1]] }, { "courses": [[44]] }, { "courses": [] }, { "courses": [] }],
+    [{ "courses": [[51]] }, { "courses": [] }, { "courses": [[52]] }, { "courses": [] }],
+    [{ "courses": [[55, 12]] }, { "courses": [] }, { "courses": [[56]] }, { "courses": [] }],
+    [{ "courses": [[18, 16]] }, { "courses": [] }, { "courses": [[57]] }, { "courses": [] }],
+    [{ "courses": [[55]] }, { "courses": [] }, { "courses": [] }, { "courses": [[63]] }],
+    [
+      { "courses": [[14]], "relationToNext": "AND" },
+      { "courses": [] },
+      { "courses": [] },
+      { "courses": [[64, 65]] }
+    ],
+    [
+      { "courses": [[18, 16]] },
+      { "courses": [] },
+      { "courses": [] },
+      { "courses": [[66, 67, 68]] }
+    ],
+    [
+      { "courses": [[69]], "relationToNext": "AND" },
+      { "courses": [] },
+      { "courses": [] },
+      { "courses": [[70]] }
+    ],
+    [{ "courses": [[2]] }, { "courses": [] }, { "courses": [] }, { "courses": [[-2]] }]
+  ]
+}

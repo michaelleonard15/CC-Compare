@@ -1,0 +1,58 @@
+[
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Source": [
+          [
+            [
+              {
+                "courseID": "CLS 1",
+                "courseName": "Class 1",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Destination": [
+          [
+            [
+              {
+                "courseID": "CLS 4",
+                "courseName": "Class 4",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "relationToNext": "OR"
+      },
+      {
+        "Source": [
+          [
+            [
+              {
+                "courseID": "CLS 3",
+                "courseName": "Class 3",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Destination": [
+          [
+            [
+              {
+                "courseID": "CLS 5",
+                "courseName": "Class 5",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  }
+]

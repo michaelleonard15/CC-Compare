@@ -1,0 +1,45 @@
+{
+	"Sections":
+	[
+		{
+			"1":{
+				"Source":{
+					"classes": [[0]]
+
+				},
+				"Destination":{
+					"classes": [[6]]
+
+				},
+				"RelationToNext":"AND"
+			},
+			"2":{
+				"Source":{
+					"classes": [[1], [2], [3], [4]]
+				},
+				"Destination":{
+					"classes": [[-2]]
+					}
+				}
+			},	
+		{
+			"1":{
+				"Source":{
+					"classes": [[-1]]
+				},
+				"Destination":{
+					"classes": [[7]]
+				},
+				"RelationToNext":"OR"
+			},
+			"2":{
+				"Source":{
+					"classes": [[5]]
+				},
+				"Destination":{
+					"classes": [[8]]
+				}
+			}
+		}
+	]
+}

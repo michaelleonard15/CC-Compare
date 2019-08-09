@@ -1,48 +1,214 @@
-.dropdown_menu_box {
-  width: 500px;
-  background-color: #a6c8ff; 
+/* Sticky footer */
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-.dropdown_menu_label {
+.Site-content {
+  flex: 1;
+}
+
+
+
+
+/* Added to customize Bulma */
+
+
+.button {
+  line-height: 0.5;
+}
+
+.relation_label {
   font-weight: bold;
+  text-decoration: underline;
 }
 
-.dropdown_menu_closed {
+
+
+/* END */
+
+
+
+
+
+
+/* Page 3 */
+
+.back_button {
+  font-size: 24px;
+  padding: 12px;
 }
 
-.dropdown_menu_option_1 {
-  background-color: #d1d1d1; 
+.next_button_box {
+  position: absolute;
+  align-content: center;
+  left: 45%;
+  top: 800px;
 }
 
-.dropdown_menu_option_2 {
-  background-color: #a1a1a1; 
+
+
+
+
+
+.school_labels_row {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+
 }
 
-.source_selection_menu {
-  position: relative;
-  top: 90px;
+.label_box {
+  width: 300px;
+  height: 100px;
+  background-color: #878787;
+  margin: 25px;
+  display: table;
+  text-align: center;
 }
 
-.destination_container {
-  position: relative;
-  top: 20px;
-  width: 45%; 
-  left: 55%
+
+.school_label {
+  display: table-cell;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: underline;
+  vertical-align: middle;
 }
 
-.destination_container_add {
-    position: absolute;
-    left: 50%;
+
+
+
+
+.source_column_box {
+  text-align: center;
+  width: 200px;
 }
 
-.specific_major_selection {
-  position: relative;
-  margin: 20px
+
+.report_toggle_selected {
+  font-size: 12px;
+  margin: 6px; 
+  padding: 6px;
+  background-color: #5a9962
 }
 
-.specific_major_selection_remove {
-    position: absolute;
-    top: 25px;
-    right: 00px;
+.report_toggle_not_selected {
+  font-size: 12px;
+  margin: 6px; 
+  padding: 6px;
+  background-color: #a8a8a8
 }
 
+
+.requirement_row_complete {
+  background-color: #00ff08;
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+}
+
+.requirement_row_incomplete {
+  background-color: #363636;
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+}
+
+
+.row_group_complete {
+  background-color: #008fba;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.row_group_incomplete {
+  background-color: #363636;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.relation_group_empty {
+  width: 300px;
+  height: 100px;
+  
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  text-align: center;
+}
+
+.relation_group {
+  width: 300px;
+  height: 100px;
+  background-color: #878787;
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+  text-align: center;
+}
+
+.class_label_selected {
+  background-color: #56a65d;
+  width: 100px;
+  height: 40px;
+}
+
+.class_label_not_selected {
+  background-color: #2f65bd;
+  width: 100px;
+  height: 40px;
+}
+
+.relation {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.relation_label {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.operator_box {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 24px; 
+} 
+
+
+
+
+
+
+.links_row {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+
+}
+
+
+.link_box {
+  width: 300px;
+  height: 25px;
+  background-color: #878787;
+  margin: 25px;
+  display: table;
+  text-align: center;
+}
+
+
+.agreement_link {
+  display: table-cell;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  vertical-align: middle;
+}

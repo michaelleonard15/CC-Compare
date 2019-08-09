@@ -1,0 +1,33 @@
+[
+  {
+    "requirement": 0,
+    "requirementType": "",
+    "Equivalencies": [
+      {
+        "Source": [
+          [
+            [
+              {
+                "courseID": "CLS 1",
+                "courseName": "Class 1",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "Destination": [
+          [
+            [
+              {
+                "courseID": "CLS 2",
+                "courseName": "Class 2",
+                "units": 3
+              }
+            ]
+          ]
+        ],
+        "relationToNext": ""
+      }
+    ]
+  }
+]

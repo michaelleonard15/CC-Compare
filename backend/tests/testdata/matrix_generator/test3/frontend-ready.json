@@ -1,0 +1,95 @@
+{
+  "lookup": [
+    {
+      "key": 0,
+      "course": {
+        "isSelected": false,
+        "courseID": "CLS 1",
+        "courseName": "Class 1",
+        "units": 3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 1,
+      "course": {
+        "isSelected": false,
+        "courseID": "CLS 2",
+        "courseName": "Class 2",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 2,
+      "course": {
+        "isSelected": false,
+        "courseID": "CLS 3",
+        "courseName": "Class 3",
+        "units": 3,
+        "isOrigin": true
+      }
+    },
+    {
+      "key": 3,
+      "course": {
+        "isSelected": false,
+        "courseID": "CLS 4",
+        "courseName": "Class 4",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 4,
+      "course": {
+        "isSelected": false,
+        "courseID": "CLS 4",
+        "courseName": "Class 4",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 5,
+      "course": {
+        "isSelected": false,
+        "courseID": "CLS 5",
+        "courseName": "Class 5",
+        "units": 3,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 6,
+      "course": {
+        "isSelected": false,
+        "courseID": "CLS 6",
+        "courseName": "Class 6",
+        "units": 4,
+        "isOrigin": false
+      }
+    },
+    {
+      "key": 7,
+      "course": {
+        "isSelected": false,
+        "courseID": "CLS 4",
+        "courseName": "Class 4",
+        "units": 4,
+        "isOrigin": false
+      }
+    }
+  ],
+  "equivalencyMatrix": [
+    [
+      { "courses": [[0]], "relationToNext": "OR" },
+      { "courses": [[1]] },
+      { "courses": [[4]] },
+      { "courses": [] }
+    ],
+    [{ "courses": [[2]] }, { "courses": [[3]] }, { "courses": [[5]] }, { "courses": [] }],
+    [{ "courses": [[0]] }, { "courses": [] }, { "courses": [] }, { "courses": [[6]] }],
+    [{ "courses": [[2]] }, { "courses": [] }, { "courses": [] }, { "courses": [[7]] }]
+  ]
+}
