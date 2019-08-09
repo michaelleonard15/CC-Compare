@@ -6,6 +6,9 @@
 
 $primary:  #63abc7;
 $link: #63abc7;
-
+$success: #a2eba6;
+$light-blue: #e3eeff; //#faebff;  //#eebaff;
+$light-blue-invert: findColorInvert($light-blue);
+$custom-colors: ("light-blue": ($light-blue, $light-blue-invert));
 
 @import "../node_modules/bulma/bulma.sass";

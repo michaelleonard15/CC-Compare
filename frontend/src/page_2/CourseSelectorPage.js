@@ -52,33 +52,6 @@ class CourseSelectorPage extends React.Component {
       let selectedColor = row.course.isSelected ? 'is-primary' : 'has-background-grey-lighter'
       let name = row.course.courseName
 
-      console.log(name)
-      console.log(name.length)
-
-
-
-      let btnText = () => { 
-        if(name.length < 20 || name.indexOf(" ", 20) < 0) {
-          return(<span className="content is-small">{name}</span>)
-        } 
-        else {
-          let space = name.indexOf(" ", 20)
-          console.log(space)
-          let p1 = name.slice(0, space)
-          let p2 = name.slice(space + 1)
-          console.log(p1 + "      " + p2)
-          return(
-            <div>
-              <span className="content is-small">{p1}</span>
-              <br/>
-              <span className="content is-small">{p2}</span>
-            </div>
-            )
-        }
-      }
-
-
-
 
       return(
         <button   key={row.ID}
@@ -88,14 +61,34 @@ class CourseSelectorPage extends React.Component {
           <div>
             <span className="content">{row.course.courseID}</span> 
             <br/> 
-            {/*<span className="content is-small">{row.course.courseName}</span>*/}
-            {btnText()}
+            {this.multilineButtonText(name)}
           </div>
         </button>
       )
     })
     return buttons
   }
+
+
+  multilineButtonText(name) {
+    if(name.length < 20 || name.indexOf(" ", 20) < 0) {
+          return(<span className="content is-small">{name}</span>)
+        } 
+        else {
+          let space = name.indexOf(" ", 20)
+          let p1 = name.slice(0, space)
+          let p2 = name.slice(space + 1)
+          return(
+            <div>
+              <span className="content is-small">{p1}</span>
+              <br/>
+              <span className="content is-small">{p2}</span>
+            </div>
+            )
+        }
+  }
+
+
 
 
   /**
@@ -106,7 +99,7 @@ class CourseSelectorPage extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="title is-1">College Comparison Tool</h1>
+        <h1 className="title is-1">CC Compare</h1>
 
         <p className="content">
         To present more useful information on the report 
@@ -124,7 +117,7 @@ class CourseSelectorPage extends React.Component {
                   What classes have you completed at {this.props.schoolName}? 
                 </h3>
       
-                <div className="buttons is-centered are-large">
+                <div className="buttons is-centered are-medium">
                   {this.generateButtons()}
                 </div>
               

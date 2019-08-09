@@ -1,0 +1,48 @@
+/* Sticky footer */
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+
+
+
+/* Added to customize Bulma */
+
+
+.button {
+  line-height: .55;
+}
+
+.relation_label {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.section {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.column.final-report {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+
+.box.extra-padding {
+  padding: 35px;
+}
+
+/* END */
+
+
+
+
+

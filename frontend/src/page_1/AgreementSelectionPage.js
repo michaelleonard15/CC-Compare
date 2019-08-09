@@ -24,7 +24,7 @@ class AgreementSelectionPage extends React.Component {
 constructor(props) {
     super(props)
 
-    this.state = {source: [], destinations: [], 
+    this.state = {source: [], destinations: [], isLoading: false, errorMessage: "",
                   selectedSource: {ID: -1, name: ""}, specificAgreements: []}
   }
 
@@ -68,6 +68,8 @@ constructor(props) {
    * specific agreements selected. 
    */
   submitForm() {
+
+    this.setState({isLoading: true})
     let names = [this.state.selectedSource.name]
     let IDs = []
     let agreements = Array.from(this.state.specificAgreements)
@@ -78,14 +80,24 @@ constructor(props) {
                 major: agreements[i].major.ID})
     }
 
-    ///// REMOVE THIS LINE LATER
-    if(names[0] === "") { names = ["Dummy 1","Dummy 2","Dummy 3","Dummy 4"]}  
-    if(IDs.length < 1) {IDs.push(14973184); IDs.push(14984221); IDs.push(15036781);}
-    ///// REMOVE THIS LINE LATER
-
-
-    let request = {source: this.state.selectedSource.ID, agreements: IDs}
-    this.props.onSubmit(request, names)                  
+    if(names[0] !== "" && IDs.length > 0) {
+      let request = {source: this.state.selectedSource.ID, agreements: IDs}
+      this.props.onSubmit(request, names)
+    }
+    else {
+      ///// REMOVE THIS LINE LATER
+      //  names = ["Dummy 1","Dummy 2","Dummy 3","Dummy 4"]
+      //  IDs.push({major: 14973184}); IDs.push({major: 14984221}); IDs.push({major: 15036781})
+      //  let request = {source: this.state.selectedSource.ID, agreements: IDs}
+      //  this.props.onSubmit(request, names)
+      ///// REMOVE THIS LINE LATER
+      
+      //// ADD THIS LATER
+        let error = "Failed to submit request, no schools/majors selected. "
+        this.setState({isLoading: false, errorMessage: error})
+        console.log(error)
+      //// ADD THIS LATER
+    }
   }
 
 
@@ -99,7 +111,7 @@ constructor(props) {
   render () {
   return (
     <div>
-      <h1 className="title is-1">College Comparison Tool</h1>
+      <h1 className="title is-1">CC Compare</h1>
 
       <p className="content">
       This page uses data from <a href="https://www.assist.org/">Assist.org</a> to provide a 
@@ -147,10 +159,10 @@ constructor(props) {
           </div>
 
         </div>
-
         <div className="level-right">
+          <strong className="content has-text-danger">{this.state.errorMessage}</strong>
           <button
-            className="button is-large  level-item"
+            className={"button is-large level-item " + (this.state.isLoading ? "is-primary is-loading" : "")}
             onClick={this.submitForm.bind(this)}>Next</button>
         </div>
       </div>

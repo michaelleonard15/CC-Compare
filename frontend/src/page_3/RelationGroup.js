@@ -58,7 +58,13 @@ class RelationGroup extends React.Component {
 
   addButtonOrLabel(reactKey, lookupKey) {
     let temp = this.props.lookupTable.get(lookupKey)
-    if(this.props.isSourceCol) {  
+    if(lookupKey < 0) {
+      return (
+        <span key={reactKey} className="level">
+          <span className='content is-large level-item'>{this.multilineButtonText(temp.courseName)}</span>
+        </span>)
+    }
+    else if(this.props.isSourceCol) {  
       let selected = temp.isSelected ? 'is-primary' : 'has-background-grey-lighter'
       return this.createButton(reactKey, selected, temp, lookupKey)
     } 
@@ -82,18 +88,37 @@ class RelationGroup extends React.Component {
   createButton(key, selectedColor, aClass, lookupKey) {
     return (
       <span key={key} className="level">
-        <button className={'button level-item ' + selectedColor}
+        <button className={'button level-item is-large ' + selectedColor}
                 onClick={this.props.handleToggle.bind(this, lookupKey)}>
           <div>
             <span className="content">{aClass.courseID} ({aClass.units})</span> 
-            <br/><br/> 
-            <span className="content is-small">{aClass.courseName}</span>      
+            <br/>
+            {this.multilineButtonText(aClass.courseName)}      
           </div>
         </button>
       </span>
     )
   }
 
+
+
+  multilineButtonText(name) {
+    if(name.length < 20 || name.indexOf(" ", 20) < 0) {
+          return(<span className="content is-small">{name}</span>)
+        } 
+        else {
+          let space = name.indexOf(" ", 20)
+          let p1 = name.slice(0, space)
+          let p2 = name.slice(space + 1)
+          return(
+            <div>
+              <span className="content is-small">{p1}</span>
+              <br/>
+              <span className="content is-small">{p2}</span>
+            </div>
+            )
+        }
+  }
 
 
 
@@ -109,7 +134,7 @@ class RelationGroup extends React.Component {
   createLabel(key, completedColor, aClass)  {
     return (
       <span key={key} className={`level ${completedColor}`}>
-        <span className='level-item'>{aClass.courseID} ({aClass.units}) </span>
+        <span className='content is-large level-item'>{aClass.courseID} ({aClass.units}) </span>
       </span>
     )
   }

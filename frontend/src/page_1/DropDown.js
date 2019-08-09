@@ -25,6 +25,23 @@ class DropDown extends React.Component {
   } 
 
 
+  sortOptions() {
+    let options = this.props.optionList
+
+    return options.sort( (c1, c2) => {
+     
+      let name1 = c1.name.toUpperCase()
+      let name2 = c2.name.toUpperCase()
+     
+      return (name1 < name2) ? -1 : 
+             (name1 > name2) ? 1  : 0
+    })
+  }
+
+
+
+
+
   /**
    * Renders the <select> element with a default option
    * and the prop optionList mapped to the other <option> elements.
@@ -47,7 +64,7 @@ class DropDown extends React.Component {
                       key ="-1" 
                       value="-1">Select an option...</option> 
               
-              {this.props.optionList.map((row, index) => {
+              {this.sortOptions().map((row, index) => {
                   return( <option 
                             key={row.id} 
                             value={row.id}>{row.name}</option> )

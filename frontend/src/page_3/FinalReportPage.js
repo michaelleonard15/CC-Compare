@@ -64,7 +64,9 @@ class FinalReportPage extends React.Component {
       else {
         rows.push(
           <div key={i} className="section">
-            {this.createRequirementRow(matrix[i], i, isComplete)}
+            <div className="box extra-padding has-background-light">
+              {this.createRequirementRow(matrix[i], i, isComplete)}
+            </div>
           </div>)
       }
     }
@@ -189,7 +191,7 @@ class FinalReportPage extends React.Component {
 
         <div className="level">
           <div className='level-left'>
-            <span className="title is-1">College Comparison Tool</span>
+            <span className="title is-1">CC Compare</span>
           </div>
           <div className="level-right">
             <button className="button is-large level-item"
